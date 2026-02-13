@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import Image from "next/image";
+import { testimonials } from "@/src/data/testimonials";
 
 export default function OurCulture(){
     return (
@@ -73,11 +74,12 @@ export default function OurCulture(){
           0: { slidesPerView: 1 },
         }}
         className="reveal-stagger our-culture-slider w-full lg:pl-16 md:pl-16 pl-8 pt-16 pb-4">
-                        <SwiperSlide>
+          {testimonials.map((testimonial, index) => (
+              <SwiperSlide key={index}>
                           <div className="flex items-center justify-evenly">
                             <div className="h-[405px] w-[30%] rounded-xl">
                                 <img
-                              src="./images/testi1.jpg"
+                              src={testimonial.image}
                               className=" h-full w-full object-cover rounded-xl"
                             />
                             </div>
@@ -88,16 +90,18 @@ export default function OurCulture(){
                                 </div>
                                 <div>
                                   <div className="flex items-center lg:min-h-[200px] md:min-h-[250px] min-h-[250px]">
-                                  <p className="text-base leading-base font-base">Hexar Studios combines creativity with professionalism. The environment pushes you to do your best work while still feeling supported. I learned more here in months than in years elsewhere.</p>
+                                  <p className="text-base leading-base font-base">{testimonial.content}</p>
 
                                   </div>
-                                  <h3 className="lg:text-[24px] md:text-[20px] text-[20px] font-semibold leading-base mb-1">Shefali Shah</h3>
-                                  <h4 className="lg:text-[20px] md:text-[18px] text-[18px] font-base leading-base">Creative Designer</h4>
+                                  <h3 className="lg:text-[24px] md:text-[20px] text-[20px] font-semibold leading-base mb-1">{testimonial.name}</h3>
+                                  <h4 className="lg:text-[20px] md:text-[18px] text-[18px] font-base leading-base">{testimonial.designation}</h4>
                                 </div>
                             </div>
                             
                           </div>
                         </SwiperSlide>
+          ))}
+                      
             
                       </Swiper>
                     </div>

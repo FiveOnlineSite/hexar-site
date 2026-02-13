@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* * {
+  cursor: url('/images/icons/sword.png'), auto !important;
+} */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.35) transparent;
+}
+
+/* Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.4),
+    rgba(255,255,255,0.15)
+  );
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.6),
+    rgba(255,255,255,0.25)
+  );
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+html, body, #__next {
+  height: 100%;
+   overflow-x: hidden;
+
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #0A0A0A; 
+  color: #fff;
+  overflow-x: hidden;
+  overscroll-behavior: none;
+}
+
+.scroll-outer-section{
+  overflow: hidden;
+}
+
+.scroll-inner-section{
+  height: 100vh;
+  width: 400vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.scroll-section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-section .slick-slide > div {
+  border: 0.4px solid white;
+}
+
+.clients-section .swiper-wrapper .swiper-slide, .why-us-section .swiper-wrapper .swiper-slide, .blog-section .swiper-wrapper .swiper-slide {
+  margin: 0 !important;
+}
+
+.our-culture-slider .swiper-slide{
+  filter: brightness(0.5);
+  transition: all 0.4s ease;
+}
+
+.our-culture-slider .swiper-slide.swiper-slide-active{
+  filter: brightness(1);
+}
+
+.animate-img-wrapper {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+/* Core blast flash */
+.blast-flash {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle, #ffffff 0%, #ffea00 60%, transparent 80%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 0.9;
+  z-index: 9999;
+  animation: blast-flash-anim 0.15s ease-out forwards;
+}
+
+@keyframes blast-flash-anim {
+  0% { transform: translate(-50%, -50%) scale(0.2); opacity: 1; }
+  100% { transform: translate(-50%, -50%) scale(2.5); opacity: 0; }
+}
+
+@keyframes side-arrow-jump {
+  0%, 100% { transform: translateY(-50%) translateX(0); }
+  50% { transform: translateY(-50%) translateX(-15px); }
+}
+
+@keyframes down-arrow-jump {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-15px); }
+}
+
+.down-arrow {
+  animation: down-arrow-jump 2s infinite;
+}
+
+.side-arrow {
+  animation: side-arrow-jump 2s infinite;
+}
+
+/* Shockwave ring */
+.blast-ring {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #ffdd55;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 1;
+  z-index: 9998;
+  animation: blast-ring-anim 0.4s ease-out forwards;
+}
+
+@keyframes blast-ring-anim {
+  0% { transform: translate(-50%, -50%) scale(0.2); opacity: 1; border-width: 3px; }
+  100% { transform: translate(-50%, -50%) scale(4); opacity: 0; border-width: 1px; }
+}
+
+/* Debris particles */
+.blast-debris {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(circle, #ffdd88, #ff6600);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9997;
+  animation: blast-debris-anim 0.6s ease-out forwards;
+}
+
+@keyframes blast-debris-anim {
+  0% { transform: translate(0, 0) scale(1); opacity: 1; }
+  100% {
+    transform: translate(var(--moveX), var(--moveY)) scale(0.4);
+    opacity: 0;
+  }
+}
+
+/* Smoke puff */
+.blast-smoke {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: radial-gradient(circle, rgba(100,100,100,0.5), transparent);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9996;
+  animation: smoke-anim 1s ease-out forwards;
+}
+
+@keyframes smoke-anim {
+  0% { opacity: 0.6; transform: translate(-50%, -50%) scale(0.3); }
+  100% { opacity: 0; transform: translate(-50%, -50%) scale(1.8); }
+}
+
+.arc-content {
+  clip-path: ellipse(120% 70% at 50% 50%);
+}
+
+.our-timeline-section{
+  will-change: transform;
+}
+
+@keyframes drawLine {
+  from {
+    stroke-dashoffset: 3000; /* Start with the line hidden */
+  }
+  to {
+    stroke-dashoffset: 0; /* End with the line fully drawn */
+  }
+}
+
+.animate-process-line {
+  
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+  animation: drawLine 5s ease-in-out forwards;
+  animation-delay: 0.5s; /* Wait for the container to open slightly */
+}
+
+.trust-section .swiper-wrapper{
+  padding-left: 5%
+}
+
+.trust-section .mySwiper .swiper-slide {
+  transition: transform 0.6s ease;
+}
+
+.trust-section .mySwiper .swiper-slide:nth-child(odd) {
+  transform: translateY(40px);
+}
+
+
+.contrib-height {
+  height: 480px; 
+
+  /* xs */
+  @media (max-width: 480px) { height: 420px; }
+
+  /* xxs */
+   @media (max-width: 400px) { height: 400px; } 
+
+  /* mini screens */
+ @media (max-width: 350px) { height: 380px; }
+
+  /* tailwind breakpoints */
+  @media (min-width: 640px) { height: 550px; }  
+  @media (min-width: 768px) { height: 420px; }   
+  @media (min-width: 1024px) { height: 365px; } 
+  /* @media (min-width: 1280px) { height: 378px; }  */
+  @media (min-width: 1280px) { height: 796px; } 
+  @media (min-width: 1180px) { height: 696px; } 
+
+} 
+
+/* @media (max-width: 768px) {
+  .reveal,
+  .reveal-stagger > * {
+    will-change: opacity, transform;
+  }
+} */
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.4s ease-out;
+}
+
+.loader {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+

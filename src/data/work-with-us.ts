@@ -33,7 +33,7 @@ export const workwithus = [
      },
       {
         title: "Hybrid Working",
-        image: "/images/work-with-us/first.png",
+        image: "/images/work-with-us/hybrid.png",
      },
      
 

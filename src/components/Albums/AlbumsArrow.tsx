@@ -63,7 +63,6 @@ interface AlbumsArrowProps {
 export default function AlbumsArrow({ categorySlug, basePath, projectSlug, albums, currentAlbumSlug }: AlbumsArrowProps) {
   const [openAlbums, setOpenAlbums] = useState(false);
 
-  
   return (
     <>
       {!openAlbums && (

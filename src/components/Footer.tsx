@@ -19,11 +19,10 @@ export default function Footer () {
                     <div className="grid grid-cols-2 gap-4" >
                         <ul className="pt-4">
                             <li className="list-none py-1 group">
-                                <Link href="/props-weapons" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Props/ Weapon’s</Link>
+                                <Link href="/categories/concept-art" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Props/ Weapon’s</Link>
                             </li>
-
                              <li className="list-none py-1 group">
-                                <Link href="/stylized-art" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Stylized Art</Link>
+                                <Link href="/categories/stylized-art" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Stylized Art</Link>
                             </li>
                              <li className="list-none py-1 group">
                                 <Link href="/concept-art" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Concept Art</Link>

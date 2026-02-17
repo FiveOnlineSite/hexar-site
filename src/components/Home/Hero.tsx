@@ -443,8 +443,17 @@ export default function Hero() {
 
               src={item.image}
               alt="banner"
-              className="lg:max-h-[90%] md:max-h-[90%] sm:max-h-[50%] max-h-[50%] object-contain"
+              className="3xl:h-[800px] 2xl:h-[700px] xl:h-[600px] lg:h-[600px] md:h-[600px] h-full object-contain"
             />
+            {/* <img
+  ref={(el) => {
+    if (el) imageRefs.current[index] = el;
+  }}
+
+              src={item.image}
+              alt="banner"
+              className="lg:max-h-[90%] md:max-h-[90%] sm:max-h-[50%] max-h-[50%] object-contain"
+            /> */}
           </div>
         </SwiperSlide>
 ))

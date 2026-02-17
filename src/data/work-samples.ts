@@ -90,10 +90,6 @@ export const worksamples = [
      },
      {
        id: 23,
-        image: "/images/work-samples/hex-hoppers-studios-3.jpg",
-     },
-     {
-       id: 24,
         image: "/images/work-samples/i. Stylized.jpg",
      },
 

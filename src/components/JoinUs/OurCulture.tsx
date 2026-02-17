@@ -1,7 +1,7 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import Image from "next/image";
 import { testimonials } from "@/src/data/testimonials";
@@ -49,11 +49,12 @@ export default function OurCulture(){
                       </button>
             
                       <Swiper
-                        modules={[Navigation]}
+                        modules={[Navigation, Autoplay]}
                         navigation={{
                           prevEl: "#custom-prev",
                           nextEl: "#custom-next",
                         }}
+                        
                         onInit={(swiper) => {
                           if (
                             swiper.params.navigation &&
@@ -65,6 +66,10 @@ export default function OurCulture(){
                           swiper.navigation?.init();
                           swiper.navigation?.update();
                         }}
+                        autoplay={{
+                  delay: 1500,
+                  disableOnInteraction: true,
+                }}
                         spaceBetween={0}
         slidesPerView={1.33}
         breakpoints={{

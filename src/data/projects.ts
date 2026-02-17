@@ -204,8 +204,8 @@ export const projects = [
             {
                 id: 1,
             album_img: "/images/project-showcase/Back4Blood/1.jpg",
-            slug: "mr-black",
-            title: "Mr. Black",
+            slug: "caucasian-npcs",
+            title: "Caucasian NPCs",
              images: [
                 
                 "/images/project-showcase/Back4Blood/Caucasian NPCs/Caucasian-Female-Mid-Age-Closeup-1.jpg",
@@ -446,40 +446,276 @@ export const projects = [
         
         ],
      },
-    //  {
-    //     title: "Wanderer Fragments of Fate",
-    //     date: "24 Nov",
-    //     image: "/images/contributions/Wanderer.jpg",
-    //      slug: "wanderer-fragments-of-fate",
-    //     content: "Spirits Unleashed",
-    //  },
+  
     //   {
+       
     //     title: "Deceit 2",
     //     date: "24 Nov",
     //     image: "/images/contributions/Deceit 2.jpg",
     //      slug: "deceit-2",
-    //     content: "Spirits Unleashed",
-    //  },
-    //    {
-    //     title: "Ghostbusters Spirits Unleashed",
-    //     date: "24 Nov",
-    //     image: "/images/contributions/Ghost.jpg",
-    //      slug: "ghostbusters-spirits-unleashed",
-    //     content: "Spirits Unleashed",
-    //  },
-    //  {
-    //     title: "Call of Osiris",
-    //     date: "24 Nov",
-    //     image: "/images/contributions/Call of Osiris.jpg",
-    //      slug: "call-of-osiris",
-    //     content: "Spirits Unleashed",
-    //  },
-    //  {
-    //     title: "Tiger 3",
-    //     date: "24 Nov",
-    //     image: "/images/contributions/Tiger.jpg",
-    //      slug: "tiger-3",
-    //     content: "Spirits Unleashed",
-    //  },
+         
+    // },
+       {
+        id: 4,
+        title: "Ghostbusters Spirits Unleashed",
+        date: "24 Nov",
+        image: "/images/contributions/Ghost.jpg",
+         slug: "ghostbusters-spirits-unleashed",
+        albums: [
+            {
+                id: 1,
+            album_img: "/images/project-showcase/Ghostbusters Spirits Unleashed/1.jpg",
+            slug: "basher-lunk",
+            title: "Basher Lunk",
+             images: [
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Basher Lunk/1.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Basher Lunk/2.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Basher Lunk/3.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Basher Lunk/4.jpg",
+            ],
+        },
+        {
+                id: 2,
+            album_img: "/images/project-showcase/Ghostbusters Spirits Unleashed/2.jpg",
+            slug: "agressive-minnion",
+            title: "Agressive Minnion",
+             images: [
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Agressive Minnion/hex-hoppers-studios-headhoppers-illfonic-ghostbuster-agressive-minnion-clay-02.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Agressive Minnion/hex-hoppers-studios-headhoppers-illfonic-ghostbuster-agressive-minnion-in-game-01.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Agressive Minnion/hex-hoppers-studios-headhoppers-illfonic-ghostbuster-agressive-minnion-in-game-02.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Agressive Minnion/hex-hoppers-studios-headhoppers-illfonic-ghostbuster-agressive-minnion-in-game-03.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Agressive Minnion/hex-hoppers-studios-headhoppers-illfonic-ghostbuster-agressive-minnion-in-game-04.jpg",
+               
+            ],
+        },
+         {
+                id: 3,
+            album_img: "/images/project-showcase/Ghostbusters Spirits Unleashed/3.jpg",
+            slug: "passive-minnion",
+            title: "Passive Minnion",
+             images: [
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Passive Minnion/hex-hoppers-studios-headhoppers-illfonic-ghostbuster-passive-minnion-clay-02.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Passive Minnion/hex-hoppers-studios-headhoppers-illfonic-ghostbuster-passive-minnion-in-game-01.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Passive Minnion/hex-hoppers-studios-headhoppers-illfonic-ghostbuster-passive-minnion-in-game-02.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Passive Minnion/hex-hoppers-studios-headhoppers-illfonic-ghostbuster-passive-minnion-in-game-03.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Passive Minnion/hex-hoppers-studios-headhoppers-illfonic-ghostbuster-passive-minnion-in-game-04.jpg",
+             
+            ],
+        },
+        {
+                id: 4,
+            album_img: "/images/project-showcase/Ghostbusters Spirits Unleashed/4.jpg",
+            slug: "outfits",
+            title: "Outfits",
+             images: [
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Outfits/HeadHoppers_Illfonic_Ghostbuster_Costume_Clay_01.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Outfits/HeadHoppers_Illfonic_Ghostbuster_Costume_Clay_02.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Outfits/HeadHoppers_Illfonic_Ghostbuster_Costume_Clay_03.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Outfits/HeadHoppers_Illfonic_Ghostbuster_Costume_Clay_04.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Outfits/HeadHoppers_Illfonic_Ghostbuster_Costume_Clay_05.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Outfits/HeadHoppers_Illfonic_Ghostbuster_Costume_Clay_06.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Outfits/HeadHoppers_Illfonic_Ghostbuster_Costume_Clay_07.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Outfits/HeadHoppers_Illfonic_Ghostbuster_Costume_Clay_08.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Outfits/HeadHoppers_Illfonic_Ghostbuster_Costume_Clay_09.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Outfits/HeadHoppers_Illfonic_Ghostbuster_Costume_Textures_01.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Outfits/HeadHoppers_Illfonic_Ghostbuster_Costume_Textures_02.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Outfits/HeadHoppers_Illfonic_Ghostbuster_Costume_Textures_03.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Outfits/HeadHoppers_Illfonic_Ghostbuster_Costume_Textures_04.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Outfits/HeadHoppers_Illfonic_Ghostbuster_Costume_Textures_05.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Outfits/HeadHoppers_Illfonic_Ghostbuster_Costume_Textures_06.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Outfits/HeadHoppers_Illfonic_Ghostbuster_Costume_Textures_07.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Outfits/HeadHoppers_Illfonic_Ghostbuster_Costume_Textures_08.jpg",
+                "/images/project-showcase/Ghostbusters Spirits Unleashed/Outfits/HeadHoppers_Illfonic_Ghostbuster_Costume_Textures_09.jpg",
+            ],
+        },
+    ]
+     },
+     {
+        id: 5,
+        title: "Call of Osiris",
+        date: "24 Nov",
+        image: "/images/contributions/Call of Osiris.jpg",
+         slug: "call-of-osiris",
+     albums: [
+            {
+                id: 1,
+            album_img: "/images/project-showcase/Call of Osiris/1.jpg",
+            slug: "mummy-characters",
+            title: "Mummy Characters",
+             images: [
+                "/images/project-showcase/Call of Osiris/Mummy Characters/COO (1).jpg",
+                "/images/project-showcase/Call of Osiris/Mummy Characters/COO (2).jpg",
+                "/images/project-showcase/Call of Osiris/Mummy Characters/COO (3).jpg",
+                "/images/project-showcase/Call of Osiris/Mummy Characters/COO (4).jpg",
+                "/images/project-showcase/Call of Osiris/Mummy Characters/COO (5).jpg",
+            ],
+        },
+        {
+                id: 2,
+            album_img: "/images/project-showcase/Call of Osiris/2.jpg",
+            slug: "environment",
+            title: "Environment",
+             images: [
+                "/images/project-showcase/Call of Osiris/Environment/Louvre (1).jpg",
+                "/images/project-showcase/Call of Osiris/Environment/Louvre (2).jpg",
+                "/images/project-showcase/Call of Osiris/Environment/Louvre (3).jpg",
+                "/images/project-showcase/Call of Osiris/Environment/Louvre (7).jpg",
+                "/images/project-showcase/Call of Osiris/Environment/Louvre (8).jpg",
+                "/images/project-showcase/Call of Osiris/Environment/Louvre (9).jpg",
+                "/images/project-showcase/Call of Osiris/Environment/Louvre (10).jpg",
+                "/images/project-showcase/Call of Osiris/Environment/Louvre (11).jpg",
+                "/images/project-showcase/Call of Osiris/Environment/Louvre (12).jpg",
+                "/images/project-showcase/Call of Osiris/Environment/Louvre (13).jpg",
+         
+            ],
+        },
+    ]
+     },
+     {
+        id: 6,
+        title: "Tiger 3",
+        date: "24 Nov",
+        image: "/images/contributions/Tiger.jpg",
+        slug: "tiger-3",
+          albums: [
+            {
+                id: 1,
+            album_img: "/images/project-showcase/Tiger 3/1.jpg",
+            slug: "afghanhouse1",
+            title: "AfghanHouse1",
+             images: [
+                "/images/project-showcase/Tiger 3/AfghanHouse1/AfghanHouse1 (1).jpg",
+                "/images/project-showcase/Tiger 3/AfghanHouse1/AfghanHouse1 (2).jpg",
+                "/images/project-showcase/Tiger 3/AfghanHouse1/AfghanHouse1 (3).jpg",
+                "/images/project-showcase/Tiger 3/AfghanHouse1/AfghanHouse1 (4).jpg",
+             ]
+        },
+        {
+                id: 2,
+            album_img: "/images/project-showcase/Tiger 3/2.jpg",
+            slug: "afghanhouse2",
+            title: "AfghanHouse2",
+             images: [
+                "/images/project-showcase/Tiger 3/AfghanHouse2/AfghanHouse2 (1).jpg",
+                "/images/project-showcase/Tiger 3/AfghanHouse2/AfghanHouse2 (2).jpg",
+                "/images/project-showcase/Tiger 3/AfghanHouse2/AfghanHouse2 (3).jpg",
+                "/images/project-showcase/Tiger 3/AfghanHouse2/AfghanHouse2 (4).jpg",
+             ]
+        },
+        {
+                id: 3,
+            album_img: "/images/project-showcase/Tiger 3/3.jpg",
+            slug: "afghanhouse3",
+            title: "AfghanHouse3",
+             images: [
+                "/images/project-showcase/Tiger 3/AfghanHouse3/AfghanHouse3 (1).jpg",
+                "/images/project-showcase/Tiger 3/AfghanHouse3/AfghanHouse3 (2).jpg",
+                "/images/project-showcase/Tiger 3/AfghanHouse3/AfghanHouse3 (3).jpg",
+                "/images/project-showcase/Tiger 3/AfghanHouse3/AfghanHouse3 (4).jpg",
+             ]
+        },
+        {
+                id: 4,
+            album_img: "/images/project-showcase/Tiger 3/4.jpg",
+            slug: "afghanhouse4",
+            title: "AfghanHouse4",
+             images: [
+                "/images/project-showcase/Tiger 3/AfghanHouse4/AfghanHouse4 (1).jpg",
+                "/images/project-showcase/Tiger 3/AfghanHouse4/AfghanHouse4 (2).jpg",
+                "/images/project-showcase/Tiger 3/AfghanHouse4/AfghanHouse4 (3).jpg",
+             ]
+        },
+        {
+                id: 5,
+            album_img: "/images/project-showcase/Tiger 3/5.jpg",
+            slug: "apc-&-dumper-truck",
+            title: "APC & Dumper Truck",
+             images: [
+                "/images/project-showcase/Tiger 3/APC & Dumper Truck/APCandDumber (1).jpg",
+                "/images/project-showcase/Tiger 3/APC & Dumper Truck/APCandDumber (1).png",
+                "/images/project-showcase/Tiger 3/APC & Dumper Truck/APCandDumber (2).jpg",
+                "/images/project-showcase/Tiger 3/APC & Dumper Truck/APCandDumber (2).png",
+                
+             ]
+        },
+        {
+                id: 6,
+            album_img: "/images/project-showcase/Tiger 3/6.jpg",
+            slug: "bike",
+            title: "Bike",
+             images: [
+                "/images/project-showcase/Tiger 3/Bike/Bike (1).png",
+                "/images/project-showcase/Tiger 3/Bike/Bike (2).png",
+                "/images/project-showcase/Tiger 3/Bike/Bike (3).png",
+                "/images/project-showcase/Tiger 3/Bike/Bike (4).png",
+            
+                
+             ]
+        },
+        {
+                id: 7,
+            album_img: "/images/project-showcase/Tiger 3/7.jpg",
+            slug: "helicopter1",
+            title: "Helicopter1",
+             images: [
+                "/images/project-showcase/Tiger 3/Helicopter1/Heli1 (1).jpg",                        
+                "/images/project-showcase/Tiger 3/Helicopter1/Heli1 (1).png",                        
+                "/images/project-showcase/Tiger 3/Helicopter1/Heli1 (2).png",                        
+                "/images/project-showcase/Tiger 3/Helicopter1/Heli1 (3).png",                        
+                "/images/project-showcase/Tiger 3/Helicopter1/Heli1 (4).png",                        
+             ]
+        },
+        {
+                id: 8,
+            album_img: "/images/project-showcase/Tiger 3/8.jpg",
+            slug: "helicopter2",
+            title: "Helicopter2",
+             images: [
+                "/images/project-showcase/Tiger 3/Helicopter2/Heli2 (1).jpg",                        
+                "/images/project-showcase/Tiger 3/Helicopter2/Heli2 (5).jpg",                        
+                "/images/project-showcase/Tiger 3/Helicopter2/Heli2 (2).jpg",                        
+                "/images/project-showcase/Tiger 3/Helicopter2/Heli2 (3).jpg",                        
+                "/images/project-showcase/Tiger 3/Helicopter2/Heli2 (4).jpg",                        
+             ]
+        },
+        {
+                id: 9,
+            album_img: "/images/project-showcase/Tiger 3/9.jpg",
+            slug: "jawan-truck",
+            title: "Jawan Truck",
+             images: [
+                "/images/project-showcase/Tiger 3/Jawan Truck/Jawan Truck (1).png",                        
+                "/images/project-showcase/Tiger 3/Jawan Truck/Jawan Truck (2).png",                        
+                "/images/project-showcase/Tiger 3/Jawan Truck/Jawan Truck (3).png",                        
+               "/images/project-showcase/Tiger 3/Jawan Truck/Jawan Truck (4).png",                        
+                      
+             ]
+        },
+        {
+                id: 10,
+            album_img: "/images/project-showcase/Tiger 3/10.jpg",
+            slug: "mountain-bike",
+            title: "Mountain Bike",
+             images: [
+                "/images/project-showcase/Tiger 3/Mountain Bike/MountainBike (1).jpg",                        
+                "/images/project-showcase/Tiger 3/Mountain Bike/MountainBike (1).png",                        
+                "/images/project-showcase/Tiger 3/Mountain Bike/MountainBike (2).jpg",                        
+                "/images/project-showcase/Tiger 3/Mountain Bike/MountainBike (2).png",                              
+             ]
+        },
+         {
+                id: 11,
+            album_img: "/images/project-showcase/Tiger 3/11.jpg",
+            slug: "pak-army-truck",
+            title: "Pak Army Truck",
+             images: [
+                "/images/project-showcase/Tiger 3/Pak Army Truck/PakArmyTruck (1).png",                        
+                "/images/project-showcase/Tiger 3/Pak Army Truck/PakArmyTruck (2).png",                        
+                "/images/project-showcase/Tiger 3/Pak Army Truck/PakArmyTruck (3).png",                        
+                "/images/project-showcase/Tiger 3/Pak Army Truck/PakArmyTruck (4).jpg",                     
+             ]
+        },
+    ]
+  },
     
 ]

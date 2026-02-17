@@ -1,7 +1,299 @@
 
 export const portfolio = [
-    {
+{
         id:1,
+        title: "Concept Art",
+        slug: "concept-art",
+         image: "/images/our-expertise/Concept.jpg",
+        albums: [
+            {
+                id: 1,
+            album_img: "/images/albums/concept-art/1.jpg",
+            slug: "magic-girl",
+            title: "Magic Girl",
+             images: [
+                
+                "/images/albums/concept-art/Magic Girl/Magic Girl 1.jpg",
+                "/images/albums/concept-art/Magic Girl/Magic Girl 2.jpg",
+                "/images/albums/concept-art/Magic Girl/Magic Girl 3.jpg",
+            ],
+        },
+        {
+                id: 2,
+            album_img: "/images/albums/concept-art/2.jpg",
+            slug: "bow-warrior",
+            title: "Bow - Warrior",
+             images: [
+                
+                "/images/albums/concept-art/Bow - Warrior/Bow-Warrior (1).jpg",
+                "/images/albums/concept-art/Bow - Warrior/Bow-Warrior (2).jpg",
+                "/images/albums/concept-art/Bow - Warrior/Bow-Warrior (3).jpg",
+            ],
+        },
+        {
+                id: 3,
+            album_img: "/images/albums/concept-art/3.jpg",
+            slug: "dungen-lady",
+            title: "Dungen Lady",
+             images: [
+                
+                "/images/albums/concept-art/Dungen Lady/Dungen Lady (1).jpg",
+                "/images/albums/concept-art/Dungen Lady/Dungen Lady (2).jpg",
+                "/images/albums/concept-art/Dungen Lady/Dungen Lady (3).jpg",
+               
+            ],
+        },
+         {
+                id: 4,
+            album_img: "/images/albums/concept-art/4.jpg",
+            slug: "viking",
+            title: "Viking",
+             images: [
+                
+                "/images/albums/concept-art/Viking/Viking (1).jpg",
+                "/images/albums/concept-art/Viking/Viking (2).jpg",
+            ],
+        },
+        {
+                id: 5,
+            album_img: "/images/albums/concept-art/5.jpg",
+            slug: "apocalyptic-girl",
+            title: "Apocalyptic Girl",
+             images: [
+                
+                "/images/albums/concept-art/Apocalyptic Girl/Apocalyptic Girl 1.jpg",
+                "/images/albums/concept-art/Viking/Viking (2).jpg",
+            ],
+        },
+        {
+                id: 6,
+            album_img: "/images/albums/concept-art/6.jpg",
+            slug: "ninja-girl",
+            title: "Ninja Girl",
+             images: [
+                "/images/albums/concept-art/Ninja Girl/Ninja Girl (1).jpg",
+                "/images/albums/concept-art/Ninja Girl/Ninja Girl (2).jpg",
+                "/images/albums/concept-art/Ninja Girl/Ninja Girl (3).jpg",
+                "/images/albums/concept-art/Ninja Girl/Ninja Girl (4).jpg",            
+            ],
+        },
+        {
+                id: 7,
+            album_img: "/images/albums/concept-art/7.jpg",
+            slug: "futurewarrior",
+            title: "FutureWarrior",
+             images: [
+                "/images/albums/concept-art/FutureWarrior/FutureWarrior (1).jpg",
+                "/images/albums/concept-art/FutureWarrior/FutureWarrior (2).jpg",
+                "/images/albums/concept-art/FutureWarrior/FutureWarrior (3).jpg",
+                       
+            ],
+        },
+        {
+                id: 8,
+            album_img: "/images/albums/concept-art/8.jpg",
+            slug: "super-heroine",
+            title: "Super Heroine",
+             images: [
+                "/images/albums/concept-art/Super Heroine/Super Heroine (1).jpg",
+                "/images/albums/concept-art/Super Heroine/Super Heroine (2).jpg",
+                "/images/albums/concept-art/Super Heroine/Super Heroine (3).jpg",                                  
+            ],
+        },
+        {
+                id: 9,
+            album_img: "/images/albums/concept-art/9.jpg",
+            slug: "lantern-girl",
+            title: "Lantern Girl",
+             images: [
+                "/images/albums/concept-art/Lantern Girl/Super Heroine (1).jpg",
+                "/images/albums/concept-art/Super Heroine/Super Heroine (2).jpg",
+                "/images/albums/concept-art/Super Heroine/Super Heroine (3).jpg",                                  
+            ],
+        },
+        {
+                id: 10,
+            album_img: "/images/albums/concept-art/10.jpg",
+            slug: "concept-girl",
+            title: "Concept Girl",
+             images: [
+                "/images/albums/concept-art/Concept Girl/Concept Girl 1.jpg",
+                "/images/albums/concept-art/Concept Girl/Concept Girl 2.jpg",
+                                                
+            ],
+        },
+        {
+                id: 11,
+            album_img: "/images/albums/concept-art/11.jpg",
+            slug: "stylized-boy",
+            title: "Stylized Boy",
+             images: [
+                "/images/albums/concept-art/Stylized Boy/Stylized Boy (1).jpg",
+                "/images/albums/concept-art/Stylized Boy/Stylized Boy (2).jpg",
+                                                
+            ],
+        },
+        {
+                id: 12,
+            album_img: "/images/albums/concept-art/12.jpg",
+            slug: "stylized-girl",
+            title: "Stylized Girl",
+             images: [
+                "/images/albums/concept-art/Stylized Girl/Stylized Girl (1).jpg",
+                "/images/albums/concept-art/Stylized Girl/Stylized Girl (2).jpg",
+                "/images/albums/concept-art/Stylized Girl/Stylized Girl (3).jpg",
+            ],
+        },
+        {
+                id: 13,
+            album_img: "/images/albums/concept-art/13.jpg",
+            slug: "stylized-man",
+            title: "Stylized Man",
+             images: [
+                "/images/albums/concept-art/Stylized Man/Stylized Man (1).jpg",
+                "/images/albums/concept-art/Stylized Man/Stylized Man (2).jpg",
+              
+            ],
+        },
+        {
+                id: 14,
+            album_img: "/images/albums/concept-art/14.jpg",
+            slug: "chibi-girl",
+            title: "Chibi Girl",
+             images: [
+                "/images/albums/concept-art/Chibi Girl/Chibi Girl (1).jpg",
+                "/images/albums/concept-art/Chibi Girl/Chibi Girl (2).jpg",          
+            ],
+        },
+        {
+                id: 15,
+            album_img: "/images/albums/concept-art/15.jpg",
+            slug: "anime",
+            title: "Anime",
+             images: [
+                "/images/albums/concept-art/Anime/Anime Girl.jpg",
+                "/images/albums/concept-art/Anime/Anime Girl Sketch.jpg",          
+            ],
+        },
+        {
+                id: 16,
+            album_img: "/images/albums/concept-art/16.jpg",
+            slug: "comic-characters",
+            title: "Comic Characters",
+             images: [
+                "/images/albums/concept-art/Comic Characters/Doga.jpg",
+                "/images/albums/concept-art/Comic Characters/Nagraj.jpg",
+                "/images/albums/concept-art/Comic Characters/Shakti.jpg",
+            ],
+        },
+        {
+                id: 17,
+            album_img: "/images/albums/concept-art/17.jpg",
+            slug: "creature1",
+            title: "Creature1",
+             images: [
+                "/images/albums/concept-art/Creature1/Creature1 (1).jpg",
+                "/images/albums/concept-art/Creature1/Creature1 (2).jpg",              
+            ],
+        },
+        {
+                id: 18,
+            album_img: "/images/albums/concept-art/18.jpg",
+            slug: "creature2",
+            title: "Creature2",
+             images: [
+                "/images/albums/concept-art/Creature2/Creature2 (1).jpg",
+                "/images/albums/concept-art/Creature2/Creature2 (2).jpg",
+            ],
+        },
+        {
+                id: 19,
+            album_img: "/images/albums/concept-art/19.jpg",
+            slug: "creature3",
+            title: "Creature3",
+             images: [
+                "/images/albums/concept-art/Creature3/Creature3 (1).jpg",
+                "/images/albums/concept-art/Creature3/Creature3 (2).jpg",
+            ],
+        },
+        {
+                id: 20,
+            album_img: "/images/albums/concept-art/20.jpg",
+            slug: "creature4",
+            title: "Creature4",
+             images: [
+                "/images/albums/concept-art/Creature4/Creature4 (1).jpg",
+                "/images/albums/concept-art/Creature4/Creature4 (2).jpg",
+            ],
+        },
+        {
+                id: 21,
+            album_img: "/images/albums/concept-art/21.jpg",
+            slug: "jatayu",
+            title: "Jatayu",
+             images: [
+                "/images/albums/concept-art/Jatayu/Jatayu (1).jpg",
+                "/images/albums/concept-art/Jatayu/Jatayu (2).jpg",
+                "/images/albums/concept-art/Jatayu/Jatayu (3).jpg",
+            ],
+        },
+        {
+                id: 22,
+            album_img: "/images/albums/concept-art/22.jpg",
+            slug: "weapons",
+            title: "Weapons",
+             images: [
+                "/images/albums/concept-art/Weapons/Weapons (1).jpg",
+                "/images/albums/concept-art/Weapons/Weapons (2).jpg",
+                "/images/albums/concept-art/Weapons/Weapons (3).jpg",
+                "/images/albums/concept-art/Weapons/Weapons (4).jpg",
+          
+            ],
+        },
+        {
+                id: 23,
+            album_img: "/images/albums/concept-art/23.jpg",
+            slug: "realistic-environment",
+            title: "Realistic Environment",
+             images: [
+                "/images/albums/concept-art/Realistic Environment/Env1.jpg",
+                "/images/albums/concept-art/Realistic Environment/Env2.jpg",
+            ],
+        },
+        {
+                id: 24,
+            album_img: "/images/albums/concept-art/24.jpg",
+            slug: "slot-game",
+            title: "Slot Game",
+             images: [
+                "/images/albums/concept-art/Slot Game/01.jpg",
+                "/images/albums/concept-art/Slot Game/02.jpg",
+                "/images/albums/concept-art/Slot Game/07.jpg",
+                "/images/albums/concept-art/Slot Game/08.jpg",
+                "/images/albums/concept-art/Slot Game/9.jpg",
+                "/images/albums/concept-art/Slot Game/10.jpg",
+                "/images/albums/concept-art/Slot Game/11.jpg",
+                "/images/albums/concept-art/Slot Game/12.jpg",
+                "/images/albums/concept-art/Slot Game/13.jpg",
+                "/images/albums/concept-art/Slot Game/24.jpg",
+                "/images/albums/concept-art/Slot Game/Chalice.jpg",
+                "/images/albums/concept-art/Slot Game/Hammer.jpg",
+                "/images/albums/concept-art/Slot Game/Hero_Armor_Elite.jpg",
+                "/images/albums/concept-art/Slot Game/image (19).jpg",
+                "/images/albums/concept-art/Slot Game/image (20).jpg",
+                "/images/albums/concept-art/Slot Game/image (21).jpg",
+                "/images/albums/concept-art/Slot Game/image (22).jpg",
+                "/images/albums/concept-art/Slot Game/image (23).jpg",
+                "/images/albums/concept-art/Slot Game/image (24).jpg",
+                "/images/albums/concept-art/Slot Game/image (25).jpg",
+            ],
+        },
+
+        ],
+    },
+    
+    {
+        id:2,
         title: "Characters",
         slug: "characters",
          image: "/images/our-expertise/Characters.jpg",
@@ -190,9 +482,11 @@ export const portfolio = [
             ],
         },
         ],
-       },
+     
+    
+    },
        {
-        id:2,
+        id:3,
         title: "Realtime Hair",
          image: "/images/our-expertise/Hairs.jpg",
         slug: "realtime-hair",
@@ -432,7 +726,7 @@ export const portfolio = [
         ],
        },
       {
-        id:3,
+        id:4,
         title: "Creature Modeling",
          image: "/images/our-expertise/Creatures.jpg",
         slug: "creature-modeling",
@@ -620,7 +914,7 @@ export const portfolio = [
     //     ],
     //    },
        {
-        id:4,
+        id:5,
         title: "Props",
          image: "/images/our-expertise/Props.jpg",
         slug: "props",
@@ -854,7 +1148,7 @@ export const portfolio = [
         ],
        },
        {
-        id:5,
+        id:6,
         title: "Weapons",
          image: "/images/our-expertise/Weapons.jpg",
         slug: "weapons",
@@ -1089,7 +1383,7 @@ export const portfolio = [
         ],
        },
        {
-        id:6,
+        id:7,
         title: "Hard Surface",
          image: "/images/our-expertise/HardSurface.jpg",
         slug: "hard-surface",
@@ -1162,7 +1456,7 @@ export const portfolio = [
         ],
        },
         {
-        id:7,
+        id:8,
         title: "Vehicles",
          image: "/images/our-expertise/Vehicles.jpg",
         slug: "vehicles",
@@ -1183,7 +1477,7 @@ export const portfolio = [
         ],
        },
        {
-        id:8,
+        id:9,
         title: "Stylized Art",
          image: "/images/our-expertise/Stylized.jpg",
         slug: "stylized-art",

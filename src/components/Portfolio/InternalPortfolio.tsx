@@ -40,9 +40,10 @@ export default function InternalPortfolio(){
         <Swiper
         modules={[Autoplay]}
                 autoplay={{
-                  delay: 1500,
-                  disableOnInteraction: false,
+                  delay:2000,
+                  disableOnInteraction: true,
                 }}
+                speed={1500}
           spaceBetween={5}
           slidesPerView={2.2}
           breakpoints={{

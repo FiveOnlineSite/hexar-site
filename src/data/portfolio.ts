@@ -52,7 +52,7 @@ export const portfolio = [
             album_img: "/images/albums/character/4.jpg",
             slug: "dragon-knight",
              images: [
-                "/images/character/dragon-knight/Dragon Knight (1).jpg",
+                "/images/albums/character/dragon-knight/Dragon Knight (1).jpg",
                 "/images/albums/character/dragon-knight/Dragon Knight (2).jpg",
                 "/images/albums/character/dragon-knight/Dragon Knight (3).jpg",
                 "/images/albums/character/dragon-knight/Dragon Knight (4).jpg",
@@ -170,7 +170,6 @@ export const portfolio = [
             slug: "thor",
             title: "Thor",
              images: [
-                "/images/albums/character/thor/Thor (1).jpg",
                 "/images/albums/character/thor/Thor (2).jpg",
                 "/images/albums/character/thor/Thor (3).jpg",
                 "/images/albums/character/thor/Thor (4).jpg",
@@ -184,10 +183,10 @@ export const portfolio = [
             slug: "ww2-female-soldier",
             title: "WW2 Female Soldier",
              images: [
-                "/images/albums/character/ww2-female-soldier/WW2 Female Soldier (1).jpg",
-                "/images/albums/character/ww2-female-soldier/WW2 Female Soldier (2).jpg",
-                "/images/albums/character/ww2-female-soldier/WW2 Female Soldier (3).jpg",
-                "/images/albums/character/ww2-female-soldier/WW2 Female Soldier (4).jpg",
+                "/images/albums/character/ww2/WW2 Female Soldier (1).jpg",
+                "/images/albums/character/ww2/WW2 Female Soldier (2).jpg",
+                "/images/albums/character/ww2/WW2 Female Soldier (3).jpg",
+                "/images/albums/character/ww2/WW2 Female Soldier (4).jpg",
             ],
         },
         ],
@@ -365,9 +364,9 @@ export const portfolio = [
             slug: "female-straight",
             title:"Female Straight",
             images: [
-                "/images/albums/realtime-hair/mongol_hair/Hair_Male_Mongol_2.jpg",
-                "/images/albums/realtime-hair/mongol_hair/Hair_Male_Mongol_3.jpg",
-                "/images/albums/realtime-hair/mongol_hair/Hair_Male_Mongol_4.jpg",
+                "/images/albums/realtime-hair/female_straight/Hair_Female_Straight_1.jpg",
+                "/images/albums/realtime-hair/female_straight/Hair_Female_Straight_3.jpg",
+                "/images/albums/realtime-hair/female_straight/Hair_Female_Straight_4.jpg",
             ],
 
             },
@@ -422,7 +421,7 @@ export const portfolio = [
                  id: 20,
             album_img: "/images/albums/realtime-hair/20.jpg",
             slug: "d-52",
-            title:"d-52",
+            title:"D-52",
             images: [
                 "/images/albums/realtime-hair/d-52/Hair_D-52_1.jpg",
                 "/images/albums/realtime-hair/d-52/Hair_D-52_2.jpg",
@@ -471,8 +470,8 @@ export const portfolio = [
              title: "Toadman",
              images: [
                 "/images/albums/creature-modeling/Toadman/Toad (1).jpg",
-                "/images/albums/creature-modeling/Toadman/Toad (2).jpg",
-                "/images/albums/creature-modeling/Toadman/Toad (3).jpg",
+                "/images/albums/creature-modeling/Toadman/Toad (2).png",
+                "/images/albums/creature-modeling/Toadman/Toad (3).png",
                 "/images/albums/creature-modeling/Toadman/Toad (4).jpg",
                 "/images/albums/creature-modeling/Toadman/Toad (5).jpg",
                 "/images/albums/creature-modeling/Toadman/Toad (6).jpg",
@@ -656,8 +655,8 @@ export const portfolio = [
              title: "Blasting Machine",
              images: [
                 "/images/albums/props/Blasting Machine/Blasting Machine (1).jpg",
-                "/images/albums/props/Blasting Machine/Blasting Machine (2).jpg",
-                "/images/albums/props/Blasting Machine/Blasting Machine (3).jpg",  
+                "/images/albums/props/Blasting Machine/Blasting Machine (3).jpg",
+                "/images/albums/props/Blasting Machine/Blasting Machine (4).jpg",  
             ],
         },
        {
@@ -811,7 +810,7 @@ export const portfolio = [
         {
             id: 16,
             album_img: "/images/albums/props/13.jpg",
-            slug: "tailer-machine",
+            slug: "tribal-mask",
              title: "Tribal Mask",
              images: [
                 "/images/albums/props/Tribal Mask/Trible mask (1).jpg",        
@@ -844,7 +843,7 @@ export const portfolio = [
         {
             id: 19,
             album_img: "/images/albums/props/16.jpg",
-            slug: "Wrist Gadget",
+            slug: "wrist-gadget",
              title: "Wrist Gadget",
              images: [
                 "/images/albums/props/Wrist Gadget/Wrist Gadget (3).jpg",                              
@@ -897,7 +896,7 @@ export const portfolio = [
         },
         {
                 id: 4,
-            album_img: "/images/albums/weapons/16.jpg",
+            album_img: "/images/albums/weapons/4.jpg",
             slug: "crossbow",
              title: "Crossbow",
              images: [
@@ -920,7 +919,7 @@ export const portfolio = [
         },
         {
                 id: 6,
-            album_img: "/images/albums/weapons/4.jpg",
+            album_img: "/images/albums/weapons/6.jpg",
             slug: "fire-gun",
              title: "Fire Gun",
              images: [
@@ -945,7 +944,7 @@ export const portfolio = [
         },
         {
                 id: 8,
-            album_img: "/images/albums/weapons/12.jpg",
+            album_img: "/images/albums/weapons/8.jpg",
             slug: "futuristic-gun",
              title: "Futuristic Gun",
              images: [
@@ -959,7 +958,7 @@ export const portfolio = [
         },
         {
                 id:9,
-            album_img: "/images/albums/weapons/14.jpg",
+            album_img: "/images/albums/weapons/9.jpg",
             slug: "machine-gun",
              title: "Machine Gun",
              images: [
@@ -971,7 +970,7 @@ export const portfolio = [
         },
         {
             id: 10,
-            album_img: "/images/albums/weapons/13.jpg",
+            album_img: "/images/albums/weapons/10.jpg",
             slug: "mandalorian-weapon",
              title: "Mandalorian Weapon",
              images: [
@@ -982,7 +981,7 @@ export const portfolio = [
         },
          {
             id: 11,
-            album_img: "/images/albums/weapons/6.jpg",
+            album_img: "/images/albums/weapons/11.jpg",
             slug: "mech-knife",
              title: "Mech Knife",
              images: [
@@ -992,7 +991,7 @@ export const portfolio = [
         },
         {
             id: 12,
-            album_img: "/images/albums/weapons/7.jpg",
+            album_img: "/images/albums/weapons/12.jpg",
             slug: "micro-roni",
              title: "Micro Roni",
              images: [
@@ -1005,7 +1004,7 @@ export const portfolio = [
         },
         {
             id: 13,
-            album_img: "/images/albums/weapons/8.jpg",
+            album_img: "/images/albums/weapons/13.jpg",
             slug: "pistol",
              title: "Pistol",
              images: [
@@ -1019,7 +1018,7 @@ export const portfolio = [
         },
         {
             id: 14,
-            album_img: "/images/albums/weapons/17.jpg",
+            album_img: "/images/albums/weapons/14.jpg",
             slug: "post-apocalypse-weapon",
              title: "Post-Apocalypse Weapon",
              images: [
@@ -1031,7 +1030,7 @@ export const portfolio = [
         },
         {
             id: 15,
-            album_img: "/images/albums/weapons/9.jpg",
+            album_img: "/images/albums/weapons/15.jpg",
             slug: "rat-captain-sword",
              title: "Rat Captain Sword",
              images: [
@@ -1042,7 +1041,7 @@ export const portfolio = [
         },
         {
             id: 16,
-            album_img: "/images/albums/weapons/19.jpg",
+            album_img: "/images/albums/weapons/16.jpg",
             slug: "sci-fi-gun",
              title: "Sci-Fi Gun",
              images: [
@@ -1055,7 +1054,7 @@ export const portfolio = [
         },   
         {
             id: 17,
-            album_img: "/images/albums/weapons/10.jpg",
+            album_img: "/images/albums/weapons/17.jpg",
             slug: "sig-552-nato-ar",
              title: "SIG 552 NATO AR",
              images: [
@@ -1068,7 +1067,7 @@ export const portfolio = [
         }, 
          {
             id: 18,
-            album_img: "/images/albums/weapons/11.jpg",
+            album_img: "/images/albums/weapons/18.jpg",
             slug: "svdm-sniper",
              title: "SVDM - Sniper",
              images: [
@@ -1079,7 +1078,7 @@ export const portfolio = [
         }, 
         {
             id: 19,
-            album_img: "/images/albums/weapons/18.jpg",
+            album_img: "/images/albums/weapons/19.jpg",
             slug: "sword",
              title: "Sword",
              images: [
@@ -1126,10 +1125,12 @@ export const portfolio = [
             slug: "the-mandalorian",
              title: "The Mandalorian",
              images: [
-                "/images/albums/hard-surface/The Mandalorian/hex-hoppers-studios-mark-5-beauty.jpg",
-                "/images/albums/hard-surface/The Mandalorian/hex-hoppers-studios-mark-5-turns-1.jpg",
-                "/images/albums/hard-surface/The Mandalorian/hex-hoppers-studios-mark-5-turns-3.jpg",
-                "/images/albums/hard-surface/The Mandalorian/hex-hoppers-studios-mark-5-turns-4.jpg",
+                "/images/albums/hard-surface/The Mandalorian/ares-studio-mando-studioartboard-4.jpg",
+                "/images/albums/hard-surface/The Mandalorian/ares-studio-mando-studioartboard-5.jpg",
+                "/images/albums/hard-surface/The Mandalorian/ares-studio-mando-studioartboard-6.jpg",
+                "/images/albums/hard-surface/The Mandalorian/ares-studio-mando-studioartboard-8.jpg",
+                "/images/albums/hard-surface/The Mandalorian/ares-studio-mando-studioartboard-11.jpg",
+
             ],
         },
        {
@@ -1193,10 +1194,12 @@ export const portfolio = [
             slug: "sci-fi-soldier",
              title: "Sci-fi Soldier",
              images: [
-                "/images/albums/stylized-art/Sci-fi Soldier/Armoured Man (3).jpg",
-                "/images/albums/stylized-art/Sci-fi Soldier/Armoured Man (5).jpg",
-                "/images/albums/stylized-art/Sci-fi Soldier/Armoured Man (7).jpg",
-                "/images/albums/stylized-art/Sci-fi Soldier/Armoured Man (11).jpg",
+                "/images/albums/stylized-art/Sci-fi Soldier/ArmoredMan (1).jpg",
+                "/images/albums/stylized-art/Sci-fi Soldier/ArmoredMan (2).jpg",
+                "/images/albums/stylized-art/Sci-fi Soldier/ArmoredMan (3).jpg",
+                "/images/albums/stylized-art/Sci-fi Soldier/ArmoredMan (4).jpg",
+                "/images/albums/stylized-art/Sci-fi Soldier/ArmoredMan (5).jpg",
+
             ],
         },  
         {
@@ -1217,10 +1220,12 @@ export const portfolio = [
             slug: "mustafa",
              title: "Mustafa",
              images: [
-                "/images/albums/stylized-art/Mustafa/Mustafa 1.jpg",
-                "/images/albums/stylized-art/Mustafa/Mustafa 2.jpg",
-                "/images/albums/stylized-art/Mustafa/Mustafa 3.jpg",
-                "/images/albums/stylized-art/Mustafa/Mustafa 4.jpg",
+                "/images/albums/stylized-art/Mustafa/Mustafa (1).jpg",
+                "/images/albums/stylized-art/Mustafa/Mustafa (2).jpg",
+                "/images/albums/stylized-art/Mustafa/Mustafa (3).jpg",
+                "/images/albums/stylized-art/Mustafa/Mustafa (4).jpg",
+                "/images/albums/stylized-art/Mustafa/Mustafa (5).jpg",
+
             
             ],
         },
@@ -1268,15 +1273,17 @@ export const portfolio = [
                 "/images/albums/stylized-art/Semi-Stylized Gun/Semi-Sylized Gun (4).jpg",
             ],
         },
-        // {
-        //     id: 8,
-        //     album_img: "/images/albums/stylized-art/8.jpg",
-        //     slug: "stylized-female-warrior",
-        //      title: "Stylized Female Warrior",
-        //      images: [
-               
-        //     ],
-        // },
+        {
+            id: 8,
+            album_img: "/images/albums/stylized-art/8.jpg",
+            slug: "stylized-female-warrior",
+             title: "Stylized Female Warrior",
+             images: [
+               "/images/albums/stylized-art/Stylized/Stylized Female Warrior (1).jpg",
+               "/images/albums/stylized-art/Stylized/Stylized Female Warrior (2).jpg",
+               "/images/albums/stylized-art/Stylized/Stylized Female Warrior (3).jpg",
+            ],
+        },
         {
             id: 9,
             album_img: "/images/albums/stylized-art/9.jpg",
@@ -1291,7 +1298,7 @@ export const portfolio = [
         },
         {
             id:10,
-            album_img: "/images/albums/stylized-art/9.jpg",
+            album_img: "/images/albums/stylized-art/10.jpg",
             slug: "magic-book",
              title: "Magic Book",
              images: [
@@ -1301,8 +1308,18 @@ export const portfolio = [
             ],
         },
         {
-            id: 11,
-            album_img: "/images/albums/stylized-art/10.jpg",
+            id:11,
+            album_img: "/images/albums/stylized-art/11.jpg",
+            slug: "stylized-props",
+             title: "Stylized Props",
+             images: [
+                 "/images/albums/stylized-art/Stylized Props/PropsArtboard 7.jpg",
+                 "/images/albums/stylized-art/Stylized Props/PropsArtboard 8.jpg",
+            ],
+        },
+        {
+            id: 12,
+            album_img: "/images/albums/stylized-art/12.jpg",
             slug: "stylized-weapons",
              title: "Stylized Weapons",
              images: [
@@ -1312,8 +1329,8 @@ export const portfolio = [
             ],
         },
         {
-            id: 12,
-            album_img: "/images/albums/stylized-art/11.jpg",
+            id: 13,
+            album_img: "/images/albums/stylized-art/13.jpg",
             slug: "stylized-table-chair",
              title: "Stylized Table Chair",
              images: [
@@ -1325,9 +1342,9 @@ export const portfolio = [
             ],
         },
         {
-            id: 13,
-            album_img: "/images/albums/stylized-art/11.jpg",
-            slug: "Stylized Well",
+            id: 14,
+            album_img: "/images/albums/stylized-art/14.jpg",
+            slug: "stylized-well",
              title: "Stylized Well",
              images: [
                  "/images/albums/stylized-art/Stylized Well/Stylized Well (1).jpg",

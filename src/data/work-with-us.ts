@@ -5,7 +5,7 @@ export const workwithus = [
      },
       {
         title: "Creative Freedom",
-        image: "/images/work-with-us/free.png",
+        image: "/images/work-with-us/mindset.png",
      },
       {
         title: "Cutting-Edge Tech",
@@ -17,7 +17,7 @@ export const workwithus = [
      },
       {
         title: "Growth Mindset",
-        image: "/images/work-with-us/mindset.png",
+        image: "/images/work-with-us/creative.png",
      },
       {
         title: "Impactful Projects",

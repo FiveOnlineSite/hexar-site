@@ -181,8 +181,15 @@ type CategoriesCardProps = {
   title: string;
   description: string;
   services_img: string;
+  slug:string;
   isOpen: boolean;
   onToggle: () => void;
+  process: {
+    step1: { title: string; description: string };
+    step2: { title: string; description: string };
+    step3: { title: string; description: string };
+    step4: { title: string; description: string };
+  };
 };
 
 export default function CategoriesCard({
@@ -191,6 +198,8 @@ export default function CategoriesCard({
   description,
   services_img,
   isOpen,
+  slug,
+  process,
   onToggle,
 }: CategoriesCardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
@@ -258,7 +267,7 @@ export default function CategoriesCard({
 
             <div className="flex items-center w-full mt-6">
               <a
-                href="#"
+                href={`/categories/${slug}`}
                 className="border-[#D50000] border-[2px] px-8 py-3 3xl:text-[22px] 2xl:text-[20px] xl:text-[18px] lg:text-[18px] md:text-[18px] text-[16px] font-semibold text-[#D50000] rounded-xl transition-all duration-500 ease-in-out bg-[#0A0A0A] group-hover:bg-[#D50000] group-hover:text-[#fff]"
               >
                 View Portfolio
@@ -355,8 +364,8 @@ vectorEffect="non-scaling-stroke"
             </div>
             <div className="process-item 3xl:px-4 2xl:px-4 xl:px-4 lg:px-4 px-0 w-[50%]">
               <h6 className="lg:text-[16px] md:text-[14px] text-[12px] font-light leading-base">Step 01</h6>
-              <h4 className="lg:text-[20px] md:text-[18px] text-[16px] font-semibold leading-base py-2">Pre-Production</h4>
-              <p className="lg:text-[16px] md:text-[14px] text-[12px] font-light leading-base">Gathering references and defining specifications.</p>
+              <h4 className="lg:text-[20px] md:text-[18px] text-[16px] font-semibold leading-base py-2">{process.step1.title}</h4>
+              <p className="lg:text-[16px] md:text-[14px] text-[12px] font-light leading-base">{process.step1.description}</p>
             </div>
           </div>
 
@@ -364,8 +373,8 @@ vectorEffect="non-scaling-stroke"
           <div className="lg:w-[55%] md:w-[80%] w-full process-step my-4 flex items-center justify-evenly">
             <div className="process-item 3xl:px-4 2xl:px-4 xl:px-4 lg:px-4 px-0 w-[50%]">
               <h6 className="lg:text-[16px] md:text-[14px] text-[12px] font-light leading-base">Step 02</h6>
-              <h4 className="lg:text-[20px] md:text-[18px] text-[16px] font-semibold leading-base py-2">Modeling</h4>
-              <p className="lg:text-[16px] md:text-[14px] text-[12px] font-light leading-base">High-quality character modeling.</p>
+              <h4 className="lg:text-[20px] md:text-[18px] text-[16px] font-semibold leading-base py-2">{process.step2.title}</h4>
+              <p className="lg:text-[16px] md:text-[14px] text-[12px] font-light leading-base">{process.step2.description}</p>
             </div>
             <div className="process-item bg-[#333333] rounded-full flex items-center justify-center lg:w-[150px] lg:h-[150px] md:w-[150px] md:h-[150px] w-[72px] h-[72px]">
               <img src="./images/icons/modeling-icon.png" className="lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] w-[60px] h-[60px] object-contain" />
@@ -379,8 +388,8 @@ vectorEffect="non-scaling-stroke"
             </div>
             <div className="process-item 3xl:px-4 2xl:px-4 xl:px-4 lg:px-4 px-0 w-[50%]">
               <h6 className="lg:text-[16px] md:text-[14px] text-[12px] font-light leading-base">Step 03</h6>
-              <h4 className="lg:text-[20px] md:text-[18px] text-[16px] font-semibold leading-base py-2">Texturing</h4>
-              <p className="lg:text-[16px] md:text-[14px] text-[12px] font-light leading-base">Applying realistic materials.</p>
+              <h4 className="lg:text-[20px] md:text-[18px] text-[16px] font-semibold leading-base py-2">{process.step3.title}</h4>
+              <p className="lg:text-[16px] md:text-[14px] text-[12px] font-light leading-base">{process.step3.description}</p>
             </div>
           </div>
 
@@ -388,8 +397,8 @@ vectorEffect="non-scaling-stroke"
           <div className="lg:w-[55%] md:w-[80%] w-full process-step mt-4 mb-8 flex items-center justify-evenly">
             <div className="process-item 3xl:px-4 2xl:px-4 xl:px-4 lg:px-4 px-0 w-[50%]">
               <h6 className="lg:text-[16px] md:text-[14px] text-[12px] font-light leading-base">Step 04</h6>
-              <h4 className="lg:text-[20px] md:text-[18px] text-[16px] font-semibold leading-base py-2">Integration</h4>
-              <p className="lg:text-[16px] md:text-[14px] text-[12px] font-light leading-base">Engine-ready delivery.</p>
+              <h4 className="lg:text-[20px] md:text-[18px] text-[16px] font-semibold leading-base py-2">{process.step4.title}</h4>
+              <p className="lg:text-[16px] md:text-[14px] text-[12px] font-light leading-base">{process.step4.description}</p>
             </div>
              <div className="process-item bg-[#333333] rounded-full flex items-center justify-center lg:w-[150px] lg:h-[150px] md:w-[150px] md:h-[150px] w-[72px] h-[72px]">
               <img src="./images/icons/integration-icon.png" className="lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] w-[60px] h-[60px] object-contain" />

@@ -29,7 +29,7 @@ export default function CreativeForce() {
         <div className="reveal-stagger grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-4 grid-col-1 gap-4">
             <div className="relative overflow-hidden group transition-all duration-500">
 
-                <img src="./images/team/Nik (1).jpg" className="h-full w-full object-contain relative brightness-50 group-hover:brightness-100 transition-all duration-500" />
+                <img src="./images/team/Nik (2).jpg" className="h-full w-full object-contain relative brightness-50 group-hover:brightness-100 transition-all duration-500" />
                
                  <div className="absolute lg:-bottom-[12%] md:bottom-[15%] bottom-[5%] left-0 lg:px-8 px-4 lg:group-hover:bottom-[10%] transition-all ease-in-out duration-500">
                      <h5 className="lg:text-[24px] md:text-[18px] text-[16px] font-semibold leading-base">Nik John</h5>

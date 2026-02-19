@@ -21,7 +21,7 @@ export default function OurContributions() {
           
           <div className="group">
             <a
-            href="#"
+            href="/portfolio"
             className="reveal inline-block 3xl:text-[22px] 2xl:text-[20px] xl:text-[18px] lg:text-[18px] md:text-[18px] text-[16px] leading-tight font-semibold lg:py-4 lg:px-8 py-3 px-2 mb-8 group-hover:bg-[#D50000] bg-transparent group-hover:text-white text-[#D50000] border-[1.8px] rounded-xl border-[#D50000] transition-all duration-500 ease-in-out"
           >
             See Our Portfolio

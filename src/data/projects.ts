@@ -30,7 +30,7 @@ export const projects = [
                 "/images/project-showcase/Predator-Hunting-Grounds/viking/PredatorViking_Tex-1.jpg",
                 "/images/project-showcase/Predator-Hunting-Grounds/viking/PredatorViking_Tex-2.jpg",
                 "/images/project-showcase/Predator-Hunting-Grounds/viking/PredatorViking_Tex-3.jpg",
-                "/images/project-showcase/Predator-Hunting-Grounds/viking/PredatorViking_Tex-4.jpg",
+                "/images/project-showcase/Predator-Hunting-Grounds/viking/PredatorViking-1.jpg",
             ],
             },
              {

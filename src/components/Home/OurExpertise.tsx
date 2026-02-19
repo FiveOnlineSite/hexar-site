@@ -1,5 +1,5 @@
 "use client"
-import { expertise } from "@/src/data/expertise";
+import { portfolio } from "@/src/data/portfolio";
 
 type OurExpertiseProps = {
   id: string;
@@ -14,17 +14,17 @@ export default function OurExpertise({ id, ...rest }: OurExpertiseProps){
                 <h2 className="reveal 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight lg:mb-8 mb-4 text-white font-bold">Our Expertise</h2>
                 
                 <div className="group">
-                    <a href="#" className="reveal inline-block 3xl:text-[22px] 2xl:text-[20px] xl:text-[18px] lg:text-[18px] md:text-[18px] text-[16px] leading-tight font-semibold lg:py-4 lg:px-14 py-3 px-5 mb-8 text-[#D50000] group-hover:text-white bg-transparent group-hover:bg-[#D50000] border-[1.8px] lg:rounded-xl md:rounded-xl rounded-lg border-[#D50000] transition-all duration-500 ease-in-out">Explore</a>           
+                    <a href="/services" className="reveal inline-block 3xl:text-[22px] 2xl:text-[20px] xl:text-[18px] lg:text-[18px] md:text-[18px] text-[16px] leading-tight font-semibold lg:py-4 lg:px-14 py-3 px-5 mb-8 text-[#D50000] group-hover:text-white bg-transparent group-hover:bg-[#D50000] border-[1.8px] lg:rounded-xl md:rounded-xl rounded-lg border-[#D50000] transition-all duration-500 ease-in-out">Explore</a>           
                 </div>
             </div>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-2 lg:gap-4 md:gap-4 gap-2 reveal-stagger">
              
-                {expertise.map((expertiseItem, index) => (
+                {portfolio.map((expertiseItem) => (
                    
-                <div key={index}  className="relative overflow-hidden rounded-2xl border border-white hover:border-transparent transition-all duration-500 group">
+                <a href={`/categories/${expertiseItem.slug}`} key={expertiseItem.id}  className="relative overflow-hidden rounded-2xl border border-white hover:border-transparent transition-all duration-500 group">
 
                 <img
-                    src={expertiseItem.img}
+                    src={expertiseItem.image}
                     alt={expertiseItem.title}
                     className="relative z-0 w-full 3xl:h-[500px] 2xl:h-[500px] xl:h-[500px] lg:h-[400px] md:h-[400px] h-[200px] object-cover rounded-2xl"
                 />
@@ -60,7 +60,7 @@ export default function OurExpertise({ id, ...rest }: OurExpertiseProps){
                     {expertiseItem.title}
                 </h2>
 
-                </div>
+                </a>
                 ))}
 
                 

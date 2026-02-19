@@ -112,18 +112,42 @@ export default function FAQSection ({ id, ...rest }: FAQSectionProps) {
 
     return (
         <section {...rest} id={id} ref={sectionRef} className="faq-section p-8 lg:p-16 border-[#ffffff66] border-t">
-            <div className="lg:flex block items-start justify-center">
-                <div className="lg:w-[40%] w-full">
-                    <h2 className="reveal 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight lg:mb-8 mb-4 text-white font-bold">Frequently Asked Question</h2>
-                    <img ref={imageRef} src="./images/FAQs.png" alt="faq-bg" className="w-full lg:h-[520px] md:h-[400px] h-[420px] lg:mb-0 mb-4 object-contain" />
-                </div>
-                <div className="lg:w-[60%] w-full px-4 reveal-stagger">
-                    {faqs.map((faq, i) => (
-            <FAQAccordion faq={faq} key={i} isOpen={activeIndex === i}
-            onToggle={() => handleToggle(i)} />
-          ))}
-                </div>
-            </div>
-        </section>
+  
+  <div className="3xl:flex 2xl:flex xl:flex lg:flex block items-stretch justify-center">
+
+    {/* LEFT */}
+    <div className="lg:w-[40%] min-h-full w-full flex flex-col">
+
+      <h2 className="reveal 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight lg:mb-8 mb-4 text-white font-bold">
+        Frequently Asked Question
+      </h2>
+
+      <div className="w-full mt-auto mx-auto">
+        <img
+          ref={imageRef}
+          src="./images/FAQs.png"
+          alt="faq-bg"
+          className="w-full 3xl:h-[650px] 2xl:h-[600px] xl:h-[550px] lg:h-[500px] md:h-[400px] h-[420px] object-contain"
+        />
+      </div>
+
+    </div>
+
+    {/* RIGHT */}
+    <div className="lg:w-[60%] w-full px-4 reveal-stagger">
+      {faqs.map((faq, i) => (
+        <FAQAccordion
+          faq={faq}
+          key={i}
+          isOpen={activeIndex === i}
+          onToggle={() => handleToggle(i)}
+        />
+      ))}
+    </div>
+
+  </div>
+
+</section>
+
     )
 }

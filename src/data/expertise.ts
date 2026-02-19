@@ -46,7 +46,7 @@ export const expertise = [
         title: "Animation",
         img: "/images/our-expertise/Animation.jpg",
     },{
-         id:2,
-        title: "Cinamatics",
-        img: "/images/our-expertise/Cinamatic.jpg",
+         id:12,
+        title: "Cinematics",
+        img: "/images/our-expertise/Cinematic.jpg",
     }]

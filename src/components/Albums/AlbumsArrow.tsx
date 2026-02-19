@@ -104,7 +104,7 @@ export default function AlbumsArrow({ categorySlug, basePath, projectSlug, album
     className={`h-full transition-all duration-500 overflow-y-scroll z-30
     ${openAlbums ? "3xl:w-[55vw] 2xl:w-[55vw] xl:w-[55vw] lg:w-[55vw] w-[80vw] bg-[#000000cc]" : "w-0"}`}
   >
-    <div className="grid grid-cols-2 gap-2 py-16 3xl:px-16 2xl:px-16 xl:px-16 lg:px-16 md-px-8 px-4 3xl:w-[80%] 2xl:w-[80%] xl:w-[80%] w-full">
+    <div className="grid grid-cols-3 gap-2 py-16 3xl:px-16 2xl:px-16 xl:px-8 lg:px-16 md-px-8 px-4 3xl:w-[90%] 2xl:w-[90%] xl:w-[90%] w-full">
      <AlbumsBox
   basePath={basePath}
   slug={categorySlug || projectSlug || ""}

@@ -9,11 +9,11 @@ export const workwithus = [
      },
       {
         title: "Cutting-Edge Tech",
-        image: "/images/work-with-us/tech.png",
+        image: "/images/work-with-us/Tech2.png",
      },
       {
         title: "Collaborative Spirit",
-        image: "/images/work-with-us/collab.png",
+        image: "/images/work-with-us/collab2.png",
      },
       {
         title: "Growth Mindset",

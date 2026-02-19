@@ -1651,4 +1651,22 @@ export const portfolio = [
         },
         ],
        },
+       {
+        id:10,
+        title: "Technical Art",
+         image: "/images/our-expertise/Technical Art.jpg",
+        slug: "technical-art",
+       },
+       {
+        id:11,
+        title: "Animation",
+         image: "/images/our-expertise/Animation.jpg",
+        slug: "animation",
+       },
+       {
+        id:12,
+        title: "Cinematic",
+         image: "/images/our-expertise/Cinematic.jpg",
+        slug: "Cinematic",
+       }
     ]

@@ -339,7 +339,7 @@ export default function Hero() {
       />
     </button>
 
-      <Swiper modules={[Navigation,Autoplay]}
+      <Swiper modules={[Navigation]}
           navigation={{
             prevEl: "#custom-prev",
             nextEl: "#custom-next",
@@ -384,7 +384,7 @@ export default function Hero() {
             autoPlay
             muted
             loop
-            className="absolute inset-0 w-full h-full object-cover blur-md"
+            className="absolute inset-0 w-full h-full object-cover blur-sm"
           />
 
           <h1 className="xl:text-[53px] lg:text-[48px] md:text-[40px] sm:text-[36px] text-[30px] leading-tight font-bold absolute xl:top-1/2 top-[30%] lg:top-[30%] left-0 px-8 lg:px-16 w-full lg:w-[60%] -translate-y-1/2">
@@ -443,8 +443,8 @@ export default function Hero() {
 
               src={item.image}
               alt="banner"
-              className="3xl:h-[800px] 2xl:h-[700px] xl:h-[600px] lg:h-[600px] md:h-[600px] h-full object-contain"
-            />
+              className="3xl:h-[800px] 2xl:h-[700px] xl:h-[600px] lg:h-[600px] md:h-[600px] h-auto object-contain"
+            /> 
             {/* <img
   ref={(el) => {
     if (el) imageRefs.current[index] = el;
@@ -458,7 +458,6 @@ export default function Hero() {
         </SwiperSlide>
 ))
 }
-       
       </Swiper>
     </section>
   );

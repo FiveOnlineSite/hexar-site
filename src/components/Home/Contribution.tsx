@@ -14,14 +14,14 @@ export default function Contribution({ id, ...rest }: ContributionProps){
             <div className="lg:flex block items-center justify-between w-full">
                 <h2 className="reveal 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tights lg:mb-16 mb-8 text-white font-bold">Our Contribution</h2>
                 <div className="group">
-                    <a href="#" className="reveal inline-block 3xl:text-[22px] 2xl:text-[20px] xl:text-[18px] lg:text-[18px] md:text-[18px] text-[16px] leading-tight font-semibold lg:py-4 lg:px-14 py-3 px-5 mb-8 text-[#D50000] group-hover:text-white bg-transparent group-hover:bg-[#D50000] border-[1.8px] lg:rounded-xl md:rounded-xl rounded-lg border-[#D50000] transition-all duration-500 ease-in-out">Explore</a>           
+                    <a href="/portfolio" className="reveal inline-block 3xl:text-[22px] 2xl:text-[20px] xl:text-[18px] lg:text-[18px] md:text-[18px] text-[16px] leading-tight font-semibold lg:py-4 lg:px-14 py-3 px-5 mb-8 text-[#D50000] group-hover:text-white bg-transparent group-hover:bg-[#D50000] border-[1.8px] lg:rounded-xl md:rounded-xl rounded-lg border-[#D50000] transition-all duration-500 ease-in-out">Explore</a>           
                 </div>
                 </div>
             <div className="reveal-stagger grid 3xl:grid-cols-3 2xl:grid-cols-3 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-5 md:gap-6 gap-5 mb-5">
              
                 {contributions.map((contribution) => (
                    
-                <a key={contribution.id}  href="#" className="relative group my-2 block overflow-hidden rounded-xl">
+                <div key={contribution.id} className="relative group my-2 block overflow-hidden rounded-xl">
 
                 <div className="overflow-hidden lg:py-[40px] lg:-my-[40px] relative rounded-xl">
                     <img 
@@ -69,7 +69,7 @@ export default function Contribution({ id, ...rest }: ContributionProps){
 >
                     <div className="bg-[#00000099] h-[900px] w-[800px] rounded-xl"></div>
 
-                    <div className="group/button flex items-center 3xl:text-[35px] 2xl:text-[30px] text-[22px] text-white leading-tight font-semibold absolute bottom-6 left-6">
+                    <div className="group/button hidden items-center 3xl:text-[35px] 2xl:text-[30px] text-[22px] text-white leading-tight font-semibold absolute bottom-6 left-6">
 
                 <span className="
                     flex items-center transition-all duration-500 ease-out
@@ -99,7 +99,7 @@ export default function Contribution({ id, ...rest }: ContributionProps){
 
                     </div>
                 </div>
-                </a>
+                </div>
                 ))}
 
             </div>

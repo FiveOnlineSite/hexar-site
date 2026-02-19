@@ -2,6 +2,7 @@ import { projects } from "@/src/data/projects";
 import ImagesSlider from "@/src/components/Albums/ImagesSlider";
 import AlbumsArrow from "@/src/components/Albums/AlbumsArrow";
 import ProjectsArrow from "@/src/components/Albums/ProjectsArrow";
+import CloseButton from "@/src/components/Albums/Close";
 
 interface AlbumsPageProps {
   params: Promise<{ project: string; album: string }>;
@@ -28,6 +29,7 @@ export default async function ProjectAlbumsPage({ params }: AlbumsPageProps) {
 
   return (
     <div className="album-banner-section min-h-screen lg:pt-20 md:pt-16 pt-8 relative">
+      <CloseButton  basePath="projects" projectSlug={currentproject.slug}/>
 <ImagesSlider images={currentAlbum.images} />
 
       <AlbumsArrow

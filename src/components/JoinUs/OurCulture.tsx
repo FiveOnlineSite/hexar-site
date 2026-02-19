@@ -95,7 +95,7 @@ export default function OurCulture(){
                                 </div>
                                 <div>
                                   <div className="flex items-center lg:min-h-[200px] md:min-h-[250px] min-h-[250px]">
-                                  <p className="text-base leading-base font-base">{testimonial.content}</p>
+                                  <p className="lg:text-[18px] md:text-[16px] text-[16px] leading-tight font-base">{testimonial.content}</p>
 
                                   </div>
                                   <h3 className="lg:text-[24px] md:text-[20px] text-[20px] font-semibold leading-base mb-1">{testimonial.name}</h3>

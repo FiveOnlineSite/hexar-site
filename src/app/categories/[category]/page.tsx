@@ -28,7 +28,7 @@ export default async function CategoriesPage({ params }: CategoriesPageProps) {
             <div className="reveal-stagger grid lg:grid-cols-5 md:grid-cols-4 grid-cols-2 mt-6 gap-2">
               {currentPortfolio.albums && currentPortfolio.albums.map((album: typeof currentPortfolio.albums[number]) => (
                  <Link href={`/categories/${currentPortfolio.slug}/albums/${album.slug}`} key={album.id}>
-                <div className="text-left relative group overflow-hidden">
+                <div className="relative group overflow-hidden">
                     
                 <img src={album.album_img} className="z-10 3xl:h-[330px] 3xl:w-[330px] 2xl:h-[280px] 2xl:w-[280px] xl:h-[200px] xl:w-[200px] lg:h-[198px] lg:w-[198px] h-full w-full object-contain relative overflow-hidden" alt={`Album-${album.id}`}  />
                                 <div className="absolute z-20 top-0 -right-[102%] 3xl:w-[310px] 3xl:h-[310px] 2xl:w-[280px] 2xl:h-[280px] xl:h-[220px] xl:w-[220px] lg:h-[145px] lg:w-[145px] 3xl:block 2xl:block xl:block lg:block none bg-[#00000066] group-hover:right-0 duration-700 transition-all overflow-hidden"></div>

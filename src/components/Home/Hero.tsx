@@ -339,7 +339,7 @@ export default function Hero() {
       />
     </button>
 
-      <Swiper modules={[Navigation]}
+      <Swiper modules={[Navigation, Autoplay]}
           navigation={{
             prevEl: "#custom-prev",
             nextEl: "#custom-next",

@@ -43,7 +43,7 @@ export default function Work(){
                   src={workwithus.image}
                   className="h-full w-full object-cover"
                 />
-                <h5 className="text-center 3xl:text-[26px] 2xl:text-[24px] xl:text-[22px] lg:text-[22px] md:text-[20px] text-[18px] font-medium ">{workwithus.title}</h5>
+                <h5 className="text-center 3xl:text-[26px] 2xl:text-[24px] xl:text-[22px] lg:text-[22px] md:text-[20px] text-[20px] font-medium ">{workwithus.title}</h5>
               </div>
             </SwiperSlide>
             ))

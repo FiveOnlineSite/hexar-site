@@ -360,7 +360,7 @@ vectorEffect="non-scaling-stroke"
             {/* STEP 01 */}
           <div className="lg:w-[55%] md:w-[80%] w-full process-step my-4 flex items-center justify-evenly">
             <div className="process-item bg-[#333333] rounded-full flex items-center justify-center lg:w-[150px] lg:h-[150px] md:w-[150px] md:h-[150px] w-[72px] h-[72px]">
-              <img src="./images/icons/pre-production-icon.png" className="lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] w-[60px] h-[60px] object-contain" />
+              <img src="./images/services-cards/First Process.png" className="lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] w-[60px] h-[60px] object-contain" />
             </div>
             <div className="process-item 3xl:px-4 2xl:px-4 xl:px-4 lg:px-4 px-0 w-[50%]">
               <h6 className="lg:text-[16px] md:text-[14px] text-[12px] font-light leading-base">Step 01</h6>
@@ -377,14 +377,14 @@ vectorEffect="non-scaling-stroke"
               <p className="lg:text-[16px] md:text-[14px] text-[12px] font-light leading-base">{process.step2.description}</p>
             </div>
             <div className="process-item bg-[#333333] rounded-full flex items-center justify-center lg:w-[150px] lg:h-[150px] md:w-[150px] md:h-[150px] w-[72px] h-[72px]">
-              <img src="./images/icons/modeling-icon.png" className="lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] w-[60px] h-[60px] object-contain" />
+              <img src="./images/services-cards/Second Process.png" className="lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] w-[60px] h-[60px] object-contain" />
             </div>
           </div>
 
           {/* STEP 03 */}
           <div className="lg:w-[55%] md:w-[80%] w-full process-step my-4 flex items-center justify-evenly">
            <div className="process-item bg-[#333333] rounded-full flex items-center justify-center lg:w-[150px] lg:h-[150px] md:w-[150px] md:h-[150px] w-[72px] h-[72px]">
-              <img src="./images/icons/texturing-icon.png" className="lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] w-[60px] h-[60px] object-contain" />
+              <img src="./images/services-cards/Third Process.png" className="lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] w-[60px] h-[60px] object-contain" />
             </div>
             <div className="process-item 3xl:px-4 2xl:px-4 xl:px-4 lg:px-4 px-0 w-[50%]">
               <h6 className="lg:text-[16px] md:text-[14px] text-[12px] font-light leading-base">Step 03</h6>
@@ -401,7 +401,7 @@ vectorEffect="non-scaling-stroke"
               <p className="lg:text-[16px] md:text-[14px] text-[12px] font-light leading-base">{process.step4.description}</p>
             </div>
              <div className="process-item bg-[#333333] rounded-full flex items-center justify-center lg:w-[150px] lg:h-[150px] md:w-[150px] md:h-[150px] w-[72px] h-[72px]">
-              <img src="./images/icons/integration-icon.png" className="lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] w-[60px] h-[60px] object-contain" />
+              <img src="./images/services-cards/Fourth Process.png" className="lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] w-[60px] h-[60px] object-contain" />
             </div>
           </div>
           </div>

@@ -19,24 +19,42 @@ export default function Footer () {
                     <div className="grid grid-cols-2 gap-4" >
                         <ul className="pt-4">
                             <li className="list-none py-1 group">
-                                <Link href="/categories/concept-art" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Props/ Weapon’s</Link>
+                                <Link href="/categories/concept-art" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Concept Art</Link>
+                            </li>
+                             <li className="list-none py-1 group">
+                                <Link href="/categories/characters" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Characters</Link>
+                            </li>
+                             <li className="list-none py-1 group">
+                                <Link href="/categories/realtime-hair" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Realtime Hair</Link>
+                            </li>
+                             <li className="list-none py-1 group">
+                                <Link href="/categories/creature-modeling" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Creature Modeling</Link>
+                            </li>
+                             <li className="list-none py-1 group">
+                                <Link href="/categories/props" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Props</Link>
+                            </li>
+                             <li className="list-none py-1 group">
+                                <Link href="/categories/weapons" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Weapons</Link>
+                            </li>
+                        </ul>
+                        <ul className="pt-4">
+                            <li className="list-none py-1 group">
+                                <Link href="/categories/hard-surface" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Hard Surface</Link>
+                            </li>
+                             <li className="list-none py-1 group">
+                                <Link href="/categories/vehicles" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Vehicles</Link>
                             </li>
                              <li className="list-none py-1 group">
                                 <Link href="/categories/stylized-art" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Stylized Art</Link>
                             </li>
                              <li className="list-none py-1 group">
-                                <Link href="/concept-art" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Concept Art</Link>
-                            </li>
-                        </ul>
-                        <ul className="pt-4">
-                            <li className="list-none py-1 group">
-                                <Link href="/realtime-hair" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Realtime Hair</Link>
+                                <Link href="/categories/technical-art" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Technical Art</Link>
                             </li>
                              <li className="list-none py-1 group">
-                                <Link href="/3d-characters" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">3D Characters</Link>
+                                <Link href="/categories/animation" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Animation</Link>
                             </li>
                              <li className="list-none py-1 group">
-                                <Link href="/animation" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Animation</Link>
+                                <Link href="/categories/cinematic" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Cinematic</Link>
                             </li>
                         </ul>
                     </div>

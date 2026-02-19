@@ -1667,6 +1667,6 @@ export const portfolio = [
         id:12,
         title: "Cinematic",
          image: "/images/our-expertise/Cinematic.jpg",
-        slug: "Cinematic",
+        slug: "cinematic",
        }
     ]

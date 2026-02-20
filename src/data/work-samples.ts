@@ -10,7 +10,7 @@ export const worksamples = [
      },
      {
         id: 3,
-        image: "/images/work-samples/3. Ghostbusters.jpg"
+        image: "/images/work-samples/3. GhostBusters.jpg"
      },
     {
         id: 4,

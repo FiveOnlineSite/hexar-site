@@ -41,7 +41,6 @@ export default function InternalPortfolio(){
         modules={[Autoplay]}
                 autoplay={{
                   delay:2000,
-                  disableOnInteraction: true,
                 }}
                 speed={1500}
           spaceBetween={5}

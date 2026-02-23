@@ -40,7 +40,7 @@ export default function ProjectsArrow({ projectSlug }: ProjectsArrowProps) {
       >
       {openProjects && (
       <button
-        className="absolute left-1/2 3xl:-top-[2.5%] 2xl:-top-[2.2%] xl:-top-[4.5%] lg:-top-[2.5%] md:-top-[2.5%] -top-[2.6%] z-20"
+        className="absolute left-1/2 -translate-x-1/2 3xl:-top-[2.5%] 2xl:-top-[2.2%] xl:-top-[4.5%] lg:-top-[2.5%] md:-top-[2.5%] -top-[2.6%] z-20"
         onClick={() => setOpenProjects((prev) => !prev)}
       >
         <div className="relative bg-black w-10 h-10 p-2 rounded-full">

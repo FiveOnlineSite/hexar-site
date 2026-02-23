@@ -47,6 +47,15 @@ export default function CreativeForce() {
              </div>
              <div className="relative overflow-hidden group transition-all duration-500">
 
+                <img src="./images/team/Prashant (1).jpg" className="h-full w-full object-contain relative brightness-50 group-hover:brightness-100 transition-all duration-500" />
+                
+                 <div className="absolute lg:-bottom-[12%] md:bottom-[15%] bottom-[5%] left-0 lg:px-8 px-4 lg:group-hover:bottom-[10%] transition-all ease-in-out duration-500">
+                     <h5 className="lg:text-[24px] md:text-[18px] text-[16px] font-semibold leading-base">Prashant Verma</h5>
+                    <p className="lg:text-[16px] md:text-[14px] text-[14px] leading-tight">Co-founder and CTO</p>
+                </div>
+             </div>
+             <div className="relative overflow-hidden group transition-all duration-500">
+
                 <img src="./images/team/Hari.jpg" className="h-full w-full object-contain relative lg:brightness-50 lg:group-hover:brightness-100 transition-all duration-500" />
                 
                 <div className="absolute lg:-bottom-[12%] md:bottom-[15%] bottom-[5%] left-0 lg:px-8 px-4 lg:group-hover:bottom-[10%] transition-all ease-in-out duration-500">
@@ -55,15 +64,7 @@ export default function CreativeForce() {
                 </div>
              </div>
           
-             <div className="relative overflow-hidden group transition-all duration-500">
-
-                <img src="./images/team/Prashant (1).jpg" className="h-full w-full object-contain relative brightness-50 group-hover:brightness-100 transition-all duration-500" />
-                
-                 <div className="absolute lg:-bottom-[12%] md:bottom-[15%] bottom-[5%] left-0 lg:px-8 px-4 lg:group-hover:bottom-[10%] transition-all ease-in-out duration-500">
-                     <h5 className="lg:text-[24px] md:text-[18px] text-[16px] font-semibold leading-base">Prashant Verma</h5>
-                    <p className="lg:text-[16px] md:text-[14px] text-[14px] leading-tight">Co-founder and CTO</p>
-                </div>
-             </div>
+             
 
             
 

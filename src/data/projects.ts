@@ -447,16 +447,241 @@ export const projects = [
         ],
      },
   
-    //   {
-       
-    //     title: "Deceit 2",
-    //     date: "24 Nov",
-    //     image: "/images/contributions/Deceit 2.jpg",
-    //      slug: "deceit-2",
-         
-    // },
-       {
+     {
+    id: 4,
+    title: "Deceit 2",
+    date: "24 Nov",
+    image: "/images/contributions/Deceit 2.jpg",
+    slug: "deceit-2",
+    albums: [
+      {
+        id: 1,
+        album_img:
+          "/images/project-showcase/Deceit 2/1.jpg",
+        slug: "album1",
+        title: "Album1",
+        images: [
+          "/images/project-showcase/Deceit 2/Album1/A (1).jpg",
+          "/images/project-showcase/Deceit 2/Album1/A (2).jpg",
+          "/images/project-showcase/Deceit 2/Album1/A (3).jpg",
+          
+        ],
+      },
+      {
+        id: 2,
+        album_img:
+          "/images/project-showcase/Deceit 2/2.jpg",
+        slug: "album2",
+        title: "Album2",
+        images: [
+          "/images/project-showcase/Deceit 2/Album1/B (1).jpg",
+          "/images/project-showcase/Deceit 2/Album1/B (2).jpg",
+          "/images/project-showcase/Deceit 2/Album1/B (3).jpg",
+          
+        ],
+      },
+      {
+        id: 3,
+        album_img:
+          "/images/project-showcase/Deceit 2/3.jpg",
+        slug: "album3",
+        title: "Album3",
+        images: [
+          "/images/project-showcase/Deceit 2/Album3/C (1).jpg",
+          "/images/project-showcase/Deceit 2/Album3/C (2).jpg",
+          "/images/project-showcase/Deceit 2/Album3/C (3).jpg",
+          
+        ],
+      },
+      {
         id: 4,
+        album_img:
+          "/images/project-showcase/Deceit 2/4.jpg",
+        slug: "album4",
+        title: "Album4",
+        images: [
+          "/images/project-showcase/Deceit 2/Album4/D (1).jpg",
+          "/images/project-showcase/Deceit 2/Album4/D (2).jpg",
+          "/images/project-showcase/Deceit 2/Album4/D (3).jpg",
+          
+        ],
+      },
+      {
+        id: 5,
+        album_img:
+          "/images/project-showcase/Deceit 2/5.jpg",
+        slug: "album5",
+        title: "Album5",
+        images: [
+          "/images/project-showcase/Deceit 2/Album5/E (1).jpg",
+          "/images/project-showcase/Deceit 2/Album5/E (2).jpg",
+          "/images/project-showcase/Deceit 2/Album5/E (3).jpg",
+          
+        ],
+      },
+      {
+        id: 6,
+        album_img:
+          "/images/project-showcase/Deceit 2/6.jpg",
+        slug: "album6",
+        title: "Album6",
+        images: [
+          "/images/project-showcase/Deceit 2/Album6/F (1).jpg",
+          "/images/project-showcase/Deceit 2/Album6/F (2).jpg",
+          "/images/project-showcase/Deceit 2/Album6/F (3).jpg",
+          
+        ],
+      },
+      {
+        id: 7,
+        album_img:
+          "/images/project-showcase/Deceit 2/7.jpg",
+        slug: "album7",
+        title: "Album7",
+        images: [
+          "/images/project-showcase/Deceit 2/Album7/G (1).jpg",
+          "/images/project-showcase/Deceit 2/Album7/G (2).jpg",
+          "/images/project-showcase/Deceit 2/Album7/G (3).jpg",
+          "/images/project-showcase/Deceit 2/Album7/G (4).jpg",
+          "/images/project-showcase/Deceit 2/Album7/G (5).jpg", 
+        ],
+      },
+      {
+        id: 8,
+        album_img:
+          "/images/project-showcase/Deceit 2/8.jpg",
+        slug: "album8",
+        title: "Album8",
+        images: [
+          "/images/project-showcase/Deceit 2/Album8/H (1).jpg",
+          "/images/project-showcase/Deceit 2/Album8/H (2).jpg",
+        ],
+      },
+      {
+        id: 9,
+        album_img:
+          "/images/project-showcase/Deceit 2/9.jpg",
+        slug: "album9",
+        title: "Album9",
+        images: [
+          "/images/project-showcase/Deceit 2/Album9/I (1).jpg",
+          "/images/project-showcase/Deceit 2/Album9/I (2).jpg",
+          "/images/project-showcase/Deceit 2/Album9/I (3).jpg",
+        ],
+      },
+        {
+        id: 10,
+        album_img:
+          "/images/project-showcase/Deceit 2/10.jpg",
+        slug: "album10",
+        title: "Album10",
+        images: [
+          "/images/project-showcase/Deceit 2/Album10/J (1).jpg",
+          "/images/project-showcase/Deceit 2/Album10/J (2).jpg",
+          "/images/project-showcase/Deceit 2/Album10/J (3).jpg",
+          "/images/project-showcase/Deceit 2/Album10/J (4).jpg",
+        ],
+      },
+      {
+        id: 11,
+        album_img:
+          "/images/project-showcase/Deceit 2/11.jpg",
+        slug: "album11",
+        title: "Album11",
+        images: [
+          "/images/project-showcase/Deceit 2/Album11/K (1).jpg",
+          "/images/project-showcase/Deceit 2/Album11/K (2).jpg",
+          "/images/project-showcase/Deceit 2/Album11/K (3).jpg",
+        ],
+      },
+      {
+        id: 12,
+        album_img:
+          "/images/project-showcase/Deceit 2/12.jpg",
+        slug: "album12",
+        title: "Album12",
+        images: [
+          "/images/project-showcase/Deceit 2/Album12/L (1).jpg",
+          "/images/project-showcase/Deceit 2/Album12/L (2).jpg",
+          "/images/project-showcase/Deceit 2/Album12/L (3).jpg",
+        ],
+      },
+      {
+        id: 13,
+        album_img:
+          "/images/project-showcase/Deceit 2/13.jpg",
+        slug: "album13",
+        title: "Album13",
+        images: [
+          "/images/project-showcase/Deceit 2/Album13/M (1).jpg",
+          "/images/project-showcase/Deceit 2/Album13/M (2).jpg",
+          "/images/project-showcase/Deceit 2/Album13/M (3).jpg",
+          "/images/project-showcase/Deceit 2/Album13/M (4).jpg",
+        ],
+      },
+      {
+        id: 14,
+        album_img:
+          "/images/project-showcase/Deceit 2/14.jpg",
+        slug: "album14",
+        title: "Album14",
+        images: [
+          "/images/project-showcase/Deceit 2/Album14/N (1).jpg",
+          "/images/project-showcase/Deceit 2/Album14/N (2).jpg",
+          "/images/project-showcase/Deceit 2/Album14/N (3).jpg",
+        ],
+      },
+      {
+        id: 15,
+        album_img:
+          "/images/project-showcase/Deceit 2/15.jpg",
+        slug: "album15",
+        title: "Album15",
+        images: [
+          "/images/project-showcase/Deceit 2/Album15/O (1).jpg",
+          "/images/project-showcase/Deceit 2/Album15/O (2).jpg",
+          "/images/project-showcase/Deceit 2/Album15/O (3).jpg",
+        ],
+      },
+      {
+        id: 16,
+        album_img:
+          "/images/project-showcase/Deceit 2/16.jpg",
+        slug: "album16",
+        title: "Album16",
+        images: [
+          "/images/project-showcase/Deceit 2/Album16/P (1).jpg",
+          "/images/project-showcase/Deceit 2/Album16/P (2).jpg",
+          "/images/project-showcase/Deceit 2/Album16/P (3).jpg",
+        ],
+      },
+      {
+        id: 17,
+        album_img:
+          "/images/project-showcase/Deceit 2/17.jpg",
+        slug: "album17",
+        title: "Album17",
+        images: [
+          "/images/project-showcase/Deceit 2/Album17/Q (1).jpg",
+          "/images/project-showcase/Deceit 2/Album17/Q (2).jpg",
+        ],
+      },
+      {
+        id: 18,
+        album_img:
+          "/images/project-showcase/Deceit 2/18.jpg",
+        slug: "album18",
+        title: "Album18",
+        images: [
+          "/images/project-showcase/Deceit 2/Album18/R (1).jpg",
+          "/images/project-showcase/Deceit 2/Album18/R (2).jpg",
+          "/images/project-showcase/Deceit 2/Album18/R (3).jpg",
+        ],
+      },
+    ],
+  },
+       {
+        id:5,
         title: "Ghostbusters Spirits Unleashed",
         date: "24 Nov",
         image: "/images/contributions/Ghost.jpg",
@@ -531,7 +756,7 @@ export const projects = [
     ]
      },
      {
-        id: 5,
+        id: 6,
         title: "Call of Osiris",
         date: "24 Nov",
         image: "/images/contributions/Call of Osiris.jpg",
@@ -572,7 +797,7 @@ export const projects = [
     ]
      },
      {
-        id: 6,
+        id: 7,
         title: "Tiger 3",
         date: "24 Nov",
         image: "/images/contributions/Tiger.jpg",

@@ -13,7 +13,7 @@ export default function ServicesPage(){
                 <OurContributions/>
                 {/* <Trust/> */}
                 <LetsWork/>
-                <FAQSection id="section13"/>
+                <FAQSection/>
      
         </>
     )

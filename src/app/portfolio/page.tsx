@@ -10,7 +10,7 @@ export default function PortfolioPage () {
         <Banner title="Portfolio" image="./images/banners/Portfolio.jpg"/>
         <PortfolioShowcase/>
         <InternalPortfolio/>
-        <FAQSection id="faq"/>
+        <FAQSection/>
         <LetsCollaborate/>
         </>
     )

@@ -4,7 +4,7 @@ export const blogs = [
         title: "Merger of Ares and Head Hoppers ",
         date: "24 Nov",
         // image: "/images/blogs/1.jpeg",
-        image: "/images/blogs/Adobe Express - file.png",
+        image: "/images/blogs/1.png",
         subtitle: "One Vision - One Stronger Future.",
         content1: "We’re excited to announce that Head Hoppers Studios and Ares Studio have come together to form Hexar Studios, our new parent company and a unified creative identity.",
         content2: "This merger brings together the strengths, expertise, and talent of both studios—creating a stronger foundation for collaboration, innovation, and scalable production. Hexar Studios represents our shared vision of delivering high-quality art, design, and storytelling while continuing to evolve with the global industry.",

@@ -319,7 +319,7 @@ export default function CategoriesCard({
           `}
         >
           {/* SVG LINE */}
-          <svg className="absolute 3xl:block 2xl:block xl:block lg:block md:hidden hidden 3xl:top-[43%] 2xl:top-[43%] xl:top-[46%] lg:top-[48%] md:top-[58%] top-[65%] left-1/2 -translate-x-1/2 w-full h-full pointer-events-none z-0" 
+          <svg className="absolute 3xl:block 2xl:block xl:block lg:block md:hidden hidden 3xl:top-[48%] 2xl:top-[49%] xl:top-[48%] lg:top-[47%] md:top-[47%] top-[65%] left-1/2 -translate-x-1/2 w-full h-full pointer-events-none z-0" 
           viewBox="0 0 1000 3400" 
           preserveAspectRatio="none" > 
           <path d=" M 350, 150 C 350, 300 650, 400 650, 550 C 650, 700 350, 800 350, 950 C 350, 1100 650, 1200 650, 1350 " 
@@ -333,8 +333,8 @@ vectorEffect="non-scaling-stroke"
            </svg>
 
            <svg
-  className="absolute 3xl:hidden 2xl:hidden xl:hidden lg:hidden md:block block top-[56%] -left-[3%] w-full h-full pointer-events-none z-0"
-  viewBox="-200 -200 1600 4200"
+  className="absolute 3xl:hidden 2xl:hidden xl:hidden lg:hidden md:block block md:top-[51%] top-[54%] -left-[3%] w-full h-full pointer-events-none z-0"
+  viewBox="-200 -200 1600 4200" 
   preserveAspectRatio="none"
 >
   <path
@@ -358,7 +358,7 @@ vectorEffect="non-scaling-stroke"
 
           <div className="flex flex-col justify-center items-center">
             {/* STEP 01 */}
-          <div className="lg:w-[55%] md:w-[80%] w-full process-step my-4 flex items-center justify-evenly">
+          <div className="lg:w-[55%] md:w-[80%] w-full process-step xl:my-4 3xl:my-4 2xl:my-4 lg:my-4 md:my-4 my-2 flex items-center justify-evenly">
             <div className="process-item bg-[#333333] rounded-full flex items-center justify-center lg:w-[150px] lg:h-[150px] md:w-[150px] md:h-[150px] w-[72px] h-[72px]">
               <img src="./images/services-cards/First Process.png" className="lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] w-[60px] h-[60px] object-contain" />
             </div>
@@ -370,7 +370,7 @@ vectorEffect="non-scaling-stroke"
           </div>
 
           {/* STEP 02 */}
-          <div className="lg:w-[55%] md:w-[80%] w-full process-step my-4 flex items-center justify-evenly">
+          <div className="lg:w-[55%] md:w-[80%] w-full process-step xl:my-4 3xl:my-4 2xl:my-4 lg:my-4 md:my-4 my-2 flex items-center justify-evenly">
             <div className="process-item 3xl:px-4 2xl:px-4 xl:px-4 lg:px-4 px-0 w-[50%]">
               <h6 className="lg:text-[16px] md:text-[14px] text-[12px] font-light leading-base">Step 02</h6>
               <h4 className="lg:text-[20px] md:text-[18px] text-[16px] font-semibold leading-base py-2">{process.step2.title}</h4>
@@ -382,7 +382,7 @@ vectorEffect="non-scaling-stroke"
           </div>
 
           {/* STEP 03 */}
-          <div className="lg:w-[55%] md:w-[80%] w-full process-step my-4 flex items-center justify-evenly">
+          <div className="lg:w-[55%] md:w-[80%] w-full process-step xl:my-4 3xl:my-4 2xl:my-4 lg:my-4 md:my-4 my-2 flex items-center justify-evenly">
            <div className="process-item bg-[#333333] rounded-full flex items-center justify-center lg:w-[150px] lg:h-[150px] md:w-[150px] md:h-[150px] w-[72px] h-[72px]">
               <img src="./images/services-cards/Third Process.png" className="lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] w-[60px] h-[60px] object-contain" />
             </div>
@@ -394,7 +394,7 @@ vectorEffect="non-scaling-stroke"
           </div>
 
           {/* STEP 04 */}
-          <div className="lg:w-[55%] md:w-[80%] w-full process-step mt-4 mb-8 flex items-center justify-evenly">
+          <div className="lg:w-[55%] md:w-[80%] w-full process-step xl:my-4 3xl:my-4 2xl:my-4 lg:my-4 md:my-4 my-2 mb-8 flex items-center justify-evenly">
             <div className="process-item 3xl:px-4 2xl:px-4 xl:px-4 lg:px-4 px-0 w-[50%]">
               <h6 className="lg:text-[16px] md:text-[14px] text-[12px] font-light leading-base">Step 04</h6>
               <h4 className="lg:text-[20px] md:text-[18px] text-[16px] font-semibold leading-base py-2">{process.step4.title}</h4>

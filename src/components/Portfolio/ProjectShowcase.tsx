@@ -7,7 +7,7 @@ export default function ProjectShowcase(){
     const [showAll, setShowAll] = useState(false)
 
     return (
-        <section className="project-showcase-section lg:p-16 md:p-16 p-8">
+        <section id="project-showcase" className="project-showcase-section lg:p-16 md:p-16 p-8">
             <div>
                 <h2 className="reveal 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] text-[#FFFFFF] leading-tight font-bold">Our Project <span className="text-[#D50000]">Showcase</span></h2>
             </div>

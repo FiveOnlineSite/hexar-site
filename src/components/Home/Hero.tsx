@@ -339,7 +339,7 @@ export default function Hero() {
       />
     </button>
 
-      <Swiper modules={[Navigation, Autoplay]}
+      <Swiper modules={[Navigation]}
           navigation={{
             prevEl: "#custom-prev",
             nextEl: "#custom-next",
@@ -387,13 +387,13 @@ export default function Hero() {
             className="absolute inset-0 w-full h-full object-cover blur-sm"
           />
 
-          <h1 className="xl:text-[53px] lg:text-[48px] md:text-[40px] sm:text-[36px] text-[30px] leading-tight font-bold absolute xl:top-1/2 top-[30%] lg:top-[30%] left-0 px-8 lg:px-16 w-full lg:w-[60%] -translate-y-1/2">
+          <h1 className="3xl:text-[70px] 2xl:text-[60px] xl:text-[53px] lg:text-[48px] md:text-[40px] sm:text-[36px] text-[30px] leading-tight font-bold absolute xl:top-1/2 top-[30%] lg:top-[30%] left-0 px-8 lg:px-16 w-full lg:w-[50%] -translate-y-1/2">
             {item.title}
           </h1>
 
                <a
-              href="#"
-              className="group flex items-center xl:text-[22px] lg:text-[22px] md:text-[22px] sm:text-[20px] text-[18px] text-white leading-tight font-semibold absolute xl:bottom-[32%] lg:bottom-[32%] md:bottom-1/2 bottom-[58%] left-0 lg:px-16 px-8 overflow-hidden"
+              href={item.url}
+              className="group flex items-center 3xl:text-[35px] 2xl:text-[30px] xl:text-[22px] lg:text-[22px] md:text-[22px] sm:text-[20px] text-[18px] text-white leading-tight font-semibold absolute 3xl:bottom-[28%] 2xl:bottom-[30%] xl:bottom-[32%] lg:bottom-[32%] md:bottom-1/2 bottom-[58%] left-0 lg:px-16 px-8 overflow-hidden"
             >
           <span
             className="
@@ -443,7 +443,7 @@ export default function Hero() {
 
               src={item.image}
               alt="banner"
-              className="3xl:h-[800px] 2xl:h-[700px] xl:h-[600px] lg:h-[600px] md:h-[600px] h-auto object-contain"
+              className="h-[90vh] object-contain"
             /> 
             {/* <img
   ref={(el) => {

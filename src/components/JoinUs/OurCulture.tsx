@@ -70,19 +70,19 @@ export default function OurCulture(){
                   delay: 1500,
                   disableOnInteraction: true,
                 }}
-                        spaceBetween={0}
+                        spaceBetween={"10px"}
         slidesPerView={1.33}
         breakpoints={{
           1200: { slidesPerView: 1.33 },
           991: { slidesPerView: 1.33 },
           640: { slidesPerView: 1},
-          0: { slidesPerView: 1 },
+          0: { slidesPerView: 1, spaceBetween: "10px" },
         }}
         className="reveal-stagger our-culture-slider w-full lg:pl-16 md:pl-16 pl-8 pt-16 pb-4">
           {testimonials.map((testimonial, index) => (
               <SwiperSlide key={index}>
                           <div className="flex items-center justify-evenly">
-                            <div className="h-[405px] lg:w-[30%] w-[50%] rounded-xl">
+                            <div className="lg:h-[405px] md:h-[500px] h-[405px] lg:w-[30%] w-[50%] rounded-xl">
                                 <img
                               src={testimonial.image}
                               className=" h-full w-full object-cover rounded-xl"

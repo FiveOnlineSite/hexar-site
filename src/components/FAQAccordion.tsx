@@ -15,7 +15,7 @@ type FAQAccordionProps = {
 
 export default function FAQAccordion({ faq, isOpen, onToggle }: FAQAccordionProps) {
   return (
-    <div className="border border-[#FFFFFFCC] rounded-lg overflow-hidden p-4 mb-4">
+    <div className="border border-[#ffffff66] rounded-lg overflow-hidden p-4 mb-4">
       <button
         onClick={onToggle}
         className="w-full flex justify-between items-center text-left"

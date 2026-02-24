@@ -184,20 +184,14 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { Autoplay } from "swiper/modules";
-
+import { blogs } from "@/src/data/blogs";
 import Image from "next/image";
 
 // REQUIRED SWIPER CSS
 import "swiper/css";
 import "swiper/css/navigation";
 
-type BlogSectionProps = {
-  id: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  [key: string]: any;
-};
-
-export default function BlogSection({ id, ...rest }: BlogSectionProps) {
+export default function BlogSection() {
   const posts = [
     { img: "/images/news-blogs-1.png", date: "24 Nov" },
     { img: "/images/news-blogs-2.png", date: "24 Nov" },
@@ -206,8 +200,6 @@ export default function BlogSection({ id, ...rest }: BlogSectionProps) {
 
   return (
     <section
-      {...rest}
-      id={id}
       className="blog-section relative lg:flex block justify-center items-start py-8 lg:py-16"
     >
       {/* LEFT TEXT */}
@@ -286,23 +278,23 @@ hover:shadow-[0_2px_20px_0_#FFFFFF40]"
         >
 
           {/* EACH CARD MUST BE A SEPARATE SLIDE */}
-          {posts.map((post, i) => (
+          {blogs.map((blog, i) => (
             <SwiperSlide key={i}>
               <div className="hover:shadow-[0_2px_20px_0_#FFFFFF40] rounded-xl overflow-hidden m-2 transition-all duration-700 group">
-                <div className="h-[250px] overflow-hidden">
+                <div className="h-auto overflow-hidden">
                   <img
-                    src={post.img}
-                    className="h-[250px] w-full object-cover group-hover:scale-125 transition-all duration-700"
+                    src={blog.image}
+                    className="h-auto w-full object-cover group-hover:scale-125 transition-all duration-700"
                   />
                 </div>
 
                 <div className="flex items-start justify-between">
                   <h3 className="reveal p-3 lg:text-[22px] text-[20px] w-[75%]">
-                    How AI is Changing the Gaming World
+                    {blog.title}
                   </h3>
 
                   <h4 className="reveal w-[25%] p-3 text-[18px] text-[#FFFFFFCC] text-right">
-                    {post.date}
+                    {blog.date}
                   </h4>
                 </div>
               </div>

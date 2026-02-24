@@ -37,11 +37,11 @@ const BlogBox = ({blog}: BlogBoxComponentProps) => {
   "
 >
   {/* Image */}
-  <div className="h-[250px] overflow-hidden">
+  <div className="h-auto overflow-hidden">
     <img
       src={blog.image}
       alt={blog.title}
-      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-125"
+      className="h-auto w-full object-cover transition-transform duration-700 group-hover:scale-125"
     />
   </div>
 

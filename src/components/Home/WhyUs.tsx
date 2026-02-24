@@ -197,8 +197,8 @@ export default function WhyUs({ id, ...rest }: WhyUsProps) {
           <div className="overflow-hidden"> 
             <img src={item.image} className="reveal w-full object-cover xl:h-[420px] h-full xl:scale-110 scale-100 xl:group-hover:h-[300px] origin-center transition-all duration-700 ease-out " /> 
           </div>  
-          <div className="xl:absolute relative 3xl:-bottom-[25%] 2xl:-bottom-[23%] xl:-bottom-[20%] bottom-0 3xl:group-hover:bottom-02xl:group-hover:bottom-0 xl:group-hover:bottom-0 transition-all duration-700 ease-out py-2 pl-4 lg:pr-8 md:pr-6 pr-4 flex flex-col items-start justify-start 3xl:min-h-0 2xl:min-h-0 xl:min-h-[100px] lg:min-h-[210px] md:min-h-[220px] min-h-[220px] bg-[linear-gradient(89.16deg,#0A0A0A_1.81%,#03010E_99.03%)] w-full"> 
-            <h2 className="text-white 3xl:text-[32px] 2xl:text-[30px] lg:text-[28px] md:text-[24px] text-[20px] font-semibold leading-tight py-2"> 
+          <div className="xl:absolute relative 3xl:-bottom-[19%] 2xl:-bottom-[19%] xl:-bottom-[20%] bottom-0 3xl:group-hover:bottom-02xl:group-hover:bottom-0 xl:group-hover:bottom-0 transition-all duration-700 ease-out py-2 pl-4 lg:pr-8 md:pr-6 pr-4 flex flex-col items-start justify-start 3xl:min-h-0 2xl:min-h-0 xl:min-h-[100px] lg:min-h-[210px] md:min-h-[220px] min-h-[220px] bg-[linear-gradient(89.16deg,#0A0A0A_1.81%,#03010E_99.03%)] w-full"> 
+            <h2 className="text-white 3xl:text-[32px] 2xl:text-[30px] xl:text-[28px] lg:text-[28px] md:text-[24px] text-[20px] font-semibold leading-tight py-2"> 
               {item.title}
               </h2> 
               <p className="3xl:text-[20px] 2xl:text-[18px] xl:text-[14px] lg:text-[16px] md:text-[14px] text-[14px] font-light min-h-[75px] leading-base pb-4"> 

@@ -30,7 +30,7 @@ export default async function ProjectAlbumsPage({ params }: AlbumsPageProps) {
   return (
     <div className="album-banner-section min-h-screen lg:pt-20 md:pt-16 pt-8 relative">
       <CloseButton  basePath="projects" projectSlug={currentproject.slug}/>
-<ImagesSlider images={currentAlbum.images} />
+<ImagesSlider media={currentAlbum.media as any} />
 
       <AlbumsArrow
         projectSlug={currentproject.slug}

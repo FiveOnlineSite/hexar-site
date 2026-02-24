@@ -2,15 +2,9 @@
 
 import { contributions } from "@/src/data/contributions";
 
-type ContributionProps = {
-  id: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  [key: string]: any;
-};
-
-export default function Contribution({ id, ...rest }: ContributionProps){
+export default function Contribution(){
     return(
-        <section {...rest} id={id} className="contribution-section bg-[#0A0A0A] lg:p-16 md:p-16 p-8 h-full w-full">
+        <section id="our-contribution" className="contribution-section bg-[#0A0A0A] lg:p-16 md:p-16 p-8 h-full w-full">
             <div className="lg:flex block items-center justify-between w-full">
                 <h2 className="reveal 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tights lg:mb-16 mb-8 text-white font-bold">Our Contribution</h2>
                 <div className="group">

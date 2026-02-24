@@ -34,7 +34,8 @@ export default async function CategoryAlbumsPage({ params }: AlbumsPageProps) {
   return (
     <div className="album-banner-section min-h-screen lg:pt-20 md:pt-16 pt-8 relative">
       <CloseButton  basePath="categories" categorySlug={currentCategory.slug}/>
-<ImagesSlider images={currentAlbum.images} />
+<ImagesSlider media={currentAlbum.media as any} />
+
 
       <AlbumsArrow
         categorySlug={currentCategory.slug}

@@ -6,6 +6,7 @@ import WhyWeRock from "@/src/components/AboutUs/WhyWeRock"
 import Banner from "@/src/components/Banner"
 import About from "@/src/components/Home/About"
 import MissionVision from "@/src/components/Home/MissionVision"
+import LetsWork from "@/src/components/Services/LetsWork"
 
 export default function AboutUsPage () {
     return (
@@ -15,6 +16,7 @@ export default function AboutUsPage () {
         <Timeline/>
         <CreativeForce/>
         <WhyWeRock/>
+        <LetsWork/>
         </>
     
     )

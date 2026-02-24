@@ -8,7 +8,31 @@ const Hire = () => {
             <div className='mb-5'>
                 <div className='border border-[#66666633] rounded-lg px-4 py-8 shadow-[0_12px_24px_0_#0000001A] flex justify-center relative overflow-hidden group'>
                     <img src="./images/icons/upload-2-line.png" alt="upload" className='w-[100px] h-[100px] object-contain relative z-10' />
-                    <div className='h-[300px] w-[300px] absolute -bottom-[150%] left-[90%] -rotate-45 group-hover:-left-[18%] group-hover:-bottom-[38%] bg-[#FFFFFF] transition-all duration-500 ease-in-out'></div>
+                    <div
+                className='
+                    h-[400px] w-[400px] absolute
+                    -bottom-[160%] left-[130%]
+                    -rotate-45
+                    bg-[#FFFFFF]
+                    transition-all duration-500 ease-in-out
+
+                    group-hover:-left-[28%]
+                    group-hover:-bottom-[48%]
+
+                    2xl:left-[195%]
+                    2xl:-bottom-[260%]
+                    2xl:group-hover:-left-[20%]
+                    2xl:group-hover:-bottom-[60%]
+                    2xl:h-[500px]
+                    2xl:w-[500px]
+
+                    3xl:left-[200%]
+                    3xl:-bottom-[300%]
+                    3xl:h-[600px]
+                    3xl:w-[600px]
+                    3xl:group-hover:-left-[22%]
+                    3xl:group-hover:-bottom-[72%]'
+                ></div>
                 </div>
                 <h3 className='lg:text-[26px] md:text-[24px] text-[22px] font-semibold leading-base text-center pt-2'>Apply</h3>
             </div>
@@ -16,7 +40,28 @@ const Hire = () => {
             <div className='mb-5'>
                 <div className='border border-[#66666633] rounded-lg px-4 py-8 shadow-[0_12px_24px_0_#0000001A] flex justify-center relative overflow-hidden group'>
                     <img src="./images/icons/phone-fill.png" alt="phone" className='w-[100px] h-[100px] object-contain relative z-10' />
-                    <div className='h-[300px] w-[300px] absolute -bottom-[150%] left-[90%] -rotate-45 group-hover:-left-[18%] group-hover:-bottom-[38%] bg-[#FFFFFF] transition-all duration-500 ease-in-out'></div>
+                    <div className='h-[400px] w-[400px] absolute
+                    -bottom-[160%] left-[130%]
+                    -rotate-45
+                    bg-[#FFFFFF]
+                    transition-all duration-500 ease-in-out
+
+                    group-hover:-left-[28%]
+                    group-hover:-bottom-[48%]
+
+                    2xl:left-[195%]
+                    2xl:-bottom-[260%]
+                    2xl:group-hover:-left-[20%]
+                    2xl:group-hover:-bottom-[60%]
+                    2xl:h-[500px]
+                    2xl:w-[500px]
+
+                    3xl:left-[200%]
+                    3xl:-bottom-[300%]
+                    3xl:h-[600px]
+                    3xl:w-[600px]
+                    3xl:group-hover:-left-[22%]
+                    3xl:group-hover:-bottom-[72%]'></div>
 
                 </div>
                 <h3 className='lg:text-[26px] md:text-[24px] text-[22px] font-semibold leading-base text-center pt-2'>Short Call</h3>
@@ -25,7 +70,28 @@ const Hire = () => {
             <div className='mb-5'>
                 <div className='border border-[#66666633] rounded-lg px-4 py-8 shadow-[0_12px_24px_0_#0000001A] flex justify-center relative overflow-hidden group'>
                     <img src="./images/icons/file-text-line.png" alt="file-text-line" className='w-[100px] h-[100px] object-contain relative z-10' />
-                    <div className='h-[300px] w-[300px] absolute -bottom-[150%] left-[90%] -rotate-45 group-hover:-left-[18%] group-hover:-bottom-[38%] bg-[#FFFFFF] transition-all duration-500 ease-in-out'></div>
+                    <div className='h-[400px] w-[400px] absolute
+                    -bottom-[160%] left-[130%]
+                    -rotate-45
+                    bg-[#FFFFFF]
+                    transition-all duration-500 ease-in-out
+
+                    group-hover:-left-[28%]
+                    group-hover:-bottom-[48%]
+
+                    2xl:left-[195%]
+                    2xl:-bottom-[260%]
+                    2xl:group-hover:-left-[20%]
+                    2xl:group-hover:-bottom-[60%]
+                    2xl:h-[500px]
+                    2xl:w-[500px]
+
+                    3xl:left-[200%]
+                    3xl:-bottom-[300%]
+                    3xl:h-[600px]
+                    3xl:w-[600px]
+                    3xl:group-hover:-left-[22%]
+                    3xl:group-hover:-bottom-[72%]'></div>
                 </div>
                 <h3 className='lg:text-[26px] md:text-[24px] text-[22px] font-semibold leading-base text-center pt-2'>Test</h3>
             </div>
@@ -33,7 +99,28 @@ const Hire = () => {
             <div className='mb-5'>
                 <div className='border border-[#66666633] rounded-lg px-4 py-8 shadow-[0_12px_24px_0_#0000001A] flex justify-center relative overflow-hidden group'>
                     <img src="./images/icons/wechat-line.png" alt="wechat-line" className='w-[100px] h-[100px] object-contain relative z-10' />
-                    <div className='h-[300px] w-[300px] absolute -bottom-[150%] left-[90%] -rotate-45 group-hover:-left-[18%] group-hover:-bottom-[38%] bg-[#FFFFFF] transition-all duration-500 ease-in-out'></div>
+                    <div className='h-[400px] w-[400px] absolute
+                    -bottom-[160%] left-[130%]
+                    -rotate-45
+                    bg-[#FFFFFF]
+                    transition-all duration-500 ease-in-out
+
+                    group-hover:-left-[28%]
+                    group-hover:-bottom-[48%]
+
+                    2xl:left-[195%]
+                    2xl:-bottom-[260%]
+                    2xl:group-hover:-left-[20%]
+                    2xl:group-hover:-bottom-[60%]
+                    2xl:h-[500px]
+                    2xl:w-[500px]
+
+                    3xl:left-[200%]
+                    3xl:-bottom-[300%]
+                    3xl:h-[600px]
+                    3xl:w-[600px]
+                    3xl:group-hover:-left-[22%]
+                    3xl:group-hover:-bottom-[72%]'></div>
                 </div>
                 <h3 className='lg:text-[26px] md:text-[24px] text-[22px] font-semibold leading-base text-center pt-2'>Final Interview</h3>
             </div>
@@ -41,7 +128,28 @@ const Hire = () => {
             <div className='mb-5'>
                 <div className='border border-[#66666633] rounded-lg px-4 py-8 shadow-[0_12px_24px_0_#0000001A] flex justify-center relative overflow-hidden group'>
                     <img src="./images/icons/shake-hands-line.png" alt="shake-hands-line" className='w-[100px] h-[100px] object-contain relative z-10' />
-                    <div className='h-[300px] w-[300px] absolute -bottom-[150%] left-[90%] -rotate-45 group-hover:-left-[18%] group-hover:-bottom-[38%] bg-[#FFFFFF] transition-all duration-500 ease-in-out'></div>
+                    <div className='h-[400px] w-[400px] absolute
+                    -bottom-[160%] left-[130%]
+                    -rotate-45
+                    bg-[#FFFFFF]
+                    transition-all duration-500 ease-in-out
+
+                    group-hover:-left-[28%]
+                    group-hover:-bottom-[48%]
+
+                    2xl:left-[195%]
+                    2xl:-bottom-[260%]
+                    2xl:group-hover:-left-[20%]
+                    2xl:group-hover:-bottom-[60%]
+                    2xl:h-[500px]
+                    2xl:w-[500px]
+
+                    3xl:left-[200%]
+                    3xl:-bottom-[300%]
+                    3xl:h-[600px]
+                    3xl:w-[600px]
+                    3xl:group-hover:-left-[22%]
+                    3xl:group-hover:-bottom-[72%]'></div>
                 </div>
                 <h3 className='lg:text-[26px] md:text-[24px] text-[22px] font-semibold leading-base text-center pt-2'>Offer</h3>
             </div>

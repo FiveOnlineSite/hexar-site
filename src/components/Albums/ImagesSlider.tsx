@@ -6,11 +6,15 @@ import { Mousewheel } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-interface AlbumSliderProps{
-    images: string[];
+interface MediaItem {
+  type: "image" | "video";
+  src: string;
 }
 
-export default function AlbumSlider({images}: AlbumSliderProps){
+interface AlbumSliderProps {
+  media: MediaItem[];
+}
+export default function AlbumSlider({media}: AlbumSliderProps){
 
     return (
           <section className="relative">
@@ -28,11 +32,23 @@ export default function AlbumSlider({images}: AlbumSliderProps){
           speed={1000}  
           className="mySwiper 3xl:h-[90vh] 2xl:h-[90vh] xl:h-[85vh] lg:h-[90vh] md:h-[90vh] h-screen relative"
         >
-            {images.map((image, index)=> (
+            {media.map((item, index)=> (
                 <SwiperSlide key={index}>
             <div >
-                <img src={image} className="3xl:h-[90vh] 2xl:h-[90vh] xl:h-[90vh] lg:h-[90vh] md:h-[90vh] h-screen w-full object-contain z-0" alt={`Album-${index}`}  />
-
+                 {item.type === "image" && (
+                <img src={item.src} className="3xl:h-[90vh] 2xl:h-[90vh] xl:h-[90vh] lg:h-[90vh] md:h-[90vh] h-screen w-full object-contain z-0" alt={`Album-${index}`}  />
+                 )}
+                    {item.type === "video" && (
+              <video
+                src={item.src}
+                className="3xl:h-[90vh] 2xl:h-[90vh] xl:h-[90vh] lg:h-[90vh] md:h-[90vh] h-screen w-full object-contain"
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls
+              />
+            )}
             </div>
             </SwiperSlide>
             ))}

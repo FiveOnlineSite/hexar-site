@@ -71,13 +71,14 @@ setTimeout(() => setSuccess(false), 3000);
 
   return (
     <section className='contact-form-section bg-[url("/images/contact-page-bg.png")] bg-contain bg-right bg-no-repeat lg:p-16 md:p-16 p-8'>
-        <div className='lg:flex block items-start justify-center lg:w-[80%] w-full mx-auto gap-16 my-8'>
+        <div className='lg:flex block items-end justify-center lg:w-[80%] w-full mx-auto gap-16 my-8'>
             <div className='lg:w-[35%] w-full'>
-                <h2 className='reveal 3xl:text-[50px] 2xl:text-[45px] xl:text-[40px] lg:text-[40px] md:text-[35px] text-[30px] font-bold leading-tight'>Contact Us</h2>
-                <p className="reveal mt-2 pr-8 3xl:text-[22px] 2xl:text-[20px] lg:text-[15px] md:text-[15px] text-[15px] font-light leading-base">Please fill out the form and we'll get back to you as soon as possible.</p>
                 <img src="./images/HardSurface.png" alt="contact-form" className='reveal w-full h-full object-contain mt-8' />
             </div>
-            <div className='lg:w-[65%] w-full reveal'>
+            <div className='lg:w-[65%] w-full reveal lg:mt-0 mt-10'>
+              <h2 className='reveal 3xl:text-[50px] 2xl:text-[45px] xl:text-[40px] lg:text-[40px] md:text-[35px] text-[30px] font-bold leading-tight'>Contact Us</h2>
+                <p className="reveal mt-2 mb-5 pr-8 3xl:text-[22px] 2xl:text-[20px] lg:text-[15px] md:text-[15px] text-[15px] font-light leading-base">Please fill out the form and we'll get back to you as soon as possible.</p>
+                
                 <form onSubmit={handleSubmit}>
                     <div className="px-[3px] rounded-md mb-3">
                     <input

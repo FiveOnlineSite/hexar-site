@@ -21,7 +21,7 @@ export default function OurExpertise({ id, ...rest }: OurExpertiseProps){
              
                 {portfolio.map((expertiseItem) => (
                    
-                <a href={`/categories/${expertiseItem.slug}`} key={expertiseItem.id}  className="relative overflow-hidden rounded-2xl border border-white hover:border-transparent transition-all duration-500 group">
+                <a href={`/categories/${expertiseItem.slug}`} key={expertiseItem.id}  className="relative overflow-hidden rounded-2xl border border-[#ffffff66] hover:border-transparent transition-all duration-500 group">
 
                 <img
                     src={expertiseItem.image}

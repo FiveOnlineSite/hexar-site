@@ -17,15 +17,15 @@ export default function HomePage () {
         <Hero/>
         <GallerySlider/>
         <About image={"/images/about-img.png" }/>
-        <MissionVision id="section-2" data-shield-section/>
-        <Solution id="section-3" data-shield-section/>
-        <OurExpertise id="section-4" data-shield-section/>
-        <Clients id="section-5" data-shield-section/>
-        <Contribution id="section-6" data-shield-section/>
-        <WhyUs id="section-7" data-shield-section/>
-        <ContactSection id="section-8" data-shield-section/>
-        <BlogSection id="section-9" data-shield-section/>
-        <FAQSection id="section-10" data-shield-section/>
+        <MissionVision/>
+        <Solution/>
+        <OurExpertise/>
+        <Clients/>
+        <Contribution/>
+        <WhyUs/>
+        <ContactSection />
+        <BlogSection/>
+        <FAQSection/>
         </>
         
     )

@@ -1,12 +1,7 @@
-type ContactSectionProps = {
-  id: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  [key: string]: any;
-};
 
-export default function ContactSection ({ id, ...rest }: ContactSectionProps){
+export default function ContactSection (){
     return (
-   <section id={id} {...rest}
+   <section
   className="
     relative
     w-full

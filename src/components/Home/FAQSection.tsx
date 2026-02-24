@@ -5,13 +5,7 @@ import { useState, useRef, useLayoutEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-type FAQSectionProps = {
-  id: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  [key: string]: any;
-};
-
-export default function FAQSection ({ id, ...rest }: FAQSectionProps) {
+export default function FAQSection () {
     const faqs = [
     {
       question: "What kind of experience does Hexar have?",
@@ -111,7 +105,7 @@ export default function FAQSection ({ id, ...rest }: FAQSectionProps) {
     }, []);
 
     return (
-        <section {...rest} id={id} ref={sectionRef} className="faq-section p-8 lg:p-16 border-[#ffffff66] border-t">
+        <section ref={sectionRef} className="faq-section p-8 lg:p-16 border-[#ffffff66] border-t">
   
   <div className="3xl:flex 2xl:flex xl:flex lg:flex block items-stretch justify-center">
 

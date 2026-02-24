@@ -100,13 +100,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
-type ClientsSectionProps = {
-  id: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  [key: string]: any;
-};
-
-export default function Clients({ id, ...rest }: ClientsSectionProps) {
+export default function Clients() {
   const clients = [
     "Artifact", "Awe Interactive", "BBW", "BCC", "Enigmatrix", "Frontier", "HF", "Hutch", "Illfonic", "Liithos", "Obsidian", "Pathea", "Piomotion", "Plarium", "Rivet", "Romero", "Sulfuric", "Turtle Rock - 2", "Ubisoft", "Wolcen", "World Maker 2", "Meta"
    ];
@@ -119,8 +113,6 @@ export default function Clients({ id, ...rest }: ClientsSectionProps) {
 
   return (
     <section
-      {...rest}
-      id={id}
       className="clients-section px-0 lg:py-16 md:py-16 py-8 overflow-hidden"
     >
       <h2 className="reveal 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight text-center lg:mb-16 mb-8 text-white font-bold">

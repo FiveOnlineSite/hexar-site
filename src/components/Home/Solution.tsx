@@ -7,13 +7,7 @@ import { useEffect, useRef, useLayoutEffect } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
-type SolutionProps = {
-  id: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  [key: string]: any;
-};
-
-export default function Solution({ id, ...rest }:SolutionProps){
+export default function Solution(){
 
     const sectionRef = useRef(null);
     const bgDesktopRef = useRef(null);
@@ -64,7 +58,7 @@ useLayoutEffect(() => {
 
 
     return(
-       <section {...rest} id={id} ref={sectionRef} className="solution-section relative h-full w-full overflow-hidden">
+       <section ref={sectionRef} className="solution-section relative h-full w-full overflow-hidden">
   
         <img
         ref={bgDesktopRef}

@@ -1,14 +1,8 @@
 "use client"
 
-type MissionVisionProps = {
-  id: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  [key: string]: any;
-};
-
-export default function MissionVision({ id, ...rest }: MissionVisionProps) {
+export default function MissionVision() {
   return (
-    <section {...rest} id={id} className="lg:py-16 md:py-16 py-8 top-0 left-0 mission-vision-section w-full h-full bg-[url('/images/mission-vision-bg.png')] bg-no-repeat xl:bg-[25%] bg-center bg-contain bg-[#0A0A0A]">
+    <section className="lg:py-16 md:py-16 py-8 top-0 left-0 mission-vision-section w-full h-full bg-[url('/images/mission-vision-bg.png')] bg-no-repeat xl:bg-[25%] bg-center bg-contain bg-[#0A0A0A]">
 <div className="lg:flex block items-center">
 <div className="lg:w-[50%] w-full h-full flex items-center">
       <svg

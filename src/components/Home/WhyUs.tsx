@@ -144,17 +144,9 @@ import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import { whyus } from "@/src/data/whyus";
 
-type WhyUsProps = {
-  id: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  [key: string]: any;
-};
-
-export default function WhyUs({ id, ...rest }: WhyUsProps) {
+export default function WhyUs() {
   return (
     <section
-      {...rest}
-      id={id}
       className="
         why-us-section
         bg-[#0A0A0A]

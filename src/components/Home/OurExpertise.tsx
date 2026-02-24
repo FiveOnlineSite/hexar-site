@@ -1,15 +1,9 @@
 "use client"
 import { portfolio } from "@/src/data/portfolio";
 
-type OurExpertiseProps = {
-  id: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  [key: string]: any;
-};
-
-export default function OurExpertise({ id, ...rest }: OurExpertiseProps){
+export default function OurExpertise(){
     return (
-        <section {...rest} id={id} className="our-expertise-seciton lg:p-16 md:p-16 p-8 bg-[#0A0A0A] bg-[url('/images/our-expertise-bg.png')] bg-contain bg-right-bottom bg-no-repeat bg-[length:60%]">
+        <section className="our-expertise-seciton lg:p-16 md:p-16 p-8 bg-[#0A0A0A] bg-[url('/images/our-expertise-bg.png')] bg-contain bg-right-bottom bg-no-repeat bg-[length:60%]">
             <div className="lg:flex block items-center justify-between w-full">
                 <h2 className="reveal 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight lg:mb-8 mb-4 text-white font-bold">Our Expertise</h2>
                 

@@ -8,7 +8,7 @@ const BlogsPage = () => {
     <>
     <Banner title='News & Blog' image="./images/banners/Blog-2.jpg"/>
     <BlogsSection/>
-    <FAQSection id='faq'/>
+    <FAQSection/>
     </>
     
   )

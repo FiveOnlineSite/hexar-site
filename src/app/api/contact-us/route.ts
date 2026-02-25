@@ -40,11 +40,8 @@ export async function POST(req: Request) {
     });
 
     return NextResponse.json({ success: true });
-  } catch (err) {
-    console.error(err);
-    return NextResponse.json(
-      { error: "Mail sending failed" },
-      { status: 500 }
-    );
-  }
+  } catch (err: any) {
+  console.error("MAIL ERROR =>", err);
+  return NextResponse.json({ error: err.message }, { status: 500 });
+}
 }

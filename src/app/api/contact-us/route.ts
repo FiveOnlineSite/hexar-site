@@ -1,34 +1,24 @@
-import nodemailer from "nodemailer";
+import sgMail from "@sendgrid/mail";
 import { NextResponse } from "next/server";
+
+sgMail.setApiKey(process.env.SENDGRID_API_KEY!);
 
 export async function POST(req: Request) {
   try {
-    const { name, email, company, message, captchaToken } = await req.json();
+    const { name, email, company, message } = await req.json();
 
-    if (!captchaToken) {
+    if (!name || !email || !message) {
       return NextResponse.json(
-        { error: "Captcha missing" },
+        { error: "Missing required fields" },
         { status: 400 }
       );
     }
 
-    // OPTIONAL: verify captcha with Google here (recommended)
-
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: Number(process.env.SMTP_PORT),
-      secure: false, // true if port 465
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
-      },
-    });
-
-    await transporter.sendMail({
-      from: `"Hexar Contact" <${process.env.SMTP_USER}>`,
-      to: process.env.CONTACT_RECEIVER,
+    await sgMail.send({
+      to: process.env.CONTACT_RECEIVER!,
+      from: "helpdesk@fiveonline.in", // must be verified sender
       replyTo: email,
-      subject: `Hexar Contact Form Submission`,
+      subject: "Hexar Contact Form Submission",
       html: `
         <h3>Hexar Contact Request</h3>
         <p><strong>Name:</strong> ${name}</p>
@@ -40,7 +30,7 @@ export async function POST(req: Request) {
     });
 
     return NextResponse.json({ success: true });
-  } catch (err: any) {
+  }  catch (err: any) {
   console.error("MAIL ERROR =>", err);
   return NextResponse.json({ error: err.message }, { status: 500 });
 }

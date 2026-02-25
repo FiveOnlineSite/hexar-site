@@ -105,8 +105,7 @@ export const portfolio = [
             title: "Lantern Girl",
              media: [
                 { type: "image", src: "/images/albums/concept-art/Lantern Girl/Lantern Girl (1).jpg"},
-                { type: "image", src: "/images/albums/concept-art/Lantern Girl/Lantern Girl (2).jpg"},
-                { type: "image", src: "/images/albums/concept-art/Lantern Girl/Lantern Girl (3).jpg"},                                  
+                { type: "image", src: "/images/albums/concept-art/Lantern Girl/Lantern Girl (2).jpg"},                                 
             ],
         },
         {
@@ -222,6 +221,8 @@ export const portfolio = [
              media: [
                 { type: "image", src: "/images/albums/concept-art/Creature4/Creature4 (1).jpg"},
                 { type: "image", src: "/images/albums/concept-art/Creature4/Creature4 (2).jpg"},
+                { type: "image", src: "/images/albums/concept-art/Creature4/Creature4 (3).jpg"},
+
             ],
         },
         {

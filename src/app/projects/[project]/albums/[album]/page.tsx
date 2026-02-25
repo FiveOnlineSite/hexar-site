@@ -15,33 +15,34 @@ export default async function ProjectAlbumsPage({ params }: AlbumsPageProps) {
     (c) => c.slug === project
   );
 
-  if (!currentproject) {
-    return <h1>project Not Found</h1>;
-  }
+  if (!currentproject) return <h1>Project Not Found</h1>;
 
   const currentAlbum = currentproject.albums.find(
     (a) => a.slug === album
   );
 
-  if (!currentAlbum) {
-    return <h1>Album Not Found</h1>;
-  }
+  if (!currentAlbum) return <h1>Album Not Found</h1>;
+
 
   return (
     <div className="album-banner-section min-h-screen lg:pt-20 md:pt-16 pt-8 relative">
-      <CloseButton  basePath="projects" projectSlug={currentproject.slug}/>
-<ImagesSlider media={currentAlbum.media as any} />
+
+      <CloseButton
+        basePath="projects"
+        projectSlug={currentproject.slug}
+      />
+
+      <ImagesSlider media={currentAlbum.media as any} />
 
       <AlbumsArrow
         projectSlug={currentproject.slug}
         albums={currentproject.albums}
-        currentAlbumSlug={album} 
+        currentAlbumSlug={album}
         basePath="projects"
       />
-      
-      <ProjectsArrow projectSlug={currentproject.slug}/>
-    
+
+      <ProjectsArrow projectSlug={currentproject.slug} />
+
     </div>
-      
   );
 }

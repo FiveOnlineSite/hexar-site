@@ -66,7 +66,7 @@ export const projects = [
                 { type: "image", src: "/images/project-showcase/Predator-Hunting-Grounds/Valkyrie/PredatorValkyrie_Tex-1.jpg"},
                 { type: "image", src: "/images/project-showcase/Predator-Hunting-Grounds/Valkyrie/PredatorValkyrie_Tex-3.jpg"},
                 { type: "image", src: "/images/project-showcase/Predator-Hunting-Grounds/Valkyrie/PredatorValkyrie_Tex-4.jpg"},
-                { type: "image", src: "/images/project-showcase/Predator-Hunting-Grounds/female-assassin/PredatorValkyrie-1.jpg"},
+                { type: "image", src: "/images/project-showcase/Predator-Hunting-Grounds/Valkyrie/PredatorValkyrie-1.jpg"},
 
             ],
         },{
@@ -235,14 +235,14 @@ export const projects = [
             slug: "african-npcs",
             title: "African NPCs",
             media: [
+                { type: "image", src: "/images/project-showcase/Back4Blood/African NPCs/African-Female-Mid-Age.jpg"},
                 { type: "image", src: "/images/project-showcase/Back4Blood/African NPCs/African-Female-Mid-Age-Closeup-1.jpg"},
                 { type: "image", src:"/images/project-showcase/Back4Blood/African NPCs/African-Female-Mid-Age-Closeup-2.jpg"},
                 { type: "image", src:"/images/project-showcase/Back4Blood/African NPCs/African-Female-Mid-Age-Closeup-3.jpg"},
-                { type: "image", src: "/images/project-showcase/Back4Blood/African NPCs/African-Female-Mid-Age.jpg"},
-                { type: "image", src: "/images/project-showcase/Back4Blood/African NPCs/African-Female-Mid-Age-Closeup-1.jpg"},
-                { type: "image", src: "/images/project-showcase/Back4Blood/African NPCs/African-Female-Mid-Age-Closeup-2.jpg"},
-                { type: "image", src: "/images/project-showcase/Back4Blood/African NPCs/African-Female-Mid-Age-Closeup-3.jpg"},
-                { type: "image", src: "/images/project-showcase/Back4Blood/African NPCs/African-Female-Mid-Age.jpg"},
+                { type: "image", src: "/images/project-showcase/Back4Blood/African NPCs/African-Female-Young-Age.jpg"},
+                { type: "image", src: "/images/project-showcase/Back4Blood/African NPCs/African-Female-Young-Age-Closeup-1.jpg"},
+                { type: "image", src: "/images/project-showcase/Back4Blood/African NPCs/African-Female-Young-Age-Closeup-2.jpg"},
+                { type: "image", src: "/images/project-showcase/Back4Blood/African NPCs/African-Female-Young-Age-Closeup-3.jpg"},
                 { type: "image", src: "/images/project-showcase/Back4Blood/African NPCs/African-Male-Young-Age-Closeup-1.jpg"},
                 { type: "image", src: "/images/project-showcase/Back4Blood/African NPCs/African-Male-Young-Age-Closeup-2.jpg"},
                 { type: "image", src: "/images/project-showcase/Back4Blood/African NPCs/African-Male-Young-Age-Closeup-3.jpg"},
@@ -853,13 +853,13 @@ export const projects = [
         {
                 id: 5,
             album_img: "/images/project-showcase/Tiger 3/5.jpg",
-            slug: "apc-&-dumper-truck",
+            slug: "apc-and-dumper-truck",
             title: "APC & Dumper Truck",
              media: [
-                { type: "image", src:"/images/project-showcase/Tiger 3/APC & Dumper Truck/APCandDumber (1).jpg"},
-                { type: "image", src:"/images/project-showcase/Tiger 3/APC & Dumper Truck/APCandDumber (1).png"},
-                { type: "image", src:"/images/project-showcase/Tiger 3/APC & Dumper Truck/APCandDumber (2).jpg"},
-                { type: "image", src:"/images/project-showcase/Tiger 3/APC & Dumper Truck/APCandDumber (2).png"},
+                { type: "image", src:"/images/project-showcase/Tiger 3/APC-Dumper Truck/APCandDumber (1).jpg"},
+                { type: "image", src:"/images/project-showcase/Tiger 3/APC-Dumper Truck/APCandDumber (1).png"},
+                { type: "image", src:"/images/project-showcase/Tiger 3/APC-Dumper Truck/APCandDumber (2).jpg"},
+                { type: "image", src:"/images/project-showcase/Tiger 3/APC-Dumper Truck/APCandDumber (2).png"},
                 
              ]
         },
@@ -912,7 +912,7 @@ export const projects = [
                 { type: "image", src:"/images/project-showcase/Tiger 3/Jawan Truck/Jawan Truck (1).png"},                        
                 { type: "image", src:"/images/project-showcase/Tiger 3/Jawan Truck/Jawan Truck (2).png"},                        
                 { type: "image", src:"/images/project-showcase/Tiger 3/Jawan Truck/Jawan Truck (3).png"},                        
-                { type: "image", src:"/images/project-showcase/Tiger 3/Jawan Truck/Jawan Truck (4).png"},                        
+                { type: "image", src:"/images/project-showcase/Tiger 3/Jawan Truck/Jawan Truck (4).jpg"},                        
                       
              ]
         },

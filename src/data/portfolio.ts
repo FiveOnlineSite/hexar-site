@@ -285,6 +285,8 @@ export const portfolio = [
                 { type: "image", src: "/images/albums/concept-art/Slot Game/image (23).jpg"},
                 { type: "image", src: "/images/albums/concept-art/Slot Game/image (24).jpg"},
                 { type: "image", src: "/images/albums/concept-art/Slot Game/image (25).jpg"},
+                { type: "image", src: "/images/albums/concept-art/Slot Game/Orb.jpg"},
+                { type: "image", src: "/images/albums/concept-art/Slot Game/Stylized.jpg"},
             ],
         },
 
@@ -318,6 +320,7 @@ export const portfolio = [
             slug: "armyman-jack",
             title: "Armyman Jack",
             media: [
+                { type: "image", src: "/images/albums/character/armyman-jack/Armyman Jack (1).jpg"},
                 { type: "image", src: "/images/albums/character/armyman-jack/Armyman Jack (2).jpg"},
                 { type: "image", src: "/images/albums/character/armyman-jack/Armyman Jack (3).jpg"},
                 { type: "image", src: "/images/albums/character/armyman-jack/Armyman Jack (4).jpg"},
@@ -361,6 +364,9 @@ export const portfolio = [
                 { type: "image", src: "/images/albums/character/female-assassin/Female Assassin (3).jpg"},
                 { type: "image", src: "/images/albums/character/female-assassin/Female Assassin (4).jpg"},
                 { type: "image", src: "/images/albums/character/female-assassin/Female Assassin (5).jpg"},
+                { type: "image", src: "/images/albums/character/female-assassin/Female Assassin (6).jpg"},
+                { type: "image", src: "/images/albums/character/female-assassin/Female Assassin (7).jpg"},
+
 
             ],
         },{
@@ -461,11 +467,14 @@ export const portfolio = [
             slug: "thor",
             title: "Thor",
              media: [
+                { type: "image", src: "/images/albums/character/thor/Thor (1).jpg"},
                 { type: "image", src: "/images/albums/character/thor/Thor (2).jpg"},
                 { type: "image", src: "/images/albums/character/thor/Thor (3).jpg"},
                 { type: "image", src: "/images/albums/character/thor/Thor (4).jpg"},
                 { type: "image", src: "/images/albums/character/thor/Thor (5).jpg"},
                 { type: "image", src: "/images/albums/character/thor/Thor (6).jpg"},
+                { type: "image", src: "/images/albums/character/thor/Thor (7).jpg"},
+
             ],
         },
         {
@@ -638,7 +647,19 @@ export const portfolio = [
 
             ],
             },
-            
+             {
+                 id: 13,
+            album_img: "/images/albums/realtime-hair/13.jpg",
+            slug: "female-cyberpunk",
+            title:"Female Cyberpunk",
+            media: [
+                { type: "image", src: "/images/albums/realtime-hair/female_cyberpunk/Female Cyberpunk (1).jpg"},
+                { type: "image", src: "/images/albums/realtime-hair/female_cyberpunk/Female Cyberpunk (2).jpg"},
+                { type: "image", src: "/images/albums/realtime-hair/female_cyberpunk/Female Cyberpunk (3).jpg"},
+
+
+            ],
+            },
             {
                  id: 14,
             album_img: "/images/albums/realtime-hair/14.jpg",
@@ -753,7 +774,9 @@ export const portfolio = [
                 { type: "image", src: "/images/albums/creature-modeling/Marshal Mort/Marshal Mort 1.jpg"},
                 { type: "image", src: "/images/albums/creature-modeling/Marshal Mort/Marshal Mort 2.jpg"},
                 { type: "image", src: "/images/albums/creature-modeling/Marshal Mort/Marshal Mort 3.jpg"},
-                { type: "image", src: "/images/albums/creature-modeling/Marshal Mort/Marshal Mort 4.jpg"},             
+                { type: "image", src: "/images/albums/creature-modeling/Marshal Mort/Marshal Mort 4.jpg"}, 
+                { type: "image", src: "/images/albums/creature-modeling/Marshal Mort/Marshal Mort 5.jpg"},             
+
             ],
         },
         {
@@ -802,6 +825,9 @@ export const portfolio = [
                 { type: "image", src: "/images/albums/creature-modeling/Giant Creature/Giant Creature 1.jpg"},
                 { type: "image", src: "/images/albums/creature-modeling/Giant Creature/Giant Creature 2.jpg"},
                 { type: "image", src: "/images/albums/creature-modeling/Giant Creature/Giant Creature 3.jpg"},
+                { type: "image", src: "/images/albums/creature-modeling/Giant Creature/Giant Creature 4.jpg"},
+                { type: "image", src: "/images/albums/creature-modeling/Giant Creature/Giant Creature 5.jpg"},
+
             ],
         },       
         {
@@ -1057,11 +1083,13 @@ export const portfolio = [
             slug: "sofa-and-tv",
              title: "Sofa and TV",
              media: [
+                { type: "image", src: "/images/albums/props/Sofa and TV/Single Sofa (1).jpg"},
                 { type: "image", src: "/images/albums/props/Sofa and TV/Single Sofa (2).jpg"},
                 { type: "image", src: "/images/albums/props/Sofa and TV/Single Sofa (3).jpg"},
                 { type: "image", src: "/images/albums/props/Sofa and TV/Single Sofa (4).jpg"},
+                { type: "image", src: "/images/albums/props/Sofa and TV/Single Sofa (5).jpg"},
                 { type: "image", src: "/images/albums/props/Sofa and TV/Single Sofa (6).jpg"},
-                { type: "image", src: "/images/albums/props/Sofa and TV/Single Sofa (8).jpg"},
+
             ],
         },
         {
@@ -1217,7 +1245,7 @@ export const portfolio = [
         },
         {
                 id: 4,
-            album_img: "/images/albums/weapons/4.jpg",
+            album_img: "/images/albums/weapons/16.jpg",
             slug: "crossbow",
              title: "Crossbow",
              media: [
@@ -1240,7 +1268,7 @@ export const portfolio = [
         },
         {
                 id: 6,
-            album_img: "/images/albums/weapons/6.jpg",
+            album_img: "/images/albums/weapons/4.jpg",
             slug: "fire-gun",
              title: "Fire Gun",
              media: [
@@ -1261,11 +1289,12 @@ export const portfolio = [
                 { type: "image", src: "/images/albums/weapons/Fire Hammer/Fire Hammer (4).jpg"},
                 { type: "image", src: "/images/albums/weapons/Fire Hammer/Fire Hammer (8).jpg"},
                 { type: "image", src: "/images/albums/weapons/Fire Hammer/Fire Hammer (9).jpg"},
+
             ],
         },
         {
                 id: 8,
-            album_img: "/images/albums/weapons/8.jpg",
+            album_img: "/images/albums/weapons/12.jpg",
             slug: "futuristic-gun",
              title: "Futuristic Gun",
              media: [
@@ -1279,7 +1308,7 @@ export const portfolio = [
         },
         {
                 id:9,
-            album_img: "/images/albums/weapons/9.jpg",
+            album_img: "/images/albums/weapons/14.jpg",
             slug: "machine-gun",
              title: "Machine Gun",
              media: [
@@ -1291,18 +1320,18 @@ export const portfolio = [
         },
         {
             id: 10,
-            album_img: "/images/albums/weapons/10.jpg",
+            album_img: "/images/albums/weapons/13.jpg",
             slug: "mandalorian-weapon",
              title: "Mandalorian Weapon",
              media: [
-                { type: "image", src: "/images/albums/weapons/Mandalorian Weapon/MachineGun  (1).jpg"},
-                { type: "image", src: "/images/albums/weapons/Mandalorian Weapon/MachineGun  (2).jpg"},
-                { type: "image", src: "/images/albums/weapons/Mandalorian Weapon/MachineGun  (3).jpg"},
+                { type: "image", src: "/images/albums/weapons/Mandalorian Weapon/Mandalorian Weapon (1).jpg"},
+                { type: "image", src: "/images/albums/weapons/Mandalorian Weapon/Mandalorian Weapon (2).jpg"},
+                { type: "image", src: "/images/albums/weapons/Mandalorian Weapon/Mandalorian Weapon (3).jpg"},
             ],
         },
          {
             id: 11,
-            album_img: "/images/albums/weapons/11.jpg",
+            album_img: "/images/albums/weapons/6.jpg",
             slug: "mech-knife",
              title: "Mech Knife",
              media: [
@@ -1312,7 +1341,7 @@ export const portfolio = [
         },
         {
             id: 12,
-            album_img: "/images/albums/weapons/12.jpg",
+            album_img: "/images/albums/weapons/7.jpg",
             slug: "micro-roni",
              title: "Micro Roni",
              media: [
@@ -1325,7 +1354,7 @@ export const portfolio = [
         },
         {
             id: 13,
-            album_img: "/images/albums/weapons/13.jpg",
+            album_img: "/images/albums/weapons/8.jpg",
             slug: "pistol",
              title: "Pistol",
              media: [
@@ -1339,9 +1368,9 @@ export const portfolio = [
         },
         {
             id: 14,
-            album_img: "/images/albums/weapons/14.jpg",
+            album_img: "/images/albums/weapons/17.jpg",
             slug: "post-apocalypse-weapon",
-             title: "Post-Apocalypse Weapon",
+             title: "Post Apocalypse Weapon",
              media: [
                 { type: "image", src: "/images/albums/weapons/Post-Apocalypse Weapon/Post-Apocalypse_weaponArtboard 1.jpg"},
                 { type: "image", src: "/images/albums/weapons/Post-Apocalypse Weapon/Post-Apocalypse_weaponArtboard 2.jpg"},
@@ -1351,7 +1380,7 @@ export const portfolio = [
         },
         {
             id: 15,
-            album_img: "/images/albums/weapons/15.jpg",
+            album_img: "/images/albums/weapons/9.jpg",
             slug: "rat-captain-sword",
              title: "Rat Captain Sword",
              media: [
@@ -1362,7 +1391,7 @@ export const portfolio = [
         },
         {
             id: 16,
-            album_img: "/images/albums/weapons/16.jpg",
+            album_img: "/images/albums/weapons/19.jpg",
             slug: "sci-fi-gun",
              title: "Sci-Fi Gun",
              media: [
@@ -1375,7 +1404,7 @@ export const portfolio = [
         },   
         {
             id: 17,
-            album_img: "/images/albums/weapons/17.jpg",
+            album_img: "/images/albums/weapons/10.jpg",
             slug: "sig-552-nato-ar",
              title: "SIG 552 NATO AR",
              media: [
@@ -1388,7 +1417,7 @@ export const portfolio = [
         }, 
          {
             id: 18,
-            album_img: "/images/albums/weapons/18.jpg",
+            album_img: "/images/albums/weapons/11.jpg",
             slug: "svdm-sniper",
              title: "SVDM - Sniper",
              media: [
@@ -1399,7 +1428,7 @@ export const portfolio = [
         }, 
         {
             id: 19,
-            album_img: "/images/albums/weapons/19.jpg",
+            album_img: "/images/albums/weapons/18.jpg",
             slug: "sword",
              title: "Sword",
              media: [
@@ -1460,6 +1489,7 @@ export const portfolio = [
             slug: "cap-d52",
              title: "Cap-D52",
              media: [
+                { type: "image", src: "/images/albums/hard-surface/Cap-D52/0.jpg"},
                 { type: "image", src: "/images/albums/hard-surface/Cap-D52/1.jpg"},
                 { type: "image", src: "/images/albums/hard-surface/Cap-D52/2.jpg"},
                 { type: "image", src: "/images/albums/hard-surface/Cap-D52/3.jpg"},

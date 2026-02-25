@@ -1587,6 +1587,8 @@ export const portfolio = [
                 { type: "image", src: "/images/albums/stylized-art/White Swamp/White Swamp 1.jpg"},
                 { type: "image", src: "/images/albums/stylized-art/White Swamp/White Swamp 2.jpg"},
                 { type: "image", src: "/images/albums/stylized-art/White Swamp/White Swamp 3.jpg"},
+                { type: "image", src: "/images/albums/stylized-art/White Swamp/White Swamp 4.jpg"},
+
             ],
         },
         {
@@ -1597,6 +1599,9 @@ export const portfolio = [
              media: [
                 { type: "image", src: "/images/albums/stylized-art/Black Angel/Black Angel (1).jpg"},
                 { type: "image", src: "/images/albums/stylized-art/Black Angel/Black Angel (2).jpg"},
+                { type: "image", src: "/images/albums/stylized-art/Black Angel/Black Angel (3).jpg"},
+                { type: "image", src: "/images/albums/stylized-art/Black Angel/Black Angel (4).jpg"},
+
             ],
         },
         {
@@ -1608,6 +1613,8 @@ export const portfolio = [
                 { type: "image", src: "/images/albums/stylized-art/Stylized Warrior/ares-studio-stylized-character-showcaseartboard-1.jpg"},
                 { type: "image", src: "/images/albums/stylized-art/Stylized Warrior/ares-studio-stylized-character-showcaseartboard-2.jpg"},
                 { type: "image", src: "/images/albums/stylized-art/Stylized Warrior/ares-studio-stylized-character-showcaseartboard-5.jpg"},
+                { type: "image", src: "/images/albums/stylized-art/Stylized Warrior/asdsasfddsad.jpg"},
+
             ],
         },
         {
@@ -1628,9 +1635,9 @@ export const portfolio = [
             slug: "stylized-female-warrior",
              title: "Stylized Female Warrior",
              media: [
-                { type: "image", src: "/images/albums/stylized-art/Stylized/Stylized Female Warrior (1).jpg"},
-                { type: "image", src: "/images/albums/stylized-art/Stylized/Stylized Female Warrior (2).jpg"},
-                { type: "image", src: "/images/albums/stylized-art/Stylized/Stylized Female Warrior (3).jpg"},
+                { type: "image", src: "/images/albums/stylized-art/Stylized Female Warrior/Stylized Female Warrior (1).jpg"},
+                { type: "image", src: "/images/albums/stylized-art/Stylized Female Warrior/Stylized Female Warrior (2).jpg"},
+                { type: "image", src: "/images/albums/stylized-art/Stylized Female Warrior/Stylized Female Warrior (3).jpg"},
             ],
         },
         {

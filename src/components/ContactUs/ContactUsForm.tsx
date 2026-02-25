@@ -110,7 +110,7 @@ setTimeout(() => setSuccess(false), 3000);
 
                     <ReCAPTCHA
         ref={recaptchaRef}
-        sitekey={process.env.RECAPTCHA_SITE_KEY!}
+        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
         onChange={(token: React.SetStateAction<string | null>) => {
           setCaptchaToken(token);
           setError("");

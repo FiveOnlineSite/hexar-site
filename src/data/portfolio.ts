@@ -397,18 +397,18 @@ export const portfolio = [
 
             ],
             },
-             {
-                id: 8,
-            album_img: "/images/albums/character/8.jpg",
-            slug: "miltary-man",
-            title: "Military Man",
-             media: [
-                { type: "image", src: "/images/albums/character/military-man/Military Man (1).jpg"},
-                { type: "image", src: "/images/albums/character/military-man/Military Man (2).jpg"},
-                { type: "image", src: "/images/albums/character/military-man/Military Man (3).jpg"},
-                { type: "image", src: "/images/albums/character/military-man/Military Man (4).jpg"},
-            ],
-        },
+        //      {
+        //         id: 8,
+        //     album_img: "/images/albums/character/8.jpg",
+        //     slug: "miltary-man",
+        //     title: "Military Man",
+        //      media: [
+        //         { type: "image", src: "/images/albums/character/military-man/Military Man (1).jpg"},
+        //         { type: "image", src: "/images/albums/character/military-man/Military Man (2).jpg"},
+        //         { type: "image", src: "/images/albums/character/military-man/Military Man (3).jpg"},
+        //         { type: "image", src: "/images/albums/character/military-man/Military Man (4).jpg"},
+        //     ],
+        // },
          {
                 id: 9,
             album_img: "/images/albums/character/9.jpg",
@@ -707,30 +707,30 @@ export const portfolio = [
             ],
 
             },
-             {
-                 id: 18,
-            album_img: "/images/albums/realtime-hair/18.jpg",
-            slug: "male-straight-short",
-            title:"Male Straight Short",
-            media: [
-                { type: "image", src: "/images/albums/realtime-hair/male_straight_short/1.jpg"},
-                { type: "image", src: "/images/albums/realtime-hair/male_straight_short/2.jpg"},
+            //  {
+            //      id: 18,
+            // album_img: "/images/albums/realtime-hair/18.jpg",
+            // slug: "male-straight-short",
+            // title:"Male Straight Short",
+            // media: [
+            //     { type: "image", src: "/images/albums/realtime-hair/male_straight_short/1.jpg"},
+            //     { type: "image", src: "/images/albums/realtime-hair/male_straight_short/2.jpg"},
                
-            ],
+            // ],
 
-            },
-             {
-                 id: 19,
-            album_img: "/images/albums/realtime-hair/19.jpg",
-            slug: "female-straight2",
-            title:"Female Straight2",
-            media: [
-                { type: "image", src: "/images/albums/realtime-hair/female_straight2/1.jpg"},
-                { type: "image", src: "/images/albums/realtime-hair/female_straight2/2.jpg"},
+            // },
+            //  {
+            //      id: 19,
+            // album_img: "/images/albums/realtime-hair/19.jpg",
+            // slug: "female-straight2",
+            // title:"Female Straight2",
+            // media: [
+            //     { type: "image", src: "/images/albums/realtime-hair/female_straight2/1.jpg"},
+            //     { type: "image", src: "/images/albums/realtime-hair/female_straight2/2.jpg"},
                
-            ],
+            // ],
 
-            },
+            // },
             {
                  id: 20,
             album_img: "/images/albums/realtime-hair/20.jpg",

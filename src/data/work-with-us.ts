@@ -25,7 +25,7 @@ export const workwithus = [
      },
       {
         title: "Recognition & Rewards",
-        image: "/images/work-with-us/Recognition & Rewards.png",
+        image: "/images/work-with-us/Recognition Rewards.png",
      },
       {
         title: "Global Exposure",

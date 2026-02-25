@@ -1508,9 +1508,7 @@ export const portfolio = [
                 { type: "image", src: "/images/albums/hard-surface/Gladiator Bust/Gladiator (2).jpg"},      
                 { type: "image", src: "/images/albums/hard-surface/Gladiator Bust/Gladiator (3).jpg"},      
             ],
-        },
-            
-        ],
+        },],
        },
         {
         id:8,

@@ -10,13 +10,13 @@ export const hero = [
         title: "Back4Blood",
         image: "/images/hero/B4B Opt-1.png",
         video: "/videos/banners/B4B.mp4",
-        url: "/projects/back4blood"
+        url: "/projects/back-4-blood"
      },
      {
         title: "Wanderer Fragments of Fate",
         image: "/images/hero/Wanderer.png",
         video: "/videos/banners/Wanderer.mp4",
-        url: "/projects/wanderer-fragments-of-fate"
+        url: "/projects/wanderer-fragment-of-fate"
      },
      {
         title: "Deceit 2",

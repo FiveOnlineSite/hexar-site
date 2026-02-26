@@ -18,7 +18,7 @@ export async function POST(req: Request) {
   to: process.env.CONTACT_RECEIVER!,
   from: "helpdesk@fiveonline.in",
   replyTo: email,
-  subject: `Hexar Contact Form Submission - ${name}`,
+  subject: `Hexar Contact Form Submission`,
   text: `
     Hexar Contact Request
 

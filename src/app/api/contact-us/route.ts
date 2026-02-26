@@ -15,19 +15,27 @@ export async function POST(req: Request) {
     }
 
     await sgMail.send({
-      to: process.env.CONTACT_RECEIVER!,
-      from: "helpdesk@fiveonline.in", // must be verified sender
-      replyTo: email,
-      subject: "Hexar Contact Form Submission",
-      html: `
-        <h3>Hexar Contact Request</h3>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Company:</strong> ${company}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message}</p>
-      `,
-    });
+  to: process.env.CONTACT_RECEIVER!,
+  from: "helpdesk@fiveonline.in",
+  replyTo: email,
+  subject: `Hexar Contact Form Submission - ${name}`,
+  text: `
+    Hexar Contact Request
+
+    Name: ${name}
+    Email: ${email}
+    Company: ${company}
+    Message: ${message}
+  `,
+  html: `
+    <h3>Hexar Contact Request</h3>
+    <p><strong>Name:</strong> ${name}</p>
+    <p><strong>Email:</strong> ${email}</p>
+    <p><strong>Company:</strong> ${company}</p>
+    <p><strong>Message:</strong></p>
+    <p>${message}</p>
+  `,
+});
 
     return NextResponse.json({ success: true });
   }  catch (err: any) {

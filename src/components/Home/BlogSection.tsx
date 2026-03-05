@@ -280,7 +280,7 @@ hover:shadow-[0_2px_20px_0_#FFFFFF40]"
           {/* EACH CARD MUST BE A SEPARATE SLIDE */}
           {blogs.map((blog, i) => (
             <SwiperSlide key={i}>
-              <div className="hover:shadow-[0_2px_20px_0_#FFFFFF40] rounded-xl overflow-hidden m-2 transition-all duration-700 group">
+              <a href={`/blogs/${blog.slug}`} className="hover:shadow-[0_2px_20px_0_#FFFFFF40] inline-block rounded-xl overflow-hidden m-2 transition-all duration-700 group">
                 <div className="h-auto overflow-hidden">
                   <img
                     src={blog.image}
@@ -297,7 +297,7 @@ hover:shadow-[0_2px_20px_0_#FFFFFF40]"
                     {blog.date}
                   </h4>
                 </div>
-              </div>
+              </a>
             </SwiperSlide>
           ))}
 

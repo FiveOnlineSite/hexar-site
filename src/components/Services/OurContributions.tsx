@@ -1,18 +1,49 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
+import type { Swiper as SwiperType } from "swiper";
+
 import Image from "next/image";
 import { worksamples } from "@/src/data/work-samples";
 
 export default function OurContributions() {
 
-  const images = [
-    "Predators", "B4B", "GhostBusters", "GhostBusters"
-  ]
+    const sectionRef = useRef(null);
+    const swiperRef = useRef<SwiperType>(null);
+    const [isVisible, setIsVisible] = useState(false);
+  
+    // 👁 Detect when section is in viewport
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          setIsVisible(entry.isIntersecting);
+        },
+        { threshold: 0.4 } // 40% visible
+      );
+  
+      if (sectionRef.current) {
+        observer.observe(sectionRef.current);
+      }
+  
+      return () => observer.disconnect();
+    }, []);
+  
+    // ▶️ Control autoplay
+    useEffect(() => {
+      if (!swiperRef.current) return;
+  
+      if (isVisible) {
+        swiperRef.current.autoplay.start();
+      } else {
+        swiperRef.current.autoplay.stop();
+      }
+    }, [isVisible]);
+
   return (
-    <div className="our-contributions-section lg:p-16 md:p-16 p-8 bg-[#0A0A0A] border-[#ffffff66] border-t">
+    <div ref={sectionRef} className="our-contributions-section lg:p-16 md:p-16 p-8 bg-[#0A0A0A] border-[#ffffff66] border-t">
       <div>
         <div className="lg:flex block items-center justify-between w-full">
           <h2 className="reveal 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight lg:mb-8 mb-8 text-white font-bold">
@@ -65,6 +96,8 @@ export default function OurContributions() {
           {/* SWIPER */}
           <Swiper
             modules={[Navigation, Autoplay]}
+             onSwiper={(swiper) => (swiperRef.current = swiper)}
+
             navigation={{
               prevEl: "#custom-prev",
               nextEl: "#custom-next",

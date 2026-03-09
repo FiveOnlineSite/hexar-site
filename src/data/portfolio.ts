@@ -315,30 +315,16 @@ export const portfolio = [
             ],
         },
         {
-                id: 2,
-            album_img: "/images/albums/character/2.jpg",
-            slug: "armyman-jack",
-            title: "Armyman Jack",
-            media: [
-                { type: "image", src: "/images/albums/character/armyman-jack/Armyman Jack (1).jpg"},
-                { type: "image", src: "/images/albums/character/armyman-jack/Armyman Jack (2).jpg"},
-                { type: "image", src: "/images/albums/character/armyman-jack/Armyman Jack (3).jpg"},
-                { type: "image", src: "/images/albums/character/armyman-jack/Armyman Jack (4).jpg"},
-            ],
-            },
-             {
-                id: 3,
-            album_img: "/images/albums/character/3.jpg",
-            title: "Deadpool",
-            slug: "deadpool",
+                id:6,
+            album_img: "/images/albums/character/6.jpg",
+            slug: "king-ahwaan",
+            title: "King Ahwaan",
              media: [
-                { type: "image", src: "/images/albums/character/deadpool/Deadpool (1).jpg"},
-                { type: "image", src: "/images/albums/character/deadpool/Deadpool (2).jpg"},
-                { type: "image", src: "/images/albums/character/deadpool/Deadpool (3).jpg"},
-                { type: "image", src: "/images/albums/character/deadpool/Deadpool (4).jpg"},
-                { type: "image", src: "/images/albums/character/deadpool/Deadpool (5).jpg"},
-                { type: "image", src: "/images/albums/character/deadpool/Deadpool (6).jpg"},
-                { type: "image", src: "/images/albums/character/deadpool/Deadpool (7).jpg"},
+                { type: "image", src: "/images/albums/character/king-ahwaan/King Ahwaan (1).jpg"},
+                { type: "image", src: "/images/albums/character/king-ahwaan/King Ahwaan (2).jpg"},
+                { type: "image", src: "/images/albums/character/king-ahwaan/King Ahwaan (3).jpg"},
+                { type: "image", src: "/images/albums/character/king-ahwaan/King Ahwaan (4).jpg"},
+                { type: "image", src: "/images/albums/character/king-ahwaan/King Ahwaan (5).jpg"},
             ],
         },
          {
@@ -368,18 +354,6 @@ export const portfolio = [
                 { type: "image", src: "/images/albums/character/female-assassin/Female Assassin (7).jpg"},
 
 
-            ],
-        },{
-                id:6,
-            album_img: "/images/albums/character/6.jpg",
-            slug: "king-ahwaan",
-            title: "King Ahwaan",
-             media: [
-                { type: "image", src: "/images/albums/character/king-ahwaan/King Ahwaan (1).jpg"},
-                { type: "image", src: "/images/albums/character/king-ahwaan/King Ahwaan (2).jpg"},
-                { type: "image", src: "/images/albums/character/king-ahwaan/King Ahwaan (3).jpg"},
-                { type: "image", src: "/images/albums/character/king-ahwaan/King Ahwaan (4).jpg"},
-                { type: "image", src: "/images/albums/character/king-ahwaan/King Ahwaan (5).jpg"},
             ],
         },
         {
@@ -489,6 +463,33 @@ export const portfolio = [
                 { type: "image", src: "/images/albums/character/ww2/WW2 Female Soldier (4).jpg"},
             ],
         },
+        {
+                id: 15,
+            album_img: "/images/albums/character/3.jpg",
+            title: "Deadpool",
+            slug: "deadpool",
+             media: [
+                { type: "image", src: "/images/albums/character/deadpool/Deadpool (1).jpg"},
+                { type: "image", src: "/images/albums/character/deadpool/Deadpool (2).jpg"},
+                { type: "image", src: "/images/albums/character/deadpool/Deadpool (3).jpg"},
+                { type: "image", src: "/images/albums/character/deadpool/Deadpool (4).jpg"},
+                { type: "image", src: "/images/albums/character/deadpool/Deadpool (5).jpg"},
+                { type: "image", src: "/images/albums/character/deadpool/Deadpool (6).jpg"},
+                { type: "image", src: "/images/albums/character/deadpool/Deadpool (7).jpg"},
+            ],
+        },
+        {
+                id: 16,
+            album_img: "/images/albums/character/2.jpg",
+            slug: "armyman-jack",
+            title: "Armyman Jack",
+            media: [
+                { type: "image", src: "/images/albums/character/armyman-jack/Armyman Jack (1).jpg"},
+                { type: "image", src: "/images/albums/character/armyman-jack/Armyman Jack (2).jpg"},
+                { type: "image", src: "/images/albums/character/armyman-jack/Armyman Jack (3).jpg"},
+                { type: "image", src: "/images/albums/character/armyman-jack/Armyman Jack (4).jpg"},
+            ],
+            },
         ],
      
     
@@ -1218,31 +1219,7 @@ export const portfolio = [
                 { type: "image", src: "/images/albums/weapons/Alucard Shield/Alucard Shield (9).jpg"},
             ],
         },
-        {
-                id: 2,
-            album_img: "/images/albums/weapons/2.jpg",
-            slug: "assault-rifle",
-             title: "Assault Rifle",
-             media: [
-                { type: "image", src: "/images/albums/weapons/Assault Rifle/Assault Rifle (1).jpg"},
-                { type: "image", src: "/images/albums/weapons/Assault Rifle/Assault Rifle (2).jpg"},
-                { type: "image", src: "/images/albums/weapons/Assault Rifle/Assault Rifle (3).jpg"},
-                { type: "image", src: "/images/albums/weapons/Assault Rifle/Assault Rifle (4).jpg"},
-                { type: "image", src: "/images/albums/weapons/Assault Rifle/Assault Rifle (5).jpg"},
-            ],
-        },
-        {
-                id: 3,
-            album_img: "/images/albums/weapons/15.jpg",
-            slug: "bow",
-             title: "Bow",
-             media: [
-                { type: "image", src: "/images/albums/weapons/Bow/Bow_1.jpg"},
-                { type: "image", src: "/images/albums/weapons/Bow/Bow_4.jpg"},
-                { type: "image", src: "/images/albums/weapons/Bow/Bow.jpg"},
-
-            ],
-        },
+       
         {
                 id: 4,
             album_img: "/images/albums/weapons/16.jpg",
@@ -1436,6 +1413,31 @@ export const portfolio = [
           
             ],
         }, 
+         {
+                id: 2,
+            album_img: "/images/albums/weapons/2.jpg",
+            slug: "assault-rifle",
+             title: "Assault Rifle",
+             media: [
+                { type: "image", src: "/images/albums/weapons/Assault Rifle/Assault Rifle (1).jpg"},
+                { type: "image", src: "/images/albums/weapons/Assault Rifle/Assault Rifle (2).jpg"},
+                { type: "image", src: "/images/albums/weapons/Assault Rifle/Assault Rifle (3).jpg"},
+                { type: "image", src: "/images/albums/weapons/Assault Rifle/Assault Rifle (4).jpg"},
+                { type: "image", src: "/images/albums/weapons/Assault Rifle/Assault Rifle (5).jpg"},
+            ],
+        },
+        {
+                id: 3,
+            album_img: "/images/albums/weapons/15.jpg",
+            slug: "bow",
+             title: "Bow",
+             media: [
+                { type: "image", src: "/images/albums/weapons/Bow/Bow_1.jpg"},
+                { type: "image", src: "/images/albums/weapons/Bow/Bow_4.jpg"},
+                { type: "image", src: "/images/albums/weapons/Bow/Bow.jpg"},
+
+            ],
+        },
         ],
        },
        {

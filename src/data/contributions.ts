@@ -1,5 +1,9 @@
 
 export const contributions = [
+    {
+        id: 16,
+        image: "/images/contributions/Skull-and-Bones.jpg",
+     },
    {
         id: 1,
         image: "/images/contributions/B4B.jpg",
@@ -56,9 +60,9 @@ export const contributions = [
         id: 14,
         image: "/images/contributions/Artificial Detective.jpg",
      },
-     {
-       id: 15,
-        image: "/images/contributions/Call of Osiris.jpg",
-     },
+   //   {
+   //     id: 15,
+   //      image: "/images/contributions/Call of Osiris.jpg",
+   //   },
     
 ]

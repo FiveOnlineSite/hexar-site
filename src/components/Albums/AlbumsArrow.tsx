@@ -54,13 +54,14 @@ interface Album {
 
 interface AlbumsArrowProps {
   categorySlug?: string;
-   basePath: "categories" | "projects";
+   basePath: "categories" | "projects" | "showreel";
    projectSlug?: string;
+   reelSlug?: string;
   albums: Album[];
   currentAlbumSlug?: string;
 }
 
-export default function AlbumsArrow({ categorySlug, basePath, projectSlug, albums, currentAlbumSlug }: AlbumsArrowProps) {
+export default function AlbumsArrow({ categorySlug, basePath, projectSlug, reelSlug, albums, currentAlbumSlug }: AlbumsArrowProps) {
   const [openAlbums, setOpenAlbums] = useState(false);
 
   return (
@@ -107,7 +108,7 @@ export default function AlbumsArrow({ categorySlug, basePath, projectSlug, album
     <div className="grid grid-cols-3 gap-2 py-16 3xl:px-16 2xl:px-16 xl:px-8 lg:px-16 md-px-8 px-4 3xl:w-[90%] 2xl:w-[90%] xl:w-[90%] w-full">
      <AlbumsBox
   basePath={basePath}
-  slug={categorySlug || projectSlug || ""}
+  slug={categorySlug || projectSlug || reelSlug ||""}
 
   albums={albums}
   currentAlbumSlug={currentAlbumSlug}

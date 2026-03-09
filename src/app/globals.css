@@ -288,9 +288,28 @@ body {
   animation: spin 0.6s linear infinite;
 }
 
+.move {
+  animation: move 2s linear infinite
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-50%,10px);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(-50%,40px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%,80px);
+    opacity: 0;
   }
 }
 

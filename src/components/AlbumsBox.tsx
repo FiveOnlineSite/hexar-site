@@ -8,7 +8,7 @@ interface Album {
 }
 
 interface AlbumsBoxProps {
-  basePath: "categories" | "projects";
+  basePath: "categories" | "projects" | "showreel"; // unified base path
   slug: string;   // unified slug
   albums: Album[];
   currentAlbumSlug?: string;

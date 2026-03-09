@@ -17,46 +17,105 @@ export default function ScrollAnimation() {
        DESKTOP
     ======================= */
     mm.add("(min-width: 769px)", () => {
-      gsap.utils.toArray<HTMLElement>(".reveal").forEach(el => {
-        if (el.closest(".category-card")) return;
+ gsap.utils.toArray<HTMLElement>(".reveal").forEach((el) => {
 
-        gsap.set(el, { opacity: 0, y: 40 });
+  gsap.set(el, { opacity: 0, y: 80 });
 
+  ScrollTrigger.create({
+    trigger: el,
+    start: "top 80%",
+    end: "top 20%",
+    onUpdate: (self) => {
+
+      // scrolling DOWN → fade in
+      if (self.direction === 1 && self.progress > 0.1) {
         gsap.to(el, {
           opacity: 1,
           y: 0,
-          duration: 0.7,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: el,
-            start: "top 80%",
-            once: true, // 🔥 NEVER reverse
-          },
+          duration: 0.6,
+          ease: "power3.out"
         });
-      });
+      }
 
-      gsap.utils.toArray<HTMLElement>(".reveal-stagger").forEach(container => {
-        if (container.closest(".category-card")) return;
+      // scrolling UP → fade out downward
+      if (self.direction === -1 && self.progress < 0.8) {
+        gsap.to(el, {
+          opacity: 0,
+          y: 80,
+          duration: 0.5,
+          ease: "power3.in"
+        });
+      }
 
-        const items = Array.from(container.children) as HTMLElement[];
-        if (!items.length) return;
+    }
+  });
 
-        gsap.set(items, { opacity: 0, y: 30 });
+});
+
+  gsap.utils.toArray<HTMLElement>(".reveal-stagger").forEach((container) => {
+
+  const items = Array.from(container.children) as HTMLElement[];
+
+  gsap.set(items, { opacity: 0, y: 60 });
+
+  ScrollTrigger.create({
+    trigger: container,
+    start: "top 80%",
+    end: "top 20%",
+    onUpdate: (self) => {
+
+      if (self.direction === 1 && self.progress > 0.1) {
 
         gsap.to(items, {
           opacity: 1,
           y: 0,
           stagger: 0.12,
           duration: 0.6,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: container,
-            start: "top 85%",
-            once: true,
-          },
+          ease: "power3.out"
         });
-      });
 
+      }
+
+      if (self.direction === -1 && self.progress < 0.8) {
+
+        gsap.to(items, {
+          opacity: 0,
+          y: 60,
+          stagger: 0.08,
+          duration: 0.5,
+          ease: "power3.in"
+        });
+
+      }
+
+    }
+  });
+
+});
+
+gsap.utils.toArray<HTMLElement>(".albums-stagger").forEach(container => {
+
+  const items = Array.from(container.children) as HTMLElement[];
+  if (!items.length) return;
+
+  gsap.fromTo(
+    items,
+    { opacity: 0, y: 30 },
+    {
+      opacity: 1,
+      y: 0,
+      stagger: 0.12,
+      duration: 0.6,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: container,
+        start: "top 80%",
+        end: "top 20%",
+        toggleActions: "play none none reverse"
+      }
+    }
+  );
+});
       ScrollTrigger.refresh();
     });
 
@@ -65,12 +124,12 @@ export default function ScrollAnimation() {
     ======================= */
     mm.add("(max-width: 768px)", () => {
       const elements = document.querySelectorAll<HTMLElement>(
-        ".reveal, .reveal-stagger > *"
+        ".reveal, .reveal-stagger, .albums-stagger > *"
       );
 
       elements.forEach(el => {
         if (el.closest(".category-card")) return;
-        gsap.set(el, { opacity: 0, y: 24 });
+        gsap.set(el, { opacity: 0, y: 40 });
       });
 
       const observer = new IntersectionObserver(entries => {

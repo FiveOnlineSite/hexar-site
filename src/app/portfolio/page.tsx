@@ -2,6 +2,7 @@ import Banner from "@/src/components/Banner";
 import FAQSection from "@/src/components/Home/FAQSection";
 import InternalPortfolio from "@/src/components/Portfolio/InternalPortfolio";
 import LetsCollaborate from "@/src/components/Portfolio/LetsCollaborate";
+import OtherCategories from "@/src/components/Portfolio/OtherCategories";
 import PortfolioShowcase from "@/src/components/Portfolio/ProjectShowcase";
 
 export default function PortfolioPage () {
@@ -10,6 +11,7 @@ export default function PortfolioPage () {
         <Banner title="Portfolio" image="./images/banners/Portfolio.jpg"/>
         <PortfolioShowcase/>
         <InternalPortfolio/>
+        <OtherCategories/>
         <FAQSection/>
         <LetsCollaborate/>
         </>

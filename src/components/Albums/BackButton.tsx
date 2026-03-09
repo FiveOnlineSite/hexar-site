@@ -1,7 +1,7 @@
 import React from 'react'
 
 interface BackButtonProps {
-   basePath: "categories" | "projects";
+   basePath: "categories" | "projects" | "showreel";
 }
 
 const BackButton = ({ basePath}: BackButtonProps) => {
@@ -10,7 +10,8 @@ const BackButton = ({ basePath}: BackButtonProps) => {
         href = `/portfolio#internal-portfolio`;
   } else if (basePath === "projects") {
     href = `/portfolio#project-showcase`;
-
+  } else if (basePath === "showreel") {
+    href = `/portfolio#othercategories`;
   }
 
   return (

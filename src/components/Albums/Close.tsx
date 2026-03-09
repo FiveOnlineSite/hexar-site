@@ -2,16 +2,19 @@ import React from 'react'
 
 interface CloseButtonProps {
     categorySlug?: string;
-   basePath: "categories" | "projects";
+   basePath: "categories" | "projects" | "showreel";
    projectSlug?: string;
+    reelSlug?: string;
 }
 
-const CloseButton = ({ categorySlug, basePath, projectSlug }: CloseButtonProps) => {
+const CloseButton = ({ categorySlug, reelSlug, basePath, projectSlug }: CloseButtonProps) => {
   let href = "";
   if (basePath === "categories") {
     href = `/categories/${categorySlug}`;
   } else if (basePath === "projects" && projectSlug) {
     href = `/projects/${projectSlug}`;
+  } else if (basePath === "showreel" && reelSlug) {
+    href = `/showreel/${reelSlug}`;
   }
 
   return (

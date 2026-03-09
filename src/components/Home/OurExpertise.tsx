@@ -1,5 +1,5 @@
 "use client"
-import { portfolio } from "@/src/data/portfolio";
+import { expertise } from "@/src/data/expertise";
 
 export default function OurExpertise(){
     return (
@@ -13,12 +13,12 @@ export default function OurExpertise(){
             </div>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-2 lg:gap-4 md:gap-4 gap-2 reveal-stagger">
              
-                {portfolio.map((expertiseItem) => (
+                {expertise.map((expertiseItem) => (
                    
                 <a href={`/categories/${expertiseItem.slug}`} key={expertiseItem.id}  className="relative overflow-hidden rounded-2xl border border-[#ffffff66] hover:border-transparent transition-all duration-500 group">
 
                 <img
-                    src={expertiseItem.image}
+                    src={expertiseItem.img}
                     alt={expertiseItem.title}
                     className="relative z-0 w-full 3xl:h-[500px] 2xl:h-[500px] xl:h-[500px] lg:h-[400px] md:h-[400px] h-[200px] object-cover rounded-2xl"
                 />

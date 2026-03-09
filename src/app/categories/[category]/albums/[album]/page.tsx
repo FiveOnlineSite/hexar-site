@@ -3,6 +3,7 @@ import ImagesSlider from "@/src/components/Albums/ImagesSlider";
 import AlbumsArrow from "@/src/components/Albums/AlbumsArrow";
 import CategoriesArrow from "@/src/components/Albums/CatergoriesArrow";
 import CloseButton from "@/src/components/Albums/Close";
+import NextPrevAlbum from "@/src/components/Albums/NextPrevAlbum";
 
 interface AlbumsPageProps {
   params: Promise<{ category: string; album: string }>;
@@ -45,6 +46,7 @@ export default async function CategoryAlbumsPage({ params }: AlbumsPageProps) {
       />
       
       <CategoriesArrow categorySlug={currentCategory.slug}/>
+    <NextPrevAlbum basePath="categories" categorySlug={currentCategory.slug} albumSlug={currentAlbum.slug}/>
     
     </div>
       

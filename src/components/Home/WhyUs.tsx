@@ -169,7 +169,7 @@ export default function WhyUs() {
 
       {/* Swiper Slider */}
       <Swiper
-      modules={[Autoplay]}
+      modules={[]}
         autoplay={{
           delay: 1500,
           disableOnInteraction: false,
@@ -185,9 +185,9 @@ export default function WhyUs() {
       >
         {whyus.map((item, index) => (
         <SwiperSlide key={index}>
-        <div className="group relative bg-[#000] rounded-lg overflow-hidden 3xl:min-h-[400px] 2xl:min-h-[400px] xl:min-h-[410px] h-full transition-all duration-700 mx-2 "> 
+        <div className="group relative bg-[#000] rounded-lg overflow-hidden 3xl:min-h-[400px] 2xl:min-h-[400px] xl:min-h-[410px] h-full transition-all duration-700 mx-2"> 
           <div className="overflow-hidden"> 
-            <img src={item.image} className="reveal w-full object-cover xl:h-[420px] h-full xl:scale-110 scale-100 xl:group-hover:h-[300px] origin-center transition-all duration-700 ease-out " /> 
+            <img src={item.image} className="reveal w-full object-cover xl:h-[350px] h-full xl:scale-110 scale-100 3xl:group-hover:h-[350px] 2xl:group-hover:h-[350px] xl:group-hover:h-[300px] origin-top transition-all duration-700 ease-out" /> 
           </div>  
           <div className="xl:absolute relative 3xl:-bottom-[19%] 2xl:-bottom-[19%] xl:-bottom-[20%] bottom-0 3xl:group-hover:bottom-02xl:group-hover:bottom-0 xl:group-hover:bottom-0 transition-all duration-700 ease-out py-2 pl-4 lg:pr-8 md:pr-6 pr-4 flex flex-col items-start justify-start 3xl:min-h-0 2xl:min-h-0 xl:min-h-[100px] lg:min-h-[210px] md:min-h-[220px] min-h-[220px] bg-[linear-gradient(89.16deg,#0A0A0A_1.81%,#03010E_99.03%)] w-full"> 
             <h2 className="text-white 3xl:text-[32px] 2xl:text-[30px] xl:text-[28px] lg:text-[28px] md:text-[24px] text-[20px] font-semibold leading-tight py-2"> 

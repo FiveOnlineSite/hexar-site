@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ScrollAnimation from "../components/ScrollAnimation";
+import GoToTopButton from "../components/GoToTopButton";
 
 export default function ClientLayout({
   children,
@@ -19,6 +20,7 @@ export default function ClientLayout({
     <>
       <Navbar />
       <ScrollAnimation/>
+      <GoToTopButton/>
       
      {/* <div id="navbar-sentinel" className="h-[1px]" /> */}
       {children}

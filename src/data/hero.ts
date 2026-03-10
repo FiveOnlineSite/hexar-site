@@ -1,6 +1,12 @@
 
 export const hero = [
     {
+        title: "Skulls and Bones",
+        image: "/images/hero/Skulls and Bones.png",
+        video: "/videos/banners/Skull-and-Bones.mp4", 
+        url: "/projects/skull-and-bones"
+    },
+    {
         title: "Predators Hunting Grounds",
         image: "/images/hero/PHG Opt-3.png",
         video: "/videos/banners/Predators.mp4", 

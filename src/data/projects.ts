@@ -1,5 +1,31 @@
 
 export const projects = [
+    {
+        id: 8,
+        title: "Skull and Bones",
+        date: "24 Nov",
+        image: "/images/contributions/Skull-and-Bones.jpg",
+        slug: "skull-and-bones",
+          albums: [
+            {
+                id: 1,
+            album_img: "/images/project-showcase/skull-and-bones/1.jpg",
+            slug: "afghanhouse1",
+            title: "AfghanHouse1",
+             media: [
+                { type: "image", src:"/images/project-showcase/skull-and-bones/SaB/1.jpg"},
+                { type: "image", src:"/images/project-showcase/skull-and-bones/SaB/2.jpg"},
+                { type: "image", src:"/images/project-showcase/skull-and-bones/SaB/3.jpg"},
+                { type: "image", src:"/images/project-showcase/skull-and-bones/SaB/4.jpg"},
+                { type: "image", src:"/images/project-showcase/skull-and-bones/SaB/5.jpg"},
+                { type: "image", src:"/images/project-showcase/skull-and-bones/SaB/6.jpg"},
+                { type: "image", src:"/images/project-showcase/skull-and-bones/SaB/8.jpg"},
+                { type: "image", src:"/images/project-showcase/skull-and-bones/SaB/9.jpg"},
+              
+             ]
+        },   
+    ]
+  },
    {
     id: 1,
         title: "Predators Hunting Grounds",
@@ -755,47 +781,47 @@ export const projects = [
         },
     ]
      },
-     {
-        id: 6,
-        title: "Call of Osiris",
-        date: "24 Nov",
-        image: "/images/contributions/Call of Osiris.jpg",
-         slug: "call-of-osiris",
-     albums: [
-            {
-                id: 1,
-            album_img: "/images/project-showcase/Call of Osiris/1.jpg",
-            slug: "mummy-characters",
-            title: "Mummy Characters",
-             media: [
-                { type: "image", src: "/images/project-showcase/Call of Osiris/Mummy Characters/COO (1).jpg"},
-                { type: "image", src: "/images/project-showcase/Call of Osiris/Mummy Characters/COO (2).jpg"},
-                { type: "image", src: "/images/project-showcase/Call of Osiris/Mummy Characters/COO (3).jpg"},
-                { type: "image", src: "/images/project-showcase/Call of Osiris/Mummy Characters/COO (4).jpg"},
-                { type: "image", src: "/images/project-showcase/Call of Osiris/Mummy Characters/COO (5).jpg"},
-            ],
-        },
-        {
-                id: 2,
-            album_img: "/images/project-showcase/Call of Osiris/2.jpg",
-            slug: "environment",
-            title: "Environment",
-             media: [
-                { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (1).jpg"},
-                { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (2).jpg"},
-                { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (3).jpg"},
-                { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (7).jpg"},
-                { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (8).jpg"},
-                { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (9).jpg"},
-                { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (10).jpg"},
-                { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (11).jpg"},
-                { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (12).jpg"},
-                { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (13).jpg"},
+    //  {
+    //     id: 6,
+    //     title: "Call of Osiris",
+    //     date: "24 Nov",
+    //     image: "/images/contributions/Call of Osiris.jpg",
+    //      slug: "call-of-osiris",
+    //  albums: [
+    //         {
+    //             id: 1,
+    //         album_img: "/images/project-showcase/Call of Osiris/1.jpg",
+    //         slug: "mummy-characters",
+    //         title: "Mummy Characters",
+    //          media: [
+    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Mummy Characters/COO (1).jpg"},
+    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Mummy Characters/COO (2).jpg"},
+    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Mummy Characters/COO (3).jpg"},
+    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Mummy Characters/COO (4).jpg"},
+    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Mummy Characters/COO (5).jpg"},
+    //         ],
+    //     },
+    //     {
+    //             id: 2,
+    //         album_img: "/images/project-showcase/Call of Osiris/2.jpg",
+    //         slug: "environment",
+    //         title: "Environment",
+    //          media: [
+    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (1).jpg"},
+    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (2).jpg"},
+    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (3).jpg"},
+    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (7).jpg"},
+    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (8).jpg"},
+    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (9).jpg"},
+    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (10).jpg"},
+    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (11).jpg"},
+    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (12).jpg"},
+    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (13).jpg"},
          
-            ],
-        },
-    ]
-     },
+    //         ],
+    //     },
+    // ]
+    //  },
      {
         id: 7,
         title: "Tiger 3",
@@ -942,5 +968,184 @@ export const projects = [
         },
     ]
   },
-    
+   {
+        id: 9,
+        title: "Artificial Detective",
+        date: "24 Nov",
+        image: "/images/contributions/Artificial Detective.jpg",
+        slug: "artificial-detective",
+          albums: [
+            {
+                id: 1,
+            album_img: "/images/project-showcase/Artificial-Detective/1.jpg",
+            slug: "hand-power-block",
+            title: "Hand Power Block",
+             media: [
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/Hand-Power-Block/P_HangPowerBlockArtboard 1_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/Hand-Power-Block/P_HangPowerBlockArtboard 2_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/Hand-Power-Block/P_HangPowerBlockArtboard 3_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/Hand-Power-Block/P_HangPowerBlockArtboard 6_1.jpg"},
+             ]
+        },
+        {
+                id: 2,
+            album_img: "/images/project-showcase/Artificial-Detective/2.jpg",
+            slug: "hang-control-panel",
+            title: "Hang Control Panel",
+             media: [
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-control-panel/P_HangControlPanelArtboard 1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-control-panel/P_HangControlPanelArtboard 2.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-control-panel/P_HangControlPanelArtboard 3.jpg"},
+             ]
+        },
+        {
+                id: 3,
+            album_img: "/images/project-showcase/Artificial-Detective/3.jpg",
+            slug: "hang-frame",
+            title: "Hang Frame",
+             media: [
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-frame/P_HangFrameArtboard 1_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-frame/P_HangFrameArtboard 3_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-frame/P_HangFrameArtboard 6.jpg"},
+             ]
+        },
+        {
+                id: 4,
+            album_img: "/images/project-showcase/Artificial-Detective/4.jpg",
+            slug: "hang-lines",
+            title: "Hang Lines",
+             media: [
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-lines/P_HangLines_shd_nvArtboard 1_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-lines/P_HangLines_shd_nvArtboard 6_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-lines/P_HangLines_shd_nvArtboard 8_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-lines/P_HangLines_shd_nvArtboard 10_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-lines/P_HangLines_shd_nvArtboard 11_1.jpg"},
+
+             ]
+        },
+        {
+                id: 5,
+            album_img: "/images/project-showcase/Artificial-Detective/5.jpg",
+            slug: "hang-machine",
+            title: "Hang Machine",
+             media: [
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-machine/P_HangMachine01Artboard 1_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-machine/P_HangMachine01Artboard 4.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-machine/P_HangMachine01Artboard 6_1.jpg"},
+             ]
+        },
+        {
+                id: 6,  
+            album_img: "/images/project-showcase/Artificial-Detective/6.jpg",
+            slug: "hang-room",
+            title: "Hang Room",
+             media: [
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-room/P_HangRoomArtboard 1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-room/P_HangRoomArtboard 3.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-room/P_HangRoomArtboard 5_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-room/P_HangRoomArtboard 6.jpg"},
+             ]
+        },
+         {
+                id: 7,  
+            album_img: "/images/project-showcase/Artificial-Detective/7.jpg",
+            slug: "hang-vent-unit",
+            title: "Hang Vent Unit",
+             media: [
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-vent-unit/P_HangVentUnit03Artboard 1_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-vent-unit/P_HangVentUnit03Artboard 2_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-vent-unit/P_HangVentUnit03Artboard 3_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-vent-unit/P_HangVentUnit03Artboard 4_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-vent-unit/P_HangVentUnit03Artboard 5_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-vent-unit/P_HangVentUnit03Artboard 7_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-vent-unit/P_HangVentUnit03Artboard 9_1.jpg"},
+             ]
+        },
+        {
+                id: 8,  
+            album_img: "/images/project-showcase/Artificial-Detective/8.jpg",
+            slug: "hang-curtain",
+            title: "Hang Curtain",
+             media: [
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-curtain/P_HangCurtain copy 1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-curtain/P_HangCurtain copy 7.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-curtain/P_HangCurtain copy 9 copy.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-curtain/P_HangCurtain copy 9.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/hang-curtain/P_HangCurtain copy 10.jpg"},
+             ]
+        },
+        {
+                id: 9,  
+            album_img: "/images/project-showcase/Artificial-Detective/9.jpg",
+            slug: "HangTransformer",
+            title: "HangTransformer",
+             media: [
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/HangTransformer/P_HangTransformerArtboard 2_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/HangTransformer/P_HangTransformerArtboard 3_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/HangTransformer/P_HangTransformerArtboard 7_1.jpg"},
+             ]
+        },
+        {
+                id: 10,  
+            album_img: "/images/project-showcase/Artificial-Detective/10.jpg",
+            slug: "HangVentUnit",
+            title: "HangVentUnit",
+             media: [
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/HangVentUnit/P_HangVentUnitArtboard 3_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/HangVentUnit/P_HangVentUnitArtboard 8_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/HangVentUnit/P_HangVentUnitArtboard 10.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/HangVentUnit/P_HangVentUnitArtboard 11.jpg"},
+             ]
+        },
+        {
+                id: 11,  
+            album_img: "/images/project-showcase/Artificial-Detective/11.jpg",
+            slug: "HangVentUnit-1",
+            title: "HangVentUnit-1",
+             media: [
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/HangVentUnit-1/P_HangVentUnit01Artboard 1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/HangVentUnit-1/P_HangVentUnit01Artboard 2 copy.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/HangVentUnit-1/P_HangVentUnit01Artboard 3 copy.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/HangVentUnit-1/P_HangVentUnit01Artboard 4.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/HangVentUnit-1/P_HangVentUnit01Artboard 8 copy.jpg"},
+             ]
+        },
+        {
+                id: 12,  
+            album_img: "/images/project-showcase/Artificial-Detective/12.jpg",
+            slug: "LStopBuilding",
+            title: "LStopBuilding",
+             media: [
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/LStopBuilding/P_LStopBuildingArtboard 1_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/LStopBuilding/P_LStopBuildingArtboard 3_1.jpg"},
+             ]
+        },
+        {
+                id: 13,  
+            album_img: "/images/project-showcase/Artificial-Detective/13.jpg",
+            slug: "LStopBuilding01",
+            title: "LStopBuilding01",
+             media: [
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/LStopBuilding01/P_LStopBuilding01Artboard 1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/LStopBuilding01/P_LStopBuilding01Artboard 2.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/LStopBuilding01/P_LStopBuilding01Artboard 3.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/LStopBuilding01/P_LStopBuilding01Artboard 10.jpg"},
+             ]
+        },
+        {
+                id: 14,  
+            album_img: "/images/project-showcase/Artificial-Detective/14.jpg",
+            slug: "PHangPalette",
+            title: "PHangPalette",
+             media: [
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/PHangPalette/Artificial DetectiveArtboard 1_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/PHangPalette/Artificial DetectiveArtboard 5_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/PHangPalette/Artificial DetectiveArtboard 6_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/PHangPalette/Artificial DetectiveArtboard 7_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/PHangPalette/Artificial DetectiveArtboard 10_1.jpg"},
+                { type: "image", src:"/images/project-showcase/Artificial-Detective/PHangPalette/Artificial DetectiveArtboard 11_1.jpg"},
+             ]
+        },
+    ]
+  },
 ]

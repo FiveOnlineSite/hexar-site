@@ -19,7 +19,7 @@ const CloseButton = ({ categorySlug, reelSlug, basePath, projectSlug }: CloseBut
 
   return (
     <div>
-      <a href={href} className="close-button h-10 w-10 absolute 3xl:top-[15%] 2xl:top-[15%] xl:top-[15%] lg:top-[20%] md:top-[20%] top-[15%] left-[5%] z-10">
+      <a href={href} className="close-button h-10 w-10 absolute 3xl:top-[15%] 2xl:top-[15%] xl:top-[15%] lg:top-[20%] md:top-[20%] top-[10%] left-[5%] z-10">
         <img src="/images/icons/back.png" className="absolute top-1/2 left-1/2 lg:w-6 lg:h-6 h-4 w-4" alt="close" />
       </a>
     </div>

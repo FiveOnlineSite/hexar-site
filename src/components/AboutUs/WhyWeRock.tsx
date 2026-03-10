@@ -12,7 +12,7 @@ export default function WhyWeRock() {
           Artistic mastery, reliable delivery, and complete production trust — all in one place.
         </p>
             </div>
-        <div className="reveal-stagger grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 grid-col-1 gap-4 lg:my-12 md:my-10 my-8">
+        <div className="xl:reveal-stagger lg:reveal-stagger grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 grid-col-1 gap-4 lg:my-12 md:my-10 my-8">
             {whyus.map((item, index) => (
                 <div key={index} className="group mb-2 relative bg-black rounded-lg overflow-hidden h-full transition-all duration-700"> 
                     <img src={item.image} className="w-full xl:object-cover lg:object-cover object-cover xl:h-full h-[255px] relative overflow-hidden" /> 

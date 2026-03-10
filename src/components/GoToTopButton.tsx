@@ -19,14 +19,14 @@ const GoToTopButton = () => {
   return (
     <div
       onClick={handleTop}
-      className={`fixed bottom-6 right-6 z-50 w-[60px] h-[60px] cursor-pointer group transition-opacity duration-300`}
+      className={`fixed lg:bottom-8 lg:right-8 md:bottom-7 md:right-7 bottom-6 right-6 z-30 cursor-pointer group transition-opacity duration-300`}
     >
-      <div className="w-[45px] h-[45px] bg-black border-[#444] group-hover:border-black border-[3px] rounded-full flex items-center justify-center transition group-hover:scale-110">
+      <div className="bg-black p-2 border-[#444] group-hover:border-black border-[3px] rounded-full flex items-center justify-center transition group-hover:scale-110">
 
         <img
           src="/images/icons/top.png"
           alt="top"
-          className="w-[22px] h-[22px] object-contain"
+          className="lg:w-[22px] lg:h-[22px] md:w-[20px] md:h-[20px] w-[18px] h-[18px] object-contain"
         />
 
       </div>

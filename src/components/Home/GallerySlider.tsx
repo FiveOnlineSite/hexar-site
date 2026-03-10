@@ -241,7 +241,7 @@ export default function GallerySlider() {
   return (
     <section className="gallery-slider-section w-full overflow-hidden border-[#ffffff66] border-b">
       <Swiper
-        modules={[]}
+        modules={[Autoplay]}
         autoplay={{
           delay: 0, 
           disableOnInteraction: false,

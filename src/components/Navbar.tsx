@@ -40,16 +40,16 @@ export default function Navbar() {
   ];
 
   return (
-    <section data-no-blast className={`navbar-section relative z-20`}>
+    <section data-no-blast className={`navbar-section relative z-50`}>
       {/* TOP BAR */}
-      <div className={`absolute top-0 left-0 right-0 z-[60] flex items-center justify-between lg:px-16 px-8 py-6
+      <div className={`absolute top-0 left-0 right-0 z-[60] flex items-center justify-between lg:px-16 md:px-8 px-8 lg:py-6 md:py-4 py-4
         ${scrolled ? "bg-black/80 backdrop-blur-md shadow-lg" : "bg-transparent"}`}>
         <Link href="/">
-          <img src="/images/icons/hexar-logo.png" className="h-[70px]" />
+          <img src="/images/icons/hexar-logo.png" className="lg:h-[70px] md:h-[60px] h-[50px]" />
         </Link>
 
         <button onClick={() => setOpen(true)} data-no-blast>
-          <img src="/images/icons/menu-line.png" className="h-8" />
+          <img src="/images/icons/menu-line.png" className="lg:h-8 md:h-6 h-4" />
         </button>
       </div>
 

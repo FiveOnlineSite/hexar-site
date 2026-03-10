@@ -30,18 +30,18 @@ export default function AlbumSlider({media}: AlbumSliderProps){
             thresholdDelta: 30
           }}
           speed={1000}  
-          className="mySwiper 3xl:h-[90vh] 2xl:h-[90vh] xl:h-[85vh] lg:h-[90vh] md:h-[90vh] h-screen relative"
+          className="mySwiper 3xl:h-[90vh] 2xl:h-[90vh] xl:h-[85vh] lg:h-[90vh] md:h-[90vh] h-screen py-4 relative"
         >
             {media.map((item, index)=> (
                 <SwiperSlide key={index}>
-            <div >
+            <div className="h-full w-full flex items-center justify-center">
                  {item.type === "image" && (
-                <img src={item.src} className="3xl:h-[90vh] 2xl:h-[90vh] xl:h-[90vh] lg:h-[90vh] md:h-[90vh] h-screen w-full object-contain z-0" alt={`Album-${index}`}  />
+                <img src={item.src} className="xl:h-full lg:h-full md:h-full h-[80%] w-full object-contain z-0" alt={`Album-${index}`}  />
                  )}
                     {item.type === "video" && (
               <video
                 src={item.src}
-                className="3xl:h-[90vh] 2xl:h-[90vh] xl:h-[90vh] lg:h-[90vh] md:h-[90vh] h-screen w-full object-contain"
+                className="3xl:h-[90vh] 2xl:h-[90vh] xl:h-[90vh] lg:h-[90vh] md:h-[90vh] h-auto w-[80%] object-contain"
                 autoPlay
                 muted
                 loop

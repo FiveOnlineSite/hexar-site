@@ -241,7 +241,7 @@ export default function GallerySlider() {
   return (
     <section className="gallery-slider-section w-full overflow-hidden border-[#ffffff66] border-b">
       <Swiper
-        modules={[Autoplay]}
+        modules={[]}
         autoplay={{
           delay: 0, 
           disableOnInteraction: false,
@@ -274,8 +274,8 @@ export default function GallerySlider() {
           "Concept Art 3D",
         ].map((text, i) => (
           <SwiperSlide key={i}>
-            <div className={`p-3 reveal ${dotClass}`}>
-              <h4 className="reveal text-base font-light text-center">{text}</h4>
+            <div className={`p-3 lg:reveal ${dotClass}`}>
+              <h4 className="lg:reveal text-base font-light text-center">{text}</h4>
             </div>
           </SwiperSlide>
         ))}

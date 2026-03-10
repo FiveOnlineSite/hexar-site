@@ -28,7 +28,7 @@ export default async function OtherCategoriesPage({ params }: OtherCategoriesPag
                <h1 className="3xl:text-[45px] 2xl:text-[43px] xl:text-[38px] lg:text-[38px] md:text-[34px] text-[30px] font-bold leading-base uppercase">{currentPortfolio.title}</h1>
             {/* <p className="reveal text-[15px] font-light 3xl:w-[25%] 2xl:w-[25%] xl:w-[25%] lg:w-[25%] md:w-[35%] 3xl:mt-0 2xl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 mt-5 w-full leading-base">{currentPortfolio.description}</p> */}
             </div>
-            <div className="albums-stagger grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 mt-6 gap-2">
+            <div className="albums-stagger grid lg:grid-cols-5 md:grid-cols-4 grid-cols-2 mt-6 gap-2">
               {currentPortfolio.albums && currentPortfolio.albums.map((album: typeof currentPortfolio.albums[number]) => (
                  <Link href={`/showreel/${currentPortfolio.slug}/albums/${album.slug}`} key={album.id} className="flex items-center justify-center">
                 <div className="relative group overflow-hidden 4xl:h-[400px] 4xl:w-[400px] 3xl:h-[343px] 3xl:w-[343px] 2xl:h-[304px] 2xl:w-[304px] xl:h-[214px] xl:w-[214px] lg:h-[198px] lg:w-[198px] h-full w-full">

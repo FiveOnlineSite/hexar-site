@@ -17,7 +17,7 @@ export default function ScrollAnimation() {
        DESKTOP
     ======================= */
     mm.add("(min-width: 769px)", () => {
- gsap.utils.toArray<HTMLElement>(".reveal").forEach((el) => {
+ gsap.utils.toArray<HTMLElement>(".reveal, .category-card").forEach((el) => {
 
   gsap.set(el, { opacity: 0, y: 80 });
 

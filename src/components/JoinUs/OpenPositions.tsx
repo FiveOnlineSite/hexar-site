@@ -6,6 +6,11 @@ import PositonsAccordion from "../PositionsAccordion";
 export default function OpenPosition() {
 
       const positions = [
+        {
+      designation: "3D Character Artist",
+      description:
+        "A proficient 3D Character Artist should possess a strong foundation in high-poly sculpting using ZBrush, coupled with expertise in modeling and creating rigging-ready topology in Maya or Blender. Core technical skills must also include optimized retopology, meticulous UV mapping, and a thorough understanding of the PBR workflow and texture baking, with texturing executed primarily in Substance Painter.",
+    },
     {
       designation: "3D Props/ Weapons Artist",
       description:
@@ -16,11 +21,7 @@ export default function OpenPosition() {
       description:
         "A proficient 3D Character Artist should possess a strong foundation in high-poly sculpting using ZBrush, coupled with expertise in modeling and creating rigging-ready topology in Maya or Blender. Core technical skills must also include optimized retopology, meticulous UV mapping, and a thorough understanding of the PBR workflow and texture baking, with texturing executed primarily in Substance Painter.",
     },
-    {
-      designation: "3D Character Artist",
-      description:
-        "A proficient 3D Character Artist should possess a strong foundation in high-poly sculpting using ZBrush, coupled with expertise in modeling and creating rigging-ready topology in Maya or Blender. Core technical skills must also include optimized retopology, meticulous UV mapping, and a thorough understanding of the PBR workflow and texture baking, with texturing executed primarily in Substance Painter.",
-    },
+    
   ];
 
       const [activeIndex, setActiveIndex] = useState<number | null>(0);

@@ -7,7 +7,7 @@ export const whyus = [
      {
         title: "Seamless Pipeline Integration",
         image: "/images/why-us/seamless.png",
-        content: "Our artists integrate effortlessly into your tools, workflows, and production pipelines — ensuring smooth collaboration with zero friction or rework.",
+        content: "Our artists integrate effortlessly into your tools, workflows, and production pipelines — ensuring smooth collaboration with zero friction.",
      },
      {
         title: "Proven Global Track Record",
@@ -32,7 +32,7 @@ export const whyus = [
      {
         title: "Secure & TPN-Certified",
         image: "/images/why-us/secure.png",
-        content: "Your assets are handled in an encrypted environment with Trusted Partner Network compliance — meeting the highest industry security standards.",
+        content: "Your assets are handled in an encrypted environment with Trusted Partner Network compliance.",
      },
      {
         title: "Scalable & Flexible Teams",

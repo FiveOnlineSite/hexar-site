@@ -12,11 +12,9 @@ export const othercategories = [
             slug: "tech-reel",
             title: "Tech Reel",
              media: [
-                { type: "video", src: "/videos/Technical-art/Hexar_TechReel_2024.mov"},
-
+                { type: "video", src: "/videos/Technical-art/Hexar_TechReel_2024.mp4"},
             ],
         },
-        
         ],
     },
     
@@ -32,7 +30,7 @@ export const othercategories = [
             slug: "animation-reel",
             title: "Animation Reel",
              media: [
-                { type: "video", src: "/videos/Animation/Hexar_Animation_Reel_V02.mov"},
+                { type: "video", src: "/videos/Animation/Hexar_Animation_Reel_V02.mp4"},
 
             ],
         },  
@@ -59,7 +57,7 @@ export const othercategories = [
             slug: "unreal-reel",
             title: "Unreal Reel",
              media: [
-                { type: "video", src: "/videos/Cinematic/Hexar_UnrealFX_Reel.mov"},
+                { type: "video", src: "/videos/Cinematic/Hexar_UnrealFX_Reel.mp4"},
             ],
         },   
         {
@@ -68,7 +66,7 @@ export const othercategories = [
             slug: "vfx-reel",
             title: "VFX Reel",
              media: [
-                { type: "video", src: "/videos/Cinematic/Hexar_VFX_ShowReel.mov"},
+                { type: "video", src: "/videos/Cinematic/Hexar_VFX_ShowReel.mp4"},
             ],
         },  
         {
@@ -77,7 +75,7 @@ export const othercategories = [
             slug: "vfx-breakdown-reel",
             title: "VFX Breakdown Reel",
              media: [
-                { type: "video", src: "/videos/Cinematic/Midriff_Lint_VFX_Breakdown_Reel.mov"},
+                { type: "video", src: "/videos/Cinematic/Midriff_Lint_VFX_Breakdown_Reel.mp4"},
             ],
         },  
          ],

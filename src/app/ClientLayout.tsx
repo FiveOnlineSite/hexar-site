@@ -15,12 +15,14 @@ export default function ClientLayout({
 
   // hide footer only on album pages
   const hideFooter = pathname?.includes("/albums/");
+  const hideTopButton = pathname?.includes("/albums/");
+
 
   return (
     <>
       <Navbar />
       <ScrollAnimation/>
-      <GoToTopButton/>
+      {!hideTopButton && <GoToTopButton/>}
       
      {/* <div id="navbar-sentinel" className="h-[1px]" /> */}
       {children}

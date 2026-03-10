@@ -3,6 +3,9 @@ import { othercategories } from '@/src/data/othercategories'
 const OtherCategories = () => {
   return (
      <section id="othercategories" className='othercategories-section lg:p-16 md:p-16 p-8'>
+      <div>
+                <h2 className="reveal 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] text-[#FFFFFF] leading-tight font-bold">Show <span className="text-[#D50000]">Reel</span></h2>
+            </div>
       <div className="reveal-stagger grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 lg:mt-10 mt-8">
                       {othercategories.map((categories) => (
                                                    

@@ -60,16 +60,16 @@ const buildLink = (album: any) => {
   return (
     <>
       {prev && (
-        <div className="absolute left-[6%] bottom-[6%] z-1">
-          <a href={buildLink(prev)} className="text-[14px]">
+        <div className="absolute left-[6%] bottom-[6%] z-10">
+          <a href={buildLink(prev)} className="text-[14px] cursor-pointer">
             Prev Album
           </a>
         </div>
       )}
 
       {next && (
-        <div className="absolute right-[6%] bottom-[6%] z-1">
-          <a href={buildLink(next)} className="text-[14px]">
+        <div className="absolute right-[6%] bottom-[6%] z-10">
+          <a href={buildLink(next)} className="text-[14px] cursor-pointer">
             Next Album
           </a>
         </div>

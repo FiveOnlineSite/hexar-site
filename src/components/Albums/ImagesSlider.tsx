@@ -34,9 +34,9 @@ export default function AlbumSlider({media}: AlbumSliderProps){
         >
             {media.map((item, index)=> (
                 <SwiperSlide key={index}>
-            <div className="h-full w-full flex items-center justify-center">
+            <div className="h-full flex items-center justify-center">
                  {item.type === "image" && (
-                <img src={item.src} className="xl:h-full lg:h-full md:h-full h-[80%] w-full object-contain z-0" alt={`Album-${index}`}  />
+                <img src={item.src} className="xl:h-full lg:h-full md:h-full h-[80%] object-contain z-0" alt={`Album-${index}`}  />
                  )}
                     {item.type === "video" && (
               <video

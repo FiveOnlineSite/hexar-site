@@ -20,7 +20,7 @@ if(!currentProject){
           <section className="3xl:mx-20 2xl:mx-18 xl:mx-16 mx-0 categories-banner-section mt-[100px] lg:p-16 md:p-16 p-8">
       <BackButton basePath="projects"/>
             <div className="3xl:flex 2xl:flex xl:flex lg:flex md:flex block items-center justify-between">
-               <h1 className="reveal 3xl:text-[45px] 2xl:text-[43px] xl:text-[38px] lg:text-[38px] md:text-[34px] text-[30px] font-bold leading-base uppercase">{currentProject.title}</h1>
+               <h1 className="3xl:text-[45px] 2xl:text-[43px] xl:text-[38px] lg:text-[38px] md:text-[34px] text-[30px] font-bold leading-base uppercase">{currentProject.title}</h1>
             {/* <p className="reveal text-[15px] font-light 3xl:w-[25%] 2xl:w-[25%] xl:w-[25%] lg:w-[25%] md:w-[35%] 3xl:mt-0 2xl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 mt-5 w-full leading-base">{currentProject.content}</p> */}
             </div>
             <div className="albums-stagger grid lg:grid-cols-5 md:grid-cols-4 grid-cols-2 my-6 gap-2">

@@ -16,9 +16,9 @@ export default function WhyWeRock() {
             {whyus.map((item, index) => (
                 <div key={index} className="group mb-2 relative bg-black rounded-lg overflow-hidden h-full transition-all duration-700"> 
                     <img src={item.image} className="w-full xl:object-cover lg:object-cover object-cover xl:h-full h-[255px] relative overflow-hidden" /> 
-                    <div className="xl:absolute relative 3xl:-bottom-[25%] 2xl:-bottom-[30%] xl:-bottom-[32%] bottom-0 xl:group-hover:bottom-[0%] transition-all duration-700 ease-out p-2 bg-black"> 
-                        <h2 className="3xl:text-[30px] 2xl:text-[25px] xl:text-[22px] lg:text-[22px] md:text-[20px] text-[18px] font-semibold leading-tight pb-2">{item.title}</h2> 
-                        <p className="3xl:text-[18px] 2xl:text-[18px] xl:text-[14px] lg:text-[14px] md:text-[12px] text-[12px] 3xl:min-h-[100px] 2xl:min-h-[100px] xl:min-h-[80px] font-light leading-base pb-4">{item.content}</p>
+                    <div className="xl:absolute relative 4xl:-bottom-[20%] 3xl:-bottom-[25%] 2xl:-bottom-[30%] xl:-bottom-[32%] bottom-0 xl:group-hover:bottom-[0%] transition-all duration-700 ease-out p-2 bg-black"> 
+                        <h2 className="4xl:text-[32px] 3xl:text-[30px] 2xl:text-[25px] xl:text-[22px] lg:text-[22px] md:text-[20px] text-[18px] font-semibold leading-tight pb-2">{item.title}</h2> 
+                        <p className="4xl:text-[20px] 3xl:text-[18px] 2xl:text-[18px] xl:text-[14px] lg:text-[14px] md:text-[12px] text-[12px] 3xl:min-h-[100px] 2xl:min-h-[100px] xl:min-h-[80px] font-light leading-base pb-4">{item.content}</p>
                     </div> 
             </div>
                 ))}

@@ -288,8 +288,8 @@ export default function Timeline() {
           >
             <div className="reveal-stagger w-full flex lg:flex-row md:flex-row flex-col-reverse items-center justify-between">
               <div className="lg:w-[70%] md:w-[70%] w-full">
-                  <h2 className="text-white lg:text-[40px] md:text-[35px] text-[25px] font-bold lg:mb-16 md:mb-10 mb-8 leading-tight">{card.title}</h2>
-                  <p className="text-white lg:text-[20px] md:text-[18px] text-[16px]">{card.text}</p>
+                  <h2 className="text-white 4xl:text-[46px] xl:text-[44px] 2xl:text-[42px] xl:text-[40px] lg:text-[40px] md:text-[35px] text-[25px] font-bold lg:mb-16 md:mb-10 mb-8 leading-tight">{card.title}</h2>
+                  <p className="text-white 4xl:text-[28px] 3xl:text-[25px] 2xl:text-[22px] lg:text-[20px] md:text-[18px] text-[16px]">{card.text}</p>
               </div>
                 <div className="lg:w-[30%] md:w-[30%] w-full lg:mb-0 md:mb-0 mb-5 inline-block">
                 <img src={card.image} alt="timeline" className="w-full lg:h-[500px] md:h-[500px] h-[250px] object-contain" />

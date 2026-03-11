@@ -37,6 +37,7 @@ export default async function CategoryAlbumsPage({ params }: AlbumsPageProps) {
       <CloseButton  basePath="categories" categorySlug={currentCategory.slug}/>
 <ImagesSlider media={currentAlbum.media as any} />
 
+{currentCategory.albums && currentCategory.albums.length > 1 && (
 
       <AlbumsArrow
         categorySlug={currentCategory.slug}
@@ -44,6 +45,7 @@ export default async function CategoryAlbumsPage({ params }: AlbumsPageProps) {
         currentAlbumSlug={album} 
         basePath="categories"
       />
+)}
       
       <CategoriesArrow categorySlug={currentCategory.slug}/>
     <NextPrevAlbum basePath="categories" categorySlug={currentCategory.slug} albumSlug={currentAlbum.slug}/>

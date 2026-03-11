@@ -38,7 +38,7 @@ export default async function OtherCategoriesAlbumsPage({ params }: AlbumsPagePr
       <ScrollDown/>
       <CloseButton basePath="showreel" reelSlug={currentReel.slug}/>
 <ImagesSlider media={currentAlbum.media as any} />
-{currentReel.albums && currentReel.albums.length > 0 && (
+{currentReel.albums && currentReel.albums.length > 1 && (
       <AlbumsArrow
         reelSlug={currentReel.slug}
         albums={currentReel.albums?.filter((a) => a.title) as any}

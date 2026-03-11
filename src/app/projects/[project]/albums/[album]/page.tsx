@@ -34,13 +34,14 @@ export default async function ProjectAlbumsPage({ params }: AlbumsPageProps) {
       />
 
       <ImagesSlider media={currentAlbum.media as any} />
-
+{currentproject.albums && currentproject.albums.length > 1 && (
       <AlbumsArrow
         projectSlug={currentproject.slug}
         albums={currentproject.albums}
         currentAlbumSlug={album}
         basePath="projects"
       />
+)}
 
       <ProjectsArrow projectSlug={currentproject.slug} />
     <NextPrevAlbum basePath="projects" projectSlug={currentproject.slug} albumSlug={currentAlbum.slug}/>

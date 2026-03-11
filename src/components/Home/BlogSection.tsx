@@ -289,11 +289,11 @@ hover:shadow-[0_2px_20px_0_#FFFFFF40]"
                 </div>
 
                 <div className="flex items-start justify-between">
-                  <h3 className="reveal p-3 lg:text-[22px] text-[20px] w-[75%]">
+                  <h3 className="p-3 lg:text-[22px] text-[20px] w-[75%]">
                     {blog.title}
                   </h3>
 
-                  <h4 className="reveal w-[25%] p-3 text-[18px] text-[#FFFFFFCC] text-right">
+                  <h4 className="w-[25%] p-3 text-[18px] text-[#FFFFFFCC] text-right">
                     {blog.date}
                   </h4>
                 </div>

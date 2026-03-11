@@ -44,7 +44,7 @@ export const othercategories = [
         albums: [
             {
                 id: 1,
-            album_img: "/videos/Cinematic/1.jpg",
+            album_img: "/videos/Cinematic/1.png",
             slug: "cgi-env-reel",
             title: "Cgi Env Reel",
              media: [

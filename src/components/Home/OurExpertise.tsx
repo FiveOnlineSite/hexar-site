@@ -20,7 +20,7 @@ export default function OurExpertise(){
                 <img
                     src={expertiseItem.img}
                     alt={expertiseItem.title}
-                    className="relative z-0 w-full 3xl:h-[500px] 2xl:h-[500px] xl:h-[500px] lg:h-[400px] md:h-[400px] h-[200px] object-cover rounded-2xl"
+                    className="relative z-0 w-full 3xl:h-[650px] 2xl:h-[500px] xl:h-[500px] lg:h-[400px] md:h-[400px] h-[200px] object-cover rounded-2xl"
                 />
 
                 {/* Overlay */}

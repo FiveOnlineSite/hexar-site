@@ -23,8 +23,8 @@ export default function ScrollAnimation() {
 
   ScrollTrigger.create({
     trigger: el,
-    start: "top 80%",
-    end: "top 20%",
+    start: "top 90%",
+    end: "top 10%",
     onUpdate: (self) => {
 
       // scrolling DOWN → fade in
@@ -60,8 +60,8 @@ export default function ScrollAnimation() {
 
   ScrollTrigger.create({
     trigger: container,
-    start: "top 80%",
-    end: "top 20%",
+    start: "top 90%",
+    end: "top 10%",
     onUpdate: (self) => {
 
       if (self.direction === 1 && self.progress > 0.1) {
@@ -109,8 +109,8 @@ gsap.utils.toArray<HTMLElement>(".albums-stagger").forEach(container => {
       ease: "power3.out",
       scrollTrigger: {
         trigger: container,
-        start: "top 80%",
-        end: "top 20%",
+        start: "top 90%",
+        end: "top 10%",
         toggleActions: "play none none reverse"
       }
     }

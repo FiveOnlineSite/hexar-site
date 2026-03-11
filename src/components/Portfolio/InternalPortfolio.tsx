@@ -92,7 +92,7 @@ export default function InternalPortfolio() {
                   />
                 </div>
 
-                <div className="w-full inline-block xl:absolute relative 3xl:-bottom-[11%] 2xl:-bottom-[11%] xl:-bottom-[14%] bottom-0 group-hover:bottom-0 transition-all duration-700 ease-out py-2 px-4 bg-[linear-gradient(89.16deg,#0A0A0A_1.81%,#03010E_99.03%)]">
+                <div className="w-full inline-block xl:absolute relative 4xl:-bottom-[8%] 3xl:-bottom-[11%] 2xl:-bottom-[11%] xl:-bottom-[14%] bottom-0 group-hover:bottom-0 transition-all duration-700 ease-out py-2 px-4 bg-[linear-gradient(89.16deg,#0A0A0A_1.81%,#03010E_99.03%)]">
 
                   <h2 className="3xl:text-[42px] 2xl:text-[38px] lg:text-[32px] md:text-[25px] text-[20px] font-semibold leading-tight py-2">
                     {portfolio.title}

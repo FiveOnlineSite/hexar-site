@@ -49,9 +49,9 @@ export default function Contribution(){
 
                 <div
   className="
-    absolute left-0 right-0 
+    absolute left-0
     bottom-0
-    h-[900px] w-[800px] overflow-hidden
+    overflow-hidden
     lg:flex hidden items-center justify-center
     z-20
     opacity-100
@@ -61,7 +61,7 @@ export default function Contribution(){
     transition-all duration-700
   "
 >
-                    <div className="bg-[#00000099] h-[900px] w-[800px] rounded-xl"></div>
+                    <div className="bg-[#00000099] h-[1200px] w-[900px] rounded-xl"></div>
 
                     <div className="group/button hidden items-center 3xl:text-[35px] 2xl:text-[30px] text-[22px] text-white leading-tight font-semibold absolute bottom-6 left-6">
 

@@ -48,13 +48,13 @@ export default function Footer () {
                                 <Link href="/categories/stylized-art" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Stylized Art</Link>
                             </li>
                              <li className="list-none py-1 group">
-                                <Link href="/categories/technical-art" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Technical Art</Link>
+                                <Link href="/showreel/technical-art" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Technical Art</Link>
                             </li>
                              <li className="list-none py-1 group">
-                                <Link href="/categories/animation" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Animation</Link>
+                                <Link href="/showreel/animation" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Animation</Link>
                             </li>
                              <li className="list-none py-1 group">
-                                <Link href="/categories/cinematic" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Cinematic</Link>
+                                <Link href="/showreel/cinematic" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Cinematic</Link>
                             </li>
                         </ul>
                     </div>

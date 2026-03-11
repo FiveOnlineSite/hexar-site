@@ -1176,8 +1176,8 @@ export const portfolio = [
         {
             id: 20,
             album_img: "/images/albums/props/BellAssest_al.png",
-            slug: "bell-assest",
-             title: "Bell Assest",
+            slug: "bell-asset",
+             title: "Bell asset",
              media: [
                 { type: "image", src: "/images/albums/props/Bell Assest/BellAssest_Still01.png"},                              
                 { type: "image", src: "/images/albums/props/Bell Assest/BellAssest_Still02.png"},                              

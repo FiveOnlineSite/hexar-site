@@ -9,18 +9,18 @@ export const projects = [
           albums: [
             {
                 id: 1,
-            album_img: "/images/project-showcase/skull-and-bones/1.jpg",
+            album_img: "/images/project-showcase/Skull-and-Bones/1.jpg",
             slug: "afghanhouse1",
             title: "AfghanHouse1",
              media: [
-                { type: "image", src:"/images/project-showcase/skull-and-bones/SaB/1.jpg"},
-                { type: "image", src:"/images/project-showcase/skull-and-bones/SaB/2.jpg"},
-                { type: "image", src:"/images/project-showcase/skull-and-bones/SaB/3.jpg"},
-                { type: "image", src:"/images/project-showcase/skull-and-bones/SaB/4.jpg"},
-                { type: "image", src:"/images/project-showcase/skull-and-bones/SaB/5.jpg"},
-                { type: "image", src:"/images/project-showcase/skull-and-bones/SaB/6.jpg"},
-                { type: "image", src:"/images/project-showcase/skull-and-bones/SaB/8.jpg"},
-                { type: "image", src:"/images/project-showcase/skull-and-bones/SaB/9.jpg"},
+                { type: "image", src:"/images/project-showcase/Skull-and-Bones/SaB/1.jpg"},
+                { type: "image", src:"/images/project-showcase/Skull-and-Bones/SaB/2.jpg"},
+                { type: "image", src:"/images/project-showcase/Skull-and-Bones/SaB/3.jpg"},
+                { type: "image", src:"/images/project-showcase/Skull-and-Bones/SaB/4.jpg"},
+                { type: "image", src:"/images/project-showcase/Skull-and-Bones/SaB/5.jpg"},
+                { type: "image", src:"/images/project-showcase/Skull-and-Bones/SaB/6.jpg"},
+                { type: "image", src:"/images/project-showcase/Skull-and-Bones/SaB/8.jpg"},
+                { type: "image", src:"/images/project-showcase/Skull-and-Bones/SaB/9.jpg"},
               
              ]
         },   

@@ -15,7 +15,7 @@ export default function OurExpertise(){
              
                 {expertise.map((expertiseItem) => (
                    
-                <a href={`/categories/${expertiseItem.slug}`} key={expertiseItem.id}  className="relative overflow-hidden rounded-2xl border border-[#ffffff66] hover:border-transparent transition-all duration-500 group">
+                <a href={`${expertiseItem.slug}`} key={expertiseItem.id}  className="relative overflow-hidden rounded-2xl border border-[#ffffff66] hover:border-transparent transition-all duration-500 group">
 
                 <img
                     src={expertiseItem.img}

@@ -36,11 +36,12 @@ export default function Footer () {
                              <li className="list-none py-1 group">
                                 <Link href="/categories/weapons" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Weapons</Link>
                             </li>
-                        </ul>
-                        <ul className="pt-4">
                             <li className="list-none py-1 group">
                                 <Link href="/categories/hard-surface" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Hard Surface</Link>
                             </li>
+                        </ul>
+                        <ul className="pt-4">
+                            
                              <li className="list-none py-1 group">
                                 <Link href="/categories/vehicles" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Vehicles</Link>
                             </li>
@@ -55,6 +56,9 @@ export default function Footer () {
                             </li>
                              <li className="list-none py-1 group">
                                 <Link href="/showreel/cinematic" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Cinematic</Link>
+                            </li>
+                            <li className="list-none py-1 group">
+                                <Link href="/showreel/realtime-vfx" className="text-[16px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Realtime VFX</Link>
                             </li>
                         </ul>
                     </div>

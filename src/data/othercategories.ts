@@ -8,7 +8,7 @@ export const othercategories = [
         albums: [
             {
                 id: 1,
-            album_img: "/videos/Technical-art/1.jpg",
+            album_img: "/images/othercategories/technical-art/1.jpg",
             slug: "tech-reel",
             title: "Tech Reel",
              media: [
@@ -26,7 +26,7 @@ export const othercategories = [
         albums: [
              {
                 id: 1,
-            album_img: "/videos/Animation/1.jpg",
+            album_img: "/images/othercategories/animation/1.jpg",
             slug: "animation-reel",
             title: "Animation Reel",
              media: [
@@ -44,7 +44,7 @@ export const othercategories = [
         albums: [
             {
                 id: 1,
-            album_img: "/videos/Cinematic/1.png",
+            album_img: "/images/othercategories/cinematics/1.png",
             slug: "cgi-env-reel",
             title: "Cgi Env Reel",
              media: [
@@ -53,7 +53,7 @@ export const othercategories = [
         }, 
          {
                 id: 2,
-            album_img: "/videos/Cinematic/2.jpg",
+            album_img: "/images/othercategories/cinematics/2.jpg",
             slug: "unreal-reel",
             title: "Unreal Reel",
              media: [
@@ -62,7 +62,7 @@ export const othercategories = [
         },   
         {
                 id: 3,
-            album_img: "/videos/Cinematic/3.jpg",
+            album_img: "/images/othercategories/cinematics/3.jpg",
             slug: "vfx-reel",
             title: "VFX Reel",
              media: [
@@ -71,7 +71,7 @@ export const othercategories = [
         },  
         {
                 id: 4,
-            album_img: "/videos/Cinematic/4.jpg",
+            album_img: "/images/othercategories/cinematics/4.jpg",
             slug: "vfx-breakdown-reel",
             title: "VFX Breakdown Reel",
              media: [

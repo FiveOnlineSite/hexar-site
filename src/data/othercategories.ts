@@ -51,26 +51,18 @@ export const othercategories = [
                 { type: "video", src: "/videos/Cinematic/Cgi Env Reel V03.mp4"},
             ],
         }, 
-         {
+          {
                 id: 2,
             album_img: "/images/othercategories/cinematics/2.jpg",
-            slug: "unreal-reel",
-            title: "Unreal Reel",
-             media: [
-                { type: "video", src: "/videos/Cinematic/Hexar_UnrealFX_Reel.mp4"},
-            ],
-        },   
-        {
-                id: 3,
-            album_img: "/images/othercategories/cinematics/3.jpg",
             slug: "vfx-reel",
             title: "VFX Reel",
              media: [
                 { type: "video", src: "/videos/Cinematic/Hexar_VFX_ShowReel.mp4"},
             ],
         },  
+       
         {
-                id: 4,
+                id: 3,
             album_img: "/images/othercategories/cinematics/4.jpg",
             slug: "vfx-breakdown-reel",
             title: "VFX Breakdown Reel",
@@ -82,22 +74,19 @@ export const othercategories = [
        },
  {
         id:4,
-        title: "Projects",
+        title: "Realtime VFX",
          image: "/images/our-expertise/Cinematic.jpg",
-        slug: "projects",
+        slug: "realtime-vfx",
         albums: [
             {
                 id: 1,
-            album_img: "/images/albums/realtime-hair/1.jpg",
-            slug: "anchi",
-             title: "Anchi",
+            album_img: "/images/othercategories/project/3.jpg",
+            slug: "unrealfx-reel",
+            title: "UnrealFX Reel",
              media: [
-                { type: "image", src: "/images/albums/realtime-hair/anchi/Hair_Anchi_0.jpg"},
-                { type: "image", src: "/images/albums/realtime-hair/anchi/Hair_Anchi_5.jpg"},
-                { type: "image", src: "/images/albums/realtime-hair/anchi/Hair_Anchi_8.jpg"},
-                { type: "image", src: "/images/albums/realtime-hair/anchi/Hair_Anchi_12.jpg"},
+                { type: "video", src: "/videos/Project/Hexar_UnrealFX_Reel.mp4"},
             ],
-        },
+        },  
         ],
        },
     ]

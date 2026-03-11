@@ -4,6 +4,7 @@ import AlbumsArrow from "@/src/components/Albums/AlbumsArrow";
 import ProjectsArrow from "@/src/components/Albums/ProjectsArrow";
 import CloseButton from "@/src/components/Albums/Close";
 import NextPrevAlbum from "@/src/components/Albums/NextPrevAlbum";
+import ScrollDown from "@/src/components/Albums/ScrollDown";
 
 interface AlbumsPageProps {
   params: Promise<{ project: string; album: string }>;
@@ -27,6 +28,7 @@ export default async function ProjectAlbumsPage({ params }: AlbumsPageProps) {
 
   return (
     <div className="album-banner-section min-h-screen lg:pt-20 md:pt-16 pt-8 relative">
+      <ScrollDown/>
 
       <CloseButton
         basePath="projects"

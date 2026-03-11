@@ -4,6 +4,7 @@ import AlbumsArrow from "@/src/components/Albums/AlbumsArrow";
 import CategoriesArrow from "@/src/components/Albums/CatergoriesArrow";
 import CloseButton from "@/src/components/Albums/Close";
 import NextPrevAlbum from "@/src/components/Albums/NextPrevAlbum";
+import ScrollDown from "@/src/components/Albums/ScrollDown";
 
 interface AlbumsPageProps {
   params: Promise<{ category: string; album: string }>;
@@ -34,6 +35,7 @@ export default async function CategoryAlbumsPage({ params }: AlbumsPageProps) {
 
   return (
     <div className="album-banner-section min-h-screen lg:pt-20 md:pt-16 pt-8 relative">
+      <ScrollDown/>
       <CloseButton  basePath="categories" categorySlug={currentCategory.slug}/>
 <ImagesSlider media={currentAlbum.media as any} />
 

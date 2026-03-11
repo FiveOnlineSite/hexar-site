@@ -2,7 +2,7 @@ export const categories = [
     {
         id:1,
         title: "Concept Art",
-        slug: "concept-art",
+        slug: "/categories/concept-art",
         description: "We craft high-quality concept designs that capture mood, style, and storytelling, laying a strong foundation for production-ready assets.",
         services_img: "/images/services-cards/Concept.png",
         process:{
@@ -29,7 +29,7 @@ export const categories = [
         title: "Characters",
         description: "Character is visual design used to inspire media development and storytelling.",
          services_img: "/images/services-cards/Characters.png",
-        slug: "characters",
+        slug: "/categories/characters",
         process:{
             step1: {
                 title: "Concept Intake",
@@ -54,7 +54,7 @@ export const categories = [
         title: "Realtime Hair",
         description: "Specialized hair creation optimized for real-time engines, combining realism, performance, and visual appeal.",
          services_img: "/images/services-cards/Hair.png",
-        slug: "realtime-hair",
+        slug: "/categories/realtime-hair",
          process:{
             step1: {
                 title: "Style & Technical Input",
@@ -79,7 +79,7 @@ export const categories = [
         title: "Props",
         description: "Game-ready props of all sizes—crafted with precision to enhance environments and storytelling while staying optimized for performance.",
          services_img: "/images/services-cards/Props.png",
-        slug: "props",
+        slug: "/categories/props",
          process:{
             step1: {
                 title: "Reference & Usage Input",
@@ -104,7 +104,7 @@ export const categories = [
         title: "Weapons",
         description: "From fantasy blades to modern firearms, we design and model weapons with striking detail, accuracy, and gameplay-readiness.",
          services_img: "/images/services-cards/Weapons.png",
-        slug: "weapons",
+        slug: "/categories/weapons",
          process:{
             step1: {
                 title: "Design & Reference Intake",
@@ -129,7 +129,7 @@ export const categories = [
         title: "Hard Surface",
         description: "Clean, optimized hardsurface assets built with technical precision—perfect for vehicles, machinery, and intricate mechanical designs.",
          services_img: "/images/services-cards/HardSurface.png",
-        slug: "hard-surface",
+        slug: "/categories/hard-surface",
          process:{
             step1: {
                 title: "Design & Reference Intake",
@@ -154,7 +154,7 @@ export const categories = [
         title: "Creature Modeling",
         description: "Unique, believable, and production-ready creature models, blending anatomy knowledge with creative imagination.",
          services_img: "/images/services-cards/Creatures.png",
-        slug: "creature-modeling",
+        slug: "/categories/creature-modeling",
          process:{
             step1: {
                 title: "Concept & Anatomy Input",
@@ -179,7 +179,7 @@ export const categories = [
         title: "Vehicles",
         description: "High-quality vehicle models, from realistic cars to futuristic mechs, designed for both realism and gameplay functionality.",
          services_img: "/images/services-cards/Vehicles.png",
-        slug: "vehicles",
+        slug: "/categories/vehicles",
          process:{
             step1: {
                 title: "Concept & Technical Input",
@@ -204,7 +204,7 @@ export const categories = [
         title: "Stylized Art",
         description: "Vibrant, personality-driven stylized characters and assets that bring a distinct creative vision to life.",
          services_img: "/images/services-cards/Stylized.png",
-        slug: "stylized-art",
+        slug: "/categories/stylized-art",
          process:{
             step1: {
                 title: "Style Direction Input",
@@ -229,7 +229,7 @@ export const categories = [
         title: "Technical Art",
         description: "We bridge the gap between art and technology—building shaders, optimizing assets, and creating tools that ensure smooth performance and seamless integration into your pipeline.",
          services_img: "/images/services-cards/Tech.png",
-        slug: "technical-art",
+        slug: "/showreel/technical-art",
          process:{
             step1: {
                 title: "Technical Requirements Intake",
@@ -254,7 +254,7 @@ export const categories = [
         title: "Animation",
         description: "Smooth, expressive animations that give life and emotion to characters, creatures, and environments.",
          services_img: "/images/services-cards/Animation.png",
-        slug: "animation",
+        slug: "/showreel/animation",
          process:{
             step1: {
                 title: "Animation Requirements",
@@ -278,7 +278,31 @@ export const categories = [
         title: "Cinematics",
         description: "High-impact visual effects and cinematic sequences designed to elevate storytelling and immerse audiences.",
          services_img: "/images/services-cards/Cinematic.png",
-        slug: "cinematics",
+        slug: "/showreel/cinematic",
+         process:{
+            step1: {
+                title: "Narrative & Visual Input",
+                description: "We receive scripts, storyboards, references, and technical requirements.",
+            }, 
+            step2: {
+                title: "Scope & Estimation",
+                description: "We define timelines, milestones, and production costs.",
+            }, 
+            step3: {
+                title: "Cinematic Production",
+                description: "Shots are produced with strong storytelling, lighting, and polish.",
+            },
+            step4: {
+                title: "Final Delivery",
+                description: "Final cinematic content is delivered in required formats and resolutions.",
+            }, 
+        }
+       }, {
+        id:13,
+        title: "Realtime VFX",
+        description: "High-impact visual effects and cinematic sequences designed to elevate storytelling and immerse audiences.",
+         services_img: "/images/services-cards/Cinematic.png",
+        slug: "/showreel/realtime-vfx",
          process:{
             step1: {
                 title: "Narrative & Visual Input",

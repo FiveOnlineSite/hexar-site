@@ -267,7 +267,7 @@ export default function CategoriesCard({
 
             <div className="flex items-center w-full mt-6">
               <a
-                href={`/categories/${slug}`}
+                href={`${slug}`}
                 className="border-[#D50000] border-[2px] px-8 py-3 3xl:text-[22px] 2xl:text-[20px] xl:text-[18px] lg:text-[18px] md:text-[18px] text-[16px] font-semibold text-[#D50000] rounded-xl transition-all duration-500 ease-in-out bg-[#0A0A0A] group-hover:bg-[#D50000] group-hover:text-[#fff]"
               >
                 View Portfolio

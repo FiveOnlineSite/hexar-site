@@ -31,7 +31,14 @@ const Hire = () => {
                     3xl:h-[600px]
                     3xl:w-[600px]
                     3xl:group-hover:-left-[22%]
-                    3xl:group-hover:-bottom-[72%]'
+                    3xl:group-hover:-bottom-[72%]
+
+                    4xl:left-[220%]
+                    4xl:-bottom-[320%]
+                    4xl:h-[700px]
+                    4xl:w-[700px]
+                    4xl:group-hover:-left-[24%]
+                    4xl:group-hover:-bottom-[74%]'
                 ></div>
                 </div>
                 <h3 className='lg:text-[26px] md:text-[24px] text-[22px] font-semibold leading-base text-center pt-2'>Apply</h3>
@@ -61,7 +68,14 @@ const Hire = () => {
                     3xl:h-[600px]
                     3xl:w-[600px]
                     3xl:group-hover:-left-[22%]
-                    3xl:group-hover:-bottom-[72%]'></div>
+                    3xl:group-hover:-bottom-[72%]
+                    
+                    4xl:left-[220%]
+                    4xl:-bottom-[320%]
+                    4xl:h-[700px]
+                    4xl:w-[700px]
+                    4xl:group-hover:-left-[24%]
+                    4xl:group-hover:-bottom-[74%]'></div>
 
                 </div>
                 <h3 className='lg:text-[26px] md:text-[24px] text-[22px] font-semibold leading-base text-center pt-2'>Short Call</h3>
@@ -91,7 +105,15 @@ const Hire = () => {
                     3xl:h-[600px]
                     3xl:w-[600px]
                     3xl:group-hover:-left-[22%]
-                    3xl:group-hover:-bottom-[72%]'></div>
+                    3xl:group-hover:-bottom-[72%]
+                    
+                    4xl:left-[220%]
+                    4xl:-bottom-[320%]
+                    4xl:h-[700px]
+                    4xl:w-[700px]
+                    4xl:group-hover:-left-[24%]
+                    4xl:group-hover:-bottom-[74%]'></div>
+
                 </div>
                 <h3 className='lg:text-[26px] md:text-[24px] text-[22px] font-semibold leading-base text-center pt-2'>Test</h3>
             </div>
@@ -120,7 +142,14 @@ const Hire = () => {
                     3xl:h-[600px]
                     3xl:w-[600px]
                     3xl:group-hover:-left-[22%]
-                    3xl:group-hover:-bottom-[72%]'></div>
+                    3xl:group-hover:-bottom-[72%]
+                    
+                    4xl:left-[220%]
+                    4xl:-bottom-[320%]
+                    4xl:h-[700px]
+                    4xl:w-[700px]
+                    4xl:group-hover:-left-[24%]
+                    4xl:group-hover:-bottom-[74%]'></div>
                 </div>
                 <h3 className='lg:text-[26px] md:text-[24px] text-[22px] font-semibold leading-base text-center pt-2'>Final Interview</h3>
             </div>
@@ -149,7 +178,14 @@ const Hire = () => {
                     3xl:h-[600px]
                     3xl:w-[600px]
                     3xl:group-hover:-left-[22%]
-                    3xl:group-hover:-bottom-[72%]'></div>
+                    3xl:group-hover:-bottom-[72%]
+                    
+                    4xl:left-[220%]
+                    4xl:-bottom-[320%]
+                    4xl:h-[700px]
+                    4xl:w-[700px]
+                    4xl:group-hover:-left-[24%]
+                    4xl:group-hover:-bottom-[74%]'></div>
                 </div>
                 <h3 className='lg:text-[26px] md:text-[24px] text-[22px] font-semibold leading-base text-center pt-2'>Offer</h3>
             </div>

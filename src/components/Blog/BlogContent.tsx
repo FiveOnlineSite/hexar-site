@@ -23,7 +23,7 @@ export default function BlogContent({ blogSlug }: BlogContentProps) {
       <img
         src={currentBlog.image}
         alt={currentBlog.title}
-        className="3xl:h-[90vh] 2xl:h-[90vh] xl:h-[90vh] lg:h-[90vh] md:h-full h-full w-full object-cover rounded-xl"
+        className="3xl:h-[90vh] 2xl:h-[90vh] xl:h-[90vh] lg:h-[90vh] md:h-full h-full w-full object-contain rounded-xl"
       />
     </section>
 

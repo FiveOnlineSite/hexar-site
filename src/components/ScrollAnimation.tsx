@@ -17,7 +17,7 @@ export default function ScrollAnimation() {
        DESKTOP
     ======================= */
     mm.add("(min-width: 769px)", () => {
- gsap.utils.toArray<HTMLElement>(".reveal, .category-card").forEach((el) => {
+ gsap.utils.toArray<HTMLElement>(".reveal").forEach((el) => {
 
   gsap.set(el, { opacity: 0, y: 80 });
 
@@ -52,7 +52,7 @@ export default function ScrollAnimation() {
 
 });
 
-  gsap.utils.toArray<HTMLElement>(".reveal-stagger").forEach((container) => {
+  gsap.utils.toArray<HTMLElement>(".reveal-stagger, .category-card").forEach((container) => {
 
   const items = Array.from(container.children) as HTMLElement[];
 

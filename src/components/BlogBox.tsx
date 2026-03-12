@@ -47,11 +47,11 @@ const BlogBox = ({blog}: BlogBoxComponentProps) => {
 
   {/* Content */}
   <div className="flex items-start justify-between">
-    <h3 className="p-3 lg:text-[22px] text-[20px] w-[75%]">
+    <h3 className="p-3 4xl:text-[26px] 3xl:text-[24px] xl:text-[22px] lg:text-[20px] text-[18px] w-[75%]">
       {blog.title}
     </h3>
 
-    <h4 className="w-[25%] p-3 text-[18px] text-[#FFFFFFCC] text-right">
+    <h4 className="w-[25%] p-3 4xl:text-[22px] 3xl:text-[20px] text-[18px] text-[#FFFFFFCC] text-right">
       {blog.date}
     </h4>
   </div>

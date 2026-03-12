@@ -885,47 +885,47 @@ export const projects = [
         },
     ]
      },
-    //  {
-    //     id: 6,
-    //     title: "Call of Osiris",
-    //     date: "24 Nov",
-    //     image: "/images/contributions/Call of Osiris.jpg",
-    //      slug: "call-of-osiris",
-    //  albums: [
-    //         {
-    //             id: 1,
-    //         album_img: "/images/project-showcase/Call of Osiris/1.jpg",
-    //         slug: "mummy-characters",
-    //         title: "Mummy Characters",
-    //          media: [
-    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Mummy Characters/COO (1).jpg"},
-    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Mummy Characters/COO (2).jpg"},
-    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Mummy Characters/COO (3).jpg"},
-    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Mummy Characters/COO (4).jpg"},
-    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Mummy Characters/COO (5).jpg"},
-    //         ],
-    //     },
-    //     {
-    //             id: 2,
-    //         album_img: "/images/project-showcase/Call of Osiris/2.jpg",
-    //         slug: "environment",
-    //         title: "Environment",
-    //          media: [
-    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (1).jpg"},
-    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (2).jpg"},
-    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (3).jpg"},
-    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (7).jpg"},
-    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (8).jpg"},
-    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (9).jpg"},
-    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (10).jpg"},
-    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (11).jpg"},
-    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (12).jpg"},
-    //             { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (13).jpg"},
+     {
+        id: 6,
+        title: "Call of Osiris",
+        date: "24 Nov",
+        image: "/images/contributions/Call of Osiris.jpg",
+         slug: "call-of-osiris",
+     albums: [
+            {
+                id: 1,
+            album_img: "/images/project-showcase/Call of Osiris/1.jpg",
+            slug: "mummy-characters",
+            title: "Mummy Characters",
+             media: [
+                { type: "image", src: "/images/project-showcase/Call of Osiris/Mummy Characters/COO (1).jpg"},
+                { type: "image", src: "/images/project-showcase/Call of Osiris/Mummy Characters/COO (2).jpg"},
+                { type: "image", src: "/images/project-showcase/Call of Osiris/Mummy Characters/COO (3).jpg"},
+                { type: "image", src: "/images/project-showcase/Call of Osiris/Mummy Characters/COO (4).jpg"},
+                { type: "image", src: "/images/project-showcase/Call of Osiris/Mummy Characters/COO (5).jpg"},
+            ],
+        },
+        {
+                id: 2,
+            album_img: "/images/project-showcase/Call of Osiris/2.jpg",
+            slug: "environment",
+            title: "Environment",
+             media: [
+                { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (1).jpg"},
+                { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (2).jpg"},
+                { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (3).jpg"},
+                { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (7).jpg"},
+                { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (8).jpg"},
+                { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (9).jpg"},
+                { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (10).jpg"},
+                { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (11).jpg"},
+                { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (12).jpg"},
+                { type: "image", src: "/images/project-showcase/Call of Osiris/Environment/Louvre (13).jpg"},
          
-    //         ],
-    //     },
-    // ]
-    //  },
+            ],
+        },
+    ]
+     },
      {
         id: 7,
         title: "Tiger 3",

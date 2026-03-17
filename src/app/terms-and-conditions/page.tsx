@@ -7,7 +7,7 @@ const TermsConditionsPage = () => {
   return (
      <div>
           <Banner title="Terms and Conditions" image="./images/banners/Join Us.jpg"/>
-          <section className="section-reveal terms-conditions-section lg:px-16 md:px-8 px-4 py-12">
+          <section className="terms-conditions-section lg:px-16 md:px-8 px-4 py-12">
             <div className="relative pl-4 my-5">
                 <div className="absolute left-0 top-0 h-full w-[3px] bg-[#D50000]"></div>
                 <div className="p-2">

@@ -2,12 +2,12 @@
 
 import Banner from '@/src/components/Banner'
 import React from 'react'   
-    
+
 const PrivacyPolicyPage = () => {
   return (
     <div>
       <Banner title="Privacy Policy" image="./images/banners/Join Us.jpg"/>
-      <section className="section-reveal privacy-policy-section lg:px-16 md:px-8 px-4 py-12">
+      <section className="privacy-policy-section lg:px-16 md:px-8 px-4 py-12">
         <div className="relative pl-4 my-5">
             <div className="absolute left-0 top-0 h-full w-[3px] bg-[#D50000]"></div>
             <div className="p-2">

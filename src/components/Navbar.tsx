@@ -75,8 +75,8 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* <div className="space-y-4 ps-8"> */}
-        <div className="space-y-4">
+        <div className="space-y-4 ps-8">
+        {/* <div className="space-y-4"> */}
           {menuItems.map((item) => (
             <Link
               key={item.label}

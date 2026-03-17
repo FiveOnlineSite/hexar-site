@@ -66,24 +66,43 @@ export default function useSectionReveal() {
 
       });
 
-      const observer = new IntersectionObserver(entries => {
+     const observer = new IntersectionObserver((entries) => {
 
-        entries.forEach(entry => {
+  entries.forEach((entry) => {
 
-          if (entry.isIntersecting) {
+    const el = entry.target as HTMLElement;
 
-            gsap.to(entry.target, {
-              opacity: 1,
-              y: 0,
-              duration: 0.6,
-              ease: "power2.out"
-            });
+    // 🔥 kill previous animation (VERY IMPORTANT)
+    gsap.killTweensOf(el);
 
-          }
+    if (entry.isIntersecting) {
 
-        });
+      gsap.to(el, {
+        opacity: 1,
+        y: 0,
+        duration: 0.8, // smoother
+        ease: "power3.out",
+        overwrite: "auto"
+      });
 
-      }, { threshold: 0.25 });
+    } else {
+
+      gsap.to(el, {
+        opacity: 0,
+        y: 60,
+        duration: 0.7, // smoother fade out
+        ease: "power3.inOut",
+        overwrite: "auto"
+      });
+
+    }
+
+  });
+
+}, {
+  rootMargin: "0px 0px -20% 0px",
+  threshold: 0
+});
 
       sections.forEach(section => observer.observe(section));
 

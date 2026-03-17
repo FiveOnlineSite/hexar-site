@@ -60,7 +60,7 @@ export default function CategoriesArrow({ reelSlug }: CategoriesArrowProps) {
 
               <Link
                 key={category.slug}
-                href={`/categories/${category.slug}`}
+                href={`/showreels/${category.slug}`}
                 className="group 3xl:h-[350px] 2xl:h-[320px] xl:h-[250px] lg:h-[220px] md:h-[300px] h-[180px] relative rounded-lg border border-[#FFFFFF33] inline-block w-full overflow-hidden"
               >
                 <div className="overflow-hidden">

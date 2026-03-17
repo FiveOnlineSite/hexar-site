@@ -263,9 +263,9 @@ export default function Timeline() {
   ];
 
   return (
-      <section className="our-timeline-section relative h-auto lg:p-16 md:p-16 p-8 flex flex-col items-center">
+      <section className="section-reveal our-timeline-section relative h-auto lg:p-16 md:p-16 p-8 flex flex-col items-center">
         <div className="text-left w-full mb-8">
-            <h2 className="reveal 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight text-white font-bold">The Hexar <span className="text-[#D50000]">Timeline</span></h2>
+            <h2 className=" 4xl:text-[70px] 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight text-white font-bold">The Hexar <span className="text-[#D50000]">Timeline</span></h2>
 
         </div>
         {cards.map((card, index) => (
@@ -286,9 +286,9 @@ export default function Timeline() {
               top: `${80 + (index * 20)}px` 
             }}
           >
-            <div className="reveal-stagger w-full flex lg:flex-row md:flex-row flex-col-reverse items-center justify-between">
+            <div className=" w-full flex lg:flex-row md:flex-row flex-col-reverse items-center justify-between">
               <div className="lg:w-[70%] md:w-[70%] w-full">
-                  <h2 className="text-white 4xl:text-[46px] xl:text-[44px] 2xl:text-[42px] xl:text-[40px] lg:text-[40px] md:text-[35px] text-[25px] font-bold lg:mb-16 md:mb-10 mb-8 leading-tight">{card.title}</h2>
+                  <h3 className="text-white 4xl:text-[46px] xl:text-[44px] 2xl:text-[42px] xl:text-[40px] lg:text-[40px] md:text-[35px] text-[25px] font-bold lg:mb-16 md:mb-10 mb-8 leading-tight">{card.title}</h3>
                   <p className="text-white 4xl:text-[28px] 3xl:text-[25px] 2xl:text-[22px] lg:text-[20px] md:text-[18px] text-[16px]">{card.text}</p>
               </div>
                 <div className="lg:w-[30%] md:w-[30%] w-full lg:mb-0 md:mb-0 mb-5 inline-block">

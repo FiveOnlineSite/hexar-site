@@ -218,8 +218,8 @@ body {
   
   stroke-dasharray: 3000;
   stroke-dashoffset: 3000;
-  animation: drawLine 5s ease-in-out forwards;
-  animation-delay: 0.5s; /* Wait for the container to open slightly */
+  animation: drawLine 3s ease-in-out forwards;
+  animation-delay: 0.1s; /* Wait for the container to open slightly */
 }
 
 .trust-section .swiper-wrapper{

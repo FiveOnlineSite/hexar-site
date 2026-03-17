@@ -8,12 +8,12 @@ import { testimonials } from "@/src/data/testimonials";
 
 export default function OurCulture(){
     return (
-        <section className="our-culture-section lg:py-16 md:py-16 py-8">
+        <section className="section-reveal our-culture-section lg:py-16 md:py-16 py-8">
             <div className="">
-                <h2 className="reveal lg:px-16 md:px-16 px-8 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] text-left text-[#D50000] font-bold leading-tight">
+                <h2 className=" lg:px-16 md:px-16 px-8 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] text-left text-[#D50000] font-bold leading-tight">
                     Our Culture
                 </h2>
-            <h2 className="reveal lg:px-16 md:px-16 px-8 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] text-left lg:mb-16 mb-8 text-white font-bold leading-tight">Through Our People</h2>
+            <h2 className=" lg:px-16 md:px-16 px-8 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] text-left lg:mb-16 mb-8 text-white font-bold leading-tight">Through Our People</h2>
             </div>
 
             <div className="relative w-full flex justify-center">
@@ -78,7 +78,7 @@ export default function OurCulture(){
           640: { slidesPerView: 1},
           0: { slidesPerView: 1, spaceBetween: "10px" },
         }}
-        className="reveal-stagger our-culture-slider w-full lg:pl-16 md:pl-16 pl-8 pt-16 pb-4">
+        className="our-culture-slider w-full lg:pl-16 md:pl-16 pl-8 pt-16 pb-4">
           {testimonials.map((testimonial, index) => (
               <SwiperSlide key={index}>
                           <div className="flex items-center justify-evenly">

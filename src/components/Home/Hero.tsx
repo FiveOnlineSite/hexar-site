@@ -303,8 +303,8 @@ export default function Hero() {
   <button
       id="custom-next"
       className="
-        absolute xl:bottom-[15%] lg:bottom-[40%] md:bottom-[40%] bottom-[57%]
-        3xl:left-[6%] xl:left-[10%] lg:left-[15%] md:left-[12%] left-[75%]
+        absolute 4xl:bottom-[25%] 3xl:bottom-[22%] 2xl:bottom-[22%] xl:bottom-[15%] lg:bottom-[40%] md:bottom-[40%] bottom-[57%]
+        3xl:left-[10%] xl:left-[10%] lg:left-[15%] md:left-[12%] left-[75%]
          rounded-full
         transition-all duration-700 z-20
         hover:shadow-[0_2px_20px_0_#FFFFFF40]
@@ -315,7 +315,7 @@ export default function Hero() {
         alt="right-arrow"
         width={48}
         height={48}
-        className="w-8 h-8 lg:w-12 lg:h-12 md:w-12 md:h-12 sm:w-10 sm:h-10"
+        className="w-8 h-8 4xl:h-[65px] 4xl:w-[65px] 3xl:h-[55px] 3xl:w-[55px] 2xl:w-[50px] 2xl:h-[50px] xl:h-[45px] xl:w-[45px] lg:w-[40px] lg:h-[40px] md:w-[35px] md:h-[35px] sm:w-[30px] sm:h-[30px]"
       />
 
       </button>
@@ -323,7 +323,7 @@ export default function Hero() {
       <button
       id="custom-prev"
       className="
-         absolute xl:bottom-[15%] lg:bottom-[40%] md:bottom-[40%] bottom-[57%]
+         absolute 4xl:bottom-[25%] 3xl:bottom-[22%] 2xl:bottom-[22%] xl:bottom-[15%] lg:bottom-[40%] md:bottom-[40%] bottom-[57%]
         xl:left-[0%] lg:left-[0%] md:left-[0%] left-[55%]
         lg:mx-16 mx-8 rounded-full
         transition-all duration-700 z-20
@@ -335,7 +335,7 @@ export default function Hero() {
         alt="left-arrow"
         width={48}
         height={48}
-        className="w-8 h-8 lg:w-12 lg:h-12 md:w-12 md:h-12 sm:w-10 sm:h-10"
+        className="w-8 h-8 4xl:h-[65px] 4xl:w-[65px] 3xl:h-[55px] 3xl:w-[55px] 2xl:w-[50px] 2xl:h-[50px] xl:h-[45px] xl:w-[45px] lg:w-[40px] lg:h-[40px] md:w-[35px] md:h-[35px] sm:w-[30px] sm:h-[30px]"
       />
     </button>
 
@@ -387,13 +387,13 @@ export default function Hero() {
             className="absolute inset-0 w-full h-screen object-cover blur-sm"
           />
 
-          <h1 className="3xl:text-[70px] 2xl:text-[60px] xl:text-[53px] lg:text-[48px] md:text-[40px] sm:text-[36px] text-[30px] leading-tight font-bold absolute xl:top-1/2 top-[30%] lg:top-[30%] left-0 px-8 lg:px-16 w-full lg:w-[50%] -translate-y-1/2">
+          <h1 className="4xl:text-[70px] 3xl:text-[70px] 2xl:text-[60px] xl:text-[53px] lg:text-[48px] md:text-[40px] sm:text-[36px] text-[30px] leading-tight font-bold absolute xl:top-1/2 top-[30%] lg:top-[30%] left-0 px-8 lg:px-16 w-full lg:w-[50%] -translate-y-1/2">
             {item.title}
           </h1>
 
                <a
               href={item.url}
-              className="group flex items-center 3xl:text-[35px] 2xl:text-[30px] xl:text-[22px] lg:text-[22px] md:text-[22px] sm:text-[20px] text-[18px] text-white leading-tight font-semibold absolute 3xl:bottom-[28%] 2xl:bottom-[30%] xl:bottom-[32%] lg:bottom-[32%] md:bottom-1/2 bottom-[58%] left-0 lg:px-16 px-8 overflow-hidden"
+              className="group flex items-center 4xl:text-[40px] 3xl:text-[35px] 2xl:text-[30px] xl:text-[22px] lg:text-[22px] md:text-[22px] sm:text-[20px] text-[18px] text-white leading-tight font-semibold absolute 4xl:bottom-[38%] 3xl:bottom-[34%] 2xl:bottom-[30%] xl:bottom-[32%] lg:bottom-[52%] md:bottom-1/2 bottom-[58%] left-0 lg:px-16 px-8 overflow-hidden"
             >
           <span
             className="
@@ -404,7 +404,7 @@ export default function Hero() {
           >
             <span
               className="
-                inline-block w-[28px] h-px bg-white me-1
+                inline-block w-[28px] 4xl:w-[40px] h-px bg-white me-1
                 transition-all duration-300
                 group-hover:opacity-0
               "
@@ -422,7 +422,7 @@ export default function Hero() {
           <span
           className="
             relative inline-flex items-center
-            w-[30px] h-px bg-white
+            4xl:w-[40px] w-[30px] h-px bg-white
             opacity-0 -translate-x-0
             transition-all duration-500 ease-out ms-1
             group-hover:opacity-100 group-hover:-translate-x-10
@@ -443,7 +443,7 @@ export default function Hero() {
 
               src={item.image}
               alt="banner"
-              className="lg:h-[90vh] md:h-[90vh] h-full object-contain"
+              className="4xl:h-[90vh] 3xl:h-[90vh] 2xl:h-[90vh] xl:h-[90vh] h-full object-contain"
             /> 
             {/* <img
   ref={(el) => {

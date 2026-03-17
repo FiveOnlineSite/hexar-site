@@ -148,7 +148,7 @@ export default function WhyUs() {
   return (
     <section
       className="
-        why-us-section
+        why-us-section section-reveal
         bg-[#0A0A0A]
         lg:py-16 md:py-16 py-8
         w-full
@@ -158,13 +158,13 @@ export default function WhyUs() {
     >
       {/* Heading + Paragraph */}
       <div className="lg:px-16 md:px-16 px-8 pb-16">
-        <h2 className="reveal 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] text-white font-bold leading-base mb-5">
+        <h2 className=" 4xl:text-[70px] 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] text-white font-bold leading-base mb-5">
           Why Us?
         </h2>
 
-        <p className="reveal lg:w-[50%] w-full 3xl:text-[28px] 2xl:text-[24px] xl:text-[22px] lg:text-[22px] md:text-[20px] text-[18px] leading-base text-white">
+        <h6 className=" lg:w-[50%] w-full 4xl:text-[28px] 3xl:text-[28px] 2xl:text-[24px] xl:text-[22px] lg:text-[22px] md:text-[20px] text-[18px] leading-tight text-white">
           Artistic mastery, reliable delivery, and complete production trust — all in one place.
-        </p>
+        </h6>
       </div>
 
       {/* Swiper Slider */}
@@ -190,9 +190,9 @@ export default function WhyUs() {
             <img src={item.image} className="w-full object-cover 4xl:h-[700px] 3xl:h-[540px] 2xl:h-[450px] xl:h-[380px] h-full scale-1 group-hover:scale-125 origin-center transition-all duration-700 ease-out" /> 
           </div>  
           <div className="xl:absolute relative 4xl:-bottom-[12%] 3xl:-bottom-[14%] 2xl:-bottom-[18%] xl:-bottom-[20%] bottom-0 3xl:group-hover:bottom-0 2xl:group-hover:bottom-0 xl:group-hover:bottom-0 transition-all duration-700 ease-out py-2 pl-4 lg:pr-8 md:pr-6 pr-4 flex flex-col items-start justify-start 3xl:min-h-0 2xl:min-h-0 xl:min-h-[100px] lg:min-h-[210px] md:min-h-[220px] min-h-[220px] bg-[linear-gradient(89.16deg,#0A0A0A_1.81%,#03010E_99.03%)] w-full"> 
-            <h2 className="text-white 4xl:text-[34px] 3xl:text-[32px] 2xl:text-[30px] xl:text-[28px] lg:text-[28px] md:text-[24px] text-[20px] font-semibold leading-tight py-2"> 
+            <h4 className="text-white 4xl:text-[34px] 3xl:text-[32px] 2xl:text-[30px] xl:text-[28px] lg:text-[28px] md:text-[24px] text-[20px] font-semibold leading-tight py-2"> 
               {item.title}
-              </h2> 
+              </h4> 
               <p className="4xl:text-[22px] 3xl:text-[20px] 2xl:text-[18px] xl:text-[14px] lg:text-[16px] md:text-[14px] text-[14px] font-light min-h-[75px] leading-base pb-4"> 
                 {item.content}
                 </p> 

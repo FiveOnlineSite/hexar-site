@@ -250,25 +250,25 @@ export default function CategoriesCard({
   return (
 <div
       ref={cardRef}
-      className="category-card border-[#FFFFFF14] border-[3px] rounded-2xl relative group xl:mt-40 lg:mt-26 mt-5 xl:mb-10 lg:mb-10 mb-5"
+      className="section-reveal category-card border-[#FFFFFF14] border-[3px] rounded-2xl relative group xl:mt-40 lg:mt-26 mt-5 xl:mb-10 lg:mb-10 mb-5"
     >
       <div className="p-4 pb-0 bg-[#0A0A0A] group-hover:bg-[#000] rounded-2xl transition-all duration-500 shadow-none group-hover:shadow-[0_16px_20px_#00000040]">
 
         {/* HEADER */}
         <div className="relative">
           <div className="lg:w-[45%] w-full lg:pl-8 pl-0 py-8">
-            <h2 className="lg:text-[40px] md:text-[35px] text-[30px] pb-5 font-bold lg:leading-base leading-tight">
+            <h2 className="4xl:text-[44px] 3xl:text-[44px] 2xl:text-[42px] xl:text-[40px] lg:text-[40px] md:text-[35px] text-[30px] pb-5 font-bold lg:leading-base leading-tight">
               {title}
             </h2>
 
-            <p className="3xl:text-[22px] 2xl:text-[20px] xl:text-[18px] lg:text-[18px] md:text-[18px] text-[16px] pb-10 mb-10 font-normal leading-base">
+            <p className="4xl:text-[22px] 3xl:text-[22px] 2xl:text-[20px] xl:text-[18px] lg:text-[18px] md:text-[18px] text-[16px] pb-10 mb-10 font-normal leading-base">
              {description}
             </p>
 
             <div className="flex items-center w-full mt-6">
               <a
                 href={`${slug}`}
-                className="border-[#D50000] border-[2px] px-8 py-3 3xl:text-[22px] 2xl:text-[20px] xl:text-[18px] lg:text-[18px] md:text-[18px] text-[16px] font-semibold text-[#D50000] rounded-xl transition-all duration-500 ease-in-out bg-[#0A0A0A] group-hover:bg-[#D50000] group-hover:text-[#fff]"
+                className="border-[#D50000] border-[2px] px-8 py-3 4xl:text-[22px] 3xl:text-[22px] 2xl:text-[20px] xl:text-[18px] lg:text-[18px] md:text-[18px] text-[16px] font-semibold text-[#D50000] rounded-xl transition-all duration-500 ease-in-out bg-[#0A0A0A] group-hover:bg-[#D50000] group-hover:text-[#fff]"
               >
                 View Portfolio
               </a>

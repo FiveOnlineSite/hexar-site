@@ -4,14 +4,14 @@ import { contributions } from "@/src/data/contributions";
 
 export default function Contribution(){
     return(
-        <section id="our-contribution" className="contribution-section bg-[#0A0A0A] lg:p-16 md:p-16 p-8 h-full w-full">
+        <section id="our-contribution" className="section-reveal contribution-section bg-[#0A0A0A] lg:p-16 md:p-16 p-8 h-full w-full">
             <div className="lg:flex block items-center justify-between w-full">
-                <h2 className="reveal 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tights lg:mb-16 mb-8 text-white font-bold">Our Contribution</h2>
+                <h2 className="4xl:text-[70px] 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tights lg:mb-8 mb-4 text-white font-bold">Our Contribution</h2>
                 <div className="group">
-                    <a href="/portfolio" className="reveal inline-block 3xl:text-[22px] 2xl:text-[20px] xl:text-[18px] lg:text-[18px] md:text-[18px] text-[16px] leading-tight font-semibold lg:py-4 lg:px-14 py-3 px-5 mb-8 text-[#D50000] group-hover:text-white bg-transparent group-hover:bg-[#D50000] border-[1.8px] lg:rounded-xl md:rounded-xl rounded-lg border-[#D50000] transition-all duration-500 ease-in-out">Explore</a>           
+                    <a href="/portfolio" className="inline-block 3xl:text-[22px] 2xl:text-[20px] xl:text-[18px] lg:text-[18px] md:text-[18px] text-[16px] leading-tight font-semibold lg:py-4 lg:px-14 py-3 px-5 mb-8 text-[#D50000] group-hover:text-white bg-transparent group-hover:bg-[#D50000] border-[1.8px] lg:rounded-xl md:rounded-xl rounded-lg border-[#D50000] transition-all duration-500 ease-in-out">Explore</a>           
                 </div>
                 </div>
-            <div className="reveal-stagger grid 3xl:grid-cols-3 2xl:grid-cols-3 xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 lg:gap-5 md:gap-6 gap-5 mb-5">
+            <div className="grid 3xl:grid-cols-3 2xl:grid-cols-3 xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 lg:gap-5 md:gap-6 gap-5 mb-5">
              
                 {contributions.map((contribution) => (
                    

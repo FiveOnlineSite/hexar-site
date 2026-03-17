@@ -1,7 +1,7 @@
 
 export const hero = [
     {
-        title: "Skulls and Bones",
+        title: "Skull and Bones",
         image: "/images/hero/Skulls and Bones.png",
         video: "/videos/banners/Skull-and-Bones.mp4", 
         url: "/projects/skull-and-bones"

@@ -51,21 +51,21 @@ export const expertise = [
     },{
          id:10,
         title: "Technical Art",
-        slug: "/showreel/technical-art",
+        slug: "/showreels/technical-art",
         img: "/images/our-expertise/Technical Art.jpg",
     },{
          id:11,
         title: "Animation",
-        slug: "/showreel/animation",
+        slug: "/showreels/animation",
         img: "/images/our-expertise/Animation.jpg",
     },{
          id:12,
-        title: "Cinematic",
-        slug: "/showreel/cinematic",
+        title: "Cinematics",
+        slug: "/showreels/cinematics",
         img: "/images/our-expertise/Cinematic.jpg",
     }, {
          id:13,
         title: "Realtime VFX",
-        slug: "/showreel/realtime-vfx",
-        img: "/images/our-expertise/Cinematic.jpg",
+        slug: "/showreels/realtime-vfx",
+        img: "/images/our-expertise/realtime-vfx1.png",
     }]

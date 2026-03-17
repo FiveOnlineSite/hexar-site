@@ -113,9 +113,9 @@ export default function Clients() {
 
   return (
     <section
-      className="clients-section px-0 lg:py-16 md:py-16 py-8 overflow-hidden"
+      className="clients-section section-reveal px-0 lg:py-16 md:py-16 py-8 overflow-hidden"
     >
-      <h2 className="reveal 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight text-center lg:mb-16 mb-8 text-white font-bold">
+      <h2 className="3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight text-center lg:mb-16 mb-8 text-white font-bold">
         Our Clients
       </h2>
 
@@ -143,7 +143,7 @@ export default function Clients() {
               {pair.map(
                 (client) =>
                   client && (
-                    <div key={client} className="revealpointer-events-auto border h-[172px] border-white/30 p-2 group overflow-hidden">
+                    <div key={client} className="pointer-events-auto border h-[172px] border-white/30 p-2 group overflow-hidden">
                       <img
                         src={`/images/clients/${client}.png`}
                         className="w-full h-full object-contain

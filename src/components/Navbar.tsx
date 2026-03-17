@@ -45,11 +45,11 @@ export default function Navbar() {
       <div className={`absolute top-0 left-0 right-0 z-[60] flex items-center justify-between lg:px-16 md:px-8 px-8 lg:py-6 md:py-4 py-4
         ${scrolled ? "bg-black/80 backdrop-blur-md shadow-lg" : "bg-transparent"}`}>
         <Link href="/">
-          <img src="/images/icons/hexar-logo.png" className="h-[70px]" />
+          <img src="/images/icons/hexar-logo.png" className="4xl:h-[150px] 3xl:h-[110px] 2xl:h-[110px] xl:h-[90px] lg:h-[90px] md:h-[70px] h-[70px]" />
         </Link>
 
         <button onClick={() => setOpen(true)} data-no-blast>
-          <img src="/images/icons/menu-line.png" className="h-8" />
+          <img src="/images/icons/menu-line.png" className="4xl:h-10 3xl:h-8 2xl:h-8 h-6" />
         </button>
       </div>
 
@@ -64,24 +64,25 @@ export default function Navbar() {
       >
         <div className="px-8 py-6 flex justify-between items-center">
           <Link href="/">
-            <img src="/images/icons/hexar-logo.png" className="h-[70px]" />
+            <img src="/images/icons/hexar-logo.png" className="4xl:h-[170px] 3xl:h-[150px] 2xl:h-[130px] xl:h-[90px] lg:h-[90px] md:h-[70px] h-[70px]" />
           </Link>
 
           <button
             onClick={() => setOpen(false)}
-            className="3xl:text-[30px] 2xl:text-[30px] xl:text-[30px] lg:text-[30px] md:text-[25px] text-[20px] font-bold text-white"
+            className="4xl:text-[35px] 3xl:text-[30px] 2xl:text-[25px] xl:text-[20px] lg:text-[20px] md:text-[20px] text-[20px] font-bold text-white"
           >
             ✕
           </button>
         </div>
 
-        <div className="space-y-4 ps-8">
+        {/* <div className="space-y-4 ps-8"> */}
+        <div className="space-y-4">
           {menuItems.map((item) => (
             <Link
               key={item.label}
               href={item.href}
               onClick={() => setOpen(false)}
-              className="group flex items-center text-white text-[20px] font-semibold"
+              className="group flex items-center text-white 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[24px] xl:text-[22px] lg:text-[22px] md:text-[20px] text-[18px] 4xl:py-2 3xl:py-2 py-0 font-semibold"
             >
               <img
                 src="/images/icons/hexar-small-logo.png"
@@ -97,10 +98,16 @@ export default function Navbar() {
           ))}
         </div>
 
+<div className="flex items-center justify-start mt-8">
         <img
           src="/images/icons/tpn-logo.png"
-          className="mx-8 mt-8 w-[140px]"
+          className="mx-8 w-[140px]"
         />
+        <img
+          src="/images/icons/Art Station.png"
+          className="w-[140px]"
+        />
+        </div>
       </div>
     </section>
   );

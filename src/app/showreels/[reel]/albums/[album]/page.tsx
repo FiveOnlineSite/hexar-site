@@ -36,18 +36,18 @@ export default async function OtherCategoriesAlbumsPage({ params }: AlbumsPagePr
   return (
     <div className="album-banner-section min-h-screen lg:pt-20 md:pt-16 pt-8 relative">
       <ScrollDown/>
-      <CloseButton basePath="showreel" reelSlug={currentReel.slug}/>
+      <CloseButton basePath="showreels" reelSlug={currentReel.slug}/>
 <ImagesSlider media={currentAlbum.media as any} />
 {currentReel.albums && currentReel.albums.length > 1 && (
       <AlbumsArrow
         reelSlug={currentReel.slug}
         albums={currentReel.albums?.filter((a) => a.title) as any}
         currentAlbumSlug={album} 
-        basePath="showreel"
+        basePath="showreels"
       /> 
 )}     
       <OtherCategoriesArrow reelSlug={currentReel.slug}/>
-    <NextPrevAlbum basePath="showreel" reelSlug={currentReel.slug} albumSlug={currentAlbum.slug}/>
+    <NextPrevAlbum basePath="showreels" reelSlug={currentReel.slug} albumSlug={currentAlbum.slug}/>
     </div>
       
   );

@@ -79,8 +79,8 @@ export default function About({image}: {image: string}) {
 
   return (
     <section
-      ref={sectionRef}
-      className="about-section inline-block w-full border-b border-[#ffffff66]"
+      ref={sectionRef} 
+      className="about-section section-reveal inline-block w-full border-b border-[#ffffff66]"
     >
       <div className="relative w-full inline-block">
 
@@ -93,7 +93,7 @@ export default function About({image}: {image: string}) {
 
         {/* Content */}
         <div className="relative z-[2]">
-          <h2 className="reveal 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight font-bold lg:px-16 lg:pt-16 px-8 pt-8">
+          <h2 className="4xl:text-[70px] 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight font-bold lg:px-16 lg:pt-16 px-8 pt-8">
             About Hexar Family
           </h2>
 
@@ -107,29 +107,29 @@ export default function About({image}: {image: string}) {
 
           {/* Text */}
           <div className="lg:w-[40%] px-8 lg:px-16 pt-8">
-            <p className="mb-3 4xl:text-[22px] 3xl:text-[22px] 2xl:text-[20px] xl:text-[15px] lg:text-[15px] md:text-[15px] text-[15px] font-light reveal">
+            <p className="mb-3 4xl:text-[22px] 3xl:text-[22px] 2xl:text-[20px] xl:text-[15px] lg:text-[15px] md:text-[15px] text-[15px] font-light">
               Welcome to Hexar Studios — the unified force created through the strategic integration of Head Hoppers Studios and Ares Visual Effects Studio.
             </p>
-            <p className="mb-3 4xl:text-[22px] 3xl:text-[22px] 2xl:text-[20px] 4xl:text-[22px] 3xl:text-[22px] xl:text-[15px] lg:text-[15px] md:text-[15px] text-[15px] font-light reveal">
+            <p className="mb-3 4xl:text-[22px] 3xl:text-[22px] 2xl:text-[20px] 4xl:text-[22px] 3xl:text-[22px] xl:text-[15px] lg:text-[15px] md:text-[15px] text-[15px] font-light">
              We bring together exceptional creative talent, advanced production pipelines, and world-class IT infrastructure to deliver stunning 3D visuals for games, films, advertising, and immersive experiences.</p>
-            <p className="4xl:text-[22px] 3xl:text-[22px] 2xl:text-[20px] xl:text-[15px] lg:text-[15px] md:text-[15px] text-[15px] font-light reveal">
+            <p className="4xl:text-[22px] 3xl:text-[22px] 2xl:text-[20px] xl:text-[15px] lg:text-[15px] md:text-[15px] text-[15px] font-light">
               With Hexar, you’re not just working with a studio — you’re partnering with a creative powerhouse trusted by global brands.</p>
           </div>
 
           {/* Connector */}
-          <div className="relative xl:w-[40%] lg:w-[40%] w-full py-16">
+          <div className="relative xl:w-[40%] lg:w-[40%] w-full lg:p-16 p-8">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 flex flex-col items-center">
               <img
                 src="/images/icons/hexar-logo1.png"
                 alt="hexar"
-                className="h-[80px] lg:h-[126px]"
+                className="h-[80px] xl:h-[105px] lg:h-[115px] w-full"
               />
-              <p className="text-[10px] font-light text-center reveal">
+              <p className="4xl:text-[15px] 3xl:text-[15px] 2xl:text-[12px] xl:text-[10px] text-[10px] font-light text-center">
                 The Parent Organisation
               </p>
             </div>
 
-            <div className="lg:pt-[80px] md:pt-[80px] pt-[40px] flex justify-center">
+            <div className="lg:pt-[80px] md:pt-[80px] pt-[60px] flex w-full justify-center">
               <BracketConnector
                 refs={{
                   main: mainPath,
@@ -139,13 +139,13 @@ export default function About({image}: {image: string}) {
               />
             </div>
 
-            <div className="flex justify-between px-8 mt-4">
+            <div className="flex xl:justify-evenly lg:justify-between md:justify-evenly justify-between mt-4">
               <div className="flex flex-col items-center">
                 <img
                   src="/images/icons/head-hoppers-logo.png"
                   className="h-[30px] lg:h-[53px]"
                 />
-                <p className="text-[10px] font-light mt-2 text-center reveal">
+                <p className="4xl:text-[15px] 3xl:text-[15px] 2xl:text-[12px] xl:text-[10px] text-[10px] font-light mt-2 text-center">
                   Character / Hair Specialist
                 </p>
               </div>
@@ -155,7 +155,7 @@ export default function About({image}: {image: string}) {
                   src="/images/icons/ares-logo.png"
                   className="h-[25px] lg:h-[37px]"
                 />
-                <p className="text-[10px] font-light mt-3 text-center reveal">
+                <p className="4xl:text-[15px] 3xl:text-[15px] 2xl:text-[12px] xl:text-[10px] text-[10px] font-light mt-3 text-center">
                   Concept / VFX / Technical Art / Co-dev
                 </p>
               </div>

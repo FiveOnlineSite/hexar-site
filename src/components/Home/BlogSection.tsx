@@ -200,42 +200,42 @@ export default function BlogSection() {
 
   return (
     <section
-      className="blog-section relative lg:flex block justify-center items-start py-8 lg:py-16"
+      className="blog-section section-reveal relative lg:flex block justify-center items-start py-8 lg:py-16"
     >
       {/* LEFT TEXT */}
       <div className="lg:w-[40%] w-full px-8 lg:ps-16">
-        <h2 className="reveal 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight lg:mb-8 mb-4 text-white font-bold">
+        <h2 className="4xl:text-[70px] 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight lg:mb-8 mb-4 text-white font-bold">
           News & <span className="text-[#D50000]">Blogs</span>
         </h2>
 
-        <p className="reveal 3xl:text-[28px] 2xl:text-[24px] xl:text-[22px] md:text-[20px] text-[18px] leading-base text-white">
+        <h6 className="4xl:text-[28px] 3xl:text-[28px] 2xl:text-[24px] xl:text-[22px] lg:text-[22px] md:text-[20px] text-[18px] leading-base text-white">
           Stay tuned for the latest company news, current trends from the world
           of game development
-        </p>
+        </h6>
       </div>
 
       {/* RIGHT SLIDER */}
-      <div className="lg:w-[60%] w-full lg:pt-2 pt-20 relative">
+      <div className="lg:w-[60%] w-full pt-20 relative">
 
         {/* CUSTOM ARROWS */}
         <button
           id="custom-prev"
-          className="reveal absolute xl:top-[75%] lg:top-[85%] top-[5%] 
-lg:-left-[58%] left-[7%]
+          className="absolute xl:top-[75%] top-[5%] 
+4xl:-left-[62%] 3xl:-left-[60%] 2xl:-left-[60%] xl:-left-[58%] lg:left-[80%] left-[7%]
 rounded-full transition-all duration-700
 hover:shadow-[0_2px_20px_0_#FFFFFF40]"
         >
-          <Image src="/images/icons/left-arrow.png" width={40} height={40} alt="prev" />
+          <Image src="/images/icons/left-arrow.png" width={40} height={40} alt="prev" className="w-8 h-8 4xl:h-[65px] 4xl:w-[65px] 3xl:h-[55px] 3xl:w-[55px] 2xl:w-[50px] 2xl:h-[50px] xl:h-[45px] xl:w-[45px] lg:w-[40px] lg:h-[40px] md:w-[35px] md:h-[35px] sm:w-[30px] sm:h-[30px]"/>
         </button>
 
         <button
           id="custom-next"
-          className="reveal absolute xl:top-[75%] lg:top-[85%] top-[5%] 
-   xl:-left-[50%] lg:-left-[45%] left-[20%]
+          className="absolute xl:top-[75%] top-[5%] 
+   xl:-left-[50%] lg:left-[90%] left-[20%]
   rounded-full transition-all duration-700
    hover:shadow-[0_2px_20px_0_#FFFFFF40]"
         >
-          <Image src="/images/icons/right-arrow.png" width={40} height={40} alt="next" />
+          <Image src="/images/icons/right-arrow.png" width={40} height={40} alt="next" className="w-8 h-8 4xl:h-[65px] 4xl:w-[65px] 3xl:h-[55px] 3xl:w-[55px] 2xl:w-[50px] 2xl:h-[50px] xl:h-[45px] xl:w-[45px] lg:w-[40px] lg:h-[40px] md:w-[35px] md:h-[35px] sm:w-[30px] sm:h-[30px]"/>
         </button>
 
         {/* SWIPER */}

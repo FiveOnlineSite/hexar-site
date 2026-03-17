@@ -2,12 +2,12 @@ export const whyus = [
     {
         title: "Artistic Mastery",
         image: "/images/why-us/artistic.png",
-        content: "Our team blends world-class artistry with deep technical expertise, delivering 3D work that is both visually stunning and production-ready.",
+        content: "Our team blends world-class artistry with deep technical expertise, delivering 3D work that is visually stunning and production-ready.",
      },
      {
         title: "Seamless Pipeline Integration",
         image: "/images/why-us/seamless.png",
-        content: "Our artists integrate effortlessly into your tools, workflows, and production pipelines — ensuring smooth collaboration with zero friction.",
+        content: "Our artists integrate effortlessly into your tools and production pipelines — ensuring smooth collaboration with zero friction.",
      },
      {
         title: "Proven Global Track Record",

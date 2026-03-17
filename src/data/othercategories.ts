@@ -38,9 +38,9 @@ export const othercategories = [
     },
        {
         id:3,
-        title: "Cinematic",
+        title: "Cinematics",
          image: "/images/our-expertise/Cinematic.jpg",
-        slug: "cinematic",
+        slug: "cinematics",
         albums: [
             {
                 id: 1,
@@ -75,7 +75,7 @@ export const othercategories = [
  {
         id:4,
         title: "Realtime VFX",
-         image: "/images/our-expertise/Cinematic.jpg",
+         image: "/images/our-expertise/realtime-vfx1.png",
         slug: "realtime-vfx",
         albums: [
             {

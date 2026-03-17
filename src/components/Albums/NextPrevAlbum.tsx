@@ -8,7 +8,7 @@ interface NextPrevAlbumProps {
   projectSlug?: string;
   categorySlug?: string;
   albumSlug?: string;
-  basePath: "categories" | "projects" | "showreel";
+  basePath: "categories" | "projects" | "showreels";
 }
 
 const NextPrevAlbum = ({
@@ -21,7 +21,7 @@ const NextPrevAlbum = ({
 
 let albums: any[] = [];
 
-if (basePath === "showreel") {
+if (basePath === "showreels") {
   const reel = othercategories.find(cat => cat.slug === reelSlug);
   albums = reel?.albums || [];
 }
@@ -42,8 +42,8 @@ const prev = index > 0 ? albums[index - 1] : null;
 const next = index < albums.length - 1 ? albums[index + 1] : null;
 const buildLink = (album: any) => {
 
-  if (basePath === "showreel") {
-    return `/showreel/${reelSlug}/albums/${album.slug}`;
+  if (basePath === "showreels") {
+    return `/showreels/${reelSlug}/albums/${album.slug}`;
   }
 
   if (basePath === "categories") {

@@ -6,9 +6,9 @@ type ConnectorRefs = {
 
 export default function BracketConnector({ refs }: { refs: ConnectorRefs }) {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center w-full">
       <svg
-        className="w-[360px] h-[80px] min-[821px]:w-[480px]"
+        className="w-[360px] h-[80px] lg:w-[400px] lg:h-[40px]"
         viewBox="0 0 480 80"
         fill="none"
       >

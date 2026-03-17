@@ -12,7 +12,7 @@ interface Album {
 
 interface AlbumsArrowProps {
   categorySlug?: string;
-   basePath: "categories" | "projects" | "showreel";
+   basePath: "categories" | "projects" | "showreels";
    projectSlug?: string;
    reelSlug?: string;
   albums: Album[];

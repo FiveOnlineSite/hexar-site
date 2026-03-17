@@ -72,7 +72,7 @@ export default function FAQSection () {
             ease: "power3.out",
             scrollTrigger: {
             trigger: imageRef.current,
-            start: "top 85%",
+            start: "top 100%",
             end: "bottom 60%",
             scrub: false,
             once: false,
@@ -105,14 +105,14 @@ export default function FAQSection () {
     }, []);
 
     return (
-        <section ref={sectionRef} className="faq-section p-8 lg:p-16 border-[#ffffff66] border-t">
+        <section ref={sectionRef} className="section-reveal faq-section p-8 lg:p-16 border-[#ffffff66] border-t">
   
   <div className="3xl:flex 2xl:flex xl:flex lg:flex block items-stretch justify-center">
 
     {/* LEFT */}
     <div className="lg:w-[40%] min-h-full w-full flex flex-col">
 
-      <h2 className="reveal 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight lg:mb-8 mb-4 text-white font-bold">
+      <h2 className="4xl:text-[70px] 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight lg:mb-8 mb-4 text-white font-bold">
         Frequently Asked Question
       </h2>
 
@@ -128,7 +128,7 @@ export default function FAQSection () {
     </div>
 
     {/* RIGHT */}
-    <div className="lg:w-[60%] w-full px-4 reveal-stagger">
+    <div className="lg:w-[60%] w-full px-4 -stagger">
       {faqs.map((faq, i) => (
         <FAQAccordion
           faq={faq}

@@ -6,7 +6,9 @@ import React from 'react'
 const TermsConditionsPage = () => {
   return (
      <div>
-          <Banner title="Terms and Conditions" image="./images/banners/Join Us.jpg"/>
+          <section className="hero-section h-[50vh] flex items-center justify-start mt-20">
+            <h1 className="px-8 lg:px-16 3xl:text-[75px] 2xl:text-[65px] xl:text-[53px] lg:text-[48px] md:text-[40px] sm:text-[36px] text-[30px] leading-tight font-bold">Terms and Conditions</h1>
+          </section>
           <section className="terms-conditions-section lg:px-16 md:px-8 px-4 py-12">
             <div className="relative pl-4 my-5">
                 <div className="absolute left-0 top-0 h-full w-[3px] bg-[#D50000]"></div>

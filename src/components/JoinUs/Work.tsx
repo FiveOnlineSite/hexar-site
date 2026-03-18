@@ -27,9 +27,9 @@ export default function Work(){
         loop={true}
         speed={900}
         spaceBetween={0}
-        slidesPerView={6}
+        slidesPerView={7}
         breakpoints={{
-          1200: { slidesPerView: 6 },
+          1200: { slidesPerView: 7 },
           991: { slidesPerView: 4 },
           640: { slidesPerView: 2 },
           0: { slidesPerView: 1 },

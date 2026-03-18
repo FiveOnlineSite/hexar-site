@@ -64,7 +64,7 @@ export default function Navbar() {
       >
         <div className="px-8 py-6 flex justify-between items-center">
           <Link href="/">
-            <img src="/images/icons/hexar-logo.png" className="4xl:h-[170px] 3xl:h-[150px] 2xl:h-[130px] xl:h-[90px] lg:h-[90px] md:h-[70px] h-[70px]" />
+            <img src="/images/icons/hexar-logo.png" className="4xl:h-[150px] 3xl:h-[110px] 2xl:h-[110px] xl:h-[90px] lg:h-[90px] md:h-[70px] h-[70px]" />
           </Link>
 
           <button
@@ -75,8 +75,8 @@ export default function Navbar() {
           </button>
         </div>
 
-        <div className="space-y-4 ps-8">
-        {/* <div className="space-y-4"> */}
+        {/* <div className="space-y-4 ps-8"> */}
+        <div className="space-y-4">
           {menuItems.map((item) => (
             <Link
               key={item.label}

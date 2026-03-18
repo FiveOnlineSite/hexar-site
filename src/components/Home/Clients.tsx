@@ -133,7 +133,7 @@ export default function Clients() {
           1200: { slidesPerView: 6 },
           991: { slidesPerView: 4 },
           640: { slidesPerView: 2 },
-          0: { slidesPerView: 1 },
+          0: { slidesPerView: 2 },
         }}
         className="w-full"
       >

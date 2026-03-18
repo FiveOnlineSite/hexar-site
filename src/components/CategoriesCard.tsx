@@ -278,13 +278,13 @@ export default function CategoriesCard({
           {/* DOWN ARROW */}
           <button
             onClick={onToggle}
-            className={`absolute bottom-[5%] left-1/2 -translate-x-1/2 z-20 transition-opacity duration-500 ${
-              isOpen ? "opacity-0" : "opacity-100"
+            className={`absolute bottom-[5%] left-1/2 -translate-x-1/2 z-20 transition-opacity duration-500 text-[#D50000] flex items-center ${
+              isOpen ? "opacity-0" : "opacity-100" 
             }`}
-          >
+          > Our Process
             <img
               src="./images/icons/arrow-down.png"
-              className="h-full w-full object-contain"
+              className="ms-5 4xl:h-[40px] 4xl:w-[40px] 3xl:h-[40px] 3xl:w-[40px] 2xl:h-[30px] 2xl:w-[30px] xl:h-[25px] xl:w-[25px] lg:h-[25px] md:h-[25px] h-[25px] object-contain"
             />
           </button>
 

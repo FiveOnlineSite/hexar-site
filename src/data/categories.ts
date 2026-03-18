@@ -301,7 +301,7 @@ export const categories = [
         id:13,
         title: "Realtime VFX",
         description: "High-impact visual effects and cinematic sequences designed to elevate storytelling and immerse audiences.",
-         services_img: "/images/services-cards/Cinematic.png",
+         services_img: "/images/services-cards/Realtime-vfx.png",
         slug: "/showreel/realtime-vfx",
          process:{
             step1: {

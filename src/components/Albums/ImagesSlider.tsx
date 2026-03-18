@@ -25,11 +25,11 @@ export default function AlbumSlider({media}: AlbumSliderProps){
             slidesPerView={1}
             mousewheel={{
             forceToAxis: false,          // prevents diagonal scroll issues
-            sensitivity: 1,             // scroll strength
+            sensitivity: 3,             // scroll strength
             releaseOnEdges: false,       // allow page scroll after last slide
-            thresholdDelta: 30
+            thresholdDelta: 10
           }}
-          speed={1000}  
+          speed={700}  
           className="mySwiper 3xl:h-[90vh] 2xl:h-[90vh] xl:h-[85vh] lg:h-[90vh] md:h-[90vh] h-screen py-4 relative"
         >
             {media.map((item, index)=> (

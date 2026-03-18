@@ -6,9 +6,9 @@ type ConnectorRefs = {
 
 export default function BracketConnector({ refs }: { refs: ConnectorRefs }) {
   return (
-    <div className="flex justify-center w-full">
+    <div className="flex justify-center w-full ">
       <svg
-        className="w-[360px] h-[80px] lg:w-[400px] lg:h-[40px]"
+        className="w-[360px] h-[80px] lg:w-[400px] lg:h-[40px] 4xl:hidden 3xl:hidden 2xl:block xl:block lg:block md:block hidden"
         viewBox="0 0 480 80"
         fill="none"
       >
@@ -45,6 +45,46 @@ export default function BracketConnector({ refs }: { refs: ConnectorRefs }) {
         <circle cx="70" cy="60" r="4" fill="white" />
         <circle cx="410" cy="60" r="4" fill="white" />
       </svg>
+
+      <svg
+  className="w-[500px] h-[80px] lg:w-[600px] lg:h-[80px] 4xl:block 3xl:block 2xl:hidden xl:hidden lg:hidden md:hidden hidden"
+  viewBox="0 0 600 100"
+  fill="none"
+>
+  {/* center line */}
+  <path
+    ref={(el) => {
+      refs.main.current = el;
+    }}
+    d="M300 0 V40"
+    stroke="white"
+    strokeWidth="2"
+  />
+
+  {/* left connector (shortened) */}
+  <path
+    ref={(el) => {
+      refs.left.current = el;
+    }}
+    d="M300 40 H70 Q50 40 50 60 V80"
+    stroke="white"
+    strokeWidth="2"
+  />
+
+  {/* right connector (shortened) */}
+  <path
+    ref={(el) => {
+      refs.right.current = el;
+    }}
+    d="M300 40 H530 Q550 40 550 60 V80"
+    stroke="white"
+    strokeWidth="2"
+  />
+
+  {/* dots */}
+  <circle cx="50" cy="80" r="4" fill="white" />
+  <circle cx="550" cy="80" r="4" fill="white" />
+</svg>
     </div>
   );
 }

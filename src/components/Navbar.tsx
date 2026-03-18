@@ -102,11 +102,15 @@ export default function Navbar() {
         <img
           src="/images/icons/tpn-logo.png"
           className="mx-8 w-[140px]"
+          alt="TPN Logo"
         />
-        <img
-          src="/images/icons/Art Station.png"
-          className="w-[140px]"
-        />
+        <a href="https://www.artstation.com/headhoppersstudios">
+          <img
+            src="/images/icons/Art Station.png"
+            className="w-[140px]"
+            alt="Art Station"
+          />
+        </a>
         </div>
       </div>
     </section>

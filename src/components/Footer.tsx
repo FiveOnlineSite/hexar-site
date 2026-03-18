@@ -54,7 +54,7 @@ export default function Footer () {
                                 <Link href="/showreels/animation" className="4xl:text-[22px] 3xl:text-[18px] 2xl:text-[18px] xl:text-[16px] lg:text-[16px] md:text-[15px] text-[14px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Animation</Link>
                             </li>
                              <li className="list-none py-1 group lg:pe-4">
-                                <Link href="/showreels/cinematic" className="4xl:text-[22px] 3xl:text-[18px] 2xl:text-[18px] xl:text-[16px] lg:text-[16px] md:text-[15px] text-[14px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Cinematic</Link>
+                                <Link href="/showreels/cinematics" className="4xl:text-[22px] 3xl:text-[18px] 2xl:text-[18px] xl:text-[16px] lg:text-[16px] md:text-[15px] text-[14px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Cinematics</Link>
                             </li>
                             <li className="list-none py-1 group lg:pe-4">
                                 <Link href="/showreels/realtime-vfx" className="4xl:text-[22px] 3xl:text-[18px] 2xl:text-[18px] xl:text-[16px] lg:text-[16px] md:text-[15px] text-[14px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Realtime VFX</Link>

@@ -16,6 +16,7 @@
     "@fortawesome/react-fontawesome": "^3.1.1",
     "@sendgrid/mail": "^8.1.6",
     "gsap": "^3.13.0",
+    "lenis": "^1.1.14",
     "next": "16.0.6",
     "nodemailer": "^7.0.12",
     "react": "19.2.0",

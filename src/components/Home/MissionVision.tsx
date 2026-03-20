@@ -95,12 +95,12 @@ export default function MissionVision() {
     </div>
 
     <div className="lg:w-[50%] w-full lg:pe-20 md:pe-0 md:px-16 px-8">
-        <div className="pb-2">
+        <div className="pb-2 text-reveal">
             <h2 className=" 4xl:text-[70px] 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight font-bold mb-5">Our Mission</h2>
             <p className="4xl:text-[22px] 3xl:text-[22px] 2xl:text-[20px] 4xl:text-[22px] 3xl:text-[22px] xl:text-[15px] lg:text-[15px] md:text-[15px] text-[15px] font-light ">Our mission is to provide cutting-edge 3D arts solutions with exceptional quality and innovation. We bring creativity to life through immersive visuals, pushing artistic boundaries.</p>
         </div>
 
-        <div className="lg:pt-10 md:pt-8 pt-6">
+        <div className="lg:pt-10 md:pt-8 pt-6 text-reveal">
             <h2 className=" 4xl:text-[70px] 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight font-bold mb-5">Our Vision</h2>
             <p className="4xl:text-[22px] 3xl:text-[22px] 2xl:text-[20px] 4xl:text-[22px] 3xl:text-[22px] xl:text-[15px] lg:text-[15px] md:text-[15px] text-[15px] font-light ">Inspire and empower through transformative 3D arts. We aim to be a trusted partner known for our visionary approach, technical expertise,and commitment to excellence. By embracing creativity and staying at the forefront of technology, we shape the future and leave a lasting impact in the industry.</p>
         </div>

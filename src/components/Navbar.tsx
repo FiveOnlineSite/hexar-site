@@ -104,7 +104,7 @@ export default function Navbar() {
           className="mx-8 w-[140px]"
           alt="TPN Logo"
         />
-        <a href="https://www.artstation.com/headhoppersstudios">
+        <a href="https://www.artstation.com/headhoppersstudios" target="_blank">
           <img
             src="/images/icons/Art Station.png"
             className="w-[140px]"

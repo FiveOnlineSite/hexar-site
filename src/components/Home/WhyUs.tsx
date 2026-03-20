@@ -158,11 +158,11 @@ export default function WhyUs() {
     >
       {/* Heading + Paragraph */}
       <div className="lg:px-16 md:px-16 px-8 pb-16">
-        <h2 className=" 4xl:text-[70px] 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] text-white font-bold leading-base mb-5">
+        <h2 className="text-reveal 4xl:text-[70px] 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] text-white font-bold leading-base mb-5">
           Why Us?
         </h2>
 
-        <h6 className=" lg:w-[50%] w-full 4xl:text-[28px] 3xl:text-[28px] 2xl:text-[24px] xl:text-[22px] lg:text-[22px] md:text-[20px] text-[18px] leading-tight text-white">
+        <h6 className="text-reveal lg:w-[50%] w-full 4xl:text-[28px] 3xl:text-[28px] 2xl:text-[24px] xl:text-[22px] lg:text-[22px] md:text-[20px] text-[18px] leading-tight text-white">
           Artistic mastery, reliable delivery, and complete production trust — all in one place.
         </h6>
       </div>

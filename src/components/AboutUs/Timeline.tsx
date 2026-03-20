@@ -263,7 +263,7 @@ export default function Timeline() {
   ];
 
   return (
-      <section className="section-reveal our-timeline-section relative h-auto lg:p-16 md:p-16 p-8 flex flex-col items-center">
+      <section className="our-timeline-section relative h-auto lg:p-16 md:p-16 p-8 flex flex-col items-center" style={{ minHeight: `${cards.length * 50}vh` }}>
         <div className="text-left w-full mb-8">
             <h2 className=" 4xl:text-[70px] 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight text-white font-bold">The Hexar <span className="text-[#D50000]">Timeline</span></h2>
 
@@ -292,7 +292,7 @@ export default function Timeline() {
                   <p className="text-white 4xl:text-[28px] 3xl:text-[25px] 2xl:text-[22px] lg:text-[20px] md:text-[18px] text-[16px]">{card.text}</p>
               </div>
                 <div className="lg:w-[30%] md:w-[30%] w-full lg:mb-0 md:mb-0 mb-5 inline-block">
-                <img src={card.image} alt="timeline" className="w-full lg:h-[500px] md:h-[500px] h-[250px] object-contain" />
+                <img src={card.image} alt="timeline" className="parallax-img w-full lg:h-[500px] md:h-[500px] h-[250px] object-contain" />
                 </div>
               </div>
           </div>

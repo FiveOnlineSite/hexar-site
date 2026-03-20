@@ -43,22 +43,27 @@
   );
 }
 
-html{
-  scroll-behavior: smooth;
+
+html {
+  min-height: 100%;
 }
 
-html, body, #__next {
-  height: 100%;
-   overflow-x: hidden;
+body {
+  min-height: 100%;
+  /* overflow-x: hidden on body kills sticky — use wrapper instead */
+}
 
+/* ADD this — clips horizontal overflow without breaking sticky */
+#__next {
+  overflow-x: clip;  /* ← 'clip' unlike 'hidden' does NOT break sticky */
+  min-height: 100%;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #0A0A0A; 
   color: #fff;
-  overflow-x: hidden;
-  overscroll-behavior: none;
+  /* overscroll-behavior: none; */
 }
 
 .scroll-outer-section{
@@ -101,6 +106,10 @@ body {
 .animate-img-wrapper {
   display: inline-block;
   will-change: transform, opacity;
+}
+
+.our-timeline-section {
+  overflow: visible !important;
 }
 
 /* Core blast flash */
@@ -201,9 +210,6 @@ body {
   clip-path: ellipse(120% 70% at 50% 50%);
 }
 
-.our-timeline-section{
-  will-change: transform;
-}
 
 @keyframes drawLine {
   from {

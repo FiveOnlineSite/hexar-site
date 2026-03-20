@@ -204,11 +204,11 @@ export default function BlogSection() {
     >
       {/* LEFT TEXT */}
       <div className="lg:w-[40%] w-full px-8 lg:ps-16">
-        <h2 className="4xl:text-[70px] 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight lg:mb-8 mb-4 text-white font-bold">
+        <h2 className="text-reveal 4xl:text-[70px] 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight lg:mb-8 mb-4 text-white font-bold">
           News & <span className="text-[#D50000]">Blogs</span>
         </h2>
 
-        <h6 className="4xl:text-[28px] 3xl:text-[28px] 2xl:text-[24px] xl:text-[22px] lg:text-[22px] md:text-[20px] text-[18px] leading-base text-white">
+        <h6 className="text-reveal 4xl:text-[28px] 3xl:text-[28px] 2xl:text-[24px] xl:text-[22px] lg:text-[22px] md:text-[20px] text-[18px] leading-base text-white">
           Stay tuned for the latest company news, current trends from the world
           of game development
         </h6>
@@ -289,11 +289,11 @@ hover:shadow-[0_2px_20px_0_#FFFFFF40]"
                 </div>
 
                 <div className="flex items-start justify-between">
-                  <h3 className="p-3 lg:text-[22px] text-[20px] w-[75%]">
+                  <h3 className="text-reveal p-3 lg:text-[22px] text-[20px] w-[75%]">
                     {blog.title}
                   </h3>
 
-                  <h4 className="w-[25%] p-3 text-[18px] text-[#FFFFFFCC] text-right">
+                  <h4 className="text-reveal w-[25%] p-3 text-[18px] text-[#FFFFFFCC] text-right">
                     {blog.date}
                   </h4>
                 </div>

@@ -112,7 +112,7 @@ export default function FAQSection () {
     {/* LEFT */}
     <div className="lg:w-[40%] min-h-full w-full flex flex-col">
 
-      <h2 className="4xl:text-[70px] 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight lg:mb-8 mb-4 text-white font-bold">
+      <h2 className="text-reveal 4xl:text-[70px] 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight lg:mb-8 mb-4 text-white font-bold">
         Frequently Asked Question
       </h2>
 
@@ -128,7 +128,7 @@ export default function FAQSection () {
     </div>
 
     {/* RIGHT */}
-    <div className="lg:w-[60%] w-full px-4 -stagger">
+    <div className="lg:w-[60%] w-full px-4 text-reveal">
       {faqs.map((faq, i) => (
         <FAQAccordion
           faq={faq}

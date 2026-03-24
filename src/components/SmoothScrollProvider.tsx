@@ -201,6 +201,21 @@ export default function SmoothScrollProvider() {
       // ── Connect Lenis → ScrollTrigger (fixes out-of-sync on first load) ──
       lenis.on("scroll", ScrollTrigger.update);
 
+      // ── Init Lenis ──
+lenis = new Lenis({
+  lerp: 0.1,
+  smoothWheel: true,
+});
+
+// ── Connect Lenis → ScrollTrigger (fixes out-of-sync on first load) ──
+lenis.on("scroll", ScrollTrigger.update);
+
+(window as any).__lenis = lenis; // ← ADD HERE
+
+tickerCallback = (time: number) => {
+  lenis.raf(time * 1000);
+};
+
       tickerCallback = (time: number) => {
         lenis.raf(time * 1000);
       };

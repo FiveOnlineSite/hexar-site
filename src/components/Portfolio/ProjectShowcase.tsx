@@ -3,15 +3,24 @@
 import { projects } from "@/src/data/projects";
 import { useRef, useState } from "react";
 
-export default function ProjectShowcase(){
+export default function ProjectShowcase() {
     const [showAll, setShowAll] = useState(false);
     const sectionRef = useRef<HTMLElement>(null);
 
     const handleToggle = () => {
         if (showAll) {
-            // Scroll back to section top before collapsing
-            sectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-            setTimeout(() => setShowAll(false), 500); // wait for scroll then collapse
+            setShowAll(false);
+
+            setTimeout(() => {
+                const lenis = (window as any).__lenis;
+                if (lenis && sectionRef.current) {
+                    lenis.scrollTo(sectionRef.current, {
+                        duration: 1.5,
+                        easing: (t: number) => 1 - Math.pow(1 - t, 4),
+                        offset: 0,
+                    });
+                }
+            }, 100);
         } else {
             setShowAll(true);
         }
@@ -20,12 +29,13 @@ export default function ProjectShowcase(){
     return (
         <section ref={sectionRef} id="project-showcase" className="section-reveal project-showcase-section lg:p-16 md:p-16 p-8">
             <div>
-                <h2 className="text-reveal 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] text-[#FFFFFF] leading-tight font-bold">Our Project <span className="text-[#D50000]">Showcase</span></h2>
+                <h2 className="text-reveal 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] text-[#FFFFFF] leading-tight font-bold">
+                    Our Project <span className="text-[#D50000]">Showcase</span>
+                </h2>
             </div>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 lg:mt-10 mt-8">
                 {projects.filter((_, index) => showAll || index < 3).map((project, index) => (
-                    <a href={`/projects/${project.slug}`}
-                        key={index} className="relative overflow-hidden group rounded-lg">
+                    <a href={`/projects/${project.slug}`} key={index} className="relative overflow-hidden group rounded-lg">
                         <img src={project.image} alt={project.title} className="relative h-full w-full object-cover rounded-lg" />
                         <div className="absolute 3xl:-bottom-[200%] 2xl:-bottom-[180%] xl:-bottom-[180%] lg:-bottom-[140%] bottom-0 left-0 3xl:h-[130vh] 2xl:h-[130vh] xl:h-[600px] md:h-[500px] sm:h-[500px] h-[480px] w-full bg-[#00000099] rounded-lg 3xl:group-hover:bottom-0 2xl:group-hover:bottom-0 xl:group-hover:bottom-0 lg:group-hover:bottom-0 transition-all duration-700 3xl:px-8 2xl:px-8 xl:px-8 lg:px-8 md:px-8 px-4 py-4 flex flex-col items-center justify-end">
                             <h5 className="uppercase text-center 3xl:text-[40px] 2xl:text-[30px] xl:text-[25px] lg:text-[25px] md:text-[20px] text-[16px] font-bold lg:leading-base leading-tight mb-2">{project.title}</h5>

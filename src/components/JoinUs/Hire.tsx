@@ -3,8 +3,8 @@ import React from 'react'
 const Hire = () => {
   return (
     <section className='section-reveal hire-seciton lg:p-16 md:p-16 p-8 border-[#ffffff66] border-t'>
-        <h2 className=' 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight text-left font-bold'>How We Hire?</h2>
-        <div className=' grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-5 mt-8'>
+        <h2 className='text-reveal 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight text-left font-bold'>How We Hire?</h2>
+        <div className='grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-5 mt-8'>
             <div className='mb-5'>
                 <div className='border border-[#66666633] rounded-lg px-4 py-8 shadow-[0_12px_24px_0_#0000001A] flex justify-center relative overflow-hidden group'>
                     <img src="./images/icons/upload-2-line.png" alt="upload" className='w-[100px] h-[100px] object-contain relative z-10' />
@@ -41,7 +41,7 @@ const Hire = () => {
                     4xl:group-hover:-bottom-[74%]'
                 ></div>
                 </div>
-                <h3 className='lg:text-[26px] md:text-[24px] text-[22px] font-semibold leading-base text-center pt-2'>Apply</h3>
+                <h3 className='text-reveal lg:text-[26px] md:text-[24px] text-[22px] font-semibold leading-base text-center pt-2'>Apply</h3>
             </div>
 
             <div className='mb-5'>
@@ -78,7 +78,7 @@ const Hire = () => {
                     4xl:group-hover:-bottom-[74%]'></div>
 
                 </div>
-                <h3 className='lg:text-[26px] md:text-[24px] text-[22px] font-semibold leading-base text-center pt-2'>Short Call</h3>
+                <h3 className='text-reveal lg:text-[26px] md:text-[24px] text-[22px] font-semibold leading-base text-center pt-2'>Short Call</h3>
             </div>
 
             <div className='mb-5'>
@@ -115,7 +115,7 @@ const Hire = () => {
                     4xl:group-hover:-bottom-[74%]'></div>
 
                 </div>
-                <h3 className='lg:text-[26px] md:text-[24px] text-[22px] font-semibold leading-base text-center pt-2'>Test</h3>
+                <h3 className='text-reveal lg:text-[26px] md:text-[24px] text-[22px] font-semibold leading-base text-center pt-2'>Test</h3>
             </div>
 
             <div className='mb-5'>
@@ -151,7 +151,7 @@ const Hire = () => {
                     4xl:group-hover:-left-[24%]
                     4xl:group-hover:-bottom-[74%]'></div>
                 </div>
-                <h3 className='lg:text-[26px] md:text-[24px] text-[22px] font-semibold leading-base text-center pt-2'>Final Interview</h3>
+                <h3 className='text-reveallg:text-[26px] md:text-[24px] text-[22px] font-semibold leading-base text-center pt-2'>Final Interview</h3>
             </div>
 
             <div className='mb-5'>
@@ -187,7 +187,7 @@ const Hire = () => {
                     4xl:group-hover:-left-[24%]
                     4xl:group-hover:-bottom-[74%]'></div>
                 </div>
-                <h3 className='lg:text-[26px] md:text-[24px] text-[22px] font-semibold leading-base text-center pt-2'>Offer</h3>
+                <h3 className='text-reveal lg:text-[26px] md:text-[24px] text-[22px] font-semibold leading-base text-center pt-2'>Offer</h3>
             </div>
         </div>
     </section>

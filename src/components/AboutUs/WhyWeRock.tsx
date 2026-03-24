@@ -4,11 +4,11 @@ export default function WhyWeRock() {
     return (
         <section className="section-reveal bg-[#0A0A0A] why-we-rock-section lg:p-16 md:p-16 p-8 border-[#ffffff66] border-t">
             <div className="lg:w-[50%] w-full">
-               <h2 className="4xl:text-[70px] 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight text-white font-bold mb-5">
+               <h2 className="text-reveal 4xl:text-[70px] 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight text-white font-bold mb-5">
           Why We <span className="text-[#D50000]">Stand Out</span>
         </h2>
 
-        <p className="w-full 4xl:text-[30px] 3xl:text-[28px] 2xl:text-[24px] xl:text-[22px] md:text-[20px] text-[18px] leading-base text-white">
+        <p className="text-reveal w-full 4xl:text-[30px] 3xl:text-[28px] 2xl:text-[24px] xl:text-[22px] md:text-[20px] text-[18px] leading-base text-white">
           Artistic mastery, reliable delivery, and complete production trust — all in one place.
         </p>
             </div>

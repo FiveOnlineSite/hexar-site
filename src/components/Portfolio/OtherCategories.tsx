@@ -5,9 +5,9 @@ const OtherCategories = () => {
   return (
      <section id="showreels" className='section-reveal showreels-section lg:p-16 md:p-16 p-8'>
       <div>
-                <h2 className=" 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] text-[#FFFFFF] leading-tight font-bold">Showreels</h2>
+                <h2 className="text-reveal 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] text-[#FFFFFF] leading-tight font-bold">Showreels</h2>
             </div>
-      <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2 lg:mt-10 mt-8">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2 lg:mt-10 mt-8">
                       {othercategories.map((categories, index) => (
                                                    
                     <Link key={index}

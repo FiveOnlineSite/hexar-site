@@ -8,8 +8,8 @@ import {workwithus} from "../../data/work-with-us";
 export default function Work(){
     return (
         <section className="section-reveal work-section bg-[#1D1D1D] lg:p-16 md:p-16 p-8">
-            <div className="">
-                <h2 className=" 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] lg:mb-8 mb-8 text-white font-bold leading-tight">
+            <div className="text-reveal">
+                <h2 className="3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] lg:mb-8 mb-8 text-white font-bold leading-tight">
                 Why Work With Us?
                 </h2>
             </div>

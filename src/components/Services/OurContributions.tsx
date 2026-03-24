@@ -46,11 +46,11 @@ export default function OurContributions() {
     <div ref={sectionRef} className="section-reveal our-contributions-section lg:p-16 md:p-16 p-8 bg-[#0A0A0A] border-[#ffffff66] border-t">
       <div>
         <div className="lg:flex block items-center justify-between w-full">
-          <h2 className=" 4xl:text-[70px] 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight lg:mb-8 mb-8 text-white font-bold">
+          <h2 className="text-reveal 4xl:text-[70px] 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight lg:mb-8 mb-8 text-white font-bold">
             Work Samples
           </h2>
           
-          <div className="group">
+          <div className="group text-reveal">
             <a
             href="/portfolio"
             className=" inline-block 3xl:text-[22px] 2xl:text-[20px] xl:text-[18px] lg:text-[18px] md:text-[18px] text-[16px] leading-tight font-semibold lg:py-4 lg:px-8 py-3 px-2 mb-8 group-hover:bg-[#D50000] bg-transparent group-hover:text-white text-[#D50000] border-[1.8px] rounded-xl border-[#D50000] transition-all duration-500 ease-in-out"

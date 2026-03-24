@@ -49,7 +49,7 @@ export default function InternalPortfolio() {
       className="section-reveal internal-portfolio-section lg:py-16 md:py-16 py-8 border-t border-[#ffffff66]"
     >
 
-      <h2 className=" 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] text-[#FFFFFF] leading-tight font-bold text-center w-full mb-8 lg:px-16 md:px-16 px-8">
+      <h2 className="text-reveal 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] text-[#FFFFFF] leading-tight font-bold text-center w-full mb-8 lg:px-16 md:px-16 px-8">
         Internal Portfolio
       </h2>
 

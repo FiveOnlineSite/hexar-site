@@ -9,7 +9,7 @@ export default function ProjectShowcase(){
     return (
         <section id="project-showcase" className="section-reveal project-showcase-section lg:p-16 md:p-16 p-8">
             <div>
-                <h2 className=" 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] text-[#FFFFFF] leading-tight font-bold">Our Project <span className="text-[#D50000]">Showcase</span></h2>
+                <h2 className="text-reveal 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] text-[#FFFFFF] leading-tight font-bold">Our Project <span className="text-[#D50000]">Showcase</span></h2>
             </div>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 lg:mt-10 mt-8">
                   {projects.filter((projects, index) => showAll || index < 3).map((projects, index) => (
@@ -27,7 +27,7 @@ export default function ProjectShowcase(){
                   ))}
 
             </div>
-            <div className="flex justify-center mt-12 group">
+            <div className="flex justify-center mt-12 group text-reveal">
                     <button onClick={() => setShowAll(prev => !prev)} className=" inline-block 3xl:text-[22px] 2xl:text-[20px] xl:text-[18px] lg:text-[18px] md:text-[18px] text-[16px] leading-tight font-semibold lg:py-4 lg:px-14 py-3 px-5 mb-8 text-[#D50000] group-hover:text-white bg-transparent group-hover:bg-[#D50000] border-[1.8px] lg:rounded-xl md:rounded-xl rounded-lg border-[#D50000] transition-all duration-500 ease-in-out">{showAll ? "Show Less" : "Explore More"}</button>           
                 
                 </div>

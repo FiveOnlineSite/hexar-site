@@ -110,40 +110,34 @@ export default function SmoothScrollProvider() {
           );
         });
 
-        // ── Stagger grid ──
-       // ── Stagger grid ──
+// ── Stagger grid ──
 document.querySelectorAll<HTMLElement>(".stagger-grid").forEach((grid) => {
-  grid.querySelectorAll<HTMLElement>(".stagger-item").forEach((item, i) => {
-    
-    // ENTER — each item triggers itself, not the grid
-    gsap.fromTo(item,
-      { opacity: 0, y: 60, scale: 0.94 },
-      {
-        opacity: 1, y: 0, scale: 1,
-        scrollTrigger: {
-          trigger: item,        // ✅ each item is its own trigger
-          start: "top 88%",     // starts when THIS item hits 88% viewport
-          end: "top 45%",       // fully visible by 45%
-          scrub: 1,
-        },
-      }
-    );
+  const items = grid.querySelectorAll<HTMLElement>(".stagger-item");
 
-    // EXIT — fade out when item leaves top
-    gsap.fromTo(item,
-      { opacity: 1, y: 0 },
-      {
-        opacity: 0, y: -30,
-        scrollTrigger: {
-          trigger: item,        // ✅ each item exits itself
-          start: "bottom 20%",
-          end: "bottom 5%",
-          scrub: 1,
-        },
-      }
-    );
+  gsap.fromTo(items,
+    {
+      opacity: 0,
+      y: 60,
+      scale: 0.92,
+    },
+    {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      duration: 0.5,
+      ease: "power3.out",
+      stagger: {
+        amount: 0.6,        
+        from: "start", 
+      },
+      scrollTrigger: {
+        trigger: grid,   
+        start: "top 85%",
+        toggleActions: "play none none reverse",
+      },
+    }
+  );
 
-  });
 });
 
         // ── Parallax images ──

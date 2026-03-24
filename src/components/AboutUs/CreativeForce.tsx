@@ -3,7 +3,7 @@ export default function CreativeForce() {
     <section className="section-reveal our-creative-force-section bg-[#0A0A0A] lg:px-16 lg:py-16 md:px-16 md:py-8 px-16 py-8 border-[#ffffff66] border-t">
     
         <div className="">
-            <h2 className="3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight text-center lg:mb-16 mb-8 text-white font-bold">
+            <h2 className="text-reveal 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight text-center lg:mb-16 mb-8 text-white font-bold">
         The <span className="text-[#D50000]">Creative Force</span>
       </h2>
         </div>

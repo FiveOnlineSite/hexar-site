@@ -252,7 +252,7 @@ export default function CategoriesCard({
       ref={cardRef}
       className="section-reveal category-card border-[#FFFFFF14] border-[3px] rounded-2xl relative group xl:mt-40 lg:mt-26 mt-5 xl:mb-10 lg:mb-10 mb-5"
     >
-      <div className="p-4 pb-0 bg-[#0A0A0A] group-hover:bg-[#000] rounded-2xl transition-all duration-500 shadow-none group-hover:shadow-[0_16px_20px_#00000040]">
+      <div className={`p-4 ${isOpen ? "pb-8" : "pb-0"} bg-[#0A0A0A] group-hover:bg-[#000] rounded-2xl transition-all duration-500 shadow-none group-hover:shadow-[0_16px_20px_#00000040]`}>
 
         {/* HEADER */}
         <div className="relative">
@@ -284,7 +284,7 @@ export default function CategoriesCard({
           > Our Process
             <img
               src="./images/icons/arrow-down.png"
-              className="ms-5 4xl:h-[40px] 4xl:w-[40px] 3xl:h-[40px] 3xl:w-[40px] 2xl:h-[30px] 2xl:w-[30px] xl:h-[25px] xl:w-[25px] lg:h-[25px] md:h-[25px] h-[25px] object-contain"
+              className="ms-5 4xl:h-[25px] 4xl:w-[25px] 3xl:h-[25px] 3xl:w-[25px] 2xl:h-[20px] 2xl:w-[20px] xl:h-[20px] xl:w-[20px] lg:h-[20px] w-[20px] md:h-[20px] h-[20px] object-contain"
             />
           </button>
 
@@ -307,7 +307,7 @@ export default function CategoriesCard({
             isOpen ? "opacity-100" : "opacity-0"
           }`}
         >
-          <img src="./images/icons/arrow-up.png" />
+          <img src="./images/icons/arrow-up.png" className="4xl:h-[25px] 4xl:w-[25px] 3xl:h-[25px] 3xl:w-[25px] 2xl:h-[20px] 2xl:w-[20px] xl:h-[20px] xl:w-[20px] lg:h-[20px] w-[20px] md:h-[20px] h-[20px] object-contain"/>
         </button>
 
         {/* PROCESS SECTION */}

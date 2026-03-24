@@ -193,7 +193,6 @@ export default function SmoothScrollProvider() {
       gsap.registerPlugin(ScrollTrigger);
 
       lenis = new Lenis({ lerp: 0.1, smoothWheel: true });
-
       lenis.on("scroll", ScrollTrigger.update);
 
       tickerCallback = (time: number) => { lenis.raf(time * 1000); };
@@ -209,11 +208,33 @@ export default function SmoothScrollProvider() {
         // ── Section reveal ──
         document.querySelectorAll<HTMLElement>(".section-reveal").forEach((el) => {
           if (isMobile) {
-            const tl = gsap.timeline({
-              scrollTrigger: { trigger: el, start: "top 90%", end: "bottom 20%", scrub: 1 },
-            });
-            tl.fromTo(el, { opacity: 0, y: 40 }, { opacity: 1, y: 0, ease: "none" })
-              .fromTo(el, { opacity: 1, y: 0 }, { opacity: 0, y: -20, ease: "none" });
+            // Fade IN — when element enters from bottom 20%
+            gsap.fromTo(el,
+              { opacity: 0, y: 40 },
+              {
+                opacity: 1, y: 0, ease: "power2.out", duration: 0.6,
+                scrollTrigger: {
+                  trigger: el,
+                  start: "top 80%",       // starts showing when top of el hits 80% of screen
+                  toggleActions: "play none none none", // only plays forward, never reverses on scroll down
+                },
+              }
+            );
+            // Fade OUT — only when scrolling back UP (element bottom leaves bottom of screen)
+            gsap.fromTo(el,
+              { opacity: 1, y: 0 },
+              {
+                opacity: 0, y: 20, ease: "power2.in", duration: 0.4,
+                scrollTrigger: {
+                  trigger: el,
+                  start: "bottom 20%",    // fade out starts when bottom of el hits 20% from bottom
+                  end: "bottom 0%",
+                  scrub: 1,
+                  // only affects scroll UP direction
+                  toggleActions: "none none play reverse",
+                },
+              }
+            );
           } else {
             gsap.fromTo(el,
               { opacity: 0, y: 60 },
@@ -225,11 +246,32 @@ export default function SmoothScrollProvider() {
         // ── Text reveal ──
         document.querySelectorAll<HTMLElement>(".text-reveal").forEach((el) => {
           if (isMobile) {
-            const tl = gsap.timeline({
-              scrollTrigger: { trigger: el, start: "top 90%", end: "bottom 20%", scrub: 1 },
-            });
-            tl.fromTo(el, { opacity: 0, y: 25 }, { opacity: 1, y: 0, ease: "none" })
-              .fromTo(el, { opacity: 1, y: 0 }, { opacity: 0, y: -15, ease: "none" });
+            // Fade IN
+            gsap.fromTo(el,
+              { opacity: 0, y: 25 },
+              {
+                opacity: 1, y: 0, ease: "power2.out", duration: 0.6,
+                scrollTrigger: {
+                  trigger: el,
+                  start: "top 80%",
+                  toggleActions: "play none none none",
+                },
+              }
+            );
+            // Fade OUT — only on scroll UP
+            gsap.fromTo(el,
+              { opacity: 1, y: 0 },
+              {
+                opacity: 0, y: 15, ease: "power2.in", duration: 0.4,
+                scrollTrigger: {
+                  trigger: el,
+                  start: "bottom 20%",
+                  end: "bottom 0%",
+                  scrub: 1,
+                  toggleActions: "none none play reverse",
+                },
+              }
+            );
           } else {
             gsap.fromTo(el,
               { opacity: 0, y: 35 },

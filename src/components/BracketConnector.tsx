@@ -15,7 +15,7 @@ export default function BracketConnector({ smallRefs, largeRefs }: ConnectorProp
 
       {/* Small SVG — md to 2xl */}
       <svg
-        className="w-[360px] h-[80px] lg:w-[400px] lg:h-[40px] 4xl:hidden 3xl:hidden 2xl:block xl:block lg:block md:block hidden"
+        className="w-[360px] h-[80px] lg:w-[400px] lg:h-[40px] 4xl:hidden 3xl:hidden 2xl:block xl:block lg:block md:block block"
         viewBox="0 0 480 80"
         fill="none"
       >

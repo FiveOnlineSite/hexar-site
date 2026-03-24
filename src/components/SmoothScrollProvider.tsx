@@ -305,6 +305,4 @@ document.querySelectorAll<HTMLElement>(".text-reveal").forEach((el) => {
   }, [pathname]);
 
   return null;
-
-  
 }

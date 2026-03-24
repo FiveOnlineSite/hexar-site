@@ -250,7 +250,7 @@ export default function CategoriesCard({
   return (
 <div
       ref={cardRef}
-      className="section-reveal category-card border-[#FFFFFF14] border-[3px] rounded-2xl relative group xl:mt-40 lg:mt-26 mt-5 xl:mb-10 lg:mb-10 mb-5"
+      className="category-card border-[#FFFFFF14] border-[3px] rounded-2xl relative group xl:mt-40 lg:mt-26 mt-5 xl:mb-10 lg:mb-10 mb-5"
     >
       <div className={`p-4 ${isOpen ? "pb-8" : "pb-0"} bg-[#0A0A0A] group-hover:bg-[#000] rounded-2xl transition-all duration-500 shadow-none group-hover:shadow-[0_16px_20px_#00000040]`}>
 

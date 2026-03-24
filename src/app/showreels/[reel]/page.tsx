@@ -21,7 +21,7 @@ export default async function OtherCategoriesPage({ params }: OtherCategoriesPag
   }
 
     return (
-          <section className="3xl:mx-20 2xl:mx-18 xl:mx-16 mx-0 categories-banner-section mt-[100px] lg:p-16 md:p-16 p-8">
+          <section className="3xl:mx-20 2xl:mx-18 xl:mx-16 mx-0 categories-banner-section lg:p-16 md:p-16 p-8">
       <BackButton basePath="showreels"/>
 
             <div className="3xl:flex 2xl:flex xl:flex lg:flex md:flex block items-center justify-between">

@@ -17,7 +17,7 @@ if(!currentProject){
   return <h1>Project Not Found</h1>
 }
     return (
-          <section className="3xl:mx-20 2xl:mx-18 xl:mx-16 mx-0 categories-banner-section mt-[100px] lg:p-16 md:p-16 p-8">
+          <section className="3xl:mx-20 2xl:mx-18 xl:mx-16 mx-0 categories-banner-section lg:p-16 md:p-16 p-8">
       <BackButton basePath="projects"/>
             <div className="3xl:flex 2xl:flex xl:flex lg:flex md:flex block items-center justify-between">
                <h1 className="3xl:text-[45px] 2xl:text-[43px] xl:text-[38px] lg:text-[38px] md:text-[34px] text-[30px] font-bold leading-base uppercase">{currentProject.title}</h1>

@@ -32,7 +32,7 @@ export const hero = [
      },
      {
         title: "Ghostbusters Spirits Unleashed",
-        image: "/images/hero/GBSU- Opt-1 Compressed.png",
+        image: "/images/hero/GBSU- Opt Compressed.png",
         video: "/videos/banners/Ghostbuster.mp4",
         url: "/projects/ghostbusters-spirits-unleashed"
     },

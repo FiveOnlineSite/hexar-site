@@ -45,7 +45,7 @@ export default function Navbar() {
       <div className={`absolute top-0 left-0 right-0 z-[60] flex items-center justify-between lg:px-16 md:px-8 px-8 lg:py-6 md:py-4 py-4
         ${scrolled ? "bg-black/80 backdrop-blur-md shadow-lg" : "bg-transparent"}`}>
         <Link href="/">
-          <img src="/images/icons/hexar-logo.png" className="4xl:h-[150px] 3xl:h-[110px] 2xl:h-[110px] xl:h-[90px] lg:h-[90px] md:h-[70px] h-[70px]" />
+          <img src="/images/icons/Hexar Logo.png" className="4xl:h-[150px] 3xl:h-[110px] 2xl:h-[110px] xl:h-[90px] lg:h-[90px] md:h-[70px] h-[70px]" />
         </Link>
 
         <div className="flex items-center justify-center gap-8">
@@ -70,7 +70,7 @@ export default function Navbar() {
       >
         <div className="px-8 py-6 flex justify-between items-center">
           <Link href="/">
-            <img src="/images/icons/hexar-logo.png" className="4xl:h-[150px] 3xl:h-[110px] 2xl:h-[110px] xl:h-[90px] lg:h-[90px] md:h-[70px] h-[70px]" />
+            <img src="/images/icons/Hexar Logo.png" className="4xl:h-[150px] 3xl:h-[110px] 2xl:h-[110px] xl:h-[90px] lg:h-[90px] md:h-[70px] h-[70px]" />
           </Link>
 
           <button
@@ -110,7 +110,7 @@ export default function Navbar() {
           className="mx-8 w-[140px]"
           alt="TPN Logo"
         />
-        <a href="https://www.artstation.com/headhoppersstudios" target="_blank">
+        <a href="https://www.artstation.com/hexarstudio" target="_blank">
           <img
             src="/images/icons/Art Station.png"
             className="w-[140px]"

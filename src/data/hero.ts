@@ -8,7 +8,7 @@ export const hero = [
     },
     {
         title: "Predators Hunting Grounds",
-        image: "/images/hero/PHG Opt-3 Compresssed.png",
+        image: "/images/hero/PHG Opt-3 Compressed.png",
         video: "/videos/banners/Predators.mp4", 
         url: "/projects/predators-hunting-grounds"
     },
@@ -26,7 +26,7 @@ export const hero = [
      },
      {
         title: "Deceit 2",
-        image: "/images/hero/Deceit2 Compressed.png",
+        image: "/images/hero/Deceit2 Normal Compressed.png",
         video: "/videos/banners/Deceit2.mp4",
         url: "/projects/deceit-2"
      },

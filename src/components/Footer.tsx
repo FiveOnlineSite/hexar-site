@@ -8,14 +8,16 @@ import Link from "next/link";
 export default function Footer () {
     return (
         <section className="footer-section bg-[#fff] lg:p-16 md:p-16 p-8 ">
-            <div className="items-start justify-between grid 4xl:grid-cols-[1.2fr_1.5fr_0.9fr_1fr] 3xl:grid-cols-[1.2fr_1.4fr_0.9fr_1fr] 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5">
+            <div className="items-center justify-between grid 4xl:grid-cols-[1.2fr_1.6fr_0.8fr_1.2fr] 3xl:grid-cols-[1.2fr_1.6fr_0.7fr_1fr] 2xl:grid-cols-[1fr_1.1fr_0.9fr_1fr] xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 grid-cols-1">
                 <div className="footer-logo flex flex-col lg:items-center md:items-start items-start justify-start">
                     <img src="/images/icons/footer-logo.png" alt="footer-logo" className="4xl:w-[371px] 4xl:h-[220px] 3xl:w-[350px] 3xl:h-[200px] 2xl:w-[300px] 2xl:h-[180px] xl:w-[271px] xl:h-[177px] lg:w-[271px] lg:h-[177px] md:w-[200px] md:h-[133px] w-[150px] h-[100px] object-contain" />
                     {/* <p className="text-[15px] text-[#0A0A0A] font-base leading-base mt-4">Hexar Studios is the parent company of Ares and Head Hoppers Studios.</p> */}
                 </div>
 
-                <div className="services flex flex-col lg:items-start md:items-start items-start justify-start">
-                    <h5 className="text-start w-full text-[#0A0A0A] text-[20px] font-semibold leading-base">Services</h5>
+                <div className="4xl:ps-0 3xl:ps-0 2xl:ps-10 xl:ps-10 lg:ps-5 ps-0 services relative flex flex-col 4xl:items-center 3xl:items-center 2xl:items-center xl:items-center items-start justify-start before:absolute before:left-0 before:top-[50%] before:transform before:-translate-y-1/2 before:h-[60%] before:w-[1px] before:bg-[#0A0A0A33] before:hidden xl:before:block h-full 4xl:mt-0 3xl:mt-0 2xl:mt-0 xl:mt-0 lg:mt-0 md:mt-10 mt-10">
+                    
+                        <h5 className="text-start w-full text-[#0A0A0A] text-[20px] font-semibold leading-base 4xl:ps-24 3xl:ps-[60px] 2xl:ps-[24px] ps-0">Services</h5>
+                    
                     <div className="">
                         <ul className="pt-4 grid 4xl:grid-cols-3 3xl:grid-cols-3 2xl:grid-cols-2 xl:grid-cols-2 grid-cols-2 ">
                             <li className="list-none py-1 group lg:pe-4">
@@ -66,7 +68,7 @@ export default function Footer () {
                     </div>
                 </div>
 
-                <div className="quick-links flex flex-col lg:items-start md:items-start items-start justify-start">
+                <div className="quick-links relative flex flex-col 4xl:items-center 3xl:items-center 2xl:items-center xl:items-center items-start justify-start before:absolute before:left-0 before:top-[50%] before:transform before:-translate-y-1/2 before:h-[60%] before:w-[1px] before:bg-[#0A0A0A33] before:hidden xl:before:block h-full 4xl:mt-0 3xl:mt-0 2xl:mt-0 xl:mt-0 lg:mt-0 md:mt-10 mt-10">
                     <h5 className="w-full text-start text-[#0A0A0A] text-[20px] font-semibold leading-base">Quick Links</h5>
                     <div className="grid grid-cols-2 gap-4" >
                         <ul className="pt-4">
@@ -97,7 +99,7 @@ export default function Footer () {
                     </div>
                 </div>
 
-                <div className="tpn-logo flex flex-col items-start justify-start">
+                <div className="tpn-logo relative flex flex-col 4xl:items-center 3xl:items-center 2xl:items-center xl:items-center items-start justify-start before:absolute before:left-0 before:top-[50%] before:transform before:-translate-y-1/2 before:h-[60%] before:w-[1px] before:bg-[#0A0A0A33] before:hidden xl:before:block h-full">
                     <img src="/images/icons/footer-tpn-logo.png" alt="footer-logo" className="4xl:w-[371px] 4xl:h-[220px] 3xl:w-[350px] 3xl:h-[200px] 2xl:w-[300px] 2xl:h-[180px] xl:w-[271px] xl:h-[177px] lg:w-[271px] lg:h-[177px] md:w-[200px] md:h-[133px] w-[150px] h-[100px] object-contain" />
                             
                     <div className="contact-links">

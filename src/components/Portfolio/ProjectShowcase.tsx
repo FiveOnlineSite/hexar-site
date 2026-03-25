@@ -13,14 +13,23 @@ export default function ProjectShowcase() {
 
             setTimeout(() => {
                 const lenis = (window as any).__lenis;
-                if (lenis && sectionRef.current) {
-                    lenis.scrollTo(sectionRef.current, {
+                const target = sectionRef.current;
+
+                if (!target) return;
+
+                if (lenis) {
+                    // Use Lenis smooth scroll
+                    lenis.scrollTo(target, {
                         duration: 1.5,
                         easing: (t: number) => 1 - Math.pow(1 - t, 4),
                         offset: 0,
                     });
+                } else {
+                    // Fallback if Lenis not ready
+                    target.scrollIntoView({ behavior: "smooth", block: "start" });
                 }
             }, 100);
+
         } else {
             setShowAll(true);
         }

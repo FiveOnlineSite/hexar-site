@@ -1,12 +1,10 @@
 "use client"
 
 import FAQAccordion from "../FAQAccordion";
-import { useState, useRef, useLayoutEffect } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useState, useRef, useEffect } from "react";
 
-export default function FAQSection () {
-    const faqs = [
+export default function FAQSection() {
+   const faqs = [
     {
       question: "What kind of experience does Hexar have?",
       answer:
@@ -49,99 +47,76 @@ export default function FAQSection () {
     },
   ];
 
+
+
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
-  const imageRef = useRef(null);
+  const imageRef = useRef<HTMLImageElement>(null);
   const sectionRef = useRef(null);
 
   const handleToggle = (index: number) => {
-  setActiveIndex((prev: number | null) => (prev === index ? null : index));
-};
+    setActiveIndex((prev: number | null) => (prev === index ? null : index));
+  };
 
- useLayoutEffect(() => {
-  gsap.registerPlugin(ScrollTrigger);
+  // ── Subtle fade in/out on scroll ──
+  useEffect(() => {
+    const el = imageRef.current;
+    if (!el) return;
 
-    const ctx = gsap.context(() => {
-        gsap.fromTo(
-        imageRef.current,
-        { opacity: 0, scale: 0.15, y: 40 },
-        {
-            opacity: 1,
-            scale: 1,
-            y: 0,
-            duration: 1.2,
-            ease: "power3.out",
-            scrollTrigger: {
-            trigger: imageRef.current,
-            start: "top 100%",
-            end: "bottom 60%",
-            scrub: false,
-            once: false,
+    el.style.opacity = "0";
+    el.style.transform = "translateY(20px)";
+    el.style.transition = "opacity 0.8s ease, transform 0.8s ease";
 
-            onEnter: () => {
-                gsap.fromTo(
-                imageRef.current,
-                { opacity: 0, scale: 0.25, y: 40 },
-                {
-                    opacity: 1,
-                    scale: 1,
-                    y: 0,
-                    duration: 1.2,
-                    ease: "power3.out",
-                }
-                );
-            },
-
-            onLeaveBack: () => {
-                gsap.set(imageRef.current, { opacity: 0, scale: 0.25, y: 40 });
-            },
-            },
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.style.opacity = "1";
+          el.style.transform = "translateY(0px)";
+        } else {
+          el.style.opacity = "0";
+          el.style.transform = "translateY(20px)";
         }
-        );
-    }, sectionRef);
+      },
+      { threshold: 0.2 }
+    );
 
-    ScrollTrigger.refresh();
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
-    return () => ctx.revert();
-    }, []);
+  return (
+    <section ref={sectionRef} className="section-reveal faq-section p-8 lg:p-16 border-[#ffffff66] border-t">
 
-    return (
-        <section ref={sectionRef} className="section-reveal faq-section p-8 lg:p-16 border-[#ffffff66] border-t">
-  
-  <div className="3xl:flex 2xl:flex xl:flex lg:flex block items-stretch justify-center">
+      <div className="3xl:flex 2xl:flex xl:flex lg:flex block items-stretch justify-center">
 
-    {/* LEFT */}
-    <div className="lg:w-[40%] min-h-full w-full flex flex-col">
+        {/* LEFT */}
+        <div className="lg:w-[40%] min-h-full w-full flex flex-col">
+          <h2 className="text-reveal 4xl:text-[70px] 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight lg:mb-8 mb-4 text-white font-bold">
+            Frequently Asked Question
+          </h2>
+          <div className="w-full mt-auto mx-auto">
+            <img
+              ref={imageRef}
+              src="./images/FAQs.png"
+              alt="faq-bg"
+              className="w-full 3xl:h-[650px] 2xl:h-[600px] xl:h-[550px] lg:h-[500px] md:h-[400px] h-[420px] object-contain"
+            />
+          </div>
+        </div>
 
-      <h2 className="text-reveal 4xl:text-[70px] 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] leading-tight lg:mb-8 mb-4 text-white font-bold">
-        Frequently Asked Question
-      </h2>
+        {/* RIGHT */}
+        <div className="lg:w-[60%] w-full px-4 text-reveal">
+          {faqs.map((faq, i) => (
+            <FAQAccordion
+              faq={faq}
+              key={i}
+              isOpen={activeIndex === i}
+              onToggle={() => handleToggle(i)}
+            />
+          ))}
+        </div>
 
-      <div className="w-full mt-auto mx-auto">
-        <img
-          ref={imageRef}
-          src="./images/FAQs.png"
-          alt="faq-bg"
-          className="w-full 3xl:h-[650px] 2xl:h-[600px] xl:h-[550px] lg:h-[500px] md:h-[400px] h-[420px] object-contain"
-        />
       </div>
 
-    </div>
-
-    {/* RIGHT */}
-    <div className="lg:w-[60%] w-full px-4 text-reveal">
-      {faqs.map((faq, i) => (
-        <FAQAccordion
-          faq={faq}
-          key={i}
-          isOpen={activeIndex === i}
-          onToggle={() => handleToggle(i)}
-        />
-      ))}
-    </div>
-
-  </div>
-
-</section>
-
-    )
+    </section>
+  );
 }

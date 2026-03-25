@@ -48,9 +48,15 @@ export default function Navbar() {
           <img src="/images/icons/hexar-logo.png" className="4xl:h-[150px] 3xl:h-[110px] 2xl:h-[110px] xl:h-[90px] lg:h-[90px] md:h-[70px] h-[70px]" />
         </Link>
 
-        <button onClick={() => setOpen(true)} data-no-blast>
-          <img src="/images/icons/menu-line.png" className="4xl:h-10 3xl:h-8 2xl:h-8 h-6" />
-        </button>
+        <div className="flex items-center justify-center gap-8">
+         <div className="group">
+            <a href="/contact-us" className="inline-block 3xl:text-[20px] 2xl:text-[18px] xl:text-[16px] lg:text-[16px] md:text-[16px] text-[14px] leading-tight font-semibold lg:py-2 lg:px-4 py-3 px-5 text-[#D50000] group-hover:text-white bg-transparent group-hover:bg-[#D50000] border-[1.8px] lg:rounded-lg md:rounded-lg rounded-md border-[#D50000] transition-all duration-500 ease-in-out">Contact Us</a>           
+          </div>
+          <button onClick={() => setOpen(true)} data-no-blast>
+            <img src="/images/icons/menu-line.png" className="4xl:h-10 3xl:h-8 2xl:h-8 h-6" />
+          </button>
+        </div>
+        
       </div>
 
       {/* DRAWER */}

@@ -6,17 +6,17 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { categories } from "@/src/data/categories";
 
 export default function CategoriesSection() {
-  const [activeCard, setActiveCard] = useState<number | null>(null);
+ const [activeCard, setActiveCard] = useState<number | null>(null);
 
   const handleToggle = (id: number) => {
     setActiveCard(prev => (prev === id ? null : id));
 
-    // 🔥 FORCE GLOBAL RECALC AFTER DOM UPDATE
-    requestAnimationFrame(() => {
+    // Wait for duration-700 CSS transition to finish before recalculating
+    setTimeout(() => {
       ScrollTrigger.refresh(true);
-    });
+    }, 750);
   };
-
+  
   return (
     <section className="lg:p-16 p-8 bg-[#0A0A0A]">
       {categories.map(category => (

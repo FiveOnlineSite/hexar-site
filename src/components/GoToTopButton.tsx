@@ -1,25 +1,24 @@
 "use client";
 
-const GoToTopButton = () => {
+type Props = {
+  pastBanner: boolean;
+}
 
-  const handleTop = () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+const GoToTopButton = ({ pastBanner }: Props) => {
 
-  document.documentElement.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-
-  document.body.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-};
+   const handleTop = () => {
+    const lenis = (window as any).__lenis;
+    if (lenis) {
+      lenis.scrollTo(0, { duration: 1.5, easing: (t: number) => 1 - Math.pow(1 - t, 4) });
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
 
   return (
     <div
       onClick={handleTop}
-      className={`fixed 4xl:bottom-12 4xl:right-12 3xl:bottom-10 3xl:right-10 2xl:bottom-8 2xl:right-8 xl:bottom-8 xl:right-8 lg:bottom-8 lg:right-8 md:bottom-7 md:right-7 bottom-6 right-6 z-30 cursor-pointer group transition-opacity duration-300`}
+      className={`fixed 4xl:bottom-12 4xl:right-12 3xl:bottom-10 3xl:right-10 2xl:bottom-8 2xl:right-8 xl:bottom-8 xl:right-8 lg:bottom-8 lg:right-8 md:bottom-7 md:right-7 bottom-6 right-6 z-30 cursor-pointer group transition-opacity duration-300 ${pastBanner ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
     >
       <div className="bg-black p-2 border-[#444] group-hover:border-black border-[3px] rounded-full flex items-center justify-center transition group-hover:scale-110">
 

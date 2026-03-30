@@ -138,7 +138,7 @@ export default function Footer () {
             </div>
             <hr className="my-5"/>
             <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-col-1 gap-2">
-                    <p className="4xl:text-[22px] 3xl:text-[18px] 2xl:text-[18px] xl:text-[16px] lg:text-[16px] md:text-[15px] text-[14px] text-[#0A0A0A] font-base leading-base">© Hexar Studio is the joint vision of Ares Studio and Head Hoppers Studios</p>
+                    <p className="4xl:text-[22px] 3xl:text-[18px] 2xl:text-[18px] xl:text-[16px] lg:text-[16px] md:text-[15px] text-[14px] text-[#0A0A0A] font-base leading-base">© Hexar Studio is the joint vision of Ares Studio and Head Hoppers Studios.</p>
                     <ul className="flex items-center lg:justify-end md:justify-end justify-start">
                         <li className="list-none py-1 group text-end pe-4">
                             <Link href="/privacy-policy" className="4xl:text-[22px] 3xl:text-[18px] 2xl:text-[18px] xl:text-[16px] lg:text-[16px] md:text-[15px] text-[14px] duration-500 transition-all ease-in-out group-hover:text-[#D50000] text-[#0A0A0A] font-base leading-base">Privacy Policy</Link>

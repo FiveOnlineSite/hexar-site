@@ -2,7 +2,7 @@
 export const blogs = [
     {
         title: "Merger of Ares and Head Hoppers ",
-        date: "24 Nov",
+        date: "May 25",
         // image: "/images/blogs/1.jpeg",
         image: "/images/blogs/1.png",
         subtitle: "One Vision - One Stronger Future.",

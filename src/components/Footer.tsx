@@ -69,7 +69,7 @@ export default function Footer () {
                 </div>
 
                 <div className="quick-links relative flex flex-col 4xl:items-center 3xl:items-center 2xl:items-center xl:items-center items-start justify-start before:absolute before:left-0 before:top-[50%] before:transform before:-translate-y-1/2 before:h-[60%] before:w-[1px] before:bg-[#0A0A0A33] before:hidden xl:before:block h-full 4xl:mt-0 3xl:mt-0 2xl:mt-0 xl:mt-0 lg:mt-0 md:mt-10 mt-10">
-                    <h5 className="w-full text-start text-[#0A0A0A] text-[20px] font-semibold leading-base">Quick Links</h5>
+                    <h5 className="w-full text-start text-[#0A0A0A] text-[20px] font-semibold leading-base 4xl:ps-24 3xl:ps-[60px] 2xl:ps-[24px] ps-0">Quick Links</h5>
                     <div className="grid grid-cols-2 gap-4" >
                         <ul className="pt-4">
                             <li className="list-none py-1 group">

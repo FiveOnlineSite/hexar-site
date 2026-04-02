@@ -144,7 +144,7 @@ export default function About({ image }: { image: string }) {
                 </p>
               </div>
               <div className="flex flex-col items-center">
-                <img src="/images/icons/ares-logo.png" className="h-[30px] lg:h-[50px]" />
+                <img src="/images/icons/ares-logo.png" className="h-[30px] lg:h-[50px] drop-shadow-[4px_4px_10px_rgba(0,0,0,0.8)]" />
                 <p className="4xl:text-[15px] 3xl:text-[15px] 2xl:text-[12px] xl:text-[10px] text-[10px] font-light mt-2 text-center">
                   Concept / VFX / Technical Art / Co-dev
                 </p>

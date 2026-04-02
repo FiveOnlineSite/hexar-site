@@ -15,7 +15,7 @@ export const blogs = [
     },
     {
         title: "XDS 2025 ",
-        date: "24 Nov",
+        date: "Sep 25",
         image: "/images/blogs/2.png",
         subtitle: "Ares Visual Effects Studio at XDS 2025 – Strengthening Global Collaborations in Vancouver, Canada ",
        content1: "Ares Visual Effects Studio marked its presence at XDS 2025 in Vancouver, showcasing its creative expertise and technological excellence on a global stage. The studio’s participation underscored its commitment to fostering international collaborations, connecting with industry leaders, and exploring cutting-edge solutions in visual effects. By engaging with global partners, Ares is paving the way for innovative projects and cross-border creative ventures, further establishing itself as a reliable and forward-thinking VFX studio in the international arena.",
@@ -24,7 +24,7 @@ export const blogs = [
     },
     {
         title: "TGS 2025 ",
-        date: "24 Nov",
+        date: "Sep 25",
         image: "/images/blogs/3.png",
       content1: "Ares Visual Effects Studio proudly marked its presence at Tokyo Game Show 2025, one of the world’s most prestigious gaming events. The showcase highlighted our expertise in high-quality game art and visual effects, while opening doors to meaningful conversations with global studios, publishers, and industry leaders. ",
         content2: "Being part of TGS 2025 reinforced our commitment to delivering world-class visuals and staying at the forefront of innovation in the global gaming ecosystem.",
@@ -33,7 +33,7 @@ export const blogs = [
     },
      {
         title: "GDC 2025",
-        date: "24 Nov",
+        date: "Mar 25",
         image: "/images/blogs/5.png",
        content1: "Ares Visual Effects Studio had the opportunity to attend the Game Developers Conference (GDC), one of the world’s most influential events for the global game development community. Our presence at GDC allowed us to connect with industry leaders, creative partners, and studios from around the world, exchange insights, and explore emerging trends in game art and visual production. Ares Visual Effects Studio had the opportunity to attend the Game Developers Conference (GDC), one of the world’s most influential events for the global game development community. Our presence at GDC allowed us to connect with industry leaders, creative partners, and studios from around the world, exchange insights, and explore emerging trends in game art and visual production.",
         content2: "The experience strengthened existing relationships, opened doors to new collaborations, and reinforced our commitment to delivering high-quality visual solutions for games and interactive experiences. GDC was an inspiring platform to learn, share, and grow as part of the ever-evolving game development ecosystem.",
@@ -43,7 +43,7 @@ export const blogs = [
     
     {
         title: "GDS 2025",
-        date: "24 Nov",
+        date: "Feb 25",
         image: "/images/blogs/4.png",
         content1: "The Global Game Development Summit (GDS) 2025 brought together some of the most influential voices in the gaming industry, and Head Hoppers Studios was proud to be part of that conversation. ",
         content2: "Representing Head Hoppers Studios, Tushank Jaiswal, Founder & CEO, attended the summit with a focus on building global connections, exchanging creative insights, and understanding the evolving direction of game development. From production workflows to next-generation visual standards, the discussions at GDS 2025 offered valuable perspectives that continue to shape Head Hoppers’ approach to quality and innovation. ",

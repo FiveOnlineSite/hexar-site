@@ -163,4 +163,4 @@ export default function Footer () {
     "https://www.instagram.com/"
   ]
 }
-
+</script>

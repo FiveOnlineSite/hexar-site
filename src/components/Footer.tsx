@@ -158,10 +158,10 @@ export default function Footer () {
                     "@type": "Organization",
                     "name": "Hexar Studios",
                     "url": "https://hexarstudios.com",
-                    "logo": "https://hexarstudios.com/logo.png",
+                    "logo": "https://hexarstudios.com/images/icons/Hexar%20Logo.png",
                     "sameAs": [
-                        "https://www.linkedin.com/",
-                        "https://www.instagram.com/"
+                        "https://linkedin.com/company/hexar-studio/",
+                        "https://www.artstation.com/hexarstudio"
                     ]
                 }),
             }}

@@ -150,8 +150,8 @@ export default function Footer () {
             </div>
         </section>
     )
-}
-<script
+
+    <script
   type="application/ld+json"
   dangerouslySetInnerHTML={{
     __html: JSON.stringify({
@@ -167,3 +167,5 @@ export default function Footer () {
     }),
   }}
 />
+
+}

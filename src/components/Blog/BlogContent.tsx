@@ -1,6 +1,7 @@
 import { blogs } from '@/src/data/blogs';
 import BlogBox from '../BlogBox';
 import Link from 'next/link';
+import Script from "next/script";
 
 interface BlogContentProps {
   blogSlug: string;
@@ -19,6 +20,39 @@ export default function BlogContent({ blogSlug }: BlogContentProps) {
 
   return (
     <>
+
+<Script
+  id="article-schema"
+  type="application/ld+json"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": currentBlog.title,
+      "image": currentBlog.image,
+      "author": {
+        "@type": "Organization",
+        "name": "Hexar Studios"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Hexar Studios",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://hexarstudios.com/images/icons/Hexar%20Logo.png"
+        }
+      },
+      "datePublished": currentBlog.date,
+      "dateModified": currentBlog.date,
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": `https://hexarstudios.com/blogs/${currentBlog.slug}`
+      }
+    }),
+  }}
+/>
+      
     <section className="section- blog-hero-section lg:p-16 md:p-16 p-8 lg:pt-32 md:pt-32 pt-16">
       <img
         src={currentBlog.image}

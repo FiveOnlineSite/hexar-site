@@ -16,7 +16,27 @@ const currentProject = projects.find((p) => p.slug === project)
 if(!currentProject){
   return <h1>Project Not Found</h1>
 }
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  serviceType: `${currentProject.title} Services`,
+  provider: {
+    "@type": "Organization",
+    name: "Hexar Studios"
+  },
+  areaServed: {
+    "@type": "Place",
+    name: "Worldwide"
+  },
+  description: `High-quality ${currentProject.title.toLowerCase()} services for game studios and creative teams.`
+}
     return (
+      <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
           <section className="3xl:mx-20 2xl:mx-18 xl:mx-16 mx-0 categories-banner-section lg:p-16 md:p-16 p-8">
       <BackButton basePath="projects"/>
             <div className="3xl:flex 2xl:flex xl:flex lg:flex md:flex block items-center justify-between">
@@ -36,5 +56,6 @@ if(!currentProject){
               ))}
             </div>
                    </section>
+      </>
     )
 }

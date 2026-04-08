@@ -20,7 +20,27 @@ export default async function OtherCategoriesPage({ params }: OtherCategoriesPag
     return <h1>Portfolio Not Found</h1>;
   }
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: `${currentPortfolio.title} Services`,
+    provider: {
+      "@type": "Organization",
+      name: "Hexar Studios"
+    },
+    areaServed: {
+      "@type": "Place",
+      name: "Worldwide"
+    },
+    description: `High-quality ${currentPortfolio.title.toLowerCase()} services for game studios and creative teams.`
+  };
+
     return (
+      <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
           <section className="3xl:mx-20 2xl:mx-18 xl:mx-16 mx-0 categories-banner-section lg:p-16 md:p-16 p-8">
       <BackButton basePath="showreels"/>
 
@@ -41,5 +61,6 @@ export default async function OtherCategoriesPage({ params }: OtherCategoriesPag
               ))}
             </div>
                    </section>
+      </>
     )
 }

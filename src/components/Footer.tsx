@@ -7,6 +7,7 @@ import Link from "next/link";
 
 export default function Footer () {
     return (
+         <>
         <section className="footer-section bg-[#fff] lg:p-16 md:p-16 p-8 ">
             <div className="items-center justify-between grid 4xl:grid-cols-[1.2fr_1.6fr_0.8fr_1.2fr] 3xl:grid-cols-[1.2fr_1.6fr_0.7fr_1fr] 2xl:grid-cols-[1fr_1.1fr_0.9fr_1fr] xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2 grid-cols-1">
                 <div className="footer-logo flex flex-col lg:items-center md:items-start items-start justify-start">
@@ -149,23 +150,21 @@ export default function Footer () {
                     </ul>
             </div>
         </section>
-    )
-
-    <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Hexar Studios",
-      "url": "https://hexarstudios.com",
-      "logo": "https://hexarstudios.com/logo.png",
-      "sameAs": [
-        "https://www.linkedin.com/",
-        "https://www.instagram.com/"
-      ]
-    }),
-  }}
-/>
-
-}
+   <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    "name": "Hexar Studios",
+                    "url": "https://hexarstudios.com",
+                    "logo": "https://hexarstudios.com/logo.png",
+                    "sameAs": [
+                        "https://www.linkedin.com/",
+                        "https://www.instagram.com/"
+                    ]
+                }),
+            }}
+        />
+    </>
+);

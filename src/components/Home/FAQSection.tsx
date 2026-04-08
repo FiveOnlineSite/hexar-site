@@ -47,6 +47,18 @@ export default function FAQSection() {
     },
   ];
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
 
 
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
@@ -84,6 +96,11 @@ export default function FAQSection() {
   }, []);
 
   return (
+    <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+    />
     <section ref={sectionRef} className="section-reveal faq-section p-8 lg:p-16 border-[#ffffff66] border-t">
 
       <div className="3xl:flex 2xl:flex xl:flex lg:flex block items-stretch justify-center">
@@ -118,5 +135,6 @@ export default function FAQSection() {
       </div>
 
     </section>
+    </>
   );
 }

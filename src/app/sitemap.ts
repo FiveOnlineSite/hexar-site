@@ -1,22 +1,21 @@
 import { MetadataRoute } from 'next'
 import { blogs } from '@/src/data/blogs'
-
-// 👉 Add your project/category data imports here if available
-// import { projects } from '@/src/data/projects'
-// import { categories } from '@/src/data/categories'
+import { portfolio } from '@/src/data/portfolio'
+import { othercategories } from '@/src/data/othercategories'
+import { projects } from '@/src/data/projects'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://hexarstudios.com'
+  const now = new Date()
 
-  // -----------------------
-  // STATIC PAGES
-  // -----------------------
   const staticRoutes = [
     '',
+    '/home',
     '/about-us',
     '/services',
     '/portfolio',
     '/blogs',
+    '/html-sitemap',
     '/contact-us',
     '/join-us',
     '/privacy-policy',
@@ -25,75 +24,75 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const staticUrls = staticRoutes.map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: now,
     priority: route === '' ? 1.0 : 0.8,
   }))
 
-  // -----------------------
-  // BLOGS (DYNAMIC)
-  // -----------------------
+  const toSafeDate = (value: string) => {
+    const parsedDate = new Date(value)
+    return Number.isNaN(parsedDate.getTime()) ? now : parsedDate
+  }
+
   const blogUrls = blogs.map((blog) => ({
     url: `${baseUrl}/blogs/${blog.slug}`,
-    lastModified: new Date(blog.date),
+    lastModified: toSafeDate(blog.date),
     priority: 0.8,
   }))
 
-  // -----------------------
-  // PROJECTS (ADD WHEN DATA AVAILABLE)
-  // -----------------------
-  /*
+  const categoryUrls = portfolio.map((category) => ({
+    url: `${baseUrl}/categories/${category.slug}`,
+    lastModified: now,
+    priority: 0.8,
+  }))
+
+  const categoryAlbumUrls = portfolio.flatMap((category) =>
+    (category.albums || []).map((album) => ({
+      url: `${baseUrl}/categories/${category.slug}/albums/${album.slug}`,
+      lastModified: now,
+      priority: 0.7,
+    }))
+  )
+
+  const showreelUrls = othercategories.map((showreel) => ({
+    url: `${baseUrl}/showreels/${showreel.slug}`,
+    lastModified: now,
+    priority: 0.8,
+  }))
+
+  const showreelAlbumUrls = othercategories.flatMap((showreel) =>
+    (showreel.albums || []).map((album) => ({
+      url: `${baseUrl}/showreels/${showreel.slug}/albums/${album.slug}`,
+      lastModified: now,
+      priority: 0.7,
+    }))
+  )
+
   const projectUrls = projects.map((project) => ({
     url: `${baseUrl}/projects/${project.slug}`,
-    lastModified: new Date(),
-    priority: 0.8,
-  }))
-  */
-
-  // -----------------------
-  // CATEGORIES
-  // -----------------------
-  const categories = [
-    'concept-art',
-    'characters',
-    'realtime-hair',
-    'creature-modeling',
-    'props',
-    'weapons',
-    'hard-surface',
-    'vehicles',
-    'stylized-art',
-  ]
-
-  const categoryUrls = categories.map((cat) => ({
-    url: `${baseUrl}/categories/${cat}`,
-    lastModified: new Date(),
+    lastModified: now,
     priority: 0.8,
   }))
 
-  // -----------------------
-  // SHOWREELS
-  // -----------------------
-  const showreels = [
-    'technical-art',
-    'animation',
-    'cinematics',
-    'realtime-vfx',
-  ]
+  const projectAlbumUrls = projects.flatMap((project) =>
+    (project.albums || []).map((album) => ({
+      url: `${baseUrl}/projects/${project.slug}/albums/${album.slug}`,
+      lastModified: now,
+      priority: 0.7,
+    }))
+  )
 
-  const showreelUrls = showreels.map((sr) => ({
-    url: `${baseUrl}/showreels/${sr}`,
-    lastModified: new Date(),
-    priority: 0.8,
-  }))
-
-  // -----------------------
-  // FINAL RETURN
-  // -----------------------
-  return [
+  const allUrls = [
     ...staticUrls,
     ...blogUrls,
     ...categoryUrls,
+    ...categoryAlbumUrls,
     ...showreelUrls,
-    // ...projectUrls (enable later)
+    ...showreelAlbumUrls,
+    ...projectUrls,
+    ...projectAlbumUrls,
   ]
+
+  return Array.from(
+    new Map(allUrls.map((entry) => [entry.url, entry])).values()
+  )
 }

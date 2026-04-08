@@ -151,3 +151,16 @@ export default function Footer () {
         </section>
     )
 }
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Hexar Studios",
+  "url": "https://hexarstudios.com",
+  "logo": "https://hexarstudios.com/logo.png",
+  "sameAs": [
+    "https://www.linkedin.com/",
+    "https://www.instagram.com/"
+  ]
+}
+

@@ -29,12 +29,13 @@ function normalizeSource(input: string): string | null {
 }
 
 function getMimeType(extension: string): string {
-  if (extension === ".png") {
-    return "image/png";
-  }
-
-  return "image/jpeg";
+  return extension === ".png" ? "image/png" : "image/jpeg";
 }
+
+function toBodyBytes(buffer: Buffer): Uint8Array {
+  return Uint8Array.from(buffer);
+}
+
 
 export async function GET(request: NextRequest) {
   const src = request.nextUrl.searchParams.get("src") ?? "";
@@ -66,11 +67,7 @@ export async function GET(request: NextRequest) {
       .webp({ quality: safeQuality })
       .toBuffer();
 
-
-    return new Response(new Uint8Array(webpBuffer), {
-
-    return new Response(webpBuffer, {
-
+    return new Response(toBodyBytes(webpBuffer) as unknown as BodyInit, {
       headers: {
         "Content-Type": "image/webp",
         "Cache-Control": "public, max-age=31536000, immutable",
@@ -80,10 +77,7 @@ export async function GET(request: NextRequest) {
     try {
       const fallbackBuffer = await fs.readFile(absolutePath);
 
-      return new Response(new Uint8Array(fallbackBuffer), {
-
-      return new Response(fallbackBuffer, {
- main
+      return new Response(toBodyBytes(fallbackBuffer) as unknown as BodyInit, {
         headers: {
           "Content-Type": getMimeType(extension),
           "Cache-Control": "public, max-age=86400",

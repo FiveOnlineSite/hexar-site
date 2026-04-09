@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import GoToTopButton from "../components/GoToTopButton";
 import ContactUsButton from "../components/ContactUsButton";
 import Loader from "../components/Loader";
+import WebpImageOptimizer from "../components/WebpImageOptimizer";
 
 const SmoothScrollProvider = dynamic(() => import("../components/SmoothScrollProvider"), {
   ssr: false,
@@ -76,6 +77,7 @@ export default function ClientLayout({
 
   return (
     <>
+      <WebpImageOptimizer />
       {enableSmoothScroll && <SmoothScrollProvider />}
       <Loader isLoading={isLoading} />
       <Navbar />

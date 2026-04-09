@@ -1,8 +1,32 @@
 "use client"
 
+import { useEffect, useRef, useState } from "react";
+
 export default function MissionVision() {
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const [canLoadVideo, setCanLoadVideo] = useState(false);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0]?.isIntersecting) {
+          setCanLoadVideo(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "200px 0px" }
+    );
+
+    observer.observe(section);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className="section-reveal lg:py-16 md:py-16 py-8 top-0 left-0 mission-vision-section w-full h-full bg-[url('/images/mission-vision-bg.png')] bg-no-repeat xl:bg-[25%] bg-center bg-contain bg-[#0A0A0A]">
+    <section ref={sectionRef} className="section-reveal lg:py-16 md:py-16 py-8 top-0 left-0 mission-vision-section w-full h-full bg-[url('/images/mission-vision-bg.png')] bg-no-repeat xl:bg-[25%] bg-center bg-contain bg-[#0A0A0A]">
 <div className="lg:flex block items-center">
 <div className="lg:w-[50%] w-full h-full flex items-center">
       <svg
@@ -82,14 +106,19 @@ export default function MissionVision() {
           height="1200"
           mask="url(#diamondMask)"
         >
-          <video
-            src="./videos/Hexar Video.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-full object-cover"
-          />
+          {canLoadVideo ? (
+            <video
+              src="./videos/Hexar Video.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="metadata"
+              className="w-full h-full object-cover"
+            />
+          ) : (
+            <div className="w-full h-full bg-black/50" />
+          )}
         </foreignObject>
       </svg>
     </div>

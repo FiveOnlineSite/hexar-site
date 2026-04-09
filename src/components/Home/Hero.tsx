@@ -235,7 +235,7 @@ import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { hero } from "@/src/data/hero";
@@ -246,6 +246,8 @@ export default function Hero() {
    const heroRef = useRef(null);
    const sliderRef = useRef(null);
   const imageRefs = useRef<HTMLImageElement[]>([]);
+  const videoRefs = useRef<HTMLVideoElement[]>([]);
+  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
   const animateImage = (index: number) => {
   const img = imageRefs.current[index];
@@ -295,6 +297,20 @@ export default function Hero() {
       onEnter: () => animateImage(0),
     });
   }, []);
+
+  useEffect(() => {
+    videoRefs.current.forEach((video, index) => {
+      if (!video) return;
+
+      if (index === activeSlideIndex) {
+        video.play().catch(() => {
+          // Ignore autoplay rejection; browser policies vary.
+        });
+      } else {
+        video.pause();
+      }
+    });
+  }, [activeSlideIndex]);
 
 
   return (
@@ -363,9 +379,10 @@ export default function Hero() {
           disableOnInteraction: false,
         }}
         onSlideChange={(swiper) => {
-  const activeIndex = swiper.realIndex;
-  animateImage(activeIndex);
-}}
+          const activeIndex = swiper.realIndex;
+          setActiveSlideIndex(activeIndex);
+          animateImage(activeIndex);
+        }}
 
         loop={true}
         speed={1500}
@@ -379,11 +396,15 @@ export default function Hero() {
 {hero.map((item, index) => (
    <SwiperSlide key={index} className="relative h-screen w-full">
           <video
+            ref={(el) => {
+              if (el) videoRefs.current[index] = el;
+            }}
             src={item.video}
             playsInline
-            autoPlay
+            autoPlay={index === 0}
             muted
             loop
+            preload={index === 0 ? "auto" : "none"}
             className="absolute inset-0 w-full h-screen object-cover blur-sm"
           />
 
@@ -443,6 +464,8 @@ export default function Hero() {
 
               src={item.image}
               alt="banner"
+              loading={index === 0 ? "eager" : "lazy"}
+              decoding="async"
               className="4xl:h-[90vh] 3xl:h-[90vh] 2xl:h-[90vh] xl:h-[90vh] h-full object-contain"
             /> 
             {/* <img

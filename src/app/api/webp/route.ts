@@ -66,7 +66,11 @@ export async function GET(request: NextRequest) {
       .webp({ quality: safeQuality })
       .toBuffer();
 
+
+    return new Response(new Uint8Array(webpBuffer), {
+
     return new Response(webpBuffer, {
+
       headers: {
         "Content-Type": "image/webp",
         "Cache-Control": "public, max-age=31536000, immutable",
@@ -75,7 +79,11 @@ export async function GET(request: NextRequest) {
   } catch {
     try {
       const fallbackBuffer = await fs.readFile(absolutePath);
+
+      return new Response(new Uint8Array(fallbackBuffer), {
+
       return new Response(fallbackBuffer, {
+ main
         headers: {
           "Content-Type": getMimeType(extension),
           "Cache-Control": "public, max-age=86400",

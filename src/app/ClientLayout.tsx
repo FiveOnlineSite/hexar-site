@@ -1,47 +1,17 @@
-// "use client";
-
-// import { usePathname } from "next/navigation";
-// import Navbar from "../components/Navbar";
-// import Footer from "../components/Footer";
-// import ScrollAnimation from "../components/ScrollAnimation";
-// import GoToTopButton from "../components/GoToTopButton";
-
-// export default function ClientLayout({
-//   children,
-// }: {
-//   children: React.ReactNode;
-// }) {
-//   const pathname = usePathname();
-
-//   // hide footer only on album pages
-//   const hideFooter = pathname?.includes("/albums/");
-//   const hideTopButton = pathname?.includes("/albums/");
-
-
-//   return (
-//     <>
-//       <Navbar />
-//       {/* <ScrollAnimation/> */}
-//       {!hideTopButton && <GoToTopButton/>}
-      
-//      {/* <div id="navbar-sentinel" className="h-[1px]" /> */}
-//       {children}
-//       {!hideFooter && <Footer />}
-//     </>
-//   );
-// }
-
-// ClientLayout.tsx
 "use client";
 
+import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import GoToTopButton from "../components/GoToTopButton";
-import SmoothScrollProvider from "../components/SmoothScrollProvider";
 import ContactUsButton from "../components/ContactUsButton";
 import Loader from "../components/Loader";
+
+const SmoothScrollProvider = dynamic(() => import("../components/SmoothScrollProvider"), {
+  ssr: false,
+});
 
 export default function ClientLayout({
   children,
@@ -50,18 +20,17 @@ export default function ClientLayout({
 }) {
   const pathname = usePathname();
   const [pastBanner, setPastBanner] = useState(false);
-  const [isLoading, setIsLoading] = useState(true); // ← start as loading
+  const [isLoading, setIsLoading] = useState(true);
 
   const hideFooter = pathname?.includes("/albums/");
   const hideContactButton = pathname?.includes("/contact-us");
   const hideTopButton = pathname?.includes("/albums/");
+  const enableSmoothScroll = !pathname?.includes("/albums/");
 
-  // ── Hide loader when page is ready ──
   useEffect(() => {
     const handleLoad = () => setIsLoading(false);
 
     if (document.readyState === "complete") {
-      // Already loaded
       setIsLoading(false);
     } else {
       window.addEventListener("load", handleLoad);
@@ -69,14 +38,12 @@ export default function ClientLayout({
     }
   }, []);
 
-  // ── Reset loader on route change ──
   useEffect(() => {
     setIsLoading(true);
     const timeout = setTimeout(() => setIsLoading(false), 800);
     return () => clearTimeout(timeout);
   }, [pathname]);
 
-  // ── Scroll detection ──
   useEffect(() => {
     let cleanup: (() => void) | undefined;
 
@@ -109,7 +76,7 @@ export default function ClientLayout({
 
   return (
     <>
-      <SmoothScrollProvider />
+      {enableSmoothScroll && <SmoothScrollProvider />}
       <Loader isLoading={isLoading} />
       <Navbar />
       {!hideTopButton && <GoToTopButton pastBanner={pastBanner} />}

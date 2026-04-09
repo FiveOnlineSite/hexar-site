@@ -45,7 +45,7 @@ export default function Navbar() {
       <div className={`absolute top-0 left-0 right-0 z-[60] flex items-center justify-between lg:px-16 md:px-8 px-8 lg:py-6 md:py-4 py-4
         ${scrolled ? "bg-black/80 backdrop-blur-md shadow-lg" : "bg-transparent"}`}>
         <Link href="/">
-          <img src="/images/icons/Hexar Logo.png" className="4xl:h-[150px] 3xl:h-[110px] 2xl:h-[110px] xl:h-[90px] lg:h-[90px] md:h-[70px] h-[70px]" />
+          <img src="/images/icons/Hexar-Logo White.svg" className="4xl:h-[150px] 3xl:h-[110px] 2xl:h-[110px] xl:h-[90px] lg:h-[90px] md:h-[70px] h-[70px]" />
         </Link>
 
         <div className="flex items-center justify-center gap-8">
@@ -70,7 +70,7 @@ export default function Navbar() {
       >
         <div className="px-8 py-6 flex justify-between items-center">
           <Link href="/">
-            <img src="/images/icons/Hexar Logo.png" className="4xl:h-[150px] 3xl:h-[110px] 2xl:h-[110px] xl:h-[90px] lg:h-[90px] md:h-[70px] h-[70px]" />
+            <img src="/images/icons/Hexar-Logo White.svg" className="4xl:h-[150px] 3xl:h-[110px] 2xl:h-[110px] xl:h-[90px] lg:h-[90px] md:h-[70px] h-[70px]" />
           </Link>
 
           <button
@@ -91,7 +91,7 @@ export default function Navbar() {
               className="group flex items-center text-white 4xl:text-[26px] 3xl:text-[26px] 2xl:text-[24px] xl:text-[22px] lg:text-[22px] md:text-[20px] text-[18px] 4xl:py-2 3xl:py-2 py-0 font-semibold"
             >
               <img
-                src="/images/icons/hexar-small-logo.png"
+                src="/images/icons/hexar-small-logo.svg"
                 className="w-[40px] h-[40px] opacity-0 -translate-x-10 
                 group-hover:opacity-100 group-hover:translate-x-6
                 transition-all duration-500"
@@ -106,7 +106,7 @@ export default function Navbar() {
 
 <div className="flex items-center justify-start mt-8">
         <img
-          src="/images/icons/tpn-logo.png"
+          src="/images/icons/tpn-logo.svg"
           className="mx-8 w-[140px]"
           alt="TPN Logo"
         />

@@ -119,7 +119,7 @@ export default function About({ image }: { image: string }) {
           <div className="relative xl:w-[40%] lg:w-[40%] w-full lg:p-16 p-8">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 flex flex-col items-center">
               <img
-                src="/images/icons/hexar-logo1.svg"
+                src="/images/icons/hexar-logo1.png"
                 alt="hexar"
                 className="h-[80px] xl:h-[105px] lg:h-[115px] w-full"
               />
@@ -138,13 +138,13 @@ export default function About({ image }: { image: string }) {
 
             <div className="flex 4xl:justify-evenly 3xl:justify-around 2xl:justify-evenly xl:justify-evenly lg:justify-between md:justify-evenly justify-between mt-4">
               <div className="flex flex-col items-center">
-                <img src="/images/icons/head-hoppers-logo.svg" className="h-[30px] lg:h-[50px]" />
+                <img src="/images/icons/head-hoppers-logo.png" className="h-[30px] lg:h-[50px]" />
                 <p className="4xl:text-[15px] 3xl:text-[15px] 2xl:text-[12px] xl:text-[10px] text-[10px] font-light mt-2 text-center">
                   Character / Hair Specialist
                 </p>
               </div>
               <div className="flex flex-col items-center">
-                <img src="/images/icons/ares-logo.svg" className="h-[30px] lg:h-[50px] drop-shadow-[4px_4px_10px_rgba(0,0,0,0.8)]" />
+                <img src="/images/icons/ares-logo.png" className="h-[30px] lg:h-[50px] drop-shadow-[4px_4px_10px_rgba(0,0,0,0.8)]" />
                 <p className="4xl:text-[15px] 3xl:text-[15px] 2xl:text-[12px] xl:text-[10px] text-[10px] font-light mt-2 text-center">
                   Concept / VFX / Technical Art / Co-dev
                 </p>

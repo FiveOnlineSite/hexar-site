@@ -143,6 +143,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import { whyus } from "@/src/data/whyus";
+import Image from "next/image";
+
+const darkPlaceholder =
+  "data:image/gif;base64,R0lGODlhAQABAPAAABEREf///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==";
 
 export default function WhyUs() {
   return (
@@ -186,8 +190,18 @@ export default function WhyUs() {
         {whyus.map((item, index) => (
         <SwiperSlide key={index}>
         <div className="group relative bg-[#000] rounded-lg overflow-hidden 3xl:min-h-[570px] 2xl:min-h-[500px] xl:min-h-[420px] h-full transition-all duration-700 mx-2"> 
-          <div className="overflow-hidden"> 
-            <img src={item.image} className="w-full object-cover 4xl:h-[700px] 3xl:h-[540px] 2xl:h-[450px] xl:h-[380px] h-full scale-1 group-hover:scale-125 origin-center transition-all duration-700 ease-out" /> 
+          <div className="overflow-hidden relative 4xl:h-[700px] 3xl:h-[540px] 2xl:h-[450px] xl:h-[380px] h-[260px]"> 
+            <Image
+              src={item.image}
+              alt={item.title}
+              fill
+              sizes="(max-width: 480px) 92vw, (max-width: 768px) 78vw, (max-width: 1200px) 50vw, 33vw"
+              quality={50}
+              priority={index === 0}
+              placeholder="blur"
+              blurDataURL={darkPlaceholder}
+              className="w-full object-cover scale-1 group-hover:scale-125 origin-center transition-all duration-700 ease-out"
+            />
           </div>  
           <div className="xl:absolute relative 4xl:-bottom-[12%] 3xl:-bottom-[14%] 2xl:-bottom-[18%] xl:-bottom-[20%] bottom-0 3xl:group-hover:bottom-0 2xl:group-hover:bottom-0 xl:group-hover:bottom-0 transition-all duration-700 ease-out py-2 pl-4 lg:pr-8 md:pr-6 pr-4 flex flex-col items-start justify-start 3xl:min-h-0 2xl:min-h-0 xl:min-h-[100px] lg:min-h-[210px] md:min-h-[220px] min-h-[220px] bg-[linear-gradient(89.16deg,#0A0A0A_1.81%,#03010E_99.03%)] w-full"> 
             <h4 className="text-white 4xl:text-[34px] 3xl:text-[32px] 2xl:text-[30px] xl:text-[28px] lg:text-[28px] md:text-[24px] text-[20px] font-semibold leading-tight py-2"> 

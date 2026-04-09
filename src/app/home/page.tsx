@@ -1,32 +1,34 @@
-import GallerySlider from "@/src/components/Home/GallerySlider"
-import Hero from "@/src/components/Home/Hero"
-import About from "@/src/components/Home/About"
-import MissionVision from "@/src/components/Home/MissionVision"
-import Solution from "@/src/components/Home/Solution"
-import OurExpertise from "@/src/components/Home/OurExpertise"
-import Clients from "@/src/components/Home/Clients"
-import Contribution from "@/src/components/Home/Contribution"
-import WhyUs from "@/src/components/Home/WhyUs"
-import ContactSection from "@/src/components/Home/ContactSection"
-import BlogSection from "@/src/components/Home/BlogSection"
-import FAQSection from "@/src/components/Home/FAQSection"
+import dynamic from "next/dynamic";
 
-export default function HomePage () {
-    return (
-        <>
-        <Hero/>
-        <GallerySlider/>
-        <About image={"/images/about-img.png" }/>
-        <MissionVision/>
-        <Solution/>
-        <OurExpertise/>
-        <Clients/>
-        <Contribution/>
-        <WhyUs/>
-        <ContactSection />
-        <BlogSection/>
-        <FAQSection/>
-        </>
-        
-    )
+import Hero from "@/src/components/Home/Hero";
+import GallerySlider from "@/src/components/Home/GallerySlider";
+
+const About = dynamic(() => import("@/src/components/Home/About"));
+const MissionVision = dynamic(() => import("@/src/components/Home/MissionVision"));
+const Solution = dynamic(() => import("@/src/components/Home/Solution"));
+const OurExpertise = dynamic(() => import("@/src/components/Home/OurExpertise"));
+const Clients = dynamic(() => import("@/src/components/Home/Clients"));
+const Contribution = dynamic(() => import("@/src/components/Home/Contribution"));
+const WhyUs = dynamic(() => import("@/src/components/Home/WhyUs"));
+const ContactSection = dynamic(() => import("@/src/components/Home/ContactSection"));
+const BlogSection = dynamic(() => import("@/src/components/Home/BlogSection"));
+const FAQSection = dynamic(() => import("@/src/components/Home/FAQSection"));
+
+export default function HomePage() {
+  return (
+    <>
+      <Hero />
+      <GallerySlider />
+      <About image="/images/about-img.png" />
+      <MissionVision />
+      <Solution />
+      <OurExpertise />
+      <Clients />
+      <Contribution />
+      <WhyUs />
+      <ContactSection />
+      <BlogSection />
+      <FAQSection />
+    </>
+  );
 }

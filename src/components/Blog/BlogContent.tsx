@@ -40,7 +40,7 @@ export default function BlogContent({ blogSlug }: BlogContentProps) {
         "name": "Hexar Studios",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://hexarstudios.com/images/icons/Hexar%20Logo.png"
+          "url": "https://hexarstudios.com/images/icons/Hexar-Logo%20Black.svg"
         }
       },
       "datePublished": currentBlog.date,

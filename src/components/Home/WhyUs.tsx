@@ -144,6 +144,8 @@ import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import { whyus } from "@/src/data/whyus";
 import Image from "next/image";
+const darkPlaceholder =
+  "data:image/gif;base64,R0lGODlhAQABAPAAABEREf///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==";
 
 export default function WhyUs() {
   return (
@@ -192,9 +194,11 @@ export default function WhyUs() {
               src={item.image}
               alt={item.title}
               fill
-              sizes="(max-width: 768px) 100vw, 45vw"
-              quality={70}
-              loading="lazy"
+              sizes="(max-width: 480px) 92vw, (max-width: 768px) 78vw, (max-width: 1200px) 50vw, 33vw"
+              quality={50}
+              priority={index === 0}
+              placeholder="blur"
+              blurDataURL={darkPlaceholder}
               className="w-full object-cover scale-1 group-hover:scale-125 origin-center transition-all duration-700 ease-out"
             />
           </div>  

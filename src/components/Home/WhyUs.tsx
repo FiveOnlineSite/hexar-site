@@ -144,7 +144,6 @@ import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import { whyus } from "@/src/data/whyus";
 import Image from "next/image";
-
 const darkPlaceholder =
   "data:image/gif;base64,R0lGODlhAQABAPAAABEREf///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==";
 

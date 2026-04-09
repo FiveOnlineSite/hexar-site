@@ -1,6 +1,7 @@
 "use client";
 import React, {useState, useRef} from 'react'
 import ReCAPTCHA from "react-google-recaptcha";
+import Image from "next/image";
 
 const ContactUsForm = () => {
 
@@ -73,8 +74,16 @@ setTimeout(() => setSuccess(false), 3000);
     <section className='section-reveal contact-form-section bg-[url("/images/contact-page-bg.png")] bg-contain bg-right bg-no-repeat lg:p-16 md:p-16 p-8'>
         <div className='lg:flex block items-end justify-center lg:w-[80%] w-full mx-auto gap-16 my-8'>
             <div className='lg:w-[35%] w-full'>
-                {/* <img src="./images/HardSurface.png" alt="contact-form" className=' w-full h-full object-contain mt-8' /> */}
-                <img src="./images/HardSurface.png" alt="contact-form" className='w-full 4xl:h-[650px] 3xl:h-[650px] 2xl:h-[650px] h-full object-contain mt-8' />
+                <Image
+                  src="/images/HardSurface.png"
+                  alt="contact-form"
+                  width={1226}
+                  height={1800}
+                  sizes="(max-width: 1024px) 100vw, 35vw"
+                  quality={70}
+                  loading="lazy"
+                  className='w-full 4xl:h-[650px] 3xl:h-[650px] 2xl:h-[650px] h-full object-contain mt-8'
+                />
             </div>
             <div className='lg:w-[65%] w-full  lg:mt-0 mt-10'>
               <h2 className=' 3xl:text-[50px] 2xl:text-[45px] xl:text-[40px] lg:text-[40px] md:text-[35px] text-[30px] font-bold leading-tight'>Contact Us</h2>

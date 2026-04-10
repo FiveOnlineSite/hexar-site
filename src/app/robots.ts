@@ -9,7 +9,8 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: 'SemrushBot',
-        disallow: '/',
+        allow: '/',
+        crawlDelay: 10,
       },
       {
         userAgent: '*',

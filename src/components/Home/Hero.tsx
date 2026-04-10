@@ -244,8 +244,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Hero() {
    const heroRef = useRef(null);
-   const sliderRef = useRef(null);
-  const imageRefs = useRef<HTMLImageElement[]>([]);
+   const imageRefs = useRef<HTMLImageElement[]>([]);
   const videoRefs = useRef<HTMLVideoElement[]>([]);
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
@@ -290,12 +289,16 @@ export default function Hero() {
     waitForSlide(() => animateImage(0));
   }, []);
 
-    useEffect(() => {
-    ScrollTrigger.create({
+  useEffect(() => {
+    const trigger = ScrollTrigger.create({
       trigger: heroRef.current,
       start: "top 80%",
       onEnter: () => animateImage(0),
     });
+
+    return () => {
+      trigger.kill();
+    };
   }, []);
 
   useEffect(() => {
@@ -365,8 +368,8 @@ export default function Hero() {
             swiper.params.navigation &&
             typeof swiper.params.navigation !== "boolean"
           ) {
-            swiper.params.navigation.prevEl = "#trust-custom-prev";
-            swiper.params.navigation.nextEl = "#trust-custom-next";
+            swiper.params.navigation.prevEl = "#custom-prev";
+            swiper.params.navigation.nextEl = "#custom-next";
           }
 
           if (swiper.navigation) {
@@ -388,7 +391,6 @@ export default function Hero() {
         speed={1500}
         spaceBetween={0}
         slidesPerView={1}
-        ref={sliderRef} 
         className="h-full w-full relative"
 
         >

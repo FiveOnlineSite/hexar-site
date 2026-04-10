@@ -29,7 +29,7 @@ export default function CreativeForce() {
         <div className="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-4 grid-col-1 gap-4">
             <div className="relative overflow-hidden group transition-all duration-500">
 
-                <img src="./images/team/Nik (2).jpg" className="h-full w-full object-contain relative brightness-50 group-hover:brightness-100 transition-all duration-500" />
+                <img src="./images/team/Nik (2).jpg" alt="Portrait of Nik John, Co-founder and CEO" className="h-full w-full object-contain relative brightness-50 group-hover:brightness-100 transition-all duration-500" />
                
                  <div className="absolute lg:-bottom-[12%] md:bottom-[15%] bottom-[5%] left-0 lg:px-8 px-4 lg:group-hover:bottom-[10%] transition-all ease-in-out duration-500">
                      <h5 className="4xl:text-[32px] 3xl:text-[28px] 2xl:text-[26px] xl:text-[24px] lg:text-[24px] md:text-[18px] text-[16px] font-semibold leading-base">Nik John</h5>
@@ -38,7 +38,7 @@ export default function CreativeForce() {
              </div>
               <div className="relative overflow-hidden group transition-all duration-500">
 
-                <img src="./images/team/Tushank (1).jpg" className="h-full w-full object-contain relative brightness-50 group-hover:brightness-100 transition-all duration-500" />
+                <img src="./images/team/Tushank (1).jpg" alt="Portrait of Tushank K Jaiswal, Co-founder and CAO" className="h-full w-full object-contain relative brightness-50 group-hover:brightness-100 transition-all duration-500" />
                 
                  <div className="absolute lg:-bottom-[12%] md:bottom-[15%] bottom-[5%] left-0 lg:px-8 px-4 lg:group-hover:bottom-[10%] transition-all ease-in-out duration-500">
                      <h5 className="4xl:text-[32px] 3xl:text-[28px] 2xl:text-[26px] xl:text-[24px] lg:text-[24px] md:text-[18px] text-[16px] font-semibold leading-base">Tushank K Jaiswal</h5>
@@ -47,7 +47,7 @@ export default function CreativeForce() {
              </div>
              <div className="relative overflow-hidden group transition-all duration-500">
 
-                <img src="./images/team/Prashant (1).jpg" className="h-full w-full object-contain relative brightness-50 group-hover:brightness-100 transition-all duration-500" />
+                <img src="./images/team/Prashant (1).jpg" alt="Portrait of Prashant Verma, Co-founder and CTO" className="h-full w-full object-contain relative brightness-50 group-hover:brightness-100 transition-all duration-500" />
                 
                  <div className="absolute lg:-bottom-[12%] md:bottom-[15%] bottom-[5%] left-0 lg:px-8 px-4 lg:group-hover:bottom-[10%] transition-all ease-in-out duration-500">
                      <h5 className="4xl:text-[32px] 3xl:text-[28px] 2xl:text-[26px] xl:text-[24px] lg:text-[24px] md:text-[18px] text-[16px] font-semibold leading-base">Prashant Verma</h5>
@@ -56,7 +56,7 @@ export default function CreativeForce() {
              </div>
              <div className="relative overflow-hidden group transition-all duration-500">
 
-                <img src="./images/team/Hari.jpg" className="h-full w-full object-contain relative lg:brightness-50 lg:group-hover:brightness-100 transition-all duration-500" />
+                <img src="./images/team/Hari.jpg" alt="Portrait of Hari K Nair, Co-founder and CFO" className="h-full w-full object-contain relative lg:brightness-50 lg:group-hover:brightness-100 transition-all duration-500" />
                 
                 <div className="absolute lg:-bottom-[12%] md:bottom-[15%] bottom-[5%] left-0 lg:px-8 px-4 lg:group-hover:bottom-[10%] transition-all ease-in-out duration-500">
                      <h5 className="4xl:text-[32px] 3xl:text-[28px] 2xl:text-[26px] xl:text-[24px] lg:text-[24px] md:text-[18px] text-[16px] font-semibold leading-base">Hari K Nair</h5>

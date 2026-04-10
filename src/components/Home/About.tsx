@@ -138,13 +138,13 @@ export default function About({ image }: { image: string }) {
 
             <div className="flex 4xl:justify-evenly 3xl:justify-around 2xl:justify-evenly xl:justify-evenly lg:justify-between md:justify-evenly justify-between mt-4">
               <div className="flex flex-col items-center">
-                <img src="/images/icons/head-hoppers-logo.png" className="h-[30px] lg:h-[50px]" />
+                <img src="/images/icons/head-hoppers-logo.png" alt="Head Hoppers Studios logo" className="h-[30px] lg:h-[50px]" />
                 <p className="4xl:text-[15px] 3xl:text-[15px] 2xl:text-[12px] xl:text-[10px] text-[10px] font-light mt-2 text-center">
                   Character / Hair Specialist
                 </p>
               </div>
               <div className="flex flex-col items-center">
-                <img src="/images/icons/ares-logo.png" className="h-[30px] lg:h-[50px] drop-shadow-[4px_4px_10px_rgba(0,0,0,0.8)]" />
+                <img src="/images/icons/ares-logo.png" alt="Ares Visual Effects Studio logo" className="h-[30px] lg:h-[50px] drop-shadow-[4px_4px_10px_rgba(0,0,0,0.8)]" />
                 <p className="4xl:text-[15px] 3xl:text-[15px] 2xl:text-[12px] xl:text-[10px] text-[10px] font-light mt-2 text-center">
                   Concept / VFX / Technical Art / Co-dev
                 </p>

@@ -7,7 +7,6 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import GoToTopButton from "../components/GoToTopButton";
 import ContactUsButton from "../components/ContactUsButton";
-import Loader from "../components/Loader";
 
 const SmoothScrollProvider = dynamic(() => import("../components/SmoothScrollProvider"), {
   ssr: false,
@@ -18,9 +17,14 @@ export default function ClientLayout({
 }: {
   children: React.ReactNode;
 }) {
+  type LenisScrollPayload = { scroll: number };
+  type LenisLike = {
+    on: (event: "scroll", callback: (payload: LenisScrollPayload) => void) => void;
+    off: (event: "scroll", callback: (payload: LenisScrollPayload) => void) => void;
+  };
+
   const pathname = usePathname();
   const [pastBanner, setPastBanner] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
 
   const hideFooter = pathname?.includes("/albums/");
   const hideContactButton = pathname?.includes("/contact-us");
@@ -28,27 +32,10 @@ export default function ClientLayout({
   const enableSmoothScroll = !pathname?.includes("/albums/");
 
   useEffect(() => {
-    const handleLoad = () => setIsLoading(false);
-
-    if (document.readyState === "complete") {
-      setIsLoading(false);
-    } else {
-      window.addEventListener("load", handleLoad);
-      return () => window.removeEventListener("load", handleLoad);
-    }
-  }, []);
-
-  useEffect(() => {
-    setIsLoading(true);
-    const timeout = setTimeout(() => setIsLoading(false), 800);
-    return () => clearTimeout(timeout);
-  }, [pathname]);
-
-  useEffect(() => {
     let cleanup: (() => void) | undefined;
 
     const trySetup = () => {
-      const lenis = (window as any).__lenis;
+      const lenis = (window as Window & { __lenis?: LenisLike }).__lenis;
 
       if (lenis) {
         const handleScroll = ({ scroll }: { scroll: number }) => {
@@ -77,7 +64,6 @@ export default function ClientLayout({
   return (
     <>
       {enableSmoothScroll && <SmoothScrollProvider />}
-      <Loader isLoading={isLoading} />
       <Navbar />
       {!hideTopButton && <GoToTopButton pastBanner={pastBanner} />}
       {!hideContactButton && <ContactUsButton pastBanner={pastBanner} />}

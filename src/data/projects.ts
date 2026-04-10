@@ -4,7 +4,7 @@ export const projects = [
         id: 8,
         title: "Skull and Bones",
         date: "24 Nov",
-        image: "/images/contributions/Skull-and-Bones.jpg",
+        image: "/images/contributions/Skull-and-Bones.webp",
         slug: "skull-and-bones",
           albums: [
             {
@@ -30,7 +30,7 @@ export const projects = [
     id: 1,
         title: "Predators Hunting Grounds",
         date: "24 Nov",
-        image: "/images/contributions/PHG.jpg",
+        image: "/images/contributions/PHG.webp",
         slug: "predators-hunting-grounds",
       //   content: "Predator Skin. Character Skins, Props and Weapons",
         albums: [
@@ -223,7 +223,7 @@ export const projects = [
         id: 2,
         title: "Back 4 Blood",
         date: "24 Nov",
-        image: "/images/contributions/B4B.jpg",
+        image: "/images/contributions/B4B.webp",
          slug: "back-4-blood",
         content: "NPC Characters (Modular), HairStyles, Head & Zombie Body Parts",
           albums: [
@@ -381,7 +381,7 @@ export const projects = [
    {    id: 3,
         title: "Wanderer Fragment of Fate",
         date: "24 Nov",
-        image: "/images/contributions/Wanderer.jpg",
+        image: "/images/contributions/Wanderer.webp",
          slug: "wanderer-fragment-of-fate",
         // content: "NPC Characters (Modular), HairStyles, Head & Zombie Body Parts",
          albums: [
@@ -581,7 +581,7 @@ export const projects = [
     id: 4,
     title: "Deceit 2",
     date: "24 Nov",
-    image: "/images/contributions/Deceit 2.jpg",
+    image: "/images/contributions/Deceit 2.webp",
     slug: "deceit-2",
     albums: [
       {
@@ -814,7 +814,7 @@ export const projects = [
         id:5,
         title: "Ghostbusters Spirits Unleashed",
         date: "24 Nov",
-        image: "/images/contributions/Ghost.jpg",
+        image: "/images/contributions/Ghost.webp",
          slug: "ghostbusters-spirits-unleashed",
         albums: [
             {
@@ -889,7 +889,7 @@ export const projects = [
         id: 6,
         title: "Call of Osiris",
         date: "24 Nov",
-        image: "/images/contributions/Call of Osiris.jpg",
+        image: "/images/contributions/Call of Osiris.webp",
          slug: "call-of-osiris",
      albums: [
             {
@@ -930,7 +930,7 @@ export const projects = [
         id: 7,
         title: "Tiger 3",
         date: "24 Nov",
-        image: "/images/contributions/Tiger.jpg",
+        image: "/images/contributions/Tiger.webp",
         slug: "tiger-3",
           albums: [
             {
@@ -1076,7 +1076,7 @@ export const projects = [
         id: 9,
         title: "Artificial Detective",
         date: "24 Nov",
-        image: "/images/contributions/Artificial Detective.jpg",
+        image: "/images/contributions/Artificial Detective.webp",
         slug: "artificial-detective",
           albums: [
             {

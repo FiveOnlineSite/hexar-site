@@ -4,7 +4,7 @@ export const othercategories = [
         id:1,
         title: "Technical Art",
         slug: "technical-art",
-         image: "/images/our-expertise/Technical Art.jpg",
+         image: "/images/our-expertise/Technical Art.webp",
         albums: [
             {
                 id: 1,
@@ -22,7 +22,7 @@ export const othercategories = [
         id:2,
         title: "Animation",
         slug: "animation",
-         image: "/images/our-expertise/Animation.jpg",
+         image: "/images/our-expertise/Animation.webp",
         albums: [
              {
                 id: 1,
@@ -39,7 +39,7 @@ export const othercategories = [
        {
         id:3,
         title: "Cinematics",
-         image: "/images/our-expertise/Cinematic.jpg",
+         image: "/images/our-expertise/Cinematic.webp",
         slug: "cinematics",
         albums: [
             {

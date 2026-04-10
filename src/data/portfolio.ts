@@ -4,7 +4,7 @@ export const portfolio = [
         id:1,
         title: "Concept Art",
         slug: "concept-art",
-         image: "/images/our-expertise/Concept.jpg",
+         image: "/images/our-expertise/Concept.webp",
         albums: [
             {
                 id: 1,
@@ -297,7 +297,7 @@ export const portfolio = [
         id:2,
         title: "Characters",
         slug: "characters",
-         image: "/images/our-expertise/Characters.jpg",
+         image: "/images/our-expertise/Characters.webp",
         albums: [
             {
                 id: 1,
@@ -497,7 +497,7 @@ export const portfolio = [
        {
         id:3,
         title: "Realtime Hair",
-         image: "/images/our-expertise/Hairs.jpg",
+         image: "/images/our-expertise/Hairs.webp",
         slug: "realtime-hair",
         albums: [
             {
@@ -749,7 +749,7 @@ export const portfolio = [
       {
         id:4,
         title: "Creature Modeling",
-         image: "/images/our-expertise/Creatures.jpg",
+         image: "/images/our-expertise/Creatures.webp",
         slug: "creature-modeling",
         albums: [
             {
@@ -871,7 +871,7 @@ export const portfolio = [
     //     {
     //     id:4,
     //     title: "Hard Surface",
-    //      image: "/images/our-expertise/HardSurface.jpg",
+    //      image: "/images/our-expertise/HardSurface.webp",
     //     slug: "hard-surface",
     //     albums: [
     //         {
@@ -942,7 +942,7 @@ export const portfolio = [
        {
         id:5,
         title: "Props",
-         image: "/images/our-expertise/Props.jpg",
+         image: "/images/our-expertise/Props.webp",
         slug: "props",
         albums: [
             {
@@ -1206,7 +1206,7 @@ export const portfolio = [
        {
         id:6,
         title: "Weapons",
-         image: "/images/our-expertise/Weapons.jpg",
+         image: "/images/our-expertise/Weapons.webp",
         slug: "weapons",
         albums: [
             {
@@ -1443,7 +1443,7 @@ export const portfolio = [
        {
         id:7,
         title: "Hard Surface",
-         image: "/images/our-expertise/HardSurface.jpg",
+         image: "/images/our-expertise/HardSurface.webp",
         slug: "hard-surface",
         albums: [
             {
@@ -1515,7 +1515,7 @@ export const portfolio = [
         {
         id:8,
         title: "Vehicles",
-         image: "/images/our-expertise/Vehicles.jpg",
+         image: "/images/our-expertise/Vehicles.webp",
         slug: "vehicles",
         albums: [
             {
@@ -1536,7 +1536,7 @@ export const portfolio = [
        {
         id:9,
         title: "Stylized Art",
-         image: "/images/our-expertise/Stylized.jpg",
+         image: "/images/our-expertise/Stylized.webp",
         slug: "stylized-art",
         albums: [
             {

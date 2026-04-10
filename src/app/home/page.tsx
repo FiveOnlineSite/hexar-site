@@ -19,7 +19,7 @@ export default function HomePage() {
     <>
       <Hero />
       <GallerySlider />
-      <About image="/images/about-img.png" />
+      <About image="/images/about-img.webp" />
       <MissionVision />
       <Solution />
       <OurExpertise />

@@ -63,12 +63,14 @@ useLayoutEffect(() => {
         <img
         // ref={bgDesktopRef}
         src="/images/end-to-end-bg.png"
+        alt=""
+        aria-hidden="true"
         className="absolute right-0 top-0 w-[900px] h-auto object-contain xl:block lg:block hidden"
       />
       <div className="relative z-10 flex items-center">
                 <div className="lg:w-[65%] w-full lg:pb-16 md:pb-16 pb-8">
                     <h2 className="text-reveal 4xl:text-[70px] 3xl:text-[70px] 2xl:text-[65px] xl:text-[56px] lg:text-[56px] md:text-[48px] text-[30px] font-bold text-white lg:leading-tight md:leading-tight leading-[40px] lg:px-16 lg:pt-16 lg:pb-8 md:px-16 md:pt-16 pb-4 pt-8 px-8"><span className="text-[#D50000]">End-to-End </span>3D Art Solutions for Film, Games & Beyond</h2>
-                    <img src="/images/end-to-end-bg.png" alt="bg" className="relative top-0 right-0 xl:hidden lg:hidden block w-full h-full pe-0"/>
+                    <img src="/images/end-to-end-bg.png" alt="End-to-end 3D art process background" className="relative top-0 right-0 xl:hidden lg:hidden block w-full h-full pe-0"/>
                     <div className="text-reveal 3xl:w-[65%] 2xl:w-[65%] lg:w-[62%] w-full lg:px-16 md:px-16 px-8">
                         <p className="4xl:text-[22px] 3xl:text-[22px] 2xl:text-[20px] xl:text-[15px] lg:text-[15px] md:text-[15px] text-[15px] font-light ">We partner with leading studios, game developers, and production houses worldwide to craft exceptional 3D art that stands out. From the spark of a 2D concept to high-resolution sculpts, highly detailed VFX assets and fully optimized in-game assets, our pipeline blends artistic passion with technical mastery. </p>
 

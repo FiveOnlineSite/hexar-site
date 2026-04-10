@@ -220,22 +220,24 @@ export default function BlogSection() {
         {/* CUSTOM ARROWS */}
         <button
           id="custom-prev"
+          aria-label="Previous blog slide"
           className="absolute xl:top-[75%] top-[5%] 
 4xl:-left-[62%] 3xl:-left-[60%] 2xl:-left-[60%] xl:-left-[58%] lg:left-[80%] left-[7%]
 rounded-full transition-all duration-700
 hover:shadow-[0_2px_20px_0_#FFFFFF40]"
         >
-          <Image src="/images/icons/left-arrow.png" width={40} height={40} alt="prev" className="w-8 h-8 4xl:h-[65px] 4xl:w-[65px] 3xl:h-[55px] 3xl:w-[55px] 2xl:w-[50px] 2xl:h-[50px] xl:h-[45px] xl:w-[45px] lg:w-[40px] lg:h-[40px] md:w-[35px] md:h-[35px] sm:w-[30px] sm:h-[30px]"/>
+          <Image src="/images/icons/left-arrow.png" width={40} height={40} alt="" className="w-8 h-8 4xl:h-[65px] 4xl:w-[65px] 3xl:h-[55px] 3xl:w-[55px] 2xl:w-[50px] 2xl:h-[50px] xl:h-[45px] xl:w-[45px] lg:w-[40px] lg:h-[40px] md:w-[35px] md:h-[35px] sm:w-[30px] sm:h-[30px]"/>
         </button>
 
         <button
           id="custom-next"
+          aria-label="Next blog slide"
           className="absolute xl:top-[75%] top-[5%] 
    xl:-left-[50%] lg:left-[90%] left-[20%]
   rounded-full transition-all duration-700
    hover:shadow-[0_2px_20px_0_#FFFFFF40]"
         >
-          <Image src="/images/icons/right-arrow.png" width={40} height={40} alt="next" className="w-8 h-8 4xl:h-[65px] 4xl:w-[65px] 3xl:h-[55px] 3xl:w-[55px] 2xl:w-[50px] 2xl:h-[50px] xl:h-[45px] xl:w-[45px] lg:w-[40px] lg:h-[40px] md:w-[35px] md:h-[35px] sm:w-[30px] sm:h-[30px]"/>
+          <Image src="/images/icons/right-arrow.png" width={40} height={40} alt="" className="w-8 h-8 4xl:h-[65px] 4xl:w-[65px] 3xl:h-[55px] 3xl:w-[55px] 2xl:w-[50px] 2xl:h-[50px] xl:h-[45px] xl:w-[45px] lg:w-[40px] lg:h-[40px] md:w-[35px] md:h-[35px] sm:w-[30px] sm:h-[30px]"/>
         </button>
 
         {/* SWIPER */}
@@ -284,6 +286,7 @@ hover:shadow-[0_2px_20px_0_#FFFFFF40]"
                 <div className="h-auto overflow-hidden">
                   <img
                     src={blog.image}
+                    alt={`Blog cover image: ${blog.title}`}
                     className="h-auto w-full object-cover group-hover:scale-125 transition-all duration-700"
                   />
                 </div>

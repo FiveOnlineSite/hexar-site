@@ -321,6 +321,7 @@ export default function Hero() {
 
   <button
       id="custom-next"
+      aria-label="Next hero slide"
       className="
         absolute 4xl:bottom-[25%] 3xl:bottom-[22%] 2xl:bottom-[22%] xl:bottom-[15%] lg:bottom-[40%] md:bottom-[40%] bottom-[57%]
         3xl:left-[10%] xl:left-[10%] lg:left-[15%] md:left-[12%] left-[75%]
@@ -331,7 +332,7 @@ export default function Hero() {
     >
       <Image
         src="/images/icons/right-arrow.png"
-        alt="right-arrow"
+        alt=""
         width={48}
         height={48}
         className="w-8 h-8 4xl:h-[65px] 4xl:w-[65px] 3xl:h-[55px] 3xl:w-[55px] 2xl:w-[50px] 2xl:h-[50px] xl:h-[45px] xl:w-[45px] lg:w-[40px] lg:h-[40px] md:w-[35px] md:h-[35px] sm:w-[30px] sm:h-[30px]"
@@ -341,6 +342,7 @@ export default function Hero() {
 
       <button
       id="custom-prev"
+      aria-label="Previous hero slide"
       className="
          absolute 4xl:bottom-[25%] 3xl:bottom-[22%] 2xl:bottom-[22%] xl:bottom-[15%] lg:bottom-[40%] md:bottom-[40%] bottom-[57%]
         xl:left-[0%] lg:left-[0%] md:left-[0%] left-[55%]
@@ -351,7 +353,7 @@ export default function Hero() {
     >
       <Image
         src="/images/icons/left-arrow.png"
-        alt="left-arrow"
+        alt=""
         width={48}
         height={48}
         className="w-8 h-8 4xl:h-[65px] 4xl:w-[65px] 3xl:h-[55px] 3xl:w-[55px] 2xl:w-[50px] 2xl:h-[50px] xl:h-[45px] xl:w-[45px] lg:w-[40px] lg:h-[40px] md:w-[35px] md:h-[35px] sm:w-[30px] sm:h-[30px]"
@@ -465,7 +467,7 @@ export default function Hero() {
   }}
 
               src={item.image}
-              alt="banner"
+              alt={`${item.title} hero visual`}
               loading={index === 0 ? "eager" : "lazy"}
               decoding="async"
               className="4xl:h-[90vh] 3xl:h-[90vh] 2xl:h-[90vh] xl:h-[90vh] h-full object-contain"

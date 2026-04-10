@@ -284,6 +284,7 @@ export default function CategoriesCard({
           > Our Process
             <img
               src="./images/icons/arrow-down.png"
+              alt=""
               className="ms-5 4xl:h-[25px] 4xl:w-[25px] 3xl:h-[25px] 3xl:w-[25px] 2xl:h-[20px] 2xl:w-[20px] xl:h-[20px] xl:w-[20px] lg:h-[20px] w-[20px] md:h-[20px] h-[20px] object-contain"
             />
           </button>
@@ -296,7 +297,7 @@ export default function CategoriesCard({
                 : "lg:absolute relative lg:group-hover:right-[8%] right-0 bottom-0"
             }`}
           >
-            <img src={services_img} className="xl:h-[450px] lg:h-[380px] md:h-[300px] h-[400px] w-full object-contain" />
+            <img src={services_img} alt={`${title} service illustration`} className="xl:h-[450px] lg:h-[380px] md:h-[300px] h-[400px] w-full object-contain" />
           </div>
         </div>
 
@@ -307,7 +308,7 @@ export default function CategoriesCard({
             isOpen ? "opacity-100" : "opacity-0"
           }`}
         >
-          <img src="./images/icons/arrow-up.png" className="4xl:h-[25px] 4xl:w-[25px] 3xl:h-[25px] 3xl:w-[25px] 2xl:h-[20px] 2xl:w-[20px] xl:h-[20px] xl:w-[20px] lg:h-[20px] w-[20px] md:h-[20px] h-[20px] object-contain"/>
+          <img src="./images/icons/arrow-up.png" alt="" className="4xl:h-[25px] 4xl:w-[25px] 3xl:h-[25px] 3xl:w-[25px] 2xl:h-[20px] 2xl:w-[20px] xl:h-[20px] xl:w-[20px] lg:h-[20px] w-[20px] md:h-[20px] h-[20px] object-contain"/>
         </button>
 
         {/* PROCESS SECTION */}
@@ -360,7 +361,7 @@ vectorEffect="non-scaling-stroke"
             {/* STEP 01 */}
           <div className="lg:w-[55%] md:w-[80%] w-full process-step xl:my-4 3xl:my-4 2xl:my-4 lg:my-4 md:my-4 my-2 flex items-center justify-evenly">
             <div className="process-item bg-[#333333] rounded-full flex items-center justify-center lg:w-[150px] lg:h-[150px] md:w-[150px] md:h-[150px] w-[72px] h-[72px]">
-              <img src="./images/services-cards/First Process.png" className="lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] w-[60px] h-[60px] object-contain" />
+              <img src="./images/services-cards/First Process.png" alt="Step 1 process icon" className="lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] w-[60px] h-[60px] object-contain" />
             </div>
             <div className="process-item 3xl:px-4 2xl:px-4 xl:px-4 lg:px-4 px-0 w-[50%]">
               <h6 className="lg:text-[16px] md:text-[14px] text-[12px] font-light leading-base">Step 01</h6>
@@ -377,14 +378,14 @@ vectorEffect="non-scaling-stroke"
               <p className="lg:text-[16px] md:text-[14px] text-[12px] font-light leading-base">{process.step2.description}</p>
             </div>
             <div className="process-item bg-[#333333] rounded-full flex items-center justify-center lg:w-[150px] lg:h-[150px] md:w-[150px] md:h-[150px] w-[72px] h-[72px]">
-              <img src="./images/services-cards/Second Process.png" className="lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] w-[60px] h-[60px] object-contain" />
+              <img src="./images/services-cards/Second Process.png" alt="Step 2 process icon" className="lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] w-[60px] h-[60px] object-contain" />
             </div>
           </div>
 
           {/* STEP 03 */}
           <div className="lg:w-[55%] md:w-[80%] w-full process-step xl:my-4 3xl:my-4 2xl:my-4 lg:my-4 md:my-4 my-2 flex items-center justify-evenly">
            <div className="process-item bg-[#333333] rounded-full flex items-center justify-center lg:w-[150px] lg:h-[150px] md:w-[150px] md:h-[150px] w-[72px] h-[72px]">
-              <img src="./images/services-cards/Third Process.png" className="lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] w-[60px] h-[60px] object-contain" />
+              <img src="./images/services-cards/Third Process.png" alt="Step 3 process icon" className="lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] w-[60px] h-[60px] object-contain" />
             </div>
             <div className="process-item 3xl:px-4 2xl:px-4 xl:px-4 lg:px-4 px-0 w-[50%]">
               <h6 className="lg:text-[16px] md:text-[14px] text-[12px] font-light leading-base">Step 03</h6>
@@ -401,7 +402,7 @@ vectorEffect="non-scaling-stroke"
               <p className="lg:text-[16px] md:text-[14px] text-[12px] font-light leading-base">{process.step4.description}</p>
             </div>
              <div className="process-item bg-[#333333] rounded-full flex items-center justify-center lg:w-[150px] lg:h-[150px] md:w-[150px] md:h-[150px] w-[72px] h-[72px]">
-              <img src="./images/services-cards/Fourth Process.png" className="lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] w-[60px] h-[60px] object-contain" />
+              <img src="./images/services-cards/Fourth Process.png" alt="Step 4 process icon" className="lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] w-[60px] h-[60px] object-contain" />
             </div>
           </div>
           </div>

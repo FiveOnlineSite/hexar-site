@@ -8,7 +8,7 @@ export const hero = [
     },
     {
         title: "Predators Hunting Grounds",
-        image: "/images/hero/PHG Opt-3 Compressed.png",
+        image: "/images/hero/PHG Opt-3 Compressed.webp",
         video: "/videos/banners/Predators.mp4", 
         url: "/projects/predators-hunting-grounds"
     },

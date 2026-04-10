@@ -56,7 +56,7 @@ export default function BlogContent({ blogSlug }: BlogContentProps) {
     <section className="section- blog-hero-section lg:p-16 md:p-16 p-8 lg:pt-32 md:pt-32 pt-16">
       <img
         src={currentBlog.image}
-        alt={currentBlog.title}
+        alt={`Blog cover image: ${currentBlog.title}`}
         className="3xl:h-[90vh] 2xl:h-[90vh] xl:h-[90vh] lg:h-[90vh] md:h-full h-full w-full object-contain rounded-xl"
       />
     </section>

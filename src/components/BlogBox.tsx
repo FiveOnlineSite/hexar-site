@@ -40,7 +40,7 @@ const BlogBox = ({blog}: BlogBoxComponentProps) => {
   <div className="h-auto overflow-hidden">
     <img
       src={blog.image}
-      alt={blog.title}
+      alt={`Blog cover image: ${blog.title}`}
       className="h-auto w-full object-cover transition-transform duration-700 group-hover:scale-125"
     />
   </div>

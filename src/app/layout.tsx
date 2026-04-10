@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import ClientLayout from "./ClientLayout";
 
 config.autoAddCss = false;
+const montserrat = Montserrat({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   title: "Hexar",
@@ -35,7 +37,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           }}
         />
       </head>
-      <body className="antialiased">
+      <body className={`${montserrat.className} antialiased`}>
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe

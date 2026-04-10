@@ -157,11 +157,122 @@ export default function Footer () {
                     "@context": "https://schema.org",
                     "@type": "Organization",
                     "name": "Hexar Studios",
-                    "url": "https://hexarstudios.com",
-                    "logo": "https://hexarstudios.com/images/icons/Hexar%20Logo.png",
+                    "alternateName": ["Hexar Studio", "Hexar"],
+                    "url": "https://www.hexarstudios.com",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://hexarstudios.com/images/icons/hexar-logo.png",
+                        "caption": "Hexar Studios Logo"
+                    },
+                    "description": "Hexar Studios is a unified 3D art production powerhouse formed through the strategic integration of Head Hoppers Studios and Ares Visual Effects Studio. We deliver end-to-end 3D art solutions for games, films, advertising, and immersive experiences — including concept art, characters, realtime hair, animation, VFX, cinematics, and technical art.",
+                    "foundingDate": "2025",
+                    "email": "contact@hexarstudios.com",
+                    "telephone": "+91-8008378964",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressCountry": "IN"
+                    },
+                    "contactPoint": {
+                        "@type": "ContactPoint",
+                        "telephone": "+91-8008378964",
+                        "email": "contact@hexarstudios.com",
+                        "contactType": "customer support",
+                        "availableLanguage": "English"
+                    },
                     "sameAs": [
-                        "https://linkedin.com/company/hexar-studio/",
-                        "https://www.artstation.com/hexarstudio"
+                        "https://www.artstation.com/hexarstudio",
+                        "https://www.linkedin.com/company/hexar-studio/",
+                        "https://www.instagram.com/hexarstudios",
+                        "https://www.facebook.com/hexarstudio",
+                        "https://www.youtube.com/@HexarStudios"
+                    ],
+                    "founder": [
+                        {
+                            "@type": "Person",
+                            "name": "Nik John",
+                            "jobTitle": "Co-founder and CEO",
+                            "worksFor": {
+                                "@type": "Organization",
+                                "name": "Hexar Studios"
+                            }
+                        },
+                        {
+                            "@type": "Person",
+                            "name": "Tushank K Jaiswal",
+                            "jobTitle": "Co-founder and CAO",
+                            "worksFor": {
+                                "@type": "Organization",
+                                "name": "Hexar Studios"
+                            }
+                        },
+                        {
+                            "@type": "Person",
+                            "name": "Prashant Verma",
+                            "jobTitle": "Co-founder and CTO",
+                            "worksFor": {
+                                "@type": "Organization",
+                                "name": "Hexar Studios"
+                            }
+                        },
+                        {
+                            "@type": "Person",
+                            "name": "Hari K Nair",
+                            "jobTitle": "Co-founder and CFO",
+                            "worksFor": {
+                                "@type": "Organization",
+                                "name": "Hexar Studios"
+                            }
+                        }
+                    ],
+                    "knowsAbout": [
+                        "3D Art Production",
+                        "Concept Art",
+                        "3D Character Modeling",
+                        "Realtime Hair",
+                        "Creature Modeling",
+                        "Props and Weapons",
+                        "Hard Surface Modeling",
+                        "Vehicle Modeling",
+                        "Stylized Art",
+                        "Technical Art",
+                        "Animation",
+                        "Cinematics",
+                        "Realtime VFX",
+                        "Game Development Co-Dev",
+                        "Visual Effects"
+                    ],
+                    "hasOfferCatalog": {
+                        "@type": "OfferCatalog",
+                        "name": "3D Art Services",
+                        "itemListElement": [
+                            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Concept Art", "url": "https://hexarstudios.com/categories/concept-art" } },
+                            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "3D Character Modeling", "url": "https://hexarstudios.com/categories/characters" } },
+                            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Realtime Hair", "url": "https://hexarstudios.com/categories/realtime-hair" } },
+                            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Creature Modeling", "url": "https://hexarstudios.com/categories/creature-modeling" } },
+                            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Props", "url": "https://hexarstudios.com/categories/props" } },
+                            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Weapons", "url": "https://hexarstudios.com/categories/weapons" } },
+                            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hard Surface Modeling", "url": "https://hexarstudios.com/categories/hard-surface" } },
+                            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Vehicles", "url": "https://hexarstudios.com/categories/vehicles" } },
+                            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stylized Art", "url": "https://hexarstudios.com/categories/stylized-art" } },
+                            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Technical Art", "url": "https://hexarstudios.com/showreels/technical-art" } },
+                            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Animation", "url": "https://hexarstudios.com/showreels/animation" } },
+                            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cinematics", "url": "https://hexarstudios.com/showreels/cinematics" } },
+                            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Realtime VFX", "url": "https://hexarstudios.com/showreels/realtime-vfx" } }
+                        ]
+                    },
+                    "subOrganization": [
+                        {
+                            "@type": "Organization",
+                            "name": "Head Hoppers Studios",
+                            "description": "Character and Hair Specialist studio, part of Hexar Studios",
+                            "logo": "https://hexarstudios.com/images/icons/head-hoppers-logo.png"
+                        },
+                        {
+                            "@type": "Organization",
+                            "name": "Ares Visual Effects Studio",
+                            "description": "Concept Art, VFX, Technical Art, and Co-Dev studio, part of Hexar Studios",
+                            "logo": "https://hexarstudios.com/images/icons/ares-logo.png"
+                        }
                     ]
                 }),
             }}

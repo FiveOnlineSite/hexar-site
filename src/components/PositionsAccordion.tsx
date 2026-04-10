@@ -46,7 +46,7 @@ export default function PositonsAccordion({ position, isOpen, onToggle }: Positi
 
       <div
         className={`pt-6 text-[#ffffffcc] 3xl:text-[20px] 2xl:text-[18px] lg:text-[15px] md:text-[15px] text-[14px] leading-relaxed transition-all duration-700 ease-in-out overflow-hidden ${
-          isOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"
+          isOpen ? "max-h-100 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <div>
